@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FaGlobe, FaHandshake, FaMedal } from "react-icons/fa";
+import world from "../assets/world.svg";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -21,18 +22,18 @@ const AboutOne = () => {
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <div className="flex flex-col space-y-6 w-full">
-                <div className="flex items-center md:justify-start justify-center ">
+                <div className="flex items-center md:justify-start justify-center md:ml-4">
                   <div className="h-4 w-1 bg-mainColor"></div>
                   <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                     About AX Seva
                   </h1>
                 </div>
 
-                <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor">
+                <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2">
                   <h1>Transforming Businesses Through Cloud Technology</h1>
                 </div>
 
-                <div className="md:text-lg text-base text-sideHeading md:text-start text-center">
+                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                   <p>
                     AX Seva is engaged in mustering energy among people to
                     create a better world and solve critical business problems
@@ -156,7 +157,7 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 border-green-50 bg-green-50 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <FaHandshake size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -189,7 +190,7 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 border-green-50 bg-green-50 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <FaMedal size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -223,7 +224,7 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 border-green-50 bg-green-50 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <FaGlobe size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -328,6 +329,62 @@ const AboutOne = () => {
                         </a>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-16 md:px-0 px-2">
+              <div className="space-y-2">
+                <div className="text-center">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                    Where can you find us!
+                  </h1>
+                </div>
+
+                <div className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center">
+                  <img src={world} alt="" className="md:w-[90%] w-[100%]" />
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-16 md:px-0 px-2">
+              <div className="space-y-2">
+                <div className="text-center">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                    Our Leadership
+                  </h1>
+                </div>
+
+                <div className="text-center mt-4">
+                  <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                    Running a business like AX Seva takes energy, creativity and
+                    a love of just getting things done. Find out more about the
+                    people we’ve chosen to lead the business.
+                  </h1>
+                </div>
+
+                <div className="max-w-[1200px] mx-auto pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt.ec6645cf.webp&w=640&q=75"
+                      className="w-80 h-80 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshabri.d0346f1e.webp&w=640&q=75"
+                      className="w-80 h-80 rounded"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjayne.eb7ebf91.webp&w=640&q=75"
+                      className="w-80 h-80 rounded"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
