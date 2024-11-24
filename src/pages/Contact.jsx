@@ -40,14 +40,14 @@ const Contact = () => {
                           </h1>
                         </div>
 
-                        <ul className="space-y-2 pt-3 md:px-0 px-2">
+                        <ul className="space-y-2 pt-3 md:px-0 px-2  flex flex-col justify-center">
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <FaHandshake className="w-8 h-8" />
+                                <FaHandshake className="w-7 h-7 text-gray-600" />
                               </div>
                               <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
+                              <h1 className="ml-3 text-lg font-medium">
                                 350+ Successful Handovers and Counting!
                               </h1>
                             </div>
@@ -56,10 +56,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center ">
                               <div className="flex flex-row items-center mr-3">
-                                <FaNetworkWired className="w-8 h-8" />
+                                <FaNetworkWired className="w-7 h-7 text-gray-600" />
                               </div>
                               <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
+                              <h1 className="ml-3 text-lg font-medium">
                                 150+ Qualified Professionals at Your Disposal!
                               </h1>
                             </div>
@@ -68,10 +68,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <FaClockRotateLeft className="w-8 h-8" />
+                                <FaClockRotateLeft className="w-7 h-7 text-gray-600" />
                               </div>
                               <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
+                              <h1 className="ml-3 text-lg font-medium">
                                 24/7 Round-the-Clock Support!
                               </h1>
                             </div>
@@ -80,10 +80,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <IoIosSpeedometer className="w-8 h-8" />
+                                <IoIosSpeedometer className="w-7 h-7 text-gray-600" />
                               </div>
                               <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
+                              <h1 className="ml-3 text-lg font-medium">
                                 2x Boost in Efficiency and Productivity!
                               </h1>
                             </div>
