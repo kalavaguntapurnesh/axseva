@@ -1,13 +1,14 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaMicrophoneAlt } from "react-icons/fa";
+import { FaAddressBook } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+import { FaClockRotateLeft } from "react-icons/fa6";
+import { FaNetworkWired } from "react-icons/fa";
+import { IoIosSpeedometer } from "react-icons/io";
 
 const Contact = () => {
-  const [isChecked, setIsChecked] = useState(false);
-  const handleCheckboxChange = (event) => {
-    setIsChecked(event.target.checked);
-  };
-
   return (
     <div>
       <Navbar />
@@ -43,14 +44,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <img
-                                  src="https://www.dynamicssquare.com/img/menu-icons/dynamics-365-customer-engagement.svg"
-                                  alt=""
-                                  className="w-8 h-8"
-                                />
+                                <FaHandshake className="w-8 h-8" />
                               </div>
-                              <div className="h-6 w-1 bg-grayColor"></div>
-                              <h1 className="ml-3 text-lg font-medium ">
+                              <div className="h-6 w-1 bg-mainColor"></div>
+                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
                                 350+ Successful Handovers and Counting!
                               </h1>
                             </div>
@@ -59,14 +56,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center ">
                               <div className="flex flex-row items-center mr-3">
-                                <img
-                                  src="https://www.dynamicssquare.com/img/menu-icons/dynamics-365-marketing.svg"
-                                  alt=""
-                                  className="w-8 h-8"
-                                />
+                                <FaNetworkWired className="w-8 h-8" />
                               </div>
-                              <div className="h-6 w-1 bg-grayColor"></div>
-                              <h1 className="ml-3 text-lg font-medium ">
+                              <div className="h-6 w-1 bg-mainColor"></div>
+                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
                                 150+ Qualified Professionals at Your Disposal!
                               </h1>
                             </div>
@@ -75,14 +68,10 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <img
-                                  src="https://www.dynamicssquare.com/img/menu-icons/dynamics-365-finance.svg"
-                                  alt=""
-                                  className="w-8 h-8"
-                                />
+                                <FaClockRotateLeft className="w-8 h-8" />
                               </div>
-                              <div className="h-6 w-1 bg-grayColor"></div>
-                              <h1 className="ml-3 text-lg font-medium ">
+                              <div className="h-6 w-1 bg-mainColor"></div>
+                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
                                 24/7 Round-the-Clock Support!
                               </h1>
                             </div>
@@ -91,19 +80,71 @@ const Contact = () => {
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
-                                <img
-                                  src="https://www.dynamicssquare.com/img/menu-icons/d365-icon.png"
-                                  alt=""
-                                  className="w-8 h-8"
-                                />
+                                <IoIosSpeedometer className="w-8 h-8" />
                               </div>
-                              <div className="h-6 w-1 bg-grayColor"></div>
-                              <h1 className="ml-3 text-lg font-medium ">
+                              <div className="h-6 w-1 bg-mainColor"></div>
+                              <h1 className="ml-3 text-lg font-medium text-gray-600 ">
                                 2x Boost in Efficiency and Productivity!
                               </h1>
                             </div>
                           </li>
                         </ul>
+
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6">
+                          <a
+                            href="mailto:info@axseva.com"
+                            class="flex md:justify-start justify-center"
+                          >
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                              <div class="space-y-2">
+                                <div className="flex justify-center items-center">
+                                  <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
+                                    <FaAddressBook
+                                      size={20}
+                                      className="text-mainColor"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                    Address
+                                  </h1>
+                                </div>
+
+                                <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
+                                  <p>1691 Kettering St.</p>
+                                  <p>Irvine, CA 92614</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="mailto:info@axseva.com"
+                            class="flex md:justify-start justify-center"
+                          >
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                              <div class="space-y-2">
+                                <div className="flex justify-center items-center">
+                                  <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
+                                    <FaMicrophoneAlt
+                                      size={20}
+                                      className="text-mainColor"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                    Email Address
+                                  </h1>
+                                </div>
+
+                                <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
+                                  <p>info@axseva.com</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
@@ -329,7 +370,7 @@ const Contact = () => {
                   </h1>
                 </div>
 
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 pt-8">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 pt-8 md:px-0 px-2">
                   <div>
                     <div className="flex justify-center items-center">
                       <img
@@ -338,10 +379,26 @@ const Contact = () => {
                         className="w-28 h-28"
                       />
                     </div>
-                    <div className="text-center">
+                    <div className="text-center text-gray-600 text-lg">
                       <h1>
                         Submit the contact form. Expect to receive an email from
                         us within one business day.
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <img
+                        src="https://centricconsulting.com/wp-content/uploads/2020/07/Salesforce-icon-350x350.png"
+                        alt=""
+                        className="w-28 h-28"
+                      />
+                    </div>
+                    <div className="text-center text-gray-600 text-lg">
+                      <h1>
+                        Respond to our email. We’ll ask you about project
+                        details and meeting availability.
                       </h1>
                     </div>
                   </div>
@@ -354,27 +411,82 @@ const Contact = () => {
                         className="w-28 h-28"
                       />
                     </div>
-                    <div className="text-center">
+                    <div className="text-center text-gray-600 text-lg">
                       <h1>
-                        Submit the contact form. Expect to receive an email from
-                        us within one business day.
+                        Meet with our experts. You’ll walk away knowing more
+                        about us and our process — and we’ll learn.
                       </h1>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
 
-                  <div>
-                    <div className="flex justify-center items-center">
-                      <img
-                        src="https://centricconsulting.com/wp-content/uploads/2020/07/Website-service-icons_52020-22-350x350.png"
-                        alt=""
-                        className="w-28 h-28"
-                      />
-                    </div>
-                    <div className="text-center">
-                      <h1>
-                        Submit the contact form. Expect to receive an email from
-                        us within one business day.
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-16 md:px-0 px-4">
+              <div class="flex md:justify-start justify-center w-full">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                  <div class="space-y-3">
+                    <div class="flex lg:justify-start justify-center items-center">
+                      <h1 class="text-2xl font-bold">
+                        Businesses Meet Expected ROI
                       </h1>
+                    </div>
+
+                    <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
+                      <p>
+                        For press or investor queries, please reach out to our
+                        Communications team
+                      </p>
+                    </div>
+
+                    <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
+                      <a
+                        href="/contact"
+                        class="flex  font-semibold transition duration-1000 ease-out"
+                      >
+                        See Investor Relations
+                      </a>
+                      <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center w-8 h-8 border-[2px] border-mainColor rounded-full">
+                          <FaArrowRightLong
+                            size={20}
+                            className="text-mainColor"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex md:justify-start justify-center">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                  <div class="space-y-3">
+                    <div class="flex lg:justify-start justify-center items-center">
+                      <h1 class="text-2xl font-bold">
+                        Your Path to Success Starts Here.
+                      </h1>
+                    </div>
+
+                    <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
+                      <p>Interested in joining the AX Seva team?</p>
+                    </div>
+
+                    <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
+                      <a
+                        href="/contact"
+                        class="flex  font-semibold transition duration-1000 ease-out"
+                      >
+                        Explore open positions
+                      </a>
+                      <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center w-8 h-8 border-[2px] border-mainColor rounded-full">
+                          <FaArrowRightLong
+                            size={20}
+                            className="text-mainColor"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
