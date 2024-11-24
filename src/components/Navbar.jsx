@@ -113,8 +113,8 @@ const NavBar = () => {
         <div
           className={
             !isMobileMenuOpen
-              ? "xl:hidden fixed left-[-100%] h-[75%] ease-in-out duration-1000 "
-              : "xl:hidden fixed left-0 top-0 w-[70%] border-r h-[85%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              ? "xl:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
+              : "xl:hidden fixed left-0 top-0 w-[70%] border-r h-[100%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           {/* <a href="/">
@@ -137,7 +137,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Company
+                Solution
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "home"
@@ -156,7 +156,7 @@ const NavBar = () => {
                   >
                     <li className="text-gray-700 ">
                       <a href="/learn-about-us" className="text-sm">
-                        About Us
+                        Dynamic 365 Chain
                       </a>
                     </li>
                     <li className="text-gray-700">
@@ -164,7 +164,7 @@ const NavBar = () => {
                         href="/learn-about-us#logo_meaning"
                         className="text-sm"
                       >
-                        Logo Meaning
+                        Customer Service
                       </a>
                     </li>
                     <li className="text-gray-700">
@@ -172,7 +172,7 @@ const NavBar = () => {
                         href="/learn-about-us#about_founder"
                         className="text-sm"
                       >
-                        Leadership
+                        Business Central
                       </a>
                     </li>
                   </motion.ul>
@@ -184,7 +184,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("products")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Products
+                Industries
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "products"
@@ -203,22 +203,12 @@ const NavBar = () => {
                   >
                     <li className="text-gray-700">
                       <a href="/" className="text-sm">
-                        LM Beehive
+                        Startups
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/" className="text-sm">
-                        LM Broadcast
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/enroll-rewards" className="text-sm">
-                        Enroll Rewards
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/" className="text-sm">
-                        Ecommerce Platform
+                        Professional Services
                       </a>
                     </li>
                   </motion.ul>
@@ -230,7 +220,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Subscription
+                Our Services
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -249,27 +239,17 @@ const NavBar = () => {
                   >
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_platinum" className="text-sm">
-                        Platinum
+                        Implementation Services
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_gold" className="text-sm">
-                        Gold
+                        Support Services
                       </a>
                     </li>
                     <li className="text-gray-700">
                       <a href="/pricing#pricing_silver" className="text-sm">
-                        Silver
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/pricing#pricing_bronze" className="text-sm">
-                        Bronze
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/pricing" className="text-sm">
-                        Free Tier
+                        Upgrade Services
                       </a>
                     </li>
                   </motion.ul>
@@ -282,7 +262,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("privacy")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Privacy
+                Company
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "privacy"
@@ -301,27 +281,21 @@ const NavBar = () => {
                   >
                     <li className="text-gray-700">
                       <a href="/privacy-policy" className="text-sm">
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/consumer-privacy" className="text-sm">
-                        Consumer Policy
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/privacy-report" className="text-sm">
-                        Privacy Report
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/privacy-statement" className="text-sm">
-                        Privacy Statement
+                        About Us
                       </a>
                     </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/contact"
+                className="flex items-center justify-between cursor-pointer"
+              >
+                Blog
+              </a>
             </li>
 
             <li className="p-4 border-b border-gray-600">

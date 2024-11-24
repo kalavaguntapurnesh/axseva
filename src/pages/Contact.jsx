@@ -40,7 +40,7 @@ const Contact = () => {
                           </h1>
                         </div>
 
-                        <ul className="space-y-2 pt-3">
+                        <ul className="space-y-2 pt-3 md:px-0 px-2">
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
@@ -90,7 +90,7 @@ const Contact = () => {
                           </li>
                         </ul>
 
-                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
                           <a
                             href="mailto:info@axseva.com"
                             class="flex md:justify-start justify-center"
@@ -322,7 +322,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="pt-16">
+            <div className="pt-16 md:px-0 px-2">
               <div className="space-y-2">
                 <div className="text-center">
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
