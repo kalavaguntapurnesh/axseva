@@ -1,12 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
-import { FaBlenderPhone, FaBuilding, FaHandshake } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -113,10 +107,14 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div>
-                      <form action="" method="POST" className="mt-8">
-                        <div className="w-full flex justify-center items-center">
-                          <div className="mb-5 md:w-10/12 w-full">
+                    <div className="mx-2">
+                      <form
+                        action=""
+                        method="POST"
+                        className="mt-8 lg:p-6 lg:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded"
+                      >
+                        <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4">
+                          <div className="mb-3 w-full">
                             <label
                               htmlFor="email"
                               className="mb-3 block text-base font-medium text-[#07074D]"
@@ -128,48 +126,96 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Full Name"
-                              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none  focus:shadow-md"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
-                        </div>
-                        <div className="w-full flex justify-center items-center">
-                          <div className="mb-5 md:w-10/12 w-full">
+                          <div className="mb-3 w-full">
                             <label
                               htmlFor="email"
                               className="mb-3 block text-base font-medium text-[#07074D]"
                             >
-                              Email Address
-                            </label>
-                            <input
-                              type="email"
-                              name="email"
-                              id="email"
-                              placeholder="example@domain.com"
-                              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none  focus:shadow-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div className="w-full flex justify-center items-center">
-                          <div className="mb-5 md:w-10/12 w-full">
-                            <label
-                              htmlFor="subject"
-                              className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                              Subject
+                              Job Title
                             </label>
                             <input
                               type="text"
-                              name="subject"
-                              id="subject"
-                              placeholder="Enter your subject"
-                              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:shadow-md"
+                              name="name"
+                              id="name"
+                              placeholder="Your Job Title"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                            />
+                          </div>
+                        </div>
+                        <div className="w-full grid grid-cols-1 md:gap-4">
+                          <div className="mb-5 w-full">
+                            <label
+                              htmlFor="email"
+                              className="mb-3 block text-base font-medium text-[#07074D]"
+                            >
+                              Work Email
+                            </label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Your Work Email"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                         </div>
 
-                        <div className="w-full flex justify-center items-center">
-                          <div className="mb-5 md:w-10/12 w-full">
+                        <div className="w-full grid grid-cols-1 md:gap-4">
+                          <div className="mb-5 w-full">
+                            <label
+                              htmlFor="email"
+                              className="mb-3 block text-base font-medium text-[#07074D]"
+                            >
+                              Phone Number
+                            </label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Your Phone Number"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4">
+                          <div className="mb-5 w-full">
+                            <label
+                              htmlFor="email"
+                              className="mb-3 block text-base font-medium text-[#07074D]"
+                            >
+                              Company Name
+                            </label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Your Company Name"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                            />
+                          </div>
+                          <div className="mb-5 w-full">
+                            <label
+                              htmlFor="email"
+                              className="mb-3 block text-base font-medium text-[#07074D]"
+                            >
+                              Looking For
+                            </label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="You are looking for"
+                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="w-full grid grid-cols-1 md:gap-4">
+                          <div className="mb-3 w-full">
                             <label
                               htmlFor="message"
                               className="mb-3 block text-base font-medium text-[#07074D]"
@@ -181,15 +227,50 @@ const Contact = () => {
                               name="message"
                               id="message"
                               placeholder="Type your message"
-                              className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none  focus:shadow-md"
+                              className="w-full resize-none rounded-md border bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             ></textarea>
                           </div>
                         </div>
 
-                        <div className="w-full flex justify-center items-center">
-                          <div className="mb-5 md:w-8/12 w-full">
-                            <button className="hover:shadow-form rounded-3xl bg-colorFour hover:bg-colorFour transition duration-1000 ease-in-out py-3 px-12 text-base font-semibold text-white outline-none">
-                              Submit
+                        <div className="w-full grid grid-cols-1 md:gap-4 lg:ml-1">
+                          <div className="flex items-start">
+                            <div className="flex items-center h-5">
+                              <input
+                                id="terms"
+                                aria-describedby="terms"
+                                type="checkbox"
+                                className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800 cursor-pointer"
+                                required
+                              ></input>
+                            </div>
+                            <div className="ml-3 text-sm">
+                              <label
+                                htmlFor="terms"
+                                className="font-light text-gray-500 dark:text-gray-300"
+                              >
+                                I accept the{" "}
+                                <a
+                                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                  href="/privacy"
+                                >
+                                  Terms and Conditions
+                                </a>{" "}
+                                and the{" "}
+                                <a
+                                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                                  href="/privacy"
+                                >
+                                  Privacy Policy
+                                </a>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="w-full grid grid-cols-1 md:gap-4">
+                          <div className="mt-4 w-full">
+                            <button className="hover:shadow-form rounded-full bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
+                              Submit Form
                             </button>
                           </div>
                         </div>
@@ -200,7 +281,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="lg:pt-8">
+            <div className="pt-16">
               <div className="space-y-2">
                 <div className="text-center">
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
@@ -214,14 +295,12 @@ const Contact = () => {
                   </h1>
                 </div>
               </div>
-              <div className="relative bg-[#f2f8fe] mt-8 rounded-lg p-6 max-w-[1400px] lg:mx-auto mx-4 h-60">
-                {/* Top-left image */}
+              <div className="relative bg-[#f2f8fe] mt-8 rounded-lg p-6 max-w-[1200px] lg:mx-auto mx-4 h-60">
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-left.png"
                   alt="Quote Left"
                   className="absolute top-[-16px] left-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
-                {/* Content */}
                 <div className="flex flex-col text-center justify-center items-center h-full max-w-[900px] mx-auto">
                   <p className="text-gray-600 text-center mt-2">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -239,6 +318,66 @@ const Contact = () => {
                   alt="Quote Right"
                   className="absolute bottom-[-16px] right-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
+              </div>
+            </div>
+
+            <div className="pt-16">
+              <div className="space-y-2">
+                <div className="text-center">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                    Transformation has no boundaries.
+                  </h1>
+                </div>
+
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 pt-8">
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <img
+                        src="https://centricconsulting.com/wp-content/uploads/2020/07/Website-service-icons_52020-22-350x350.png"
+                        alt=""
+                        className="w-28 h-28"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h1>
+                        Submit the contact form. Expect to receive an email from
+                        us within one business day.
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <img
+                        src="https://centricconsulting.com/wp-content/uploads/2020/07/Website-service-icons_52020-22-350x350.png"
+                        alt=""
+                        className="w-28 h-28"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h1>
+                        Submit the contact form. Expect to receive an email from
+                        us within one business day.
+                      </h1>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex justify-center items-center">
+                      <img
+                        src="https://centricconsulting.com/wp-content/uploads/2020/07/Website-service-icons_52020-22-350x350.png"
+                        alt=""
+                        className="w-28 h-28"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <h1>
+                        Submit the contact form. Expect to receive an email from
+                        us within one business day.
+                      </h1>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

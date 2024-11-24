@@ -9,7 +9,7 @@ export default {
         // mainColor: "#187e4c",
         headingColor: "#19191B",
         sideHeading: "#474749",
-        grayColor:"#585858"
+        grayColor:"#585858",
       },
     },
   },
