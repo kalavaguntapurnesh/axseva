@@ -7,6 +7,7 @@ import { FaHandshake } from "react-icons/fa";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { FaNetworkWired } from "react-icons/fa";
 import { IoIosSpeedometer } from "react-icons/io";
+import { MdArrowRightAlt } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -446,14 +447,7 @@ const Contact = () => {
                       >
                         See Investor Relations
                       </a>
-                      <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-8 h-8 border-[2px] border-mainColor rounded-full">
-                          <FaArrowRightLong
-                            size={20}
-                            className="text-mainColor"
-                          />
-                        </div>
-                      </div>
+                      <MdArrowRightAlt size={24} className="text-mainColor" />
                     </div>
                   </div>
                 </div>
@@ -479,14 +473,7 @@ const Contact = () => {
                       >
                         Explore open positions
                       </a>
-                      <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-8 h-8 border-[2px] border-mainColor rounded-full">
-                          <FaArrowRightLong
-                            size={20}
-                            className="text-mainColor"
-                          />
-                        </div>
-                      </div>
+                      <MdArrowRightAlt size={24} className="text-mainColor" />
                     </div>
                   </div>
                 </div>
