@@ -1,5 +1,4 @@
 import React from "react";
-import { TfiMicrosoftAlt } from "react-icons/tfi";
 import { MdArrowRightAlt } from "react-icons/md";
 
 const Bento = () => {
@@ -31,7 +30,7 @@ const Bento = () => {
               </h1>
             </div>
 
-            <div className="bg-slate-100 w-[100%] rounded mt-8 p-8">
+            <div className="bg-slate-100 w-[100%] rounded mt-8 md:p-8 p-3">
               <div className="grid md:grid-cols-3 grid-cols-1 gap-2 ">
                 <a href="" class="flex md:justify-start justify-center">
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
@@ -71,7 +70,7 @@ const Bento = () => {
                           alt=""
                         />
                         <h1 className="ml-4 text-xl text-colorTwo font-bold">
-                          Dynamics 365 Finance
+                          Dynamics 365 Finance Software
                         </h1>
                       </div>
 

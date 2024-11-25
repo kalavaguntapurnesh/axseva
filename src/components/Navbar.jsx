@@ -66,7 +66,10 @@ const NavBar = () => {
           <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
             Industries
           </FlyoutLink>
-          <FlyoutLink href="/managed-it-services" FlyoutContent={ServicesContent}>
+          <FlyoutLink
+            href="/managed-it-services"
+            FlyoutContent={ServicesContent}
+          >
             Our Services
           </FlyoutLink>
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
@@ -222,8 +225,8 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer"
               >
-               <a href="/managed-it-services" className="text-sm">
-                Our Services
+                <a href="/managed-it-services" className="text-sm">
+                  Our Services
                 </a>
                 <FaAngleDown
                   className={`transition-transform ${
@@ -262,35 +265,12 @@ const NavBar = () => {
             </li>
 
             <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("privacy")}
+              <a
+                href="/about-us"
                 className="flex items-center justify-between cursor-pointer"
               >
-                Company
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "privacy"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "privacy" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-gray-700">
-                      <a href="/about-us" className="text-sm">
-                        About Us
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
+                About AX Seva
+              </a>
             </li>
 
             <li className="p-4 border-b border-gray-600">
