@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { FaGlobe, FaHandshake, FaMedal } from "react-icons/fa";
 import world from "../assets/world.svg";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -365,26 +366,82 @@ const AboutOne = () => {
                 </div>
 
                 <div className="max-w-[1200px] mx-auto pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-                  <div className="flex justify-center items-center">
+                  <div className="flex flex-col justify-center items-center space-y-1">
                     <img
-                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt.ec6645cf.webp&w=640&q=75"
+                      src="https://media.licdn.com/dms/image/v2/C5603AQGqgZ482j5DSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516332918641?e=1738195200&v=beta&t=A27zEvNDLZwKBzYWZgtNdd5c9p8G65t0Ws1ucGfenfc"
                       className="w-80 h-80 rounded"
                       alt=""
                     />
+                    <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                      <h1>Hari Krishna Mandali</h1>
+                    </div>
+                    <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                      <p>Founder & Business Head</p>
+                    </div>
+                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                      <a
+                        href="https://www.linkedin.com/in/amarnathpenumur/"
+                        className="bg-white border-[1px] border-mainColor font-medium outline-none
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      >
+                        <FaLinkedinIn size={16} className="text-mainColor" />
+                        <span className="ml-1 text-mainColor">
+                          LinkedIn Profile
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                  <div className="flex justify-center items-center">
+                  <div className="flex flex-col space-y-1 justify-center items-center">
                     <img
-                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshabri.d0346f1e.webp&w=640&q=75"
+                      src="https://media.licdn.com/dms/image/v2/C4D03AQHblLCeYxGqiw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1589251992840?e=1738195200&v=beta&t=DNoUnZs6MbWMgrKzQKeF7fdoz336vXFbfMPKvjWRMIs"
                       className="w-80 h-80 rounded"
                       alt=""
                     />
+                    <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                      <h1>Amarnath Revuri</h1>
+                    </div>
+                    <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                      <p>Founder & CTO</p>
+                    </div>
+                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                      <a
+                        href="https://www.linkedin.com/in/amarnathpenumur/"
+                        className="bg-white border-[1px] border-mainColor font-medium outline-none
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      >
+                        <FaLinkedinIn size={16} className="text-mainColor" />
+                        <span className="ml-1 text-mainColor">
+                          LinkedIn Profile
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                  <div className="flex justify-center items-center">
+                  <div className="flex flex-col space-y-1 justify-center items-center">
                     <img
-                      src="https://screencloud.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjayne.eb7ebf91.webp&w=640&q=75"
+                      src="https://media.licdn.com/dms/image/v2/C4E03AQG1WjrArK1OzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517761454164?e=1738195200&v=beta&t=3MoJpq0ls8jRll-xPe49vkMXZ9pjR6UWZ43Detg4IkQ"
                       className="w-80 h-80 rounded"
                       alt=""
                     />
+
+                    <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                      <h1>Amarnath Reddy Penumuru</h1>
+                    </div>
+                    <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                      <p>Founder & CPO</p>
+                    </div>
+
+                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                      <a
+                        href="https://www.linkedin.com/in/amarnathpenumur/"
+                        className="bg-white border-[1px] border-mainColor font-medium outline-none
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      >
+                        <FaLinkedinIn size={16} className="text-mainColor" />
+                        <span className="ml-1 text-mainColor">
+                          LinkedIn Profile
+                        </span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
