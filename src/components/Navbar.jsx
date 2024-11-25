@@ -77,7 +77,7 @@ const NavBar = () => {
             <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
-            <a href="/solutions">Blog</a>
+            <a href="/solutions">Our Blogs</a>
             <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
         </ul>
@@ -296,7 +296,7 @@ const NavBar = () => {
                 href="/contact"
                 className="flex items-center justify-between cursor-pointer"
               >
-                Blog
+                Our Blogs
               </a>
             </li>
 
@@ -401,7 +401,7 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         Contact sales
       </button>
     </div>
@@ -424,7 +424,7 @@ const ServicesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -453,7 +453,7 @@ const IndustriesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -478,10 +478,7 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <button
-        onClick={() => navi}
-        className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white"
-      >
+      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
