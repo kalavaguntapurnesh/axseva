@@ -24,7 +24,7 @@ const Contact = () => {
                     <div>
                       <div className="flex flex-col space-y-4 mt-8">
                         <div className="lg:text-start text-center">
-                          <h1 className="uppercase font-bold text-colorFour tracking-wide">
+                          <h1 className="uppercase font-bold text-mainColor tracking-wide">
                             get in touch
                           </h1>
                         </div>
