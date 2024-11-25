@@ -369,7 +369,7 @@ const AboutOne = () => {
                   <div className="flex flex-col justify-center items-center space-y-1">
                     <img
                       src="https://media.licdn.com/dms/image/v2/C5603AQGqgZ482j5DSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516332918641?e=1738195200&v=beta&t=A27zEvNDLZwKBzYWZgtNdd5c9p8G65t0Ws1ucGfenfc"
-                      className="w-80 h-80 rounded"
+                      className="md:w-60 md:h-60 h-80 w-80 rounded"
                       alt=""
                     />
                     <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
@@ -378,11 +378,12 @@ const AboutOne = () => {
                     <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
                       <p>Founder & Business Head</p>
                     </div>
-                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+
+                    <div className="flex items-center lg:justify-start justify-center ">
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -394,7 +395,7 @@ const AboutOne = () => {
                   <div className="flex flex-col space-y-1 justify-center items-center">
                     <img
                       src="https://media.licdn.com/dms/image/v2/C4D03AQHblLCeYxGqiw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1589251992840?e=1738195200&v=beta&t=DNoUnZs6MbWMgrKzQKeF7fdoz336vXFbfMPKvjWRMIs"
-                      className="w-80 h-80 rounded"
+                      className="md:w-60 md:h-60 h-80 w-80 rounded"
                       alt=""
                     />
                     <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
@@ -403,11 +404,11 @@ const AboutOne = () => {
                     <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
                       <p>Founder & CTO</p>
                     </div>
-                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                    <div className="flex items-center lg:justify-start justify-center ">
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -419,7 +420,7 @@ const AboutOne = () => {
                   <div className="flex flex-col space-y-1 justify-center items-center">
                     <img
                       src="https://media.licdn.com/dms/image/v2/C4E03AQG1WjrArK1OzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517761454164?e=1738195200&v=beta&t=3MoJpq0ls8jRll-xPe49vkMXZ9pjR6UWZ43Detg4IkQ"
-                      className="w-80 h-80 rounded"
+                      className="md:w-60 md:h-60 h-80 w-80 rounded"
                       alt=""
                     />
 
@@ -430,11 +431,11 @@ const AboutOne = () => {
                       <p>Founder & CPO</p>
                     </div>
 
-                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                    <div className="flex items-center lg:justify-start justify-center ">
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 py-2 text-center"
+                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
