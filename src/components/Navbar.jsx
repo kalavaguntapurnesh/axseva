@@ -66,7 +66,7 @@ const NavBar = () => {
           <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
             Industries
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={ServicesContent}>
+          <FlyoutLink href="/managed-it-services" FlyoutContent={ServicesContent}>
             Our Services
           </FlyoutLink>
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
@@ -222,7 +222,9 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer"
               >
+               <a href="/managed-it-services" className="text-sm">
                 Our Services
+                </a>
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
