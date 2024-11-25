@@ -40,7 +40,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
                           <TfiMicrosoftAlt
                             size={36}
                             className="text-mainColor"
@@ -63,7 +63,7 @@ const Carousel = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
                         >
                           View More
                         </a>
@@ -76,7 +76,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
                           <IoSettings size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -97,7 +97,7 @@ const Carousel = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
                         >
                           View More
                         </a>
@@ -110,7 +110,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
                           <FaHeadset size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -131,7 +131,7 @@ const Carousel = () => {
                       <div className="flex justify-center w-[100%] ">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
                         >
                           View More
                         </a>

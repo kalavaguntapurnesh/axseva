@@ -178,7 +178,7 @@ const AboutOne = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
@@ -212,7 +212,7 @@ const AboutOne = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
@@ -246,7 +246,7 @@ const AboutOne = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-full"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
@@ -383,7 +383,7 @@ const AboutOne = () => {
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -408,7 +408,7 @@ const AboutOne = () => {
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -435,7 +435,7 @@ const AboutOne = () => {
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-full flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
