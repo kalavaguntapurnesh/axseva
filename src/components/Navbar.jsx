@@ -2,29 +2,12 @@ import React, { useState, useEffect } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { MdComputer } from "react-icons/md";
-import {
-  FaBuildingColumns,
-  FaComputerMouse,
-  FaUsers,
-  FaXTwitter,
-} from "react-icons/fa6";
-import { FaGlobeAmericas, FaInstagram, FaMicrophoneAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
-import {
-  FiArrowRight,
-  FiBarChart2,
-  FiChevronDown,
-  FiHome,
-  FiPieChart,
-} from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
-import free from "../assets/free.png";
-import premium from "../assets/money.png";
-import { SiAdguard, SiSecurityscorecard } from "react-icons/si";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,17 +29,16 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Toggle dropdown and close others
   const toggleDropdown = (dropdown) => {
     if (openDropdown === dropdown) {
-      setOpenDropdown(null); // close if the same dropdown is clicked
+      setOpenDropdown(null);
     } else {
-      setOpenDropdown(dropdown); // open the clicked dropdown
+      setOpenDropdown(dropdown);
     }
   };
 
   const toggleMobileDropdown = (dropdown) => {
-    setOpenDropdownMobile((prev) => (prev === dropdown ? null : dropdown)); // Toggle the dropdown
+    setOpenDropdownMobile((prev) => (prev === dropdown ? null : dropdown));
   };
 
   return (
@@ -77,7 +59,27 @@ const NavBar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
-          <Tabs />
+          {/* <Tabs /> */}
+          <FlyoutLink href="#" FlyoutContent={PricingContent}>
+            Solutions
+          </FlyoutLink>
+          <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
+            Industries
+          </FlyoutLink>
+          <FlyoutLink href="#" FlyoutContent={ServicesContent}>
+            Our Services
+          </FlyoutLink>
+          <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
+            About Us
+          </FlyoutLink>
+          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
+            <a href="/solutions">Support</a>
+            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+          </li>
+          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
+            <a href="/solutions">Blog</a>
+            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+          </li>
         </ul>
 
         {/* Login Button */}
@@ -94,7 +96,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/contact");
             }}
-            className="border-[1px] border-mainColor text-white hover:text-mainColor bg-mainColor hover:bg-mainColor lg:px-6 md:px-4 py-2 rounded-full text-sm font-medium transition duration-500"
+            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-full text-sm font-medium transition duration-500"
           >
             Contact Us
           </button>
@@ -335,405 +337,155 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+const FlyoutLink = ({ children, href, FlyoutContent }) => {
+  const [open, setOpen] = useState(false);
 
-const Tabs = () => {
-  const [selected, setSelected] = useState(null);
-  const [dir, setDir] = useState(null);
-
-  const handleSetSelected = (val) => {
-    if (typeof selected === "number" && typeof val === "number") {
-      setDir(selected > val ? "r" : "l");
-    } else if (val === null) {
-      setDir(null);
-    }
-
-    setSelected(val);
-  };
+  const showFlyout = FlyoutContent && open;
 
   return (
     <div
-      onMouseLeave={() => handleSetSelected(null)}
-      className="relative flex h-fit gap-2"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      className="relative w-fit h-fit"
     >
-      {TABS.map((t) => {
-        return (
-          <Tab
-            key={t.id}
-            selected={selected}
-            handleSetSelected={handleSetSelected}
-            tab={t.id}
-          >
-            {t.title}
-          </Tab>
-        );
-      })}
-
+      <a href={href} className="relative text-black">
+        {children}
+        <span
+          style={{
+            transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
+          }}
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-mainColor transition-transform duration-300 ease-out"
+        />
+      </a>
       <AnimatePresence>
-        {selected && <Content dir={dir} selected={selected} />}
+        {showFlyout && (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 15 }}
+            style={{ translateX: "-50%" }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="absolute left-1/2 top-12 bg-white text-black"
+          >
+            <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
+            <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
+            <FlyoutContent />
+          </motion.div>
+        )}
       </AnimatePresence>
     </div>
   );
 };
 
-const Tab = ({ children, tab, handleSetSelected, selected }) => {
+const PricingContent = () => {
   return (
-    <button
-      id={`shift-tab-${tab}`}
-      onMouseEnter={() => handleSetSelected(tab)}
-      onClick={() => handleSetSelected(tab)}
-      className={`flex items-center gap-1 rounded-full md:text-sm lg:text-base px-3 py-1.5 transition-colors font-medium ${
-        selected === tab ? " bg-mainColor text-neutral-100" : "text-grayColor"
-      }`}
-    >
-      <span>{children}</span>
-      <FiChevronDown
-        className={`transition-transform ${
-          selected === tab ? "rotate-180" : ""
-        }`}
-      />
-    </button>
-  );
-};
-
-const Content = ({ selected, dir }) => {
-  return (
-    <motion.div
-      id="overlay-content"
-      initial={{
-        opacity: 0,
-        y: 8,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      exit={{
-        opacity: 0,
-        y: 8,
-      }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-[100%] bg-white rounded-lg shadow p-4"
-    >
-      <Bridge />
-      <Nub selected={selected} />
-
-      {TABS.map((t) => {
-        return (
-          <div className="overflow-hidden " key={t.id}>
-            {selected === t.id && (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  x: dir === "l" ? 100 : dir === "r" ? -100 : 0,
-                }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.25, ease: "easeInOut" }}
-              >
-                <t.Component />
-              </motion.div>
-            )}
-          </div>
-        );
-      })}
-    </motion.div>
-  );
-};
-
-const Bridge = () => (
-  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
-);
-
-const Nub = ({ selected }) => {
-  const [left, setLeft] = useState(0);
-
-  useEffect(() => {
-    moveNub();
-  }, [selected]);
-
-  const moveNub = () => {
-    if (selected) {
-      const hoveredTab = document.getElementById(`shift-tab-${selected}`);
-      const overlayContent = document.getElementById("overlay-content");
-
-      if (!hoveredTab || !overlayContent) return;
-
-      const tabRect = hoveredTab.getBoundingClientRect();
-      const { left: contentLeft } = overlayContent.getBoundingClientRect();
-
-      const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
-
-      setLeft(tabCenter);
-    }
-  };
-
-  return (
-    <motion.span
-      style={{
-        clipPath: "polygon(0 0, 100% 0, 50% 50%, 0% 100%)",
-      }}
-      animate={{ left }}
-      transition={{ duration: 0.25, ease: "easeInOut" }}
-      className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl bg-mainColor"
-    />
-  );
-};
-
-const Blog = () => {
-  return (
-    <div>
-      <div className="grid grid-cols-2 gap-2">
-        <a href="/pricing" className="w-full border-[1px] p-2 rounded">
-          <div className="flex justify-center items-center">
-            <img
-              className="mb-2 h-16 w-16 rounded "
-              src={premium}
-              alt="Placeholder image"
-            />
-          </div>
-          <h4 className="mb-0.5 text-sm font-medium text-center">
-            Premium Subscription
-          </h4>
-          <ul className="space-y-1 text-sm text-neutral-600 flex justify-center items-center flex-col">
-            <li>Platinum</li>
-            <li>Gold</li>
-            <li>Silver</li>
-            <li>Bronze</li>
-          </ul>
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">For Individuals</h3>
+        <a href="#" className="block text-sm hover:underline">
+          Introduction
         </a>
-        <a href="/pricing" className="w-full border-[1px] p-2 rounded">
-          <div className="flex justify-center items-center">
-            <img
-              className="mb-2 h-16 w-16 rounded "
-              src={free}
-              alt="Placeholder image"
-            />
-          </div>
-          <h4 className="mb-0.5 text-sm font-medium text-center">
-            Free Subscription
-          </h4>
-          <ul className="space-y-1 text-sm flex justify-center items-center flex-col text-neutral-600">
-            <li>Free Tier</li>
-            <li>Rewards Engage</li>
-          </ul>
+        <a href="#" className="block text-sm hover:underline">
+          Pay as you go
         </a>
       </div>
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-mainColor font-semibold">
-        <span>View more</span>
-        <FiArrowRight />
+      <div className="mb-6 space-y-3">
+        <h3 className="font-semibold">For Companies</h3>
+        <a href="#" className="block text-sm hover:underline">
+          Startups
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          SMBs
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Enterprise
+        </a>
+      </div>
+      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+        Contact sales
       </button>
     </div>
   );
 };
 
-const Homebar = () => {
+const ServicesContent = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 ">
-      <a
-        href="/learn-about-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">About Us</span>
-      </a>
-      <a
-        href="/learn-about-us#logo_meaning"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Logo Meaning
-        </span>
-      </a>
-      <a
-        href="/learn-about-us#about_founder"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">Leadership</span>
-      </a>
-    </div>
-  );
-};
-
-const Subscription = () => {
-  return (
-    <div>
-      <div className="grid grid-cols-4 gap-2">
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="https://lmclub.club/wp-content/uploads/2024/09/Picture2-300x300.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-black">LM Beehive</h4>
-          <p className="text-xs text-neutral-400">
-            Coupons, information and opportunities from local restaurants hotel,
-            retailers.
-          </p>
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">Services We Offer</h3>
+        <a href="#" className="block text-sm hover:underline">
+          Implementation Services
         </a>
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="https://lmclub.club/wp-content/uploads/2024/09/Picture1-300x300.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-black">
-            LM Broadcast
-          </h4>
-          <p className="text-xs text-neutral-400">
-            Advertise local businesses on your social media and we will pay you
-            a percentage of the revenue earned.
-          </p>
+        <a href="#" className="block text-sm hover:underline">
+          Upgrade Services
         </a>
-        <a href="/enroll-rewards">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="https://lmclub.club/wp-content/uploads/2024/09/Picture3-300x300.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-black">
-            Enroll Rewards
-          </h4>
-          <p className="text-xs text-neutral-400">
-            Activate GROW & ENROLL to earn rewards for helping our community to
-            expand.
-          </p>
-        </a>
-        <a href="https://ecommerce-green-theta.vercel.app/">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="https://cdn-icons-png.flaticon.com/512/3445/3445817.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium text-black">
-            Ecommerce Platform
-          </h4>
-          <p className="text-xs text-neutral-400">
-            Ecommerce platform is the place where you can find customized
-            jerseys.
-          </p>
+        <a href="#" className="block text-sm hover:underline">
+          Support Services
         </a>
       </div>
-      <button className="ml-auto mt-4 flex items-center font-semibold gap-1 text-sm text-mainColor">
-        <span>View more</span>
-        <FiArrowRight />
+
+      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+        View More
       </button>
     </div>
   );
 };
 
-const Privacy = () => {
+const IndustriesContent = () => {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <a
-        href="/privacy-policy"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <RiCustomerService2Fill className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Privacy Policy
-        </span>
-      </a>
-      <a
-        href="/consumer-privacy"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FaUsers className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Consumer Policy
-        </span>
-      </a>
-      <a
-        href="/privacy-report"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <SiAdguard className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Privacy Report
-        </span>
-      </a>
-      <a
-        href="/privacy-statement"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <SiSecurityscorecard className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Privacy Statement
-        </span>
-      </a>
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">Our Vast Resources</h3>
+        <a href="#" className="block text-sm hover:underline">
+          Startups
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Not for profit
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Ecommerce
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Manufacturing Services
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Professional Services
+        </a>
+      </div>
+
+      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+        View More
+      </button>
     </div>
   );
 };
 
-const ContactBar = () => {
+const AboutUsContent = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 ">
-      <a
-        href="/contact-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">About AX Seva</h3>
+        <a href="#" className="block text-sm hover:underline">
+          About Us
+        </a>
+        <a href="#" className="block text-sm hover:underline">
+          Why AX Seva
+        </a>
+      </div>
+      <div className="mb-6 space-y-3">
+        <h3 className="font-semibold">Careers at AX Seva</h3>
+        <a href="#" className="block text-sm hover:underline">
+          Collaborate with Us
+        </a>
+      </div>
+      <button
+        onClick={() => navi}
+        className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white"
       >
-        <FaGlobeAmericas className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Head Quarters
-        </span>
-      </a>
-      <a
-        href="/contact-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FaBuildingColumns className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Branch Offices
-        </span>
-      </a>
-      <a
-        href="/contact-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FaComputerMouse className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Contact by Email
-        </span>
-      </a>
-      <a
-        href="/contact-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <MdComputer className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Contact by Chat
-        </span>
-      </a>
-      <a
-        href="/contact-us"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FaMicrophoneAlt className="mb-2 text-xl text-mainColor" />
-        <span className="text-xs font-semibold text-gray-700">
-          Contact by Phone
-        </span>
-      </a>
+        View More
+      </button>
     </div>
   );
 };
 
-const TABS = [
-  { title: "Solutions", Component: Homebar },
-  {
-    title: "Our Services",
-    Component: Subscription,
-  },
-  {
-    title: "Industries",
-    Component: Blog,
-  },
-
-  {
-    title: "Company",
-    Component: Privacy,
-  },
-  {
-    title: "Blog",
-    Component: ContactBar,
-  },
-].map((n, idx) => ({ ...n, id: idx + 1 }));
+export default NavBar;
