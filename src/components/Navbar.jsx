@@ -74,11 +74,11 @@ const NavBar = () => {
           </FlyoutLink>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
             <a href="/solutions">Support</a>
-            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+            <div className="bg-mainColor mt-[2px] rounded-lg h-1 w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
             <a href="/solutions">Our Blogs</a>
-            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+            <div className="bg-mainColor mt-[2px] rounded-lg h-1 w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
         </ul>
 
@@ -88,7 +88,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/login");
             }}
-            className="bg-mainColor hover:text-mainColor hover:border-[1px] hover:border-mainColor text-white lg:px-6 md:px-4 py-2 rounded-full font-medium text-sm hover:bg-white transition duration-500"
+            className="bg-mainColor hover:text-mainColor hover:border-[1px] hover:border-mainColor text-white lg:px-6 md:px-4 py-2 rounded-lg font-medium text-sm hover:bg-white transition duration-500"
           >
             Contact Us{" "}
           </button> */}
@@ -96,7 +96,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/contact");
             }}
-            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-full text-sm font-medium transition duration-500"
+            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-lg text-sm font-medium transition duration-500"
           >
             Contact Us
           </button>
@@ -116,7 +116,7 @@ const NavBar = () => {
           className={
             !isMobileMenuOpen
               ? "xl:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "xl:hidden fixed left-0 top-0 w-[70%] border-r h-[100%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              : "xl:hidden fixed left-0 top-0 w-[70%] border-r h-[100%] bg-white ease-in-out duration-1000 rounded-lg-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           {/* <a href="/">
@@ -354,7 +354,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-mainColor transition-transform duration-300 ease-out"
+          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-lg bg-mainColor transition-transform duration-300 ease-out"
         />
       </a>
       <AnimatePresence>

@@ -310,7 +310,7 @@ const Contact = () => {
 
                         <div className="w-full grid grid-cols-1 md:gap-4">
                           <div className="mt-4 w-full">
-                            <button className="hover:shadow-form rounded-full bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
+                            <button className="hover:shadow-form rounded-lg bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
                               Submit Form
                             </button>
                           </div>
