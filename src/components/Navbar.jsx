@@ -141,7 +141,7 @@ const NavBar = () => {
           className={
             !isMobileMenuOpen
               ? "xl:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "xl:hidden fixed left-0 top-0 w-[70%] border-r h-[100%] bg-white ease-in-out duration-1000 rounded-lg-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              : "xl:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-lg-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           {/* <a href="/">
@@ -152,7 +152,7 @@ const NavBar = () => {
           <a href="/" className="flex flex-row items-center ml-6 mt-6 mb-2">
             <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
             <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-              AX <span className="text-black">Seva</span>
+              AX <span className="text-navGray">Seva</span>
             </h1>
           </a>
 
@@ -160,7 +160,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("home")}
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Solutions
                 <FaAngleDown
@@ -179,12 +179,12 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700 ">
+                    <li className="text-navGray ">
                       <a href="/learn-about-us" className="text-sm">
                         Dynamic 365 Chain
                       </a>
                     </li>
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a
                         href="/learn-about-us#logo_meaning"
                         className="text-sm"
@@ -192,7 +192,7 @@ const NavBar = () => {
                         Customer Service
                       </a>
                     </li>
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a
                         href="/learn-about-us#about_founder"
                         className="text-sm"
@@ -207,7 +207,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("products")}
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Industries
                 <FaAngleDown
@@ -226,12 +226,12 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a href="/" className="text-sm">
                         Startups
                       </a>
                     </li>
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a href="/" className="text-sm">
                         Professional Services
                       </a>
@@ -243,7 +243,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("subscription")}
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 <a href="/managed-it-services" className="text-sm">
                   Our Services
@@ -264,17 +264,17 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a href="/pricing#pricing_platinum" className="text-sm">
                         Implementation Services
                       </a>
                     </li>
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a href="/pricing#pricing_gold" className="text-sm">
                         Support Services
                       </a>
                     </li>
-                    <li className="text-gray-700">
+                    <li className="text-navGray">
                       <a href="/pricing#pricing_silver" className="text-sm">
                         Upgrade Services
                       </a>
@@ -287,7 +287,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <a
                 href="/about-us"
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 About Us
               </a>
@@ -296,7 +296,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <a
                 href="/contact"
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Our Blogs
               </a>
@@ -305,7 +305,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <a
                 href="/contact"
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Contact Us
               </a>
@@ -313,22 +313,24 @@ const NavBar = () => {
           </ul>
 
           <div className="px-4">
-            <h1 className="p-4 text-xl font-semibold">Follow us on</h1>
+            <h1 className="p-4 text-xl text-navGray font-semibold">
+              Follow us on
+            </h1>
             <div className="p-4">
               <div className="grid grid-cols-4">
                 <a href="https://www.linkedin.com/company/laoe-maom/">
-                  <FaLinkedinIn className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
+                  <FaLinkedinIn className="w-6 h-6 text-navGray duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
                 <a href="">
-                  <FaXTwitter className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
-                </a>
-                <a href="">
-                  {" "}
-                  <FaInstagram className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
+                  <FaXTwitter className="w-6 h-6 text-navGray duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
                 <a href="">
                   {" "}
-                  <FaFacebookF className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
+                  <FaInstagram className="w-6 h-6 text-navGray duration-1000 hover:text-mainColor ease-in-out" />
+                </a>
+                <a href="">
+                  {" "}
+                  <FaFacebookF className="w-6 h-6 text-navGray duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
               </div>
             </div>
