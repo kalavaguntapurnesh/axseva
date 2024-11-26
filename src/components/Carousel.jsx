@@ -40,7 +40,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <TfiMicrosoftAlt
                             size={36}
                             className="text-mainColor"
@@ -76,7 +76,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <IoSettings size={36} className="text-mainColor" />
                         </div>
                       </div>
@@ -110,7 +110,7 @@ const Carousel = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-lg">
+                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
                           <FaHeadset size={36} className="text-mainColor" />
                         </div>
                       </div>

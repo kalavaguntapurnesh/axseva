@@ -24,8 +24,9 @@ const Contact = () => {
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
                       <div className="flex flex-col space-y-4 mt-8">
-                        <div className="lg:text-start text-center">
-                          <h1 className="uppercase font-bold text-mainColor tracking-wide">
+                        <div className="flex items-center md:justify-start justify-center md:text-start text-center">
+                          <div className="h-4 w-1 bg-mainColor"></div>
+                          <h1 className="uppercase ml-2 text-lg font-bold text-mainColor ">
                             get in touch
                           </h1>
                         </div>
@@ -99,12 +100,10 @@ const Contact = () => {
                             <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                               <div class="space-y-2">
                                 <div className="flex justify-center items-center">
-                                  <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
-                                    <FaAddressBook
-                                      size={20}
-                                      className="text-mainColor"
-                                    />
-                                  </div>
+                                  <FaAddressBook
+                                    size={24}
+                                    className="text-mainColor"
+                                  />
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <h1 class="text-xl text-headingColor font-semibold text-center">
@@ -126,12 +125,10 @@ const Contact = () => {
                             <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                               <div class="space-y-2">
                                 <div className="flex justify-center items-center">
-                                  <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
-                                    <FaMicrophoneAlt
-                                      size={20}
-                                      className="text-mainColor"
-                                    />
-                                  </div>
+                                  <FaMicrophoneAlt
+                                    size={24}
+                                    className="text-mainColor"
+                                  />
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <h1 class="text-xl text-headingColor font-semibold text-center">
@@ -423,7 +420,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-16 md:px-0 px-4">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-16 md:px-2 px-4">
               <div class="flex md:justify-start justify-center w-full">
                 <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
