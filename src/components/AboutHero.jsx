@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Hero = () => {
+const AboutHero = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/02/img_v2_b89f65cc-04c0-4ada-b7c1-bcb856ff202h1.jpg",
-      heading: "Empowering Your Business",
+        "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1335295270-2048x2048-1.jpg",
+      heading: "Get the Best Solutions for Business ",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
@@ -14,8 +14,8 @@ const Hero = () => {
     },
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/05/shutterstock_1852757821-scaled.jpg",
-      heading: "INTELLIGENT SOLUTIONS FOR YOUR BUSINESS",
+        "https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp",
+      heading: "Transforming Businesses by Technology",
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
       buttonText: "Find Out More",
@@ -80,4 +80,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AboutHero;
