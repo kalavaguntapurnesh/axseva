@@ -1,18 +1,13 @@
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import { FaArrowRightLong } from "react-icons/fa6";
+import ContactNavbar from "../components/ContactNavbar";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa";
-import { FaHandshake } from "react-icons/fa";
-import { FaClockRotateLeft } from "react-icons/fa6";
-import { FaNetworkWired } from "react-icons/fa";
-import { IoIosSpeedometer } from "react-icons/io";
 import { MdArrowRightAlt } from "react-icons/md";
 
 const Contact = () => {
   return (
     <div>
-      <Navbar />
+      <ContactNavbar />
       {/* <ScrollToTop /> */}
 
       <section className=" text-black">
@@ -42,7 +37,7 @@ const Contact = () => {
                           </h1>
                         </div>
 
-                        <ul className="space-y-2 pt-3 md:px-0 px-2 hidden md:flex flex-col justify-center">
+                        {/* <ul className="space-y-2 pt-3 md:px-0 px-2 hidden md:flex flex-col justify-center">
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">
@@ -90,7 +85,7 @@ const Contact = () => {
                               </h1>
                             </div>
                           </li>
-                        </ul>
+                        </ul> */}
 
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
                           <a

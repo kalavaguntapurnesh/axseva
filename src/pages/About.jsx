@@ -1,11 +1,11 @@
 import AboutOne from "../components/AboutOne";
-import Navbar from "../components/Navbar";
-import Footer from './../components/Footer';
+import Footer from "./../components/Footer";
+import AboutLayout from "./../components/AboutLayout";
 
 const About = () => {
   return (
     <div>
-      <Navbar />
+      <AboutLayout />
       <AboutOne />
       <Footer />
     </div>
