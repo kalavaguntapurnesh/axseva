@@ -126,15 +126,13 @@ const NavBar = () => {
               LM <span className="text-black">Club.</span>
             </h1>
           </a> */}
-          <a href="/" className="flex items-center m-4">
-            <img
-              src="https://www.dynamicssquare.com/img/dynamics_square-logo.svg"
-              alt=""
-              width={282}
-              height={18}
-              className="mt-4"
-            />
+          <a href="/" className="flex flex-row items-center ml-6 mt-6 mb-2">
+            <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
+            <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+              AX <span className="text-black">Seva</span>
+            </h1>
           </a>
+
           <ul className="p-4">
             <li className="p-4 border-b border-gray-600">
               <div

@@ -42,7 +42,7 @@ const Contact = () => {
                           </h1>
                         </div>
 
-                        <ul className="space-y-2 pt-3 md:px-0 px-2  flex flex-col justify-center">
+                        <ul className="space-y-2 pt-3 md:px-0 px-2 hidden md:flex flex-col justify-center">
                           <li>
                             <div className="flex items-center">
                               <div className="flex flex-row items-center mr-3">

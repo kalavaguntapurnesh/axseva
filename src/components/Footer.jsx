@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
+import { SiPaloaltosoftware } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -12,14 +13,15 @@ const Footer = () => {
           <div className="w-full px-4 mx-auto max-w-[1400px]">
             <div className="flex md:flex-row flex-col">
               <div className="w-full pt-8">
-                <div className="flex md:justify-start justify-center">
-                  <img
-                    src="https://www.dynamicssquare.com/img/dynamics_square-logo.svg"
-                    alt=""
-                    width={282}
-                    height={19}
-                  />
-                </div>
+                <a
+                  href="/"
+                  className="flex flex-row items-center md:justify-start justify-center"
+                >
+                  <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
+                  <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+                    AX <span className="text-black">Seva</span>
+                  </h1>
+                </a>
               </div>
               <div className="w-full pt-8">
                 <div className="grid grid-cols-5">
