@@ -8,6 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
+import { SiPaloaltosoftware } from "react-icons/si";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,13 +49,11 @@ const NavBar = () => {
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
-        <a href="/" className="flex items-center">
-          <img
-            src="https://www.dynamicssquare.com/img/dynamics_square-logo.svg"
-            alt=""
-            width={282}
-            height={18}
-          />
+        <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
+          <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
+          <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+            AX <span className="text-black">Seva</span>
+          </h1>
         </a>
 
         {/* Desktop Nav Links */}
@@ -142,7 +141,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Solution
+                Solutions
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "home"
@@ -269,7 +268,7 @@ const NavBar = () => {
                 href="/about-us"
                 className="flex items-center justify-between cursor-pointer"
               >
-                About AX Seva
+                About Us
               </a>
             </li>
 

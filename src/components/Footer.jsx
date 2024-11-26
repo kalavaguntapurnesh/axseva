@@ -100,14 +100,7 @@ const Footer = () => {
                           FA Questions
                         </a>
                       </li>
-                      {/* <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/"
-                          className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
-                        >
-                          Appointment Booking
-                        </a>
-                      </li> */}
+
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/pricing#testimonial"
@@ -143,14 +136,7 @@ const Footer = () => {
                           Location Map
                         </a>
                       </li>
-                      {/* <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/"
-                          className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
-                        >
-                          Become Partner
-                        </a>
-                      </li> */}
+
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/contact-us"
@@ -178,14 +164,6 @@ const Footer = () => {
                       </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
-                      {/* <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/privacy-policy"
-                          className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
-                        >
-                          Terms & Conditions
-                        </a>
-                      </li> */}
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
@@ -215,7 +193,7 @@ const Footer = () => {
                           href="/learn-about-us#logo_meaning"
                           className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
                         >
-                          Logo Meaning
+                          News & Events
                         </a>
                       </li>
                     </ul>
@@ -225,7 +203,7 @@ const Footer = () => {
                     <div className="flex items-center md:justify-start justify-center">
                       <div className="h-4 w-1 bg-mainColor"></div>
                       <h4 className="ml-2 text-sm leading-5 font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                        products
+                        services
                       </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -234,7 +212,7 @@ const Footer = () => {
                           href="/products"
                           className="no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-1000 ease-in-out"
                         >
-                          LM Beehive
+                          Business Central
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
