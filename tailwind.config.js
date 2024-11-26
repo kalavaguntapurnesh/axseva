@@ -11,6 +11,7 @@ export default {
         headingColor: "#19191B",
         sideHeading: "#474749",
         grayColor: "#585858",
+        bgColor:"#0C2D48"
       },
     },
   },

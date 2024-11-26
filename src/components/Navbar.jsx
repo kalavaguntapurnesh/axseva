@@ -63,7 +63,7 @@ const NavBar = () => {
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
             Solutions
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
+          <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
             Industries
           </FlyoutLink>
           <FlyoutLink href="/managed-it-services" FlyoutContent={ServicesContent}>
@@ -73,7 +73,7 @@ const NavBar = () => {
             About Us
           </FlyoutLink>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
-            <a href="/solutions">Support</a>
+            <a href="/dynamics-365-support-services">Support</a>
             <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
@@ -186,7 +186,10 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("products")}
                 className="flex items-center justify-between cursor-pointer"
               >
+                
+                <a href="/industries" className="text-sm">
                 Industries
+                </a>
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "products"
