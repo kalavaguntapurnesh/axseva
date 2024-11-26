@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
         isScrolled ? "bg-white shadow-md py-6" : "bg-transparent py-6"
       }`}
     >
@@ -52,7 +52,10 @@ const NavBar = () => {
         <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-            AX <span className="text-black">Seva</span>
+            AX{" "}
+            <span className={` ${isScrolled ? "text-black" : "text-navGray"}`}>
+              Seva
+            </span>
           </h1>
         </a>
 
@@ -60,45 +63,57 @@ const NavBar = () => {
         <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
           {/* <Tabs /> */}
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
-            Solutions
+            SOLUTIONS
           </FlyoutLink>
           <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
-            Industries
+            INDUSTRIES{" "}
           </FlyoutLink>
           <FlyoutLink
             href="/managed-it-services"
             FlyoutContent={ServicesContent}
           >
-            Our Services
+            SERVICES
           </FlyoutLink>
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
-            About Us
+            ABOUT US
           </FlyoutLink>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
+          <li
+            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase  ${
+              isScrolled ? "text-black" : "text-gray-200 font-light"
+            } `}
+          >
             <a href="/solutions">Support</a>
-            <div className="bg-mainColor mt-[2px] rounded-lg h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+            <div
+              className={`mt-[2px] rounded-lg h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
+                isScrolled ? "bg-mainColor" : "bg-navGray"
+              }`}
+            ></div>
           </li>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
+          <li
+            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
+              isScrolled ? "text-black" : "text-gray-200 font-light"
+            } `}
+          >
             <a href="/solutions">Our Blogs</a>
-            <div className="bg-mainColor mt-[2px] rounded-lg h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+            <div
+              className={`mt-[2px] rounded-lg h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
+                isScrolled ? "bg-mainColor" : "bg-navGray"
+              }`}
+            ></div>
           </li>
         </ul>
 
         {/* Login Button */}
         <div className="hidden xl:flex space-x-4">
-          {/* <button
-            onClick={() => {
-              navigate("/login");
-            }}
-            className="bg-mainColor hover:text-mainColor hover:border-[1px] hover:border-mainColor text-white lg:px-6 md:px-4 py-2 rounded-lg font-medium text-sm hover:bg-white transition duration-500"
-          >
-            Contact Us{" "}
-          </button> */}
           <button
             onClick={() => {
               navigate("/contact");
             }}
-            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-lg text-sm font-medium transition duration-500"
+            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded-lg text-sm  transition duration-500 ${
+              isScrolled
+                ? "border-mainColor bg-mainColor hover:border-[1px] hover:border-mainColor font-medium hover:text-mainColor hover:bg-white"
+                : "border-navGray font-light"
+            }`}
           >
             Contact Us
           </button>
@@ -107,9 +122,17 @@ const NavBar = () => {
         <div className="xl:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
-              <AiOutlineClose className="w-6 h-6 text-black" />
+              <AiOutlineClose
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-black" : "text-navGray"
+                }`}
+              />
             ) : (
-              <RiMenu3Fill className="w-6 h-6 text-black" />
+              <RiMenu3Fill
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-black" : "text-navGray"
+                }`}
+              />
             )}
           </button>
         </div>
@@ -319,6 +342,21 @@ const NavBar = () => {
 const FlyoutLink = ({ children, href, FlyoutContent }) => {
   const [open, setOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const showFlyout = FlyoutContent && open;
 
   return (
@@ -327,13 +365,18 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <a href={href} className="relative text-black">
+      <a
+        href={href}
+        className={`relative ${isScrolled ? "text-black" : "text-navGray"}`}
+      >
         {children}
         <span
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-lg bg-mainColor transition-transform duration-300 ease-out"
+          className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded-lg transition-transform duration-300 ease-out ${
+            isScrolled ? "bg-mainColor" : "bg-navGray"
+          }`}
         />
       </a>
       <AnimatePresence>

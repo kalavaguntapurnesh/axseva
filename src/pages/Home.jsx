@@ -5,11 +5,12 @@ import NavBar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import HomeFinal from "../components/HomeFinal";
 import Bento from "../components/Bento";
+import MainLayout from "./../components/MainLayout";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
+      <MainLayout />
       <Carousel />
       <Bento />
       <HomeFinal />
