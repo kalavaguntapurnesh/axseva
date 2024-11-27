@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FaGlobe, FaHandshake, FaMedal } from "react-icons/fa";
 import world from "../assets/world.svg";
 import { FaLinkedinIn } from "react-icons/fa";
+import { IoBarChart } from "react-icons/io5";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -17,7 +18,7 @@ const AboutOne = () => {
   }, [location]);
 
   return (
-    <div className="mt-28">
+    <div className="lg:pt-28 pt-16">
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -30,11 +31,11 @@ const AboutOne = () => {
                   </h1>
                 </div>
 
-                <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2">
-                  <h1>Transforming Businesses Through Cloud Technology</h1>
+                <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                  <h1>Transforming Businesses Through Technology</h1>
                 </div>
 
-                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
                   <p>
                     AX Seva is engaged in mustering energy among people to
                     create a better world and solve critical business problems
@@ -45,23 +46,23 @@ const AboutOne = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2 md:px-0 px-2">
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-2">
+                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>In-depth Product Knowledge</p>
                     </div>
                   </div>
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4">
+                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>Flexible Engagement Model</p>
                     </div>
                   </div>
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4">
+                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>Higher Customer Satisfaction</p>
                     </div>
                   </div>
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4">
+                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>Quality Driven Products</p>
                     </div>
@@ -89,8 +90,8 @@ const AboutOne = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-8 md:px-0 px-2">
-              <div className="bg-[#f8f9fa] rounded p-8">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-20 md:px-0 px-2">
+              <div className="bg-[#f8f9fa] rounded p-8 shadow">
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
@@ -110,7 +111,7 @@ const AboutOne = () => {
                   </div>
                 </div>
               </div>
-              <div className="bg-[#f8f9fa] rounded p-8">
+              <div className="bg-[#f8f9fa] rounded p-8 shadow">
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
@@ -158,13 +159,13 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <FaHandshake size={36} className="text-mainColor" />
+                        <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
+                          <IoBarChart size={32} className="text-mainColor" />
                         </div>
                       </div>
                       <div class="flex justify-center items-center">
-                        <h1 class="text-3xl text-colorTwo font-bold text-center">
-                          Reward Collaboration
+                        <h1 class="text-3xl text-headingColor font-bold text-center">
+                          Innovation
                         </h1>
                       </div>
 
@@ -175,14 +176,14 @@ const AboutOne = () => {
                         </p>
                       </div>
 
-                      <div className="flex justify-center">
+                      {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
                           class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </a>
@@ -191,13 +192,13 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <FaMedal size={36} className="text-mainColor" />
+                        <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
+                          <FaMedal size={32} className="text-mainColor" />
                         </div>
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-colorTwo font-bold text-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
                           Build Global Community
                         </h1>
                       </div>
@@ -209,14 +210,14 @@ const AboutOne = () => {
                         </p>
                       </div>
 
-                      <div className="flex justify-center">
+                      {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
                           class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </a>
@@ -225,13 +226,13 @@ const AboutOne = () => {
                   <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <FaGlobe size={36} className="text-mainColor" />
+                        <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
+                          <FaGlobe size={32} className="text-mainColor" />
                         </div>
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-colorTwo font-bold text-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
                           Foster Social Bonds
                         </h1>
                       </div>
@@ -243,122 +244,47 @@ const AboutOne = () => {
                         </p>
                       </div>
 
-                      <div className="flex justify-center">
+                      {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
                           class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
                         >
                           View Features
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </a>
               </div>
-
-              <div class=" lg:grid-cols-2 grid-cols-1 gap-6 pt-8 hidden">
-                <div class="flex md:justify-start justify-center w-full">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <div class="space-y-6">
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <img
-                          src="https://uptimerobot.com/assets/images/monitor-icons/ssl-monitoring.svg"
-                          alt=""
-                          class="w-20 h-20"
-                        />
-                      </div>
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <h1 class="text-2xl font-bold">Website monitoring</h1>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
-                        <p>
-                          Is the email service still UP? How about the critical
-                          database server? Let's check! Monitor any specific
-                          service running on any port.
-                        </p>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center">
-                        <a
-                          href="/contact"
-                          class="relative inline-flex items-center justify-center py-3 px-20 overflow-hidden font-semibold text-brand shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition duration-1000 ease-out bg-white hover:bg-brand rounded-3xl group"
-                        >
-                          <span class="absolute inset-0 flex items-center justify-center w-full h-full text-colorOne duration-300 -translate-x-full group-hover:translate-x-0 ease-in-out"></span>
-                          <span class="absolute flex items-center justify-center w-full h-full font-bold hover:text-white duration-1000 transition ease-in-out">
-                            Website monitoring
-                          </span>
-                          <span class="relative invisible">Button Text</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <div class="space-y-6">
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <img
-                          src="https://uptimerobot.com/assets/images/monitor-icons/cron-job-monitoring.svg"
-                          alt=""
-                          class="w-20 h-20"
-                        />
-                      </div>
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <h1 class="text-2xl font-bold">Cron job monitoring</h1>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
-                        <p>
-                          Is the email service still UP? How about the critical
-                          database server? Let's check! Monitor any specific
-                          service running on any port.
-                        </p>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center">
-                        <a
-                          href="/contact"
-                          class="relative inline-flex items-center justify-center py-3 px-20 overflow-hidden font-semibold hover:bg-brand text-brand shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition duration-1000 ease-out bg-white rounded-3xl group"
-                        >
-                          <span class="absolute inset-0 flex items-center justify-center w-full h-full text-colorOne duration-300 -translate-x-full group-hover:translate-x-0 ease-in-out"></span>
-                          <span class="absolute flex items-center justify-center w-full h-full font-bold hover:text-white duration-1000 transition ease-in-out">
-                            Cron Job Monitoring
-                          </span>
-                          <span class="relative invisible">Button Text</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div className="pt-16 md:px-0 px-2">
+            <div className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
                 <div className="text-center">
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Where can you find us!
                   </h1>
                 </div>
 
-                <div className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center">
+                <a
+                  href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
+                  className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center"
+                >
                   <img src={world} alt="" className="md:w-[90%] w-[100%]" />
-                </div>
+                </a>
               </div>
             </div>
 
-            <div className="pt-16 md:px-0 px-2">
+            <div className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
                 <div className="text-center">
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Our Leadership
                   </h1>
                 </div>
 
                 <div className="text-center mt-4">
-                  <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                  <h1 className="leading-relaxed tracking-wide text-base text-gray-600 dark:text-gray-800 ">
                     Running a business like AX Seva takes energy, creativity and
                     a love of just getting things done. Find out more about the
                     people we’ve chosen to lead the business.

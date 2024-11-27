@@ -6,7 +6,6 @@ import { MdArrowRightAlt } from "react-icons/md";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
-
   const handleCaptcha = (value) => {
     const [verified, setVerified] = useState(false); // Captcha verification state
     setVerified(true);
@@ -33,12 +32,12 @@ const Contact = () => {
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                          <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                             Ready for Business Innovation? Let’s talk!
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="leading-relaxed tracking-wide font-medium lg:text-[20px] text-[16px] text-gray-600 dark:text-gray-800 ">
+                          <h1 className="leading-relaxed tracking-wide lg:text-[20px] text-[16px] text-gray-600 dark:text-gray-800 ">
                             Leverage Microsoft solutions customized specifically
                             for your business needs!
                           </h1>
@@ -332,14 +331,8 @@ const Contact = () => {
             <div className="pt-16 md:px-0 px-2">
               <div className="space-y-2">
                 <div className="text-center">
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
-                    Why Businesses Trust AX Seva?
-                  </h1>
-                </div>
-                <div className="text-center">
-                  <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
-                    AX Seva is the leading Microsoft Solution partner, offering
-                    future-ready business solutions to global organizations.
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                    A word from the founder
                   </h1>
                 </div>
               </div>
@@ -351,13 +344,13 @@ const Contact = () => {
                 />
                 <div className="flex flex-col text-center justify-center items-center h-full max-w-[900px] mx-auto">
                   <p className="text-gray-600 text-center mt-2">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque libero necessitatibus quidem numquam ullam,
-                    architecto sit repudiandae fuga reprehenderit assumenda
-                    quasi natus inventore voluptates ipsum?
+                    At AX Seva, I’ve built a company rooted in expertise,
+                    transparency, tailored strategies, strong partnerships, and
+                    measurable results in the field of Microsoft Dynamics 365
+                    Finance & Operations.
                   </p>
-                  <h2 className="text-grayColor text-2xl mt-4 font-semibold text-center">
-                    Card Title
+                  <h2 className="text-black text-2xl mt-4 font-bold text-center flex flex-row items-center">
+                    Sumanth Dama
                   </h2>
                 </div>
                 {/* Bottom-right image */}
@@ -372,7 +365,7 @@ const Contact = () => {
             <div className="pt-16">
               <div className="space-y-2">
                 <div className="text-center">
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
+                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Transformation has no boundaries.
                   </h1>
                 </div>
@@ -434,7 +427,7 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold">
+                      <h1 class="text-2xl font-bold text-headingColor">
                         Businesses Meet Expected ROI
                       </h1>
                     </div>
@@ -463,7 +456,7 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold">
+                      <h1 class="text-2xl font-bold text-headingColor">
                         Your Path to Success Starts Here.
                       </h1>
                     </div>
