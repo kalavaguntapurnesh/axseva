@@ -85,10 +85,10 @@ const Footer = () => {
 
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/contact-us"
+                            href="#"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            Live Chat
+                            Whatsapp Chat
                           </a>
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
@@ -202,38 +202,7 @@ const Footer = () => {
                           Holistico - D365 Customer Service Solution
                         </a>
                       </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Start up
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          E-commerce
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Enterprice
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          SMBs
-                        </a>
-                      </li>
+                    
                     </ul>
                   </div>
 
@@ -266,7 +235,7 @@ const Footer = () => {
                           href="/learn-about-us#about_founder"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Ecommerce
+                          E-commerce
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -429,6 +398,9 @@ const Footer = () => {
             <div className="text-center text-sm pb-6">
               <p className="text-footerItems">
                 Copyright © 2024 AxSeva. All rights reserved
+              </p>
+              <p className="text-footerItems">
+                Copyright © 2024 Microsoft. All images related to Microsoft & other images are trademarks of Microsoft
               </p>
               <p className="text-footerItems">
                 Developed by Cloud Data Networks
