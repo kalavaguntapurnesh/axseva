@@ -9,7 +9,7 @@ import { GiWorld } from "react-icons/gi";
 
 const Carousel = () => {
   return (
-    <div className="mt-28">
+    <div>
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
