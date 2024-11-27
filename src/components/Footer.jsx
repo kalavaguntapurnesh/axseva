@@ -11,104 +11,98 @@ const Footer = () => {
       <div className="relative ">
         <div className="w-full">
           <div className="w-full px-4 mx-auto max-w-[1400px]">
-            
-
             <div className="pb-8 mb-8 border-b border-gray-600">
               <div className="w-full p-8">
                 <div className="grid grid-cols-2 md:grid-cols-2 gap-6 lg:grid-cols-5 mt-12">
-
-                <div className="flex flex-col gap-10">
-                  <div className="mb-12 md:mb-0">
-                    <div className="flex items-center md:justify-start justify-center">
-                      {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                        Company
-                      </h4>
+                  <div className="flex flex-col gap-10">
+                    <div className="mb-12 md:mb-0">
+                      <div className="flex items-center md:justify-start justify-center">
+                        {/* <div className="h-4 w-1 bg-mainColor"></div> */}
+                        <h4 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                          Company
+                        </h4>
+                      </div>
+                      <ul className="pl-0 mt-4 space-y-3 list-none">
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/privacy-policy"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Privacy Policy
+                          </a>
+                        </li>
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/learn-about-us"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            About AX Seva
+                          </a>
+                        </li>
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/learn-about-us#about_founder"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Leadership
+                          </a>
+                        </li>
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/learn-about-us#logo_meaning"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            News & Events
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <ul className="pl-0 mt-4 space-y-3 list-none">
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Privacy Policy
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          About AX Seva
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Leadership
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          News & Events
-                        </a>
-                      </li>
-                    </ul>
+
+                    <div className="mb-12 md:mb-0 ">
+                      <div className="flex items-center md:justify-start justify-center">
+                        {/* <div className="h-4 w-1 bg-mainColor"></div> */}
+                        <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                          Support
+                        </h4>
+                      </div>
+                      <ul className="pl-0 mt-4 space-y-3 list-none">
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="mailto:info@laoemaom.com"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Help Center
+                          </a>
+                        </li>
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="https://maps.app.goo.gl/G9qoFoUF2K1MPmv8A"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Location Map
+                          </a>
+                        </li>
+
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/contact-us"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Live Chat
+                          </a>
+                        </li>
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="/"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Refund Policy
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
-
-                  <div className="mb-12 md:mb-0 ">
-                    <div className="flex items-center md:justify-start justify-center">
-                      {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                        Support
-                      </h4>
-                    </div>
-                    <ul className="pl-0 mt-4 space-y-3 list-none">
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="mailto:info@laoemaom.com"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Help Center
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="https://maps.app.goo.gl/G9qoFoUF2K1MPmv8A"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Location Map
-                        </a>
-                      </li>
-
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/contact-us"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Live Chat
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
-                        >
-                          Refund Policy
-                        </a>
-                      </li>
-
-                    </ul>
-                  </div>
-                </div> 
-
-                
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
@@ -120,7 +114,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Microsoft Dynamics 365
                         </a>
@@ -128,7 +122,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/consumer-privacy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Finance & Operations
                         </a>
@@ -136,7 +130,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/consumer-privacy#cookie-use-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Implementation
                         </a>
@@ -144,7 +138,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Implementation Partner
                         </a>
@@ -152,7 +146,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
                         >
                           Customer Engagement
                         </a>
@@ -160,7 +154,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
                         >
                           Upgrade
                         </a>
@@ -168,7 +162,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center   text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center   text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
                         >
                           Optimization
                         </a>
@@ -176,12 +170,11 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Support
                         </a>
                       </li>
-              
                     </ul>
                   </div>
 
@@ -196,7 +189,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Super & Hypermarkets Solution
                         </a>
@@ -204,7 +197,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Holistico - D365 Customer Service Solution
                         </a>
@@ -212,7 +205,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Start up
                         </a>
@@ -220,7 +213,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           E-commerce
                         </a>
@@ -228,7 +221,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Enterprice
                         </a>
@@ -236,7 +229,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           SMBs
                         </a>
@@ -255,7 +248,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Startups
                         </a>
@@ -263,7 +256,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Not for profit
                         </a>
@@ -271,7 +264,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Ecommerce
                         </a>
@@ -279,7 +272,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Manufacturing Services
                         </a>
@@ -287,7 +280,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Professional Services
                         </a>
@@ -295,7 +288,7 @@ const Footer = () => {
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks hover:text-gray-600 transition duration-300 ease-in-out"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Food & Beverages
                         </a>
@@ -304,7 +297,6 @@ const Footer = () => {
                   </div>
 
                   <div className="flex flex-col gap-4  ">
-
                     <div className="w-full ">
                       <a
                         href="/"
@@ -318,85 +310,91 @@ const Footer = () => {
                     </div>
 
                     <div className="flex md:flex-row flex-col ">
-              
-                    <div className="w-full pt-8">
-                      <div className="grid grid-cols-5">
-                        <a
-                          href="https://www.linkedin.com/company/laoe-maom/"
-                          className="flex justify-center items-center "
-                        > 
-                          <FaLinkedin
-                            size={25}
-                            className="cursor-pointer"
-                            color="white  "
-                          />
-                        </a>
-                        <a href="/about" className="flex justify-center items-center">
-                          <FaXTwitter
-                            size={25}
-                            className="cursor-pointer"
-                            color="white"
-                          />
-                        </a>
-                        <a href="/about" className="flex justify-center items-center">
-                          <FaInstagram
-                            size={25}
-                            className="cursor-pointer"
-                            color="white"
-                          />
-                        </a>
-                        <a href="/about" className="flex justify-center items-center">
-                          <FaGoogle
-                            size={25}
-                            className="cursor-pointer"
-                            color="white"
-                          />
-                        </a>
-                        <a href="/about" className="flex justify-center items-center">
-                          <FaFacebook
-                            size={25}
-                            className="cursor-pointer "
-                            color="footerItems"
-                          />
-                        </a>{" "}
+                      <div className="w-full pt-8">
+                        <div className="grid grid-cols-5">
+                          <a
+                            href="https://www.linkedin.com/company/laoe-maom/"
+                            className="flex justify-center items-center "
+                          >
+                            <FaLinkedin
+                              size={25}
+                              className="cursor-pointer"
+                              color="white  "
+                            />
+                          </a>
+                          <a
+                            href="/about"
+                            className="flex justify-center items-center"
+                          >
+                            <FaXTwitter
+                              size={25}
+                              className="cursor-pointer"
+                              color="white"
+                            />
+                          </a>
+                          <a
+                            href="/about"
+                            className="flex justify-center items-center"
+                          >
+                            <FaInstagram
+                              size={25}
+                              className="cursor-pointer"
+                              color="white"
+                            />
+                          </a>
+                          <a
+                            href="/about"
+                            className="flex justify-center items-center"
+                          >
+                            <FaGoogle
+                              size={25}
+                              className="cursor-pointer"
+                              color="white"
+                            />
+                          </a>
+                          <a
+                            href="/about"
+                            className="flex justify-center items-center"
+                          >
+                            <FaFacebook
+                              size={25}
+                              className="cursor-pointer text-white"
+                              color="footerItems"
+                            />
+                          </a>{" "}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="w-full md:gap-4 flex flex-col py-10 gap-4">
+                    <div className="w-full md:gap-4 flex flex-col py-10 gap-4">
+                      <div className="text-white font-bold text-xl">
+                        <h1>Join our family</h1>
+                      </div>
+                      <div className="mb-3 w-full">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Your Full Name"
+                          className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                        />
+                      </div>
+                      <div className="mb-3 w-full">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Your Job Title"
+                          className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                        />
+                      </div>
 
-                        <div className="text-white font-bold text-xl">
-                          <h1>Join our family</h1>
-                        </div>
-                          <div className="mb-3 w-full">
-                      
-                            <input
-                              type="text"
-                              name="name"
-                              id="name"
-                              placeholder="Your Full Name"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                            />
-                          </div>
-                          <div className="mb-3 w-full">
-                        
-                            <input
-                              type="text"
-                              name="name"
-                              id="name"
-                              placeholder="Your Job Title"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                            />
-                          </div>
-
-                          <div className="flex justify-center items-center md:justify-start py-2">
-                            <button className="bg-mainColor text-white px-10 py-4 rounded-lg">
-                              <Link to="/contact">Join </Link>
-                            </button>
-                          </div>
-
-                        </div>
-
+                      <div className="flex justify-center items-center md:justify-start py-2">
+                        <button className="bg-mainColor text-white px-10 py-4 rounded-lg">
+                          <Link to="/contact">Join </Link>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
