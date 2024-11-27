@@ -98,7 +98,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/contact");
             }}
-            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-full text-sm font-medium transition duration-500"
+            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-lg text-sm font-medium transition duration-500"
           >
             Contact Us
           </button>

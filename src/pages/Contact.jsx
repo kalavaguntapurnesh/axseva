@@ -3,8 +3,15 @@ import ContactNavbar from "../components/ContactNavbar";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { FaAddressBook } from "react-icons/fa";
 import { MdArrowRightAlt } from "react-icons/md";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+
+  const handleCaptcha = (value) => {
+    const [verified, setVerified] = useState(false); // Captcha verification state
+    setVerified(true);
+  };
+
   return (
     <div>
       <ContactNavbar />
@@ -266,6 +273,13 @@ const Contact = () => {
                           </div>
                         </div>
 
+                        <div className="w-[100%] flex py-4 text-start justify-center">
+                          <ReCAPTCHA
+                            sitekey="6LchMmUqAAAAANKg1dNzYDXJnCMf-L6TjRsUVAfG"
+                            onChange={handleCaptcha}
+                          />
+                        </div>
+
                         <div className="w-full grid grid-cols-1 md:gap-4 lg:ml-1">
                           <div className="flex items-start">
                             <div className="flex items-center h-5">
@@ -302,7 +316,7 @@ const Contact = () => {
                         </div>
 
                         <div className="w-full grid grid-cols-1 md:gap-4">
-                          <div className="mt-4 w-full">
+                          <div className="mt-8 md:mt-6 w-full">
                             <button className="hover:shadow-form rounded-lg bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
                               Submit Form
                             </button>
