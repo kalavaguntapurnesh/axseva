@@ -98,7 +98,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/contact");
             }}
-            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded-lg text-sm font-medium transition duration-500"
+            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded text-sm font-medium transition duration-500"
           >
             Contact Us
           </button>
@@ -404,7 +404,7 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
         Contact sales
       </button>
     </div>
@@ -427,7 +427,7 @@ const ServicesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
         View More
       </button>
     </div>
@@ -456,7 +456,7 @@ const IndustriesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
         View More
       </button>
     </div>
@@ -483,7 +483,7 @@ const AboutUsContent = () => {
       </div>
       <button
         onClick={() => navi}
-        className="w-full rounded-lg border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white"
+        className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white"
       >
         View More
       </button>

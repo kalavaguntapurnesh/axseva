@@ -390,7 +390,7 @@ const Footer = () => {
                       </div>
 
                       <div className="flex justify-center items-center md:justify-start py-2">
-                        <button className="bg-mainColor text-white px-10 py-4 rounded-lg">
+                        <button className="bg-mainColor text-white px-10 py-4 rounded">
                           <Link to="/contact">Join </Link>
                         </button>
                       </div>

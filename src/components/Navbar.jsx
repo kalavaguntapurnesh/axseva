@@ -84,7 +84,7 @@ const NavBar = () => {
           >
             <a href="/dynamics-365-support-services">Support</a>
             <div
-              className={`mt-[2px] rounded-lg h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
+              className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
                 isScrolled ? "bg-mainColor" : "bg-navGray"
               }`}
             ></div>
@@ -96,7 +96,7 @@ const NavBar = () => {
           >
             <a href="/solutions">Our Blogs</a>
             <div
-              className={`mt-[2px] rounded-lg h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
+              className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
                 isScrolled ? "bg-mainColor" : "bg-navGray"
               }`}
             ></div>
@@ -109,7 +109,7 @@ const NavBar = () => {
             onClick={() => {
               navigate("/contact");
             }}
-            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded-lg text-sm  transition duration-500 ${
+            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
                 ? "border-mainColor bg-mainColor hover:border-[1px] hover:border-mainColor font-medium hover:text-mainColor hover:bg-white"
                 : "border-navGray font-light"
@@ -141,7 +141,7 @@ const NavBar = () => {
           className={
             !isMobileMenuOpen
               ? "xl:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "xl:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-lg-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              : "xl:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           {/* <a href="/">
@@ -369,14 +369,14 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     >
       <a
         href={href}
-        className={`relative ${isScrolled ? "text-black" : "text-navGray"}`}
+        className={`relative ${isScrolled ? "text-headingColor" : "text-navGray"}`}
       >
         {children}
         <span
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded-lg transition-transform duration-300 ease-out ${
+          className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded transition-transform duration-300 ease-out ${
             isScrolled ? "bg-mainColor" : "bg-navGray"
           }`}
         />
@@ -425,7 +425,7 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         Contact sales
       </button>
     </div>
@@ -448,7 +448,7 @@ const ServicesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -477,7 +477,7 @@ const IndustriesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -502,7 +502,7 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <button className="w-full rounded-lg border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>

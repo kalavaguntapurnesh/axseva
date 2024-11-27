@@ -156,7 +156,7 @@ const AboutOne = () => {
 
               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
@@ -179,7 +179,7 @@ const AboutOne = () => {
                       {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
                         >
                           View Features
                         </a>
@@ -189,7 +189,7 @@ const AboutOne = () => {
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
@@ -213,7 +213,7 @@ const AboutOne = () => {
                       {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
                         >
                           View Features
                         </a>
@@ -223,7 +223,7 @@ const AboutOne = () => {
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-16 h-16 border-2 rounded-full">
@@ -247,7 +247,7 @@ const AboutOne = () => {
                       {/* <div className="flex justify-center">
                         <a
                           href="/contact-us"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
                         >
                           View Features
                         </a>
@@ -291,15 +291,15 @@ const AboutOne = () => {
                   </h1>
                 </div>
 
-                <div className="max-w-[1200px] mx-auto pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+                {/* <div className="max-w-[1200px] mx-auto pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                   <div className="flex flex-col justify-center items-center space-y-1">
                     <img
-                      src="https://media.licdn.com/dms/image/v2/C5603AQGqgZ482j5DSA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516332918641?e=1738195200&v=beta&t=A27zEvNDLZwKBzYWZgtNdd5c9p8G65t0Ws1ucGfenfc"
+                      src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
                       className="md:w-60 md:h-60 h-80 w-80 rounded"
                       alt=""
                     />
                     <div className="text-xl pt-2 font-semibold tracking-normal md:leading-relaxed leading-normal text-colorThree">
-                      <h1>Hari Krishna Mandali</h1>
+                      <h1>Sumanth Dama</h1>
                     </div>
                     <div className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
                       <p>Founder & Business Head</p>
@@ -307,9 +307,9 @@ const AboutOne = () => {
 
                     <div className="flex items-center lg:justify-start justify-center ">
                       <a
-                        href="https://www.linkedin.com/in/amarnathpenumur/"
+                        href="https://www.linkedin.com/in/sumanthdama/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -334,7 +334,7 @@ const AboutOne = () => {
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
@@ -361,12 +361,75 @@ const AboutOne = () => {
                       <a
                         href="https://www.linkedin.com/in/amarnathpenumur/"
                         className="bg-white border-[1px] border-mainColor font-medium outline-none
-                      rounded-lg flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
+                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white md:px-6 px-8 py-2 text-center"
                       >
                         <FaLinkedinIn size={16} className="text-mainColor" />
                         <span className="ml-1 text-mainColor">
                           LinkedIn Profile
                         </span>
+                      </a>
+                    </div>
+                  </div>
+                </div> */}
+
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-12">
+                  <div className="flex justify-center items-center">
+                    <div className="w-full">
+                      <img
+                        src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
+                        alt=""
+                        height="400"
+                        className="rounded md:w-[70%] w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col space-y-6 w-full md:justify-center">
+                    <div className="flex items-center md:justify-start justify-center ">
+                      <div className="h-4 w-1 bg-mainColor"></div>
+                      <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                        About the founder
+                      </h1>
+                    </div>
+
+                    <div className="text-4xl md:text-start text-center font-bold text-headingColor">
+                      <h1>Sumanth Dama</h1>
+                    </div>
+
+                    <div className="md:text-lg text-sideHeading md:text-start text-center">
+                      <p>
+                        As a Microsoft Dynamics AX Solutions Architect, I am
+                        responsible for overseeing the design of software
+                        solutions that provide seamless automation of business
+                        operations and support for my clients. My experience as
+                        a consultant and architect supporting Microsoft Dynamics
+                        AX extends nearly 12 years. A long-standing career in
+                        software consulting and a passion for coaching and
+                        mentoring other software engineers has helped me to
+                        build
+                      </p>
+                    </div>
+
+                    <div className="md:flex items-center lg:justify-start justify-center hidden">
+                      <a
+                        href="https://www.linkedin.com/in/sumanthdama/"
+                        className="border-mainColor border-[1px] font-medium outline-none
+                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 md:py-3 py-2 text-center"
+                      >
+                        <FaLinkedinIn className="text-mainColor" size={16} />
+                        <span className="ml-1 text-mainColor">
+                          LinkedIn Profile
+                        </span>
+                      </a>
+                    </div>
+
+                    <div className="mx-8 md:hidden block">
+                      <a
+                        href="https://www.linkedin.com/in/rickardo-anderson-a8964a220/"
+                        className="bg-mainColor flex items-center justify-center hover:bg-white hover:text-mainColor hover:border-[1px] hover:border-mainColor font-medium outline-none
+                      rounded hover:shadow-form transition duration-1000 ease-in-out text-base text-white px-8 py-2.5 text-center"
+                      >
+                        <FaLinkedinIn size={16} />
+                        <span className="ml-1">LinkedIn Profile</span>
                       </a>
                     </div>
                   </div>
