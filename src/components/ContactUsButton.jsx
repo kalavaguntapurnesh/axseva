@@ -6,7 +6,7 @@ import { classNames } from "../components/classNames";
 const ContactUsButton = () => {
   const phoneNumber = "14042773220";
   const message =
-    "Hello LM Club, I need your guidance on professional technicians..."; // Pre-filled message
+    "Hello AX Seva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -41,7 +41,7 @@ const ContactUsButton = () => {
         href={whatsappUrl}
         className={classNames(
           isVisible ? "opacity-100" : "opacity-0",
-          "bg-mainColor fixed flex items-center justify-center lg:bottom-6 bottom-6 lg:right-2 right-2 z-20 p-3 rounded-full transition duration-1000 ease-in-out"
+          "bg-mainColor fixed flex items-center justify-center bottom-4 right-5 z-20 p-3 rounded-full transition duration-1000 ease-in-out"
         )}
       >
         <SiWhatsapp className="h-6 w-6 text-white " aria-hidden="true" />
