@@ -14,6 +14,8 @@ export default {
         grayColor: "#585858",
         navGray: "#dddddd",
         buttons: "#0064c8",
+        footerbg:"#111827",
+        footerItems:"#9ca3af"
       },
     },
   },
