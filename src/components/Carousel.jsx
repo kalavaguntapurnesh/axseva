@@ -2,10 +2,11 @@ import React from "react";
 import { IoSettings } from "react-icons/io5";
 import { FaHeadset } from "react-icons/fa";
 import { TfiMicrosoftAlt } from "react-icons/tfi";
-import { FaServer } from "react-icons/fa";
 import { SiDynamics365 } from "react-icons/si";
 import { BsPeopleFill } from "react-icons/bs";
-import { GiWorld } from "react-icons/gi";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { SiPowerautomate } from "react-icons/si";
+import tick from "../assets/tick.svg";
 
 const Carousel = () => {
   return (
@@ -37,7 +38,7 @@ const Carousel = () => {
 
               <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
@@ -63,7 +64,7 @@ const Carousel = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
                         >
                           View More
                         </a>
@@ -73,7 +74,7 @@ const Carousel = () => {
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
@@ -97,7 +98,7 @@ const Carousel = () => {
                       <div className="flex justify-center">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
                         >
                           View More
                         </a>
@@ -107,7 +108,7 @@ const Carousel = () => {
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                     <div class="space-y-4">
                       <div className="flex justify-center items-center">
                         <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
@@ -131,7 +132,7 @@ const Carousel = () => {
                       <div className="flex justify-center w-[100%] ">
                         <a
                           href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded-lg"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
                         >
                           View More
                         </a>
@@ -143,7 +144,7 @@ const Carousel = () => {
 
               <div class=" lg:grid-cols-2 grid-cols-1 gap-6 pt-8 hidden">
                 <div class="flex md:justify-start justify-center w-full">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <div class="space-y-6">
                       <div class="flex lg:justify-start justify-center items-center">
                         <img
@@ -181,7 +182,7 @@ const Carousel = () => {
                 </div>
 
                 <div class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <div class="space-y-6">
                       <div class="flex lg:justify-start justify-center items-center">
                         <img
@@ -247,53 +248,55 @@ const Carousel = () => {
                               </h1>
                             </div>
                             <div class="pt-6 mt-6 space-y-4 border-t-[2px] border-gray-200 dark:border-gray-700">
-                              <div className="lg:block hidden">
-                                <a
-                                  href="/services"
-                                  class="inline-flex items-center text-base font-medium text-colorOne hover:text-colorTwo transition duration-1000 ease-in-out"
-                                >
-                                  Explore our unique services
-                                  <svg
-                                    class="w-5 h-5 ml-1"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
+                              <div className="flex flex-row justify-between">
+                                <div className="lg:block hidden">
+                                  <a
+                                    href="/services"
+                                    class="inline-flex items-center text-base font-medium text-colorOne hover:text-colorTwo transition duration-1000 ease-in-out"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </a>
-                              </div>
-                              <div className="lg:block hidden">
-                                <a
-                                  href="/features"
-                                  class="inline-flex items-center text-base font-medium text-colorOne hover:text-colorTwo transition duration-1000 ease-in-out"
-                                >
-                                  Visit our various features
-                                  <svg
-                                    class="w-5 h-5 ml-1"
-                                    fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    Explore our unique services
+                                    <svg
+                                      class="w-5 h-5 ml-1"
+                                      fill="currentColor"
+                                      viewBox="0 0 20 20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </a>
+                                </div>
+                                <div className="lg:block hidden">
+                                  <a
+                                    href="/features"
+                                    class="inline-flex items-center text-base font-medium text-colorOne hover:text-colorTwo transition duration-1000 ease-in-out"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"
-                                    ></path>
-                                  </svg>
-                                </a>
+                                    Visit our various features
+                                    <svg
+                                      class="w-5 h-5 ml-1"
+                                      fill="currentColor"
+                                      viewBox="0 0 20 20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        fill-rule="evenodd"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
                             <div className="flex flex-col lg:items-start items-center">
-                              <FaServer class="w-10 h-10 mb-2 text-mainColor" />
+                              <FaMoneyBillTrendUp class="w-10 h-10 mb-2 text-mainColor" />
                               <h3 class="mb-2 text-2xl font-bold text-colorTwo ">
-                                96% success
+                                Financial Management
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
                                 rate of visa approval to various countries.
@@ -302,7 +305,7 @@ const Carousel = () => {
                             <div className="flex flex-col lg:items-start items-center">
                               <SiDynamics365 class="w-10 h-10 mb-2 text-mainColor" />
                               <h3 class="mb-2 text-2xl font-bold ">
-                                1050+ Students
+                                Microsoft Ecosystem Integration
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
                                 Students Sent From MAC to Various Universities.
@@ -312,7 +315,7 @@ const Carousel = () => {
                             <div className="flex flex-col lg:items-start items-center">
                               <BsPeopleFill class="w-10 h-10 mb-2 text-mainColor" />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
-                                1050+ Students
+                                Integration and Scalability
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
                                 Students Sent From MAC to Various Universities.
@@ -320,9 +323,9 @@ const Carousel = () => {
                             </div>
 
                             <div className="flex flex-col lg:items-start items-center">
-                              <GiWorld class="w-10 h-10 mb-2 text-mainColor" />
+                              <SiPowerautomate class="w-10 h-10 mb-2 text-mainColor" />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
-                                1050+ Students
+                                Process Automation
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
                                 Students Sent From MAC to Various Universities.
@@ -333,6 +336,91 @@ const Carousel = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 pt-12">
+              <div className="flex justify-center items-center w-[100%] bg-[#f8f9fa]">
+                <div>
+                  <img
+                    src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg"
+                    alt=""
+                    width="612"
+                    height="512"
+                    className="rounded md:block hidden"
+                  />
+                </div>
+                <div className="flex justify-center items-center">
+                  <img
+                    src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg"
+                    alt=""
+                    className="rounded md:hidden block w-[90%]"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col space-y-6 w-full">
+                <div className="text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                  <h1>Transforming Businesses Through Technology</h1>
+                </div>
+
+                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                  <p>
+                    AX Seva is engaged in mustering energy among people to
+                    create a better world and solve critical business problems
+                    through digital transformation.
+                  </p>
+                </div>
+
+                <ul className="list-none text-sideHeading space-y-2 md:text-start text-center md:ml-2 px-2 md:px-0">
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">
+                      <img src={tick} alt="" className="w-6 h-6" />
+                    </span>
+                    <span>
+                      Centralizes customer data, tracks interactions, and
+                      automates sales.
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">
+                      <img src={tick} alt="" className="w-6 h-6" />
+                    </span>
+                    <span>
+                      Integrates financial, supply chain, and HR processes to
+                      optimize business operation
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">
+                      <img src={tick} alt="" className="w-6 h-6" />
+                    </span>
+                    <span>
+                      Uses AI to provide insights, forecast trends, and automate
+                      decision-making{" "}
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-green-500 mr-2">
+                      <img src={tick} alt="" className="w-6 h-6" />
+                    </span>
+                    <span>
+                      {" "}
+                      Modular system allows businesses to scale and customize
+                      workflows{" "}
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="md:flex items-center lg:justify-start justify-center hidden">
+                  <a
+                    href="/products"
+                    className="bg-mainColor font-medium outline-none
+                      rounded hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 md:py-3 py-2 text-center"
+                  >
+                    Let's get started
+                  </a>
                 </div>
               </div>
             </div>

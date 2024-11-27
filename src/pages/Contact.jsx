@@ -98,7 +98,7 @@ const Contact = () => {
                             href="mailto:info@axseva.com"
                             class="flex md:justify-start justify-center"
                           >
-                            <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                               <div class="space-y-2">
                                 <div className="flex justify-center items-center">
                                   <FaAddressBook
@@ -123,7 +123,7 @@ const Contact = () => {
                             href="mailto:info@axseva.com"
                             class="flex md:justify-start justify-center"
                           >
-                            <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                               <div class="space-y-2">
                                 <div className="flex justify-center items-center">
                                   <FaMicrophoneAlt
@@ -316,7 +316,7 @@ const Contact = () => {
 
                         <div className="w-full grid grid-cols-1 md:gap-4">
                           <div className="mt-8 md:mt-6 w-full">
-                            <button className="hover:shadow-form rounded-lg bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
+                            <button className="hover:shadow-form rounded bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
                               Submit Form
                             </button>
                           </div>
@@ -336,7 +336,7 @@ const Contact = () => {
                   </h1>
                 </div>
               </div>
-              <div className="relative bg-[#f2f8fe] mt-8 rounded-lg p-6 max-w-[1200px] lg:mx-auto mx-4 h-60">
+              <div className="relative bg-[#f2f8fe] mt-8 rounded p-6 max-w-[1200px] lg:mx-auto mx-4 h-60">
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-left.png"
                   alt="Quote Left"
@@ -424,7 +424,7 @@ const Contact = () => {
 
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-16 md:px-2 px-4">
               <div class="flex md:justify-start justify-center w-full">
-                <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
                       <h1 class="text-2xl font-bold text-headingColor">
@@ -453,7 +453,7 @@ const Contact = () => {
               </div>
 
               <div class="flex md:justify-start justify-center">
-                <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
                       <h1 class="text-2xl font-bold text-headingColor">

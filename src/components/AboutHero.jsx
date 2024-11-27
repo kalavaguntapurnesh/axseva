@@ -62,7 +62,7 @@ const AboutHero = () => {
         </p>
         <a
           href={slides[currentIndex].buttonLink}
-          className="mt-8 inline-block px-6 py-3 border-[1px] border-navGray text-white rounded-lg text-lg font-light transition hover:bg-opacity-90"
+          className="mt-8 inline-block px-6 py-3 border-[1px] border-navGray text-white rounded text-lg font-light transition hover:bg-opacity-90"
         >
           {slides[currentIndex].buttonText}
         </a>

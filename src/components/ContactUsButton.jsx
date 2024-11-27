@@ -22,7 +22,7 @@ const ContactUsButton = () => {
       {/* Popup Form */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center lg:justify-end items-center">
-          <div className="bg-gradient-to-b from-white via-white to-white md:p-6 p-4 rounded-lg shadow-xl w-[90%] max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
+          <div className="bg-gradient-to-b from-white via-white to-white md:p-6 p-4 rounded shadow-xl w-[90%] max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
             <a
               href="/"
               className="flex flex-row items-center justify-center md:ml-0 ml-2"
@@ -41,7 +41,7 @@ const ContactUsButton = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-3 py-2 border rounded-lg"
+                    className="w-full px-3 py-2 border rounded"
                     placeholder="Enter your first name"
                   />
                 </div>
@@ -51,7 +51,7 @@ const ContactUsButton = () => {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-3 py-2 border rounded-lg"
+                    className="w-full px-3 py-2 border rounded"
                     placeholder="Enter your last name"
                   />
                 </div>
@@ -61,7 +61,7 @@ const ContactUsButton = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-3 py-2 border rounded-lg"
+                    className="w-full px-3 py-2 border rounded"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -72,13 +72,13 @@ const ContactUsButton = () => {
               <button
                 type="button"
                 onClick={togglePopup}
-                className="bg-gray-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-gray-600"
+                className="bg-gray-500 text-white px-4 py-2 rounded mr-2 hover:bg-gray-600"
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="bg-buttons text-white px-4 py-2 rounded-lg "
+                className="bg-buttons text-white px-4 py-2 rounded "
               >
                 Submit
               </button>
