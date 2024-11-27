@@ -13,7 +13,7 @@ const ContactUsButton = () => {
       {/* Contact Us Button */}
       <button
         onClick={togglePopup}
-        className="fixed bottom-5 right-5 z-20 bg-buttons text-white px-3 py-3 rounded-full shadow-lg transition duration-300 block"
+        className="fixed bottom-5 right-5 z-20 bg-buttons text-white px-3 py-3 rounded-full shadow-lg transition flex items-center justify-center duration-300 "
       >
         <MdMessage className="h-6 w-6" />
       </button>
@@ -21,8 +21,10 @@ const ContactUsButton = () => {
       {/* Popup Form */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center lg:justify-end items-center">
-          <div className="bg-gradient-to-b from-blue-300 to-white p-6 rounded-lg shadow-xl w-full max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
-            <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
+          <div className="bg-gradient-to-b from-blue-300 to-white md:p-6 p-4 rounded-lg shadow-xl w-[90%] max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
+            <h2 className="text-2xl font-semibold text-center mb-4">
+              Contact Us
+            </h2>
             {/* Scrollable Content */}
             <div className="flex-grow overflow-y-auto">
               <form>

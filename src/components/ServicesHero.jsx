@@ -6,7 +6,7 @@ const ServicesHero = () => {
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1303809341-2048x2048-1.jpg",
-      heading: "Get the Best Solutions for Business ",
+      heading: "Microsoft Dynamics 365 Finance & Operations",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
