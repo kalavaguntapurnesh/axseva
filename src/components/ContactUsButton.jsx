@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { SiPaloaltosoftware } from "react-icons/si";
 import { MdMessage } from "react-icons/md";
 
 const ContactUsButton = () => {
@@ -21,10 +22,16 @@ const ContactUsButton = () => {
       {/* Popup Form */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center lg:justify-end items-center">
-          <div className="bg-gradient-to-b from-blue-300 to-white md:p-6 p-4 rounded-lg shadow-xl w-[90%] max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
-            <h2 className="text-2xl font-semibold text-center mb-4">
-              Contact Us
-            </h2>
+          <div className="bg-gradient-to-b from-white via-white to-white md:p-6 p-4 rounded-lg shadow-xl w-[90%] max-w-md lg:w-2/5 lg:mr-5 lg:h-[60%] h-auto flex flex-col">
+            <a
+              href="/"
+              className="flex flex-row items-center justify-center md:ml-0 ml-2"
+            >
+              <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
+              <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+                AX <span className="text-black">Seva</span>
+              </h1>
+            </a>
             {/* Scrollable Content */}
             <div className="flex-grow overflow-y-auto">
               <form>
@@ -61,7 +68,7 @@ const ContactUsButton = () => {
               </form>
             </div>
             {/* Buttons */}
-            <div className="flex justify-end mt-4">
+            <div className="flex justify-center mt-4">
               <button
                 type="button"
                 onClick={togglePopup}

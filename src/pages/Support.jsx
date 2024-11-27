@@ -14,6 +14,7 @@ import { SlEqualizer } from "react-icons/sl";
 import { FcCustomerSupport } from "react-icons/fc";
 import { FaDatabase } from "react-icons/fa6";
 import SupportLayout from './../components/SupportLayout';
+import ContactUsButton from "../components/ContactUsButton";
 const Support = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -401,6 +402,8 @@ const Support = () => {
           </div>
         </div>
       </div>
+
+      <ContactUsButton />
 
       <Footer />
     </>
