@@ -5,13 +5,15 @@ export default {
     extend: {
       container: {},
       colors: {
-        mainColor: "#16b6ea",
+        // mainColor: "#16b6ea",
+        mainColor:"#0064c8",
         // mainColor: "#bb2b36",
         // mainColor: "#187e4c",
         headingColor: "#19191B",
         sideHeading: "#474749",
         grayColor: "#585858",
         navGray: "#dddddd",
+        buttons: "#0064c8",
       },
     },
   },

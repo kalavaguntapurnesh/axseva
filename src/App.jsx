@@ -12,16 +12,18 @@ import Services from "./pages/Services";
 import Lottie from "lottie-react";
 import { useState } from "react";
 import Loading from "./assets/Loading.json";
+import Industries from "./pages/Industries";
+import Support from "./pages/Support";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 1500);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  // }, 1500);
   return (
     <BrowserRouter>
-      {isLoading ? (
+      {/* {isLoading ? (
         <div className="flex flex-col items-center justify-center min-h-screen">
           <div className="flex justify-center items-center">
             <Lottie
@@ -31,14 +33,16 @@ function App() {
             />
           </div>
         </div>
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/about-us" element={<About />} />
-          <Route path="/managed-it-services" element={<Services />} />
-        </Routes>
-      )}
+      ) : ( */}
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/about-us" element={<About />} />
+        <Route path="/managed-it-services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/dynamics-365-support-services" element={<Support />} />
+      </Routes>
+      {/* )} */}
     </BrowserRouter>
   );
 }

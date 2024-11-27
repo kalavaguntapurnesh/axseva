@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import HomeFinal from "../components/HomeFinal";
 import Bento from "../components/Bento";
 import MainLayout from "./../components/MainLayout";
+import ContactUsButton from "../components/ContactUsButton";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Carousel />
       <Bento />
       <HomeFinal />
+      <ContactUsButton />
       <Footer />
     </>
   );

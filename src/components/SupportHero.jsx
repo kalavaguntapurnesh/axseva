@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const AboutHero = () => {
+const SupportHero = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1335295270-2048x2048-1.jpg",
-      heading: "AX Seva specialized in Dynamics AX",
+        "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
+      heading: "SUPPORT & MANAGED SERVICES",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
@@ -14,12 +14,12 @@ const AboutHero = () => {
     },
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp",
-      heading: "DYNAMIC 365 & ERP IMPLEMENTATION",
+        "https://www.tectura.com/wp-content/uploads/2023/04/End-to-End-Retail-ERP-CRM-and-POS-Solutions-for-Specialty-Retailers.jpg",
+      heading: "get an advice from us",
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
-      buttonText: "Find Out More",
-      buttonLink: "/learn-more",
+      buttonText: "Contact Us",
+      buttonLink: "/contact",
     },
   ];
 
@@ -71,4 +71,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default SupportHero;
