@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -18,6 +17,7 @@ import { FaClockRotateLeft } from "react-icons/fa6";
 import { FaNetworkWired } from "react-icons/fa";
 import { IoIosSpeedometer } from "react-icons/io";
 import { FaMicrophoneAlt } from "react-icons/fa";
+import ServicesLayout from "../components/ServicesLayout";
 const Services = () => {
   const problems = [
     {
@@ -185,7 +185,7 @@ const Services = () => {
 
   return (
     <>
-      <NavBar />
+      <ServicesLayout />
 
       {/* 1st section  */}
 

@@ -62,17 +62,17 @@ const NavBar = () => {
         {/* Desktop Nav Links */}
         <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
           {/* <Tabs /> */}
-          <FlyoutLink href="#" FlyoutContent={PricingContent}>
-            SOLUTIONS
-          </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
-            INDUSTRIES{" "}
-          </FlyoutLink>
           <FlyoutLink
             href="/managed-it-services"
             FlyoutContent={ServicesContent}
           >
             SERVICES
+          </FlyoutLink>
+          <FlyoutLink href="#" FlyoutContent={PricingContent}>
+            SOLUTIONS
+          </FlyoutLink>
+          <FlyoutLink href="#" FlyoutContent={IndustriesContent}>
+            INDUSTRIES{" "}
           </FlyoutLink>
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
             ABOUT US
