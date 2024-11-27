@@ -85,10 +85,10 @@ const Footer = () => {
 
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/contact-us"
+                            href="#"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            Live Chat
+                            Whatsapp Chat
                           </a>
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
@@ -202,38 +202,6 @@ const Footer = () => {
                           Holistico - D365 Customer Service Solution
                         </a>
                       </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Start up
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#about_founder"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          E-commerce
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Enterprice
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/learn-about-us#logo_meaning"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          SMBs
-                        </a>
-                      </li>
                     </ul>
                   </div>
 
@@ -266,7 +234,7 @@ const Footer = () => {
                           href="/learn-about-us#about_founder"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Ecommerce
+                          E-commerce
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -313,7 +281,7 @@ const Footer = () => {
                       <div className="w-full pt-8">
                         <div className="grid grid-cols-5">
                           <a
-                            href="https://www.linkedin.com/company/laoe-maom/"
+                            href="https://www.linkedin.com/in/sumanthdama/"
                             className="flex justify-center items-center "
                           >
                             <FaLinkedin
@@ -376,7 +344,7 @@ const Footer = () => {
                           name="name"
                           id="name"
                           placeholder="Your Full Name"
-                          className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                          className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                         />
                       </div>
                       <div className="mb-3 w-full">
@@ -385,7 +353,7 @@ const Footer = () => {
                           name="name"
                           id="name"
                           placeholder="Your Email"
-                          className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                          className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                         />
                       </div>
 
@@ -430,8 +398,9 @@ const Footer = () => {
               <p className="text-footerItems">
                 Copyright © 2024 AxSeva. All rights reserved
               </p>
-              <p className="text-footerItems">
-                Developed by Cloud Data Networks
+              <p className="text-footerItems pt-2">
+                All images related to Microsoft & other images are trademarks of
+                Microsoft. Developed by Cloud Data Networks
               </p>
             </div>
           </div>

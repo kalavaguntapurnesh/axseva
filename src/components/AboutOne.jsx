@@ -373,17 +373,26 @@ const AboutOne = () => {
                 </div> */}
 
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-12">
-                  <div className="flex justify-center items-center">
-                    <div className="w-full">
+                  <div className="flex justify-center items-center w-[100%]">
+                    <div className="md:flex justify-center hidden w-[100%]">
                       <img
                         src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
                         alt=""
-                        height="400"
-                        className="rounded md:w-[70%] w-full"
+                        // width="612"
+                        // height="512"
+                        className="rounded md:block hidden w-[80%] h-[460px]"
+                      />
+                    </div>
+                    <div className="flex justify-center items-center md:hidden w-[90%]">
+                      <img
+                        src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
+                        alt=""
+                        className="rounded w-[100%]"
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col space-y-6 w-full md:justify-center">
+
+                  <div className="flex flex-col space-y-6 w-full md:justify-start">
                     <div className="flex items-center md:justify-start justify-center ">
                       <div className="h-4 w-1 bg-mainColor"></div>
                       <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
