@@ -384,7 +384,7 @@ const Footer = () => {
                           type="text"
                           name="name"
                           id="name"
-                          placeholder="Your Job Title"
+                          placeholder="Your Email"
                           className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                         />
                       </div>

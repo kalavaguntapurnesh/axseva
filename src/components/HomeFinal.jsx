@@ -8,7 +8,7 @@ const HomeFinal = () => {
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
-            <div className="mx-auto px-6 lg:px-8">
+            {/* <div className="mx-auto px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
                 <div className="max-w-xl lg:max-w-lg">
                   <h2 className="md:text-start text-center text-3xl font-bold tracking-tight text-colorTwo sm:text-4xl">
@@ -67,7 +67,7 @@ const HomeFinal = () => {
                   </div>
                 </dl>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

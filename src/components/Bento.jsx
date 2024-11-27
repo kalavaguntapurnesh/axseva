@@ -16,13 +16,12 @@ const Bento = () => {
 
             <div className="mx-auto max-w-[1000px] text-center mt-4">
               <h1 className="text-4xl font-bold text-headingColor">
-                Get the Best Solutions for Business Growth from Microsoft
-                Dynamics 365 Partner
+                Get the Best Solutions for Business Growth 
               </h1>
             </div>
 
-            <div className="text-center mt-4">
-              <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+            <div className="text-center mt-4 mx-auto max-w-[1000px]">
+              <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                 Automate your business, simplify operations, and redefine the
                 way you deal with new opportunities using powerful Dynamics 365
                 solutions from the renowned Microsoft Dynamics 365 partner in
@@ -37,10 +36,11 @@ const Bento = () => {
                     <div class="space-y-4">
                       <div className="flex flex-row md:justify-start justify-center items-center md:w-[80%] ">
                         <img
-                          src="https://www.dynamicssquare.com/img/business-center-logo.svg"
+                          src="https://tripearltech.com/wp-content/uploads/2023/09/BusinessCentral_scalable.svg"
                           alt=""
+                          className="w-12 h-12"
                         />
-                        <h1 className="ml-4 text-xl text-colorTwo font-bold">
+                        <h1 className="ml-4 text-xl text-headingColor font-bold">
                           Dynamics 365 Business Central
                         </h1>
                       </div>
@@ -66,10 +66,11 @@ const Bento = () => {
                     <div class="space-y-4">
                       <div className="flex flex-row md:justify-start justify-center items-center md:w-[80%] ">
                         <img
-                          src="https://www.dynamicssquare.com/img/finace-icons.svg"
+                          src="https://tripearltech.com/wp-content/uploads/2023/09/Finance_scalable.svg"
                           alt=""
+                          className="w-12 h-12"
                         />
-                        <h1 className="ml-4 text-xl text-colorTwo font-bold">
+                        <h1 className="ml-4 text-xl text-headingColor font-bold">
                           Dynamics 365 Finance Software
                         </h1>
                       </div>
@@ -94,10 +95,11 @@ const Bento = () => {
                     <div class="space-y-4">
                       <div className="flex flex-row md:justify-start justify-center items-center md:w-[80%] ">
                         <img
-                          src="https://www.dynamicssquare.com/img/supplychain-logo.svg"
+                          src="https://tripearltech.com/wp-content/uploads/2023/09/SupplyChainManagement_scalable.svg"
                           alt=""
+                          className="w-12 h-12"
                         />
-                        <h1 className="ml-4 text-xl text-colorTwo font-bold">
+                        <h1 className="ml-4 text-xl text-headingColor font-bold">
                           Dynamics 365 Supply Chain
                         </h1>
                       </div>

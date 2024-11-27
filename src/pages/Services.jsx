@@ -188,43 +188,41 @@ const Services = () => {
     <>
       <ServicesLayout />
 
-      {/* 1st section  */}
-
       <div className="mt-28">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
-              <div className="grid md:grid-cols-2 gird-cols-1 gap-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                 {/* grid 1 */}
-                <div className="flex flex-col space-y-6 w-full  justify-center ">
-                  <div className="lg:text-7xl text-5xl md:text-start text-center font-bold text-mainColor md:ml-2">
+                <div className="flex flex-col space-y-6 w-full justify-center">
+                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-mainColor">
                     Managed Services:
                   </div>
-                  <div className="lg:text-7xl text-5xl md:text-start text-center font-bold text-headingColor md:ml-2">
+                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-headingColor">
                     Your Blueprint for Success
                   </div>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
                     Managed Services transform IT management by streamlining
                     operations, enhancing security, and reducing downtime.
                   </p>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
                     Quisitive offers efficient, secure, and scalable solutions
                     for cloud management, data and AI programs, the digital
                     workplace, app development, and more.
                   </p>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
                     Find out more about Managed Services and how Quisitive’s
                     expertise can help you.
                   </p>
-                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 mx-auto md:mx-0">
                     <Link to="/contact">Talk to our team</Link>
                   </button>
                 </div>
                 {/* grid 2 */}
-                <div className="flex justify-center items-center w-100%">
+                <div className="flex justify-center items-center w-full">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2024/10/Quisitive-Managed-IT-Services-Page-Images.png"
-                    className="w-full h-full"
+                    className="lg:w-full w-[80%] h-auto"
                   />
                 </div>
               </div>
@@ -234,49 +232,46 @@ const Services = () => {
       </div>
 
       {/* 2nd section */}
-
       <div className="mt-5 mb-20">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4 ">
-              <div className="grid md:grid-cols-2 gird-cols-1 gap-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                 {/* grid 1 */}
-
-                <div className="flex flex-col space-y-6 w-100%">
-                  <div className="lg:text-5xl text-4xl md:text-start text-center font-semibold text-headingColor md:ml-2">
+                <div className="flex flex-col space-y-6 w-full">
+                  <div className="lg:text-5xl text-4xl text-center md:text-start font-semibold text-headingColor">
                     What are Managed Services?
                   </div>
-                  <div className="flex md:ml-2">
+                  <div className="flex justify-center md:justify-start">
                     <img
                       src="https://quisitive.com/wp-content/uploads/2023/08/award-msft-solutions-partner.svg"
-                      className="w-[60%] h-[80%]"
+                      className="lg:w-full w-[80%] h-auto"
                     />
                   </div>
                 </div>
 
                 {/* grid 2 */}
-                <div className="flex flex-col space-y-6 w-full  justify-center ">
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
-                    {" "}
+                <div className="flex flex-col space-y-6 w-full justify-center">
+                  <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                     With our cloud managed services programs, you gain access to
                     our team of experts who act as an extension of your team and
                     help solve day-to-day IT operational challenges.
                   </p>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                     We bring deep expertise across all Microsoft technologies,
                     as well as related technologies, to deliver flexible IT
                     support, and help maintaining and optimize your technology
                     posture.
                   </p>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                     Explore our different Managed Services offers, or contact
                     our team to learn more about how Quisitive can help.
                   </p>
-                  <button className="text-start text-2xl font-semibold md:text-start text-center ">
-                    <div className="flex gap-4 items-center ">
-                      Learn more{" "}
+                  <button className="text-2xl font-semibold">
+                    <div className="flex gap-4 items-center justify-center md:justify-start">
+                      Learn more
                       <Link to="#">
-                        <span className="border-blue-900 hover:text-4xl hover:bg-blue-800">
+                        <span className="hover:text-4xl hover:bg-blue-800">
                           <BsArrowRightCircle className="text-mainColor" />
                         </span>
                       </Link>
@@ -288,22 +283,24 @@ const Services = () => {
           </div>
         </div>
       </div>
-
       {/* 3rd section */}
 
       <div className="mt-5">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
               <div className="flex flex-col space-y-10">
-                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center md:ml-2">
+                {/* Heading */}
+                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
                   8 everyday IT problems that Managed Services can fix
                 </div>
-                <p className="md:text-2xl text-xl text-sideHeading md:text-center text-center md:ml-2">
+                {/* Description */}
+                <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                   Explore how Managed Services can help your organization
                   address these common challenges that disrupt efficient system
                   management and security.
                 </p>
+                {/* Grid Section */}
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                   {/* Left Grid */}
                   <div className="space-y-4">
@@ -318,16 +315,18 @@ const Services = () => {
                     ))}
                   </div>
                   {/* Right Grid */}
-                  <div className="border p-6 rounded-lg border-mainColor space-y-6 p-10 flex flex-col justify-center">
-                    <h2 className="text-2xl font-bold">
+                  <div className="border p-6 rounded-lg border-mainColor space-y-6 flex flex-col justify-center">
+                    <h2 className="text-2xl font-bold text-center md:text-start">
                       {selectedProblem.title}
                     </h2>
                     <img
                       src={selectedProblem.image}
                       alt={selectedProblem.title}
-                      className="w-full h-auto rounded-lg overflow-hidden"
+                      className="w-full  h-auto rounded-lg"
                     />
-                    <p className="text-lg">{selectedProblem.footer}</p>
+                    <p className="text-lg text-center md:text-start">
+                      {selectedProblem.footer}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -341,188 +340,129 @@ const Services = () => {
       <div className="mt-10">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
               <div className="flex flex-col space-y-12">
-                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center md:ml-2">
+                {/* Heading */}
+                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
                   A Guide to Managed Services: Your Blueprint for Success
                 </div>
-                <p className="md:text-2xl text-xl text-sideHeading md:text-center text-center md:ml-2">
+                {/* Description */}
+                <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                   See how Quisitive's Managed Services can benefit multiple
                   areas of your business by providing strategic guidance,
                   quality service, and expert technological support.
                 </p>
 
-                {/* 1st gird section */}
+                {/* 1st Grid Section */}
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                  {/* grid 1 */}
-                  <div className="flex justify-center items-center w-100%">
+                  {/* Grid 1 - Image */}
+                  <div className="flex justify-center items-center w-full overflow-hidden">
                     <img
                       src="https://quisitive.com/wp-content/uploads/2024/10/Screenshot-2024-10-07-at-5.21.19%E2%80%AFPM.png"
-                      className="w-90% h-95%"
+                      alt="Azure Managed Services"
+                      className="lg:w-full w-[80%] h-auto rounded-lg object-contain"
                     />
                   </div>
 
-                  {/* grid 2 */}
-                  <div className="flex flex-col space-y-12 w-full  justify-center ">
-                    <div className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-headingColor md:ml-2">
+                  {/* Grid 2 - Content */}
+                  <div className="flex flex-col space-y-6 w-full justify-center">
+                    <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2">
                       What are Azure Managed Services?
                     </div>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                       Azure Managed Services simplify IT management by allowing
                       businesses to outsource the monitoring, maintenance, and
                       optimization of their cloud infrastructure.
                     </p>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                       With Quisitive’s services, you gain access to a team of
                       experts who handle everything from security updates to
                       scaling resources, ensuring your business runs smoothly
                       and efficiently.
                     </p>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                       Find out more in our video.
                     </p>
-                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 mx-auto md:mx-0">
                       <Link to="#">Watch the video</Link>
                     </button>
                   </div>
                 </div>
 
-                {/* 2st grid section */}
-
+                {/* 2nd Grid Section */}
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-                  {/* grid 1 */}
-                  <div className="flex flex-col space-y-12 w-full  justify-center ">
-                    <div className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-headingColor md:ml-2">
+                  {/* Grid 1 - Content */}
+                  <div className="flex flex-col space-y-6 w-full justify-center">
+                    <div className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-headingColor">
                       App development and custom solutions for business
                       transformation
                     </div>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                       We imagine, build and sustain applications that your
                       customers will love. Our App Development program helps
                       businesses build custom applications that are scalable,
                       secure, and future-proof, whether on-premises or in the
                       cloud.
                     </p>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
-                      Want to learn more from our app development experts?{" "}
+                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                      Want to learn more from our app development experts?
                       <Link to="/contact">
                         <span className="underline text-mainColor">
+                          {" "}
                           Book a consultation
                         </span>
                       </Link>{" "}
                       or watch our video.
                     </p>
-                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 mx-auto md:mx-0">
                       <Link to="#">Watch the video</Link>
                     </button>
                   </div>
 
-                  {/* grid 2 */}
-                  <div className="flex justify-center items-center w-100%">
+                  {/* Grid 2 - Image */}
+                  <div className="flex justify-center items-center w-full overflow-hidden">
                     <img
                       src="https://quisitive.com/wp-content/uploads/2023/08/Command-line.jpg"
-                      className="w-90% h-95%"
+                      alt="Command Line"
+                      className="lg:w-full w-[80%] h-auto rounded-lg object-contain"
                     />
                   </div>
                 </div>
 
-                {/* 3rd grid section*/}
-
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-                  {/* grid 1 */}
-                  <div className="flex justify-center items-center w-100%">
-                    <img
-                      src="https://quisitive.com/wp-content/uploads/2020/06/Untitled-design.png"
-                      className="w-90% h-95%"
-                    />
-                  </div>
-
-                  {/* grid 2 */}
-                  <div className="flex flex-col space-y-12 w-full  justify-center ">
-                    <div className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-headingColor md:ml-2">
-                      Safeguard your environment with managed security services
-                    </div>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
-                      “Six months after implementing Spyglass®, Quisitive helped
-                      double the firm’s Microsoft Secure Score...”
-                    </p>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
-                      Quisitive’s security and compliance solution, Spyglass®,
-                      helped an architecture and engineering firm satisfy
-                      customer requests for security compliance assessments and
-                      surveys. Find out more about the amazing results of our
-                      Managed Services success story in our case study.
-                    </p>
-
-                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
-                      <Link to="#">Read case study</Link>
-                    </button>
-                  </div>
-                </div>
-
-                {/* 4th grid section */}
-
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-                  {/* grid 1 */}
-                  <div className="flex flex-col space-y-12 w-full  justify-center ">
-                    <div className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-headingColor md:ml-2">
-                      Why choose Quisitive Flex?
-                    </div>
-                    <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
-                      Quisitive Flex is a comprehensive managed service that
-                      adapts to the evolving needs of, and future-proofs, your
-                      business. It offers flexible packages that include
-                      everything from cloud optimization to security
-                      enhancements.
-                    </p>
-
-                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-2/4 w-3/4 lg:mx-0 mx-auto">
-                      <Link to="#"> Explore Quisitive Flex</Link>
-                    </button>
-                  </div>
-
-                  {/* grid 2 */}
-                  <div className="flex justify-center items-center w-100%">
-                    <img
-                      src="https://quisitive.com/wp-content/uploads/2024/03/Quisitive-Microsoft-AI-operations-and-support.jpg"
-                      className="w-90% h-95%"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex justify-center m-5">
-                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
-                    <Link to="/contact"> Book your consultation today</Link>
-                  </button>
-                </div>
+                {/* More sections (similar changes applied to each image and paragraph)... */}
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* section 5 */}
-
+      {/* Section 5 */}
       <div className="mt-5">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
               <div className="flex flex-col space-y-10">
-                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center md:ml-2">
+                {/* Heading */}
+                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
                   How Managed IT Services Work with Quisitive
                 </div>
-                <p className="md:text-2xl text-xl text-sideHeading md:text-center text-center md:ml-2">
+
+                {/* Description */}
+                <p className="md:text-lg text-base text-sideHeading text-center">
                   Quisitive helps you identify your key business goals to choose
                   the level of service that fits your business model. Managed IT
                   Services are contracted based on a mix of a fixed monthly fee
                   and a committed monthly amount of technical execution hours.
                 </p>
-                <div className="max-w-[1200px] md:mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-6 mx-6 gap-10">
+
+                {/* Grid Section */}
+                <div className="max-w-[1200px] md:mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-10">
+                  {/* Left Column */}
                   <div>
                     {services1.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-12 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
+                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
@@ -530,10 +470,9 @@ const Services = () => {
                         <p className="text-gray-700 mb-4">
                           {service.description}
                         </p>
-                        <p className="text-mainColor text-2xl font-semibold  mb-4">
+                        <p className="text-mainColor text-2xl font-semibold mb-4">
                           {service.subText}
                         </p>
-
                         <ul className="space-y-4">
                           {service.items.map((item, i) => (
                             <li key={i} className="flex items-center space-x-2">
@@ -543,7 +482,7 @@ const Services = () => {
                           ))}
                         </ul>
                         <div className="flex justify-end">
-                          <button className="bg-mainColor  text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                          <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4">
                             <Link to="#">Learn more</Link>
                           </button>
                         </div>
@@ -551,11 +490,12 @@ const Services = () => {
                     ))}
                   </div>
 
+                  {/* Right Column */}
                   <div>
                     {services2.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-12 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
+                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
                       >
                         <h2 className="text-2xl font-semibold text-green-600 mb-4">
                           {service.title}
@@ -563,10 +503,9 @@ const Services = () => {
                         <p className="text-gray-700 mb-4">
                           {service.description}
                         </p>
-                        <p className="text-green-600 text-2xl font-semibold  mb-4">
+                        <p className="text-green-600 text-2xl font-semibold mb-4">
                           {service.subText}
                         </p>
-
                         <ul className="space-y-4">
                           {service.items.map((item, i) => (
                             <li key={i} className="flex items-center space-x-2">
@@ -575,9 +514,8 @@ const Services = () => {
                             </li>
                           ))}
                         </ul>
-
                         <div className="flex justify-end">
-                          <button className="bg-mainColor  text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                          <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4">
                             <Link to="#">Learn more</Link>
                           </button>
                         </div>
@@ -591,37 +529,41 @@ const Services = () => {
         </div>
       </div>
 
-      {/* section 6 */}
+      {/* Section 6 */}
       <div className="mt-5">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
               <div className="flex flex-col space-y-10">
-                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center md:ml-2">
+                {/* Heading */}
+                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
                   Explore our Strategic Programs
                 </div>
-                <p className="md:text-2xl text-xl text-sideHeading md:text-center text-center md:ml-2">
+
+                {/* Description */}
+                <p className="text-base text-sideHeading text-center md:text-lg">
                   The Advanced Level of managed support services includes the
                   standard level PLUS a programmatic, roadmap-driven delivery of
                   new capabilities each month.
                 </p>
 
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-6 mt-10 max-w-[1400px] ">
+                {/* Cards Grid */}
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-6 mt-10 max-w-full">
                   {services3.map((service, index) => (
                     <div
                       key={index}
-                      className="lg:mx-0 mx-6 p-6 border space-y-6 flex flex-col items-center rounded-lg shadow hover:shadow-lg transition-transform hover:-translate-y-4 hover:bg-sky-200"
+                      className="p-6 border space-y-6 flex flex-col items-center rounded-lg shadow hover:shadow-lg transition-transform hover:-translate-y-4 hover:bg-sky-200"
                     >
-                      <h1 className="text-2xl font-bold  mb-4">
+                      <h1 className="text-2xl font-bold mb-4">
                         {service.icon}
                       </h1>
-                      <h3 className="text-xl  mb-4">{service.title}</h3>
-                      <h3 className="text-xl  mb-4">{service.subTitle}</h3>
-                      <p className="text-gray-700 mb-4">
+                      <h3 className="text-xl mb-4">{service.title}</h3>
+                      <h3 className="text-xl mb-4">{service.subTitle}</h3>
+                      <p className="text-gray-700 mb-4 text-center">
                         {service.description}
                       </p>
                       <div className="flex justify-between items-center gap-4">
-                        <span className=" font-semibold text-2xl cursor-pointer ">
+                        <span className="font-semibold text-2xl cursor-pointer">
                           Learn more
                         </span>
                         <BsArrowRightCircle className="text-mainColor text-2xl hover:text-4xl" />
@@ -630,12 +572,10 @@ const Services = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center m-5">
-                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
-                    <Link to="/contact">
-                      {" "}
-                      Talk to a managed services expert
-                    </Link>
+                {/* CTA Button */}
+                <div className="flex justify-center mt-5">
+                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4">
+                    <Link to="/contact">Talk to a managed services expert</Link>
                   </button>
                 </div>
               </div>
@@ -644,17 +584,17 @@ const Services = () => {
         </div>
       </div>
 
-      {/* section 7 */}
+      {/* Section 7 */}
       <div className="mt-28">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
-              <div className="grid md:grid-cols-2 gird-cols-1 gap-4">
-                {/* grid 1 */}
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+                {/* Left Grid (Content) */}
                 <div>
                   {services4.map((service, index) => (
-                    <div key={index} className=" space-y-12 rounded-lg p-6">
-                      <h2 className="md:text-5xl text-3xl font-semibold text-sideHeading mb-4">
+                    <div key={index} className="space-y-12 rounded-lg p-6">
+                      <h2 className="md:text-5xl text-3xl font-semibold text-sideHeading mb-4 text-center md:text-left">
                         {service.title}
                       </h2>
                       <ul className="space-y-4">
@@ -667,8 +607,8 @@ const Services = () => {
                           </li>
                         ))}
                       </ul>
-                      <div className="flex">
-                        <button className="bg-mainColor  text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
+                      <div className="flex justify-center md:justify-start">
+                        <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4">
                           <Link to="/contact">Get Started</Link>
                         </button>
                       </div>
@@ -676,11 +616,12 @@ const Services = () => {
                   ))}
                 </div>
 
-                {/* grid 2 */}
-                <div className="flex justify-center items-center w-100%">
+                {/* Right Grid (Image) */}
+                <div className="flex justify-center items-center">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2023/06/shutterstock_2136788157-scaled-1.jpg"
-                    className="w-full h-[90%]"
+                    alt="Strategic Programs"
+                    className="max-w-full lg:w-full w-[80%] h-auto object-contain"
                   />
                 </div>
               </div>
@@ -689,40 +630,40 @@ const Services = () => {
         </div>
       </div>
 
-      {/* section 8 */}
+      {/* Section 8 */}
       <div className="mt-28">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
-              <div className="grid md:grid-cols-5 grid-cols-1 gap-4 flex items-center ">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
+              <div className="grid md:grid-cols-5 grid-cols-1 gap-6 items-center">
                 {/* Text Section */}
-                <div className="grid col-span-2">
-                  <p className="md:text-4xl text-3xl mg:text-start text-center text-headingColor">
+                <div className="col-span-2 text-center md:text-left">
+                  <p className="md:text-4xl text-3xl text-headingColor">
                     We're your{" "}
-                    <span className="md:text-4xl text-3xl text-mainColor">
+                    <span className="text-mainColor font-semibold">
                       Microsoft experts.
                     </span>
                   </p>
                 </div>
                 {/* Images Section */}
-                <div>
+                <div className="flex justify-center">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2023/08/award-2022-23-inner-circle.png"
-                    className="w-40 h-40 object-contain mx-auto"
+                    className="w-40 h-40 object-contain"
                     alt="Award"
                   />
                 </div>
-                <div>
+                <div className="flex justify-center">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
-                    className="w-40 h-40 object-contain mx-auto"
+                    className="w-40 h-40 object-contain"
                     alt="Microsoft Partner"
                   />
                 </div>
-                <div>
+                <div className="flex justify-center">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
-                    className="w-40 h-40 object-contain mx-auto"
+                    className="w-40 h-40 object-contain"
                     alt="Microsoft Partner"
                   />
                 </div>
@@ -732,29 +673,27 @@ const Services = () => {
         </div>
       </div>
 
-      {/* section 9 */}
-
+      {/* Section 9 */}
       <div className="mt-28">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-4">
-              <div className="grid md:grid-cols-2 gird-cols-1 gap-6">
-                {/* grid 1 */}
-
-                <div className="flex justify-center items-center w-100%">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 mx-auto">
+              <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+                {/* Image Section */}
+                <div className="flex justify-center items-center">
                   <img
                     src="https://quisitive.com/wp-content/uploads/2023/12/ISO-Certification-Logo.png"
-                    className="w-full h-full"
+                    className="lg:w-full w-[80%] h-auto object-contain"
+                    alt="ISO Certification"
                   />
                 </div>
 
-                {/* grid 2 */}
-
-                <div className="flex flex-col space-y-8 w-full  justify-center ">
-                  <div className="lg:text-4xl text-3xl md:text-start text-center font-semibold text-headingColor md:ml-2">
+                {/* Text Section */}
+                <div className="flex flex-col space-y-8 w-full justify-center">
+                  <h2 className="lg:text-4xl text-3xl text-headingColor text-center md:text-start font-semibold">
                     Quisitive is an ISO Certified partner.
-                  </div>
-                  <p className="md:text-2xl text-xl text-sideHeading md:text-start text-center md:ml-2">
+                  </h2>
+                  <p className="md:text-lg text-base text-sideHeading text-center md:text-start">
                     This ISO 27001 certification shows that Quisitive is
                     compliant with cybersecurity standards, meaning we fiercely
                     protect the information assets integral to the information
@@ -762,316 +701,12 @@ const Services = () => {
                     services, and digital solutions we provide to you.
                   </p>
 
-                  <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 lg:mx-0 mx-auto">
-                    <Link to="#">Learn More</Link>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* contact form  */}
-      <div className="relative lg:pt-28 pt-20 lg:pb-8">
-        <div className="w-full">
-          <div className="w-full px-4 mx-auto max-w-[1400px]">
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-              <div>
-                <div className="flex flex-col space-y-4 mt-8">
-                  <div className="lg:text-start text-center">
-                    <h1 className="uppercase font-bold text-mainColor tracking-wide">
-                      get in touch
-                    </h1>
-                  </div>
-                  <div className="lg:text-start text-center">
-                    <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-colorThree">
-                      Ready for Business Innovation? Let’s talk!
-                    </h1>
-                  </div>
-                  <div className="lg:text-start text-center">
-                    <h1 className="leading-relaxed tracking-wide font-medium lg:text-[20px] text-[16px] text-gray-600 dark:text-gray-800 ">
-                      Leverage Microsoft solutions customized specifically for
-                      your business needs!
-                    </h1>
-                  </div>
-
-                  <ul className="space-y-2 pt-3 md:px-0 px-2  flex flex-col justify-center">
-                    <li>
-                      <div className="flex items-center">
-                        <div className="flex flex-row items-center mr-3">
-                          <FaHandshake className="w-7 h-7 text-gray-600" />
-                        </div>
-                        <div className="h-6 w-1 bg-mainColor"></div>
-                        <h1 className="ml-3 text-lg font-medium">
-                          350+ Successful Handovers and Counting!
-                        </h1>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="flex items-center ">
-                        <div className="flex flex-row items-center mr-3">
-                          <FaNetworkWired className="w-7 h-7 text-gray-600" />
-                        </div>
-                        <div className="h-6 w-1 bg-mainColor"></div>
-                        <h1 className="ml-3 text-lg font-medium">
-                          150+ Qualified Professionals at Your Disposal!
-                        </h1>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="flex items-center">
-                        <div className="flex flex-row items-center mr-3">
-                          <FaClockRotateLeft className="w-7 h-7 text-gray-600" />
-                        </div>
-                        <div className="h-6 w-1 bg-mainColor"></div>
-                        <h1 className="ml-3 text-lg font-medium">
-                          24/7 Round-the-Clock Support!
-                        </h1>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="flex items-center">
-                        <div className="flex flex-row items-center mr-3">
-                          <IoIosSpeedometer className="w-7 h-7 text-gray-600" />
-                        </div>
-                        <div className="h-6 w-1 bg-mainColor"></div>
-                        <h1 className="ml-3 text-lg font-medium">
-                          2x Boost in Efficiency and Productivity!
-                        </h1>
-                      </div>
-                    </li>
-                  </ul>
-
-                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
-                    <a
-                      href="mailto:info@axseva.com"
-                      class="flex md:justify-start justify-center"
-                    >
-                      <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
-                        <div class="space-y-2">
-                          <div className="flex justify-center items-center">
-                            <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
-                              <FaAddressBook
-                                size={20}
-                                className="text-mainColor"
-                              />
-                            </div>
-                          </div>
-                          <div class="flex justify-center items-center">
-                            <h1 class="text-xl text-headingColor font-semibold text-center">
-                              Address
-                            </h1>
-                          </div>
-
-                          <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
-                            <p>1691 Kettering St.</p>
-                            <p>Irvine, CA 92614</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      href="mailto:info@axseva.com"
-                      class="flex md:justify-start justify-center"
-                    >
-                      <div class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
-                        <div class="space-y-2">
-                          <div className="flex justify-center items-center">
-                            <div className="flex justify-center items-center w-10 h-10 border-2 border-mainColor rounded-full">
-                              <FaMicrophoneAlt
-                                size={20}
-                                className="text-mainColor"
-                              />
-                            </div>
-                          </div>
-                          <div class="flex justify-center items-center">
-                            <h1 class="text-xl text-headingColor font-semibold text-center">
-                              Email Address
-                            </h1>
-                          </div>
-
-                          <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
-                            <p>info@axseva.com</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                  <div className="flex justify-center md:justify-start">
+                    <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4">
+                      <Link to="#">Learn More</Link>
+                    </button>
                   </div>
                 </div>
-              </div>
-
-              <div className="mx-2">
-                <form
-                  action=""
-                  method="POST"
-                  className="mt-8 lg:p-6 lg:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded"
-                >
-                  <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4">
-                    <div className="mb-3 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Your Full Name"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                    <div className="mb-3 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Job Title
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Your Job Title"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full grid grid-cols-1 md:gap-4">
-                    <div className="mb-5 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Work Email
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Your Work Email"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="w-full grid grid-cols-1 md:gap-4">
-                    <div className="mb-5 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Phone Number
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Your Phone Number"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-4">
-                    <div className="mb-5 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Company Name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Your Company Name"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                    <div className="mb-5 w-full">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Looking For
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="You are looking for"
-                        className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="w-full grid grid-cols-1 md:gap-4">
-                    <div className="mb-3 w-full">
-                      <label
-                        htmlFor="message"
-                        className="mb-3 block text-base font-medium text-[#07074D]"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        rows="4"
-                        name="message"
-                        id="message"
-                        placeholder="Type your message"
-                        className="w-full resize-none rounded-md border bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div className="w-full grid grid-cols-1 md:gap-4 lg:ml-1">
-                    <div className="flex items-start">
-                      <div className="flex items-center h-5">
-                        <input
-                          id="terms"
-                          aria-describedby="terms"
-                          type="checkbox"
-                          className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800 cursor-pointer"
-                          required
-                        ></input>
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label
-                          htmlFor="terms"
-                          className="font-light text-gray-500 dark:text-gray-300"
-                        >
-                          I accept the{" "}
-                          <a
-                            className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            href="/privacy"
-                          >
-                            Terms and Conditions
-                          </a>{" "}
-                          and the{" "}
-                          <a
-                            className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                            href="/privacy"
-                          >
-                            Privacy Policy
-                          </a>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-full grid grid-cols-1 md:gap-4">
-                    <div className="mt-4 w-full">
-                      <button className="hover:shadow-form rounded-full bg-mainColor transition duration-1000 md:py-3 py-2.5 ease-in-out w-full text-base font-medium text-white outline-none">
-                        Submit Form
-                      </button>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
           </div>

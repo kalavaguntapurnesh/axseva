@@ -28,7 +28,7 @@ const Carousel = () => {
               </div>
 
               <div className="text-center mt-4">
-                <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                   AXSeva specializes in Dynamics AX implementations with core
                   focus on Dynamics AX + Analytics. Our expertise with Dynamics
                   AX includes customization in X++.
@@ -48,7 +48,7 @@ const Carousel = () => {
                         </div>
                       </div>
                       <div class="flex justify-center items-center">
-                        <h1 class="text-3xl text-colorTwo font-bold text-center">
+                        <h1 class="text-3xl text-headingColor font-bold text-center">
                           Dynamic 365 & ERP Implementation
                         </h1>
                       </div>
@@ -82,7 +82,7 @@ const Carousel = () => {
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-colorTwo font-bold text-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
                           Business Intelligence Analytics
                         </h1>
                       </div>
@@ -116,7 +116,7 @@ const Carousel = () => {
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-colorTwo font-bold text-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
                           Suppot & Managed Services
                         </h1>
                       </div>
