@@ -14,7 +14,7 @@ import { useState } from "react";
 import Loading from "./assets/Loading.json";
 import Industries from "./pages/Industries";
 import Support from "./pages/Support";
-
+import Benefits from "./pages/Benefits";
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -41,6 +41,7 @@ function App() {
         <Route path="/managed-it-services" element={<Services />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/dynamics-365-support-services" element={<Support />} />
+        <Route path="/collaborate-with-us" element={<Benefits />} />
       </Routes>
       {/* )} */}
     </BrowserRouter>
