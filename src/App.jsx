@@ -15,6 +15,7 @@ import Loading from "./assets/Loading.json";
 import Industries from "./pages/Industries";
 import Support from "./pages/Support";
 import Benefits from "./pages/Benefits";
+import MicrosoftDynamics365 from "./pages/Services/MicrosoftDynamics365";
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/dynamics-365-support-services" element={<Support />} />
         <Route path="/collaborate-with-us" element={<Benefits />} />
+        <Route path="/services-microsoft-dynamics-365" element={<MicrosoftDynamics365/>}/>
       </Routes>
       {/* )} */}
     </BrowserRouter>
