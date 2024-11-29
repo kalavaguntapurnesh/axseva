@@ -56,7 +56,9 @@ const Contact = () => {
     }
     
     try {
-        const response = await axios.post("http://localhost:3010/api/register", formData);
+      // https://axseva-backend.onrender.com
+      // http://localhost:3010/api/register
+        const response = await axios.post("https://axseva-backend.onrender.com/api/register", formData);
         Swal.fire({
             title: "Success",
             text: "Form submitted successfully!",
