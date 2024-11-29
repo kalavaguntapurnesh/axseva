@@ -43,40 +43,45 @@ const NavBar = () => {
   };
 
   return (
+    
     <nav
       className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-white shadow-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-footerbg shadow-md py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
         <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-            AX <span className="text-black">Seva</span>
+            <div className="flex gap-0">AX<span className={`${isScrolled ? 'text-white': 'text-black' }`}>Seva</span></div>
           </h1>
         </a>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
+        <ul className="hidden  xl:flex flex-grow justify-center space-x-8 items-center">
           {/* <Tabs /> */}
           <FlyoutLink
             href="/managed-it-services"
             FlyoutContent={ServicesContent}
+            
           >
-            Services
+           <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Services </span> 
           </FlyoutLink>
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
-            Solutions
+          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Solutions </span> 
+            
           </FlyoutLink>
           <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
-            Industries
+          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Industries </span> 
+            
           </FlyoutLink>
 
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
-            About Us
+          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> About Us </span> 
+            
           </FlyoutLink>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
-            <a href="/dynamics-365-support-services">Support</a>
+            <a href="/dynamics-365-support-services"><span className={`${isScrolled ? 'text-white': 'text-black' }`}> Support</span> </a>
             <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
         
@@ -135,6 +140,7 @@ const NavBar = () => {
               <div
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
+                
               >
                 Solutions
                 <FaAngleDown
@@ -559,6 +565,7 @@ const AboutUsContent = () => {
         View More
       </button>
     </div>
+    
   );
 };
 

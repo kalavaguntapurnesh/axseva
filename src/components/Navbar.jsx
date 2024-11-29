@@ -52,14 +52,16 @@ const NavBar = () => {
         <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-            AX{" "}
-            <span
-              className={` ${
-                isScrolled ? "text-[#ffffff] font-semibold" : "text-navGray"
-              }`}
-            >
-              Seva
-            </span>
+            <div className="flex gap-0">
+              AX{" "}
+              <span
+                className={` ${
+                  isScrolled ? "text-[#ffffff] font-semibold" : "text-navGray"
+                }`}
+              >
+                Seva
+              </span>
+            </div>
           </h1>
         </a>
 
