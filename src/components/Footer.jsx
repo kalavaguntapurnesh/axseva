@@ -91,7 +91,6 @@ const Footer = () => {
                             Whatsapp Chat
                           </a>
                         </li>
-                        
                       </ul>
                     </div>
                   </div>
@@ -331,7 +330,7 @@ const Footer = () => {
                       <div className="text-white font-bold text-xl">
                         <h1>Join our family</h1>
                       </div>
-                      <div className="mb-3 w-full">
+                      <div className="w-full">
                         <input
                           type="text"
                           name="name"
@@ -340,7 +339,7 @@ const Footer = () => {
                           className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                         />
                       </div>
-                      <div className="mb-3 w-full">
+                      <div className="w-full">
                         <input
                           type="text"
                           name="name"
@@ -350,8 +349,8 @@ const Footer = () => {
                         />
                       </div>
 
-                      <div className="flex justify-center items-center md:justify-start py-2">
-                        <button className="bg-mainColor text-white px-10 py-4 rounded">
+                      <div className="flex justify-center items-center md:justify-start py-2 w-[100%]">
+                        <button className="bg-mainColor text-white py-3 px-6  rounded w-full">
                           <Link to="/contact">Join </Link>
                         </button>
                       </div>
