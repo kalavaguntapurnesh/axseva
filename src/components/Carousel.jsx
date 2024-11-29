@@ -154,7 +154,7 @@ const Carousel = () => {
               <div className="flex justify-center items-center pt-4 pb-4">
                 <a
                   href="/managed-it-services"
-                  className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor text-mainColor rounded transition text-center font-semibold hover:bg-opacity-90"
+                  className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
                 >
                   Know More
                 </a>
