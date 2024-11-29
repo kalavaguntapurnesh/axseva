@@ -222,27 +222,27 @@ const MicrosoftDynamics365 = () => {
                         </p>
                         <div className="p-6 bg-gray-100">
                         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-  {services.map((service, index) => (
-    <div
-      key={index}
-      className="p-6 border space-y-4 rounded-lg shadow hover:shadow-lg transition-transform hover:-translate-y-4 hover:bg-sky-200"
-    >
-      <div className="text-3xl text-mainColor mb-4 flex justify-center">
-        {/* Optional: You can remove the icon if not used */}
-      </div>
-      <div className="flex justify-center items-center">
-        {/* Replace image URLs with actual URLs for the service */}
-        <img
-          src={service.imageUrl} // Assuming each service object has an 'imageUrl' property
-          alt="icon"
-          className="w-[30%] h-[30%] rounded-full"
-        />
-      </div>
-      <h3 className="text-xl font-bold text-center">{service.title}</h3>
-      <p className="text-gray-700 text-center">{service.description}</p>
-    </div>
-  ))}
-</div>
+                            {services.map((service, index) => (
+                                <div
+                                key={index}
+                                className="p-6 border space-y-4 rounded-lg shadow hover:shadow-lg transition-transform hover:-translate-y-4 hover:bg-sky-200 bg-transparent"
+                                >
+                                <div className="text-3xl text-mainColor mb-4 flex justify-center">
+                                    {/* Optional: You can remove the icon if not used */}
+                                </div>
+                                <div className="flex justify-center items-center  bg-transparent ">
+                                    {/* Replace image URLs with actual URLs for the service */}
+                                    <img
+                                    src={service.imageUrl} // Assuming each service object has an 'imageUrl' property
+                                    alt="icon"
+                                    className="w-[30%] h-[30%] object-cover none rounded-full"
+                                    />
+                                </div>
+                                <h3 className="text-xl font-bold text-center">{service.title}</h3>
+                                <p className="text-gray-700 text-center">{service.description}</p>
+                                </div>
+                            ))}
+                            </div>
 
                         </div>
                     </div>
