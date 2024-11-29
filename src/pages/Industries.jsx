@@ -2,11 +2,11 @@ import React from "react";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import IndustriesLayout from "./../components/IndustriesLayout";
 const Industries = () => {
   return (
     <>
-      <NavBar />
-
+      <IndustriesLayout />
       {/* Section 1 */}
 
       <div className="mt-28">

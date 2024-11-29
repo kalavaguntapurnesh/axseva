@@ -79,10 +79,7 @@ const NavBar = () => {
             <a href="/dynamics-365-support-services">Support</a>
             <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
-            <a href="/solutions">Our Blogs</a>
-            <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
-          </li>
+        
         </ul>
 
         {/* Login Button */}
@@ -300,14 +297,7 @@ const NavBar = () => {
               </a>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
-              <a
-                href="/contact"
-                className="flex items-center justify-between cursor-pointer"
-              >
-                Our Blogs
-              </a>
-            </li>
+           
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -345,8 +335,6 @@ const NavBar = () => {
     </nav>
   );
 };
-
-
 
 const FlyoutLink = ({ children, href, FlyoutContent }) => {
   const [open, setOpen] = useState(false);
@@ -442,6 +430,10 @@ const PricingContent = () => {
 };
 
 const ServicesContent = () => {
+  const navigate = useNavigate();
+  const handleServices = () => {
+    navigate("/managed-it-services"); // Navigate to the "About" page
+  };
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -496,7 +488,10 @@ const ServicesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button
+        onClick={handleServices}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
         View More
       </button>
     </div>
@@ -533,6 +528,7 @@ const IndustriesContent = () => {
 };
 
 const AboutUsContent = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -556,13 +552,14 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button
+        onClick={() => navigate("/about-us")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
         View More
       </button>
     </div>
   );
 };
-
-
 
 export default NavBar;

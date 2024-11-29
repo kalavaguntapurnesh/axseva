@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -9,6 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 import { SiPaloaltosoftware } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -95,7 +95,7 @@ const NavBar = () => {
               }`}
             ></div>
           </li>
-          <li
+          {/* <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
               isScrolled
                 ? "text-[#ffffff] font-light"
@@ -105,10 +105,10 @@ const NavBar = () => {
             <a href="/solutions">Our Blogs</a>
             <div
               className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-               isScrolled ? "bg-[#ffffff]" : "bg-navGray"
+                isScrolled ? "bg-[#ffffff]" : "bg-navGray"
               }`}
             ></div>
-          </li>
+          </li> */}
         </ul>
 
         {/* Login Button */}
@@ -253,9 +253,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                <a href="/managed-it-services" >
-                  Our Services
-                </a>
+                <a href="/managed-it-services">Our Services</a>
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -301,14 +299,6 @@ const NavBar = () => {
               </a>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
-              <a
-                href="/contact"
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                Our Blogs
-              </a>
-            </li>
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -443,6 +433,11 @@ const PricingContent = () => {
 };
 
 const ServicesContent = () => {
+  const navigate = useNavigate();
+  const handleServices = () => {
+    navigate("/managed-it-services"); // Navigate to the "About" page
+  };
+
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -497,7 +492,10 @@ const ServicesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button
+        onClick={handleServices}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
         View More
       </button>
     </div>
@@ -505,6 +503,7 @@ const ServicesContent = () => {
 };
 
 const IndustriesContent = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -526,7 +525,10 @@ const IndustriesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button
+        onClick={() => navigate("/industries")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
         View More
       </button>
     </div>
@@ -534,6 +536,7 @@ const IndustriesContent = () => {
 };
 
 const AboutUsContent = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -557,7 +560,10 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      <button
+        onClick={() => navigate("/about-us")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
         View More
       </button>
     </div>
