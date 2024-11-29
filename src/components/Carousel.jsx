@@ -24,121 +24,139 @@ const Carousel = () => {
 
               <div className="mx-auto max-w-[1000px] text-center mt-4">
                 <h1 className="text-4xl font-bold text-headingColor">
-                  An Unmatched Experience
+                  Our Products
                 </h1>
               </div>
 
               <div className="text-center mt-4">
                 <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
-                  AXSeva specializes in Dynamics AX implementations with core
-                  focus on Dynamics AX + Analytics. Our expertise with Dynamics
-                  AX includes customization in X++.
+                  Discover the Comprehensive Suite of Microsoft Dynamics 365 and
+                  other Microsoft Solutions for Your Business Transformation
                 </h1>
               </div>
 
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
+              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
-                    <div class="space-y-4">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
+                    <div class="space-y-3">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <TfiMicrosoftAlt
-                            size={36}
-                            className="text-mainColor"
+                        <div className="flex justify-center items-center ">
+                          <img
+                            src="https://tripearltech.com/wp-content/uploads/2023/09/BusinessCentral_scalable.svg"
+                            alt=""
+                            className="w-16 h-16"
                           />
                         </div>
                       </div>
                       <div class="flex justify-center items-center">
-                        <h1 class="text-3xl text-headingColor font-bold text-center">
-                          Dynamic 365 & ERP Implementation
+                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                          Dynamics 365 For Business
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Recognize member initiatives with businesses both
-                          locally and globally with incentives.
+                          Create engaging experiences by unifying customer data
+                          with real-time journeys and leveraging Copilot to
+                          uncover insights for personalized interactions.
                         </p>
-                      </div>
-
-                      <div className="flex justify-center">
-                        <a
-                          href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
-                        >
-                          View More
-                        </a>
                       </div>
                     </div>
                   </div>
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
-                    <div class="space-y-4">
-                      <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <IoSettings size={36} className="text-mainColor" />
-                        </div>
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
+                    <div class="space-y-3">
+                      <div className="flex justify-center items-center ">
+                        <img
+                          src="https://tripearltech.com/wp-content/uploads/2023/09/Finance_scalable.svg"
+                          alt=""
+                          className="w-16 h-16"
+                        />
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-headingColor font-bold text-center">
-                          Business Intelligence Analytics
+                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                          Dynamics 365 For Finance
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Establish a global presence that encourages networking
-                          and mutual benefits.
+                          Strengthen your financial and business operating
+                          models and get end-to-end financial visibility to make
+                          faster growth decisions.
                         </p>
-                      </div>
-
-                      <div className="flex justify-center">
-                        <a
-                          href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
-                        >
-                          View More
-                        </a>
                       </div>
                     </div>
                   </div>
                 </a>
 
                 <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
-                    <div class="space-y-4">
-                      <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center w-20 h-20 border-2 rounded-full">
-                          <FaHeadset size={36} className="text-mainColor" />
-                        </div>
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
+                    <div class="space-y-3">
+                      <div className="flex justify-center items-center ">
+                        <img
+                          src="https://www.confiz.com/wp-content/uploads/2023/10/supply-chain.png"
+                          alt=""
+                          className="w-16 h-16"
+                        />
                       </div>
 
                       <div class="flex justify-center items-center">
-                        <h1 class=" text-3xl text-headingColor font-bold text-center">
-                          Suppot & Managed Services
+                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                          Dynamics 365 For Supply Chain
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Develop a nurturing environment that fosters enduring
-                          friendships and a robust social network.
+                          Build a smart adaptable supply chain, meet the growing
+                          eCommerce needs, optimize front-end and back-end
+                          operations, and stay profitable.
                         </p>
-                      </div>
-
-                      <div className="flex justify-center w-[100%] ">
-                        <a
-                          href="/contact"
-                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-8 rounded"
-                        >
-                          View More
-                        </a>
                       </div>
                     </div>
                   </div>
+                </a>
+
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
+                    <div class="space-y-3">
+                      <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center ">
+                          <img
+                            src="https://play-lh.googleusercontent.com/9M9lQsb7XwwflId89QAgfWGfZZeuTW2NCZPM1Q8OegZmGvWgA1hzSuKmJ0m6D-aGak8I"
+                            alt=""
+                            className="w-16 h-16"
+                          />
+                        </div>
+                      </div>
+                      <div class="flex justify-center items-center">
+                        <h1 class="text-2xl text-headingColor font-semibold text-center">
+                          Dynamics 365 For Sales Management
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Empower your sales team with actionable sales
+                          intelligence to improve customer relationships, sell
+                          at scale and serve customers intelligently.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="flex justify-center items-center pt-4 pb-4">
+                <a
+                  href="/managed-it-services"
+                  className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor text-mainColor rounded transition text-center font-semibold hover:bg-opacity-90"
+                >
+                  Know More
                 </a>
               </div>
 

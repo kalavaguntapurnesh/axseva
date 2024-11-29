@@ -20,13 +20,6 @@ const ContactUsButton = () => {
     }
   };
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
 
