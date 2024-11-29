@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="animate-slidein [--slidein-delay:400ms] opacity-0">
       <ContactNavbar />
       {/* <ScrollToTop /> */}
 

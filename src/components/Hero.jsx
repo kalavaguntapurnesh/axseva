@@ -44,7 +44,7 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative h-full w-full overflow-hidden">
+    <section className="relative h-full w-full overflow-hidden ">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence>
@@ -61,17 +61,16 @@ const Hero = () => {
         </AnimatePresence>
       </div>
 
-      {/* Static Text Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
-        <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+        <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase animate-slidein [--slidein-delay:1000ms] opacity-0">
           {slides[currentIndex].heading}
         </h1>
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
+        <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light animate-slidein [--slidein-delay:1000ms] opacity-0">
           {slides[currentIndex].paragraph}
         </p>
         <a
           href={slides[currentIndex].buttonLink}
-          className="mt-8 inline-block px-6 py-3 border-[1px] border-navGray text-white rounded text-lg font-light transition hover:bg-opacity-90"
+          className="mt-8 inline-block px-6 py-3 border-[1px] border-navGray text-white rounded text-lg font-light transition hover:bg-opacity-90 animate-slidein [--slidein-delay:1000ms] opacity-0"
         >
           {slides[currentIndex].buttonText}
         </a>

@@ -3,6 +3,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        slidein: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
+        // slidein500: "slidein 1s ease 500ms forwards",
+        // slidein700: "slidein 1s ease 700ms forwards",
+      },
       container: {},
       colors: {
         // mainColor: "#16b6ea",
