@@ -18,7 +18,7 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > window.innerHeight / 4) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -45,7 +45,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-white shadow-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-navColor shadow-md py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
@@ -53,7 +53,11 @@ const NavBar = () => {
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
             AX{" "}
-            <span className={` ${isScrolled ? "text-black" : "text-navGray"}`}>
+            <span
+              className={` ${
+                isScrolled ? "text-[#ffffff] font-semibold" : "text-navGray"
+              }`}
+            >
               Seva
             </span>
           </h1>
@@ -78,26 +82,30 @@ const NavBar = () => {
             ABOUT US
           </FlyoutLink>
           <li
-            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase  ${
-              isScrolled ? "text-black" : "text-gray-200 font-light"
+            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
+              isScrolled
+                ? "text-[#ffffff] font-light"
+                : "text-gray-200 font-light"
             } `}
           >
             <a href="/dynamics-365-support-services">Support</a>
             <div
               className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-navGray"
+                isScrolled ? "bg-[#ffffff]" : "bg-navGray"
               }`}
             ></div>
           </li>
           <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
-              isScrolled ? "text-black" : "text-gray-200 font-light"
+              isScrolled
+                ? "text-[#ffffff] font-light"
+                : "text-gray-200 font-light"
             } `}
           >
             <a href="/solutions">Our Blogs</a>
             <div
               className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-mainColor" : "bg-navGray"
+               isScrolled ? "bg-[#ffffff]" : "bg-navGray"
               }`}
             ></div>
           </li>
@@ -111,7 +119,7 @@ const NavBar = () => {
             }}
             className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
-                ? "border-mainColor bg-mainColor hover:border-[1px] hover:border-mainColor font-medium hover:text-mainColor hover:bg-white"
+                ? "border-navGray hover:border-[1px]  font-light"
                 : "border-navGray font-light"
             }`}
           >
@@ -124,13 +132,13 @@ const NavBar = () => {
             {isMobileMenuOpen ? (
               <AiOutlineClose
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-black" : "text-navGray"
+                  isScrolled ? "text-[#ffffff]" : "text-navGray"
                 }`}
               />
             ) : (
               <RiMenu3Fill
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-black" : "text-navGray"
+                  isScrolled ? "text-[#ffffff]" : "text-navGray"
                 }`}
               />
             )}
@@ -369,7 +377,9 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     >
       <a
         href={href}
-        className={`relative ${isScrolled ? "text-headingColor" : "text-navGray"}`}
+        className={`relative ${
+          isScrolled ? "text-[#ffffff] font-light" : "text-navGray"
+        }`}
       >
         {children}
         <span
@@ -377,7 +387,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
           className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded transition-transform duration-300 ease-out ${
-            isScrolled ? "bg-mainColor" : "bg-navGray"
+            isScrolled ? "bg-[#ffffff]" : "bg-navGray"
           }`}
         />
       </a>
@@ -437,29 +447,53 @@ const ServicesContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Services We Offer</h3>
-        <a href="/services-microsoft-dynamics-365" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="/services-microsoft-dynamics-365"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Microsoft Dynamics 365
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Dynamics 365 Finance & Operations
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Dynamics 365 Implementation
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Implementation Partner
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Customer Engagement
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Upgrade
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
           Optimization
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor hover:font-bold">
-        Support
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Support
         </a>
       </div>
 
@@ -507,13 +541,19 @@ const AboutUsContent = () => {
         <a href="/about-us" className="block text-sm hover:underline">
           About Us
         </a>
-        <a href="/collaborate-with-us" className="block text-sm hover:underline">
+        <a
+          href="/collaborate-with-us"
+          className="block text-sm hover:underline"
+        >
           Why AX Seva
         </a>
       </div>
       <div className="mb-6 space-y-3">
         <h3 className="font-semibold">Careers at AX Seva</h3>
-        <a href="/collaborate-with-us" className="block text-sm hover:underline">
+        <a
+          href="/collaborate-with-us"
+          className="block text-sm hover:underline"
+        >
           Collaborate with Us
         </a>
       </div>

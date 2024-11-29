@@ -5,7 +5,7 @@ import NavBar from "./Navbar";
 
 const ServicesLayout = () => {
   return (
-    <div className="flex flex-col h-screen animate-slidein [--slidein-delay:400ms] opacity-0">
+    <div className="flex flex-col h-screen">
       <NavBar />
       <ServicesHero />
     </div>

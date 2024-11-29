@@ -34,6 +34,7 @@ export default {
         buttons: "#0064c8",
         footerbg: "#24272b",
         footerItems: "#9ca3af",
+        navColor: "#24272b",
       },
     },
   },
