@@ -91,14 +91,7 @@ const Footer = () => {
                             Whatsapp Chat
                           </a>
                         </li>
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Refund Policy
-                          </a>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
