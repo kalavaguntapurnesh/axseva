@@ -253,7 +253,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                <a href="/managed-it-services" className="text-sm">
+                <a href="/managed-it-services" >
                   Our Services
                 </a>
                 <FaAngleDown

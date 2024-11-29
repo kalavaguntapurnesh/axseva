@@ -59,28 +59,29 @@ const NavBar = () => {
         {/* Desktop Nav Links */}
         <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
           {/* <Tabs /> */}
+          <FlyoutLink
+            href="/managed-it-services"
+            FlyoutContent={ServicesContent}
+          >
+            Services
+          </FlyoutLink>
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
             Solutions
           </FlyoutLink>
           <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
             Industries
           </FlyoutLink>
-          <FlyoutLink
-            href="/managed-it-services"
-            FlyoutContent={ServicesContent}
-          >
-            Our Services
-          </FlyoutLink>
+
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
             About Us
           </FlyoutLink>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
+          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
             <a href="/dynamics-365-support-services">Support</a>
-            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+            <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out">
-            <a href="/solutions">Blog</a>
-            <div className="bg-mainColor mt-[2px] rounded-full h-1 w-0 group-hover:w-full transition-all duration-300"></div>
+          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
+            <a href="/solutions">Our Blogs</a>
+            <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
         </ul>
 
@@ -138,7 +139,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                Solution
+                Solutions
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "home"
@@ -185,9 +186,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("products")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                <a href="/industries" className="text-sm">
-                  Industries
-                </a>
+                <a href="/industries">Industries</a>
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "products"
@@ -223,9 +222,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer"
               >
-                <a href="/managed-it-services" className="text-sm">
-                  Our Services
-                </a>
+                <a href="/managed-it-services">Our Services</a>
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -262,7 +259,7 @@ const NavBar = () => {
               </AnimatePresence>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
+            {/* <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("privacy")}
                 className="flex items-center justify-between cursor-pointer"
@@ -292,6 +289,15 @@ const NavBar = () => {
                   </motion.ul>
                 )}
               </AnimatePresence>
+            </li> */}
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/about-us"
+                className="flex items-center justify-between cursor-pointer"
+              >
+                About Us
+              </a>
             </li>
 
             <li className="p-4 border-b border-gray-600">
@@ -299,7 +305,7 @@ const NavBar = () => {
                 href="/contact"
                 className="flex items-center justify-between cursor-pointer"
               >
-                Blog
+                Our Blogs
               </a>
             </li>
 
@@ -340,8 +346,25 @@ const NavBar = () => {
   );
 };
 
+
+
 const FlyoutLink = ({ children, href, FlyoutContent }) => {
   const [open, setOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const showFlyout = FlyoutContent && open;
 
@@ -351,13 +374,20 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative w-fit h-fit"
     >
-      <a href={href} className="relative text-black">
+      <a
+        href={href}
+        className={`relative ${
+          isScrolled ? " text-black uppercase" : "text-black uppercase"
+        }`}
+      >
         {children}
         <span
           style={{
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
-          className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-mainColor transition-transform duration-300 ease-out"
+          className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded transition-transform duration-300 ease-out ${
+            isScrolled ? "bg-[#ffffff]" : "bg-navGray"
+          }`}
         />
       </a>
       <AnimatePresence>
@@ -404,7 +434,7 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         Contact sales
       </button>
     </div>
@@ -416,18 +446,57 @@ const ServicesContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Services We Offer</h3>
-        <a href="#" className="block text-sm hover:underline">
-          Implementation Services
+        <a
+          href="/services-microsoft-dynamics-365"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Microsoft Dynamics 365
         </a>
-        <a href="#" className="block text-sm hover:underline">
-          Upgrade Services
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Dynamics 365 Finance & Operations
         </a>
-        <a href="#" className="block text-sm hover:underline">
-          Support Services
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Dynamics 365 Implementation
+        </a>
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Implementation Partner
+        </a>
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Customer Engagement
+        </a>
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Upgrade
+        </a>
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Optimization
+        </a>
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Support
         </a>
       </div>
 
-      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -456,7 +525,7 @@ const IndustriesContent = () => {
         </a>
       </div>
 
-      <button className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white">
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
@@ -468,27 +537,32 @@ const AboutUsContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">About AX Seva</h3>
-        <a href="#" className="block text-sm hover:underline">
+        <a href="/about-us" className="block text-sm hover:underline">
           About Us
         </a>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="/collaborate-with-us"
+          className="block text-sm hover:underline"
+        >
           Why AX Seva
         </a>
       </div>
       <div className="mb-6 space-y-3">
         <h3 className="font-semibold">Careers at AX Seva</h3>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="/collaborate-with-us"
+          className="block text-sm hover:underline"
+        >
           Collaborate with Us
         </a>
       </div>
-      <button
-        onClick={() => navi}
-        className="w-full rounded border-2 border-neutral-950 px-4 py-2 font-semibold transition-colors hover:bg-neutral-950 hover:text-white"
-      >
+      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
       </button>
     </div>
   );
 };
+
+
 
 export default NavBar;

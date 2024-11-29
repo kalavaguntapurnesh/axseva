@@ -29,12 +29,12 @@ const HomeFinal = () => {
                       type="email"
                       autocomplete="email"
                       required
-                      className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-500 shadow-sm ring-1 ring-inset sm:text-sm sm:leading-6"
+                      className="min-w-0 flex-auto rounded border-0 bg-white/5 px-3.5 py-2 text-gray-500 shadow-sm ring-1 ring-inset sm:text-sm sm:leading-6"
                       placeholder="Enter your email"
                     />
                     <button
                       type="submit"
-                      className="flex-none rounded-md bg-mainColor px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-colorTwo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                      className="flex-none rounded bg-mainColor px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-colorTwo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                     >
                       Subscribe
                     </button>
@@ -42,7 +42,7 @@ const HomeFinal = () => {
                 </div>
                 <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                   <div className="flex flex-col md:items-start items-center">
-                    <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <div className="rounded bg-white/5 p-2 ring-1 ring-white/10">
                       <BsGraphUpArrow className="text-mainColor w-8 h-8" />
                     </div>
                     <dt className="mt-4 font-semibold text-colorTwo">
@@ -54,7 +54,7 @@ const HomeFinal = () => {
                     </dd>
                   </div>
                   <div className="flex flex-col md:items-start items-center">
-                    <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                    <div className="rounded bg-white/5 p-2 ring-1 ring-white/10">
                       <GoGoal className="text-mainColor w-8 h-8" />
                     </div>
                     <dt className="mt-4 font-semibold text-colorTwo">

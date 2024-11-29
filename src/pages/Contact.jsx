@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="animate-slidein [--slidein-delay:400ms] opacity-0">
+    <div>
       <ContactNavbar />
       {/* <ScrollToTop /> */}
 
@@ -166,7 +166,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Full Name"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                           <div className="mb-3 w-full">
@@ -181,7 +181,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Job Title"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                         </div>
@@ -198,7 +198,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Work Email"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                         </div>
@@ -216,7 +216,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Phone Number"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                         </div>
@@ -234,7 +234,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="Your Company Name"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                           <div className="mb-5 w-full">
@@ -249,7 +249,7 @@ const Contact = () => {
                               name="name"
                               id="name"
                               placeholder="You are looking for"
-                              className="w-full rounded-md bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             />
                           </div>
                         </div>
@@ -267,7 +267,7 @@ const Contact = () => {
                               name="message"
                               id="message"
                               placeholder="Type your message"
-                              className="w-full resize-none rounded-md border bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                              className="w-full resize-none rounded border bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                             ></textarea>
                           </div>
                         </div>
