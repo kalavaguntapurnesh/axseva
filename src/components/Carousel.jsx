@@ -1,12 +1,6 @@
-import React from "react";
-import { IoSettings } from "react-icons/io5";
-import { FaHeadset } from "react-icons/fa";
-import { TfiMicrosoftAlt } from "react-icons/tfi";
-import { SiDynamics365 } from "react-icons/si";
-import { BsPeopleFill } from "react-icons/bs";
-import { FaMoneyBillTrendUp } from "react-icons/fa6";
-import { SiPowerautomate } from "react-icons/si";
-import tick from "../assets/tick.svg";
+import React, { useState } from "react";
+import { Tabs, Tab } from "../components/Tabs";
+import success from "../assets/success.svg";
 
 const Carousel = () => {
   return (
@@ -18,7 +12,7 @@ const Carousel = () => {
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                  We are AX Seva
+                  We are AXSeva
                 </h1>
               </div>
 
@@ -36,25 +30,22 @@ const Carousel = () => {
               </div>
 
               <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
-                <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
-                    <div class="space-y-3">
+                <a href="#" className="flex md:justify-start justify-center">
+                  <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
+                    <div className="space-y-3">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center ">
-                          <img
-                            src="https://tripearltech.com/wp-content/uploads/2023/09/BusinessCentral_scalable.svg"
-                            alt=""
-                            className="w-16 h-16"
-                          />
-                        </div>
+                        <img
+                          src="https://tripearltech.com/wp-content/uploads/2023/09/BusinessCentral_scalable.svg"
+                          alt=""
+                          className="w-16 h-16"
+                        />
                       </div>
-                      <div class="flex justify-center items-center">
-                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                      <div className="flex justify-center items-center">
+                        <h1 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Business
                         </h1>
                       </div>
-
-                      <div class="flex justify-center items-center text-gray-600 text-center">
+                      <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
                           Create engaging experiences by unifying customer data
                           with real-time journeys and leveraging Copilot to
@@ -65,24 +56,22 @@ const Carousel = () => {
                   </div>
                 </a>
 
-                <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
-                    <div class="space-y-3">
-                      <div className="flex justify-center items-center ">
+                <a href="#" className="flex md:justify-start justify-center">
+                  <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
+                    <div className="space-y-3">
+                      <div className="flex justify-center items-center">
                         <img
                           src="https://tripearltech.com/wp-content/uploads/2023/09/Finance_scalable.svg"
                           alt=""
                           className="w-16 h-16"
                         />
                       </div>
-
-                      <div class="flex justify-center items-center">
-                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                      <div className="flex justify-center items-center">
+                        <h1 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Finance
                         </h1>
                       </div>
-
-                      <div class="flex justify-center items-center text-gray-600 text-center">
+                      <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
                           Strengthen your financial and business operating
                           models and get end-to-end financial visibility to make
@@ -93,24 +82,22 @@ const Carousel = () => {
                   </div>
                 </a>
 
-                <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
-                    <div class="space-y-3">
-                      <div className="flex justify-center items-center ">
+                <a href="#" className="flex md:justify-start justify-center">
+                  <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
+                    <div className="space-y-3">
+                      <div className="flex justify-center items-center">
                         <img
                           src="https://www.confiz.com/wp-content/uploads/2023/10/supply-chain.png"
                           alt=""
                           className="w-16 h-16"
                         />
                       </div>
-
-                      <div class="flex justify-center items-center">
-                        <h1 class="text-2xl text-headingColor font-bold text-center">
+                      <div className="flex justify-center items-center">
+                        <h1 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Supply Chain
                         </h1>
                       </div>
-
-                      <div class="flex justify-center items-center text-gray-600 text-center">
+                      <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
                           Build a smart adaptable supply chain, meet the growing
                           eCommerce needs, optimize front-end and back-end
@@ -121,25 +108,22 @@ const Carousel = () => {
                   </div>
                 </a>
 
-                <a href="" class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded  sm:p-6 md:p-8 ">
-                    <div class="space-y-3">
+                <a href="#" className="flex md:justify-start justify-center">
+                  <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
+                    <div className="space-y-3">
                       <div className="flex justify-center items-center">
-                        <div className="flex justify-center items-center ">
-                          <img
-                            src="https://play-lh.googleusercontent.com/9M9lQsb7XwwflId89QAgfWGfZZeuTW2NCZPM1Q8OegZmGvWgA1hzSuKmJ0m6D-aGak8I"
-                            alt=""
-                            className="w-16 h-16"
-                          />
-                        </div>
+                        <img
+                          src="https://www.encorebusiness.com/wp-content/uploads/2024/11/Sales_scalable.svg"
+                          alt=""
+                          className="w-16 h-16"
+                        />
                       </div>
-                      <div class="flex justify-center items-center">
-                        <h1 class="text-2xl text-headingColor font-semibold text-center">
+                      <div className="flex justify-center items-center">
+                        <h1 className="text-2xl text-headingColor font-semibold text-center">
                           Dynamics 365 For Sales Management
                         </h1>
                       </div>
-
-                      <div class="flex justify-center items-center text-gray-600 text-center">
+                      <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
                           Empower your sales team with actionable sales
                           intelligence to improve customer relationships, sell
@@ -159,87 +143,9 @@ const Carousel = () => {
                   Know More
                 </a>
               </div>
-
-              <div class=" lg:grid-cols-2 grid-cols-1 gap-6 pt-8 hidden">
-                <div class="flex md:justify-start justify-center w-full">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <div class="space-y-6">
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <img
-                          src="https://uptimerobot.com/assets/images/monitor-icons/ssl-monitoring.svg"
-                          alt=""
-                          class="w-20 h-20"
-                        />
-                      </div>
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <h1 class="text-2xl font-bold">Website monitoring</h1>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
-                        <p>
-                          Is the email service still UP? How about the critical
-                          database server? Let's check! Monitor any specific
-                          service running on any port.
-                        </p>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center">
-                        <a
-                          href="/contact"
-                          class="relative inline-flex items-center justify-center py-3 px-20 overflow-hidden font-semibold text-brand shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition duration-1000 ease-out bg-white hover:bg-brand rounded-3xl group"
-                        >
-                          <span class="absolute inset-0 flex items-center justify-center w-full h-full text-colorOne duration-300 -translate-x-full group-hover:translate-x-0 ease-in-out"></span>
-                          <span class="absolute flex items-center justify-center w-full h-full font-bold hover:text-white duration-1000 transition ease-in-out">
-                            Website monitoring
-                          </span>
-                          <span class="relative invisible">Button Text</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex md:justify-start justify-center">
-                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <div class="space-y-6">
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <img
-                          src="https://uptimerobot.com/assets/images/monitor-icons/cron-job-monitoring.svg"
-                          alt=""
-                          class="w-20 h-20"
-                        />
-                      </div>
-                      <div class="flex lg:justify-start justify-center items-center">
-                        <h1 class="text-2xl font-bold">Cron job monitoring</h1>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
-                        <p>
-                          Is the email service still UP? How about the critical
-                          database server? Let's check! Monitor any specific
-                          service running on any port.
-                        </p>
-                      </div>
-
-                      <div class="flex lg:justify-start justify-center">
-                        <a
-                          href="/contact"
-                          class="relative inline-flex items-center justify-center py-3 px-20 overflow-hidden font-semibold hover:bg-brand text-brand shadow-[0_3px_10px_rgb(0,0,0,0.2)] transition duration-1000 ease-out bg-white rounded-3xl group"
-                        >
-                          <span class="absolute inset-0 flex items-center justify-center w-full h-full text-colorOne duration-300 -translate-x-full group-hover:translate-x-0 ease-in-out"></span>
-                          <span class="absolute flex items-center justify-center w-full h-full font-bold hover:text-white duration-1000 transition ease-in-out">
-                            Cron Job Monitoring
-                          </span>
-                          <span class="relative invisible">Button Text</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div className="pt-12">
+            <div className="pt-16">
               <div className="bg-white">
                 <div className="w-full ">
                   <div className="w-full px-4 mx-auto max-w-[1400px]">
@@ -254,19 +160,22 @@ const Carousel = () => {
                               </h1>
                             </div>
                             <h1 className="text-4xl font-bold text-headingColor md:text-start text-center">
-                              Dynamics 365 Finance: Services we Offer to You
+                              What is Microsoft Dynamics 365 Finance &
+                              Operations?
                             </h1>
 
                             <div className="md:text-start text-center mt-4 mb-1">
                               <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
-                                AXSeva specializes in Dynamics AX
-                                implementations with core focus on Dynamics AX +
-                                Analytics. Our expertise with Dynamics AX
-                                includes customization in X++.
+                                Dynamics 365 Finance & Operations takes center
+                                stage among the flagship business solutions
+                                launched by Microsoft. It is an advanced ERP
+                                solution that integrates finance, supply chain,
+                                and operations to enjoy maximum visibility and
+                                control to grow more than your competitors.
                               </h1>
                             </div>
-                            <div class="pt-6 mt-6 space-y-4 border-t-[2px] border-gray-200 dark:border-gray-700">
-                              <div className="flex flex-row justify-between">
+                            <div class=" mt-6 space-y-4 border-t-[2px] border-gray-200 dark:border-gray-700">
+                              {/* <div className="flex flex-row justify-between">
                                 <div className="lg:block hidden">
                                   <a
                                     href="/services"
@@ -307,12 +216,24 @@ const Carousel = () => {
                                     </svg>
                                   </a>
                                 </div>
+                              </div> */}
+
+                              <div className="flex md:justify-start justify-center items-center pb-4">
+                                <a
+                                  href="/managed-it-services"
+                                  className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out text-white bg-mainColor rounded  text-center font-medium hover:bg-opacity-90"
+                                >
+                                  Request a Demo
+                                </a>
                               </div>
                             </div>
                           </div>
                           <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
                             <div className="flex flex-col lg:items-start items-center">
-                              <FaMoneyBillTrendUp class="w-10 h-10 mb-2 text-mainColor" />
+                              <img
+                                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
+                                class="w-16 h-16 mb-2 text-mainColor"
+                              />
                               <h3 class="mb-2 text-2xl font-bold text-colorTwo ">
                                 Financial Management
                               </h3>
@@ -321,7 +242,10 @@ const Carousel = () => {
                               </p>
                             </div>
                             <div className="flex flex-col lg:items-start items-center">
-                              <SiDynamics365 class="w-10 h-10 mb-2 text-mainColor" />
+                              <img
+                                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-1848708-1568040.png?f=webp&w=512"
+                                class="w-16 h-16 mb-2 text-mainColor"
+                              />
                               <h3 class="mb-2 text-2xl font-bold ">
                                 Microsoft Ecosystem Integration
                               </h3>
@@ -331,7 +255,10 @@ const Carousel = () => {
                             </div>
 
                             <div className="flex flex-col lg:items-start items-center">
-                              <BsPeopleFill class="w-10 h-10 mb-2 text-mainColor" />
+                              <img
+                                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/percentage-pie-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-graph-circle-circular-infographic-pack-infographics-icons-1813279.png?f=webp&w=512"
+                                class="w-16 h-16 mb-2 text-mainColor"
+                              />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
                                 Integration and Scalability
                               </h3>
@@ -341,7 +268,10 @@ const Carousel = () => {
                             </div>
 
                             <div className="flex flex-col lg:items-start items-center">
-                              <SiPowerautomate class="w-10 h-10 mb-2 text-mainColor" />
+                              <img
+                                src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
+                                class="w-16 h-16 mb-2 text-mainColor"
+                              />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
                                 Process Automation
                               </h3>
@@ -358,90 +288,303 @@ const Carousel = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-8 pt-12">
-              <div className="flex justify-center items-center w-[100%] bg-[#f8f9fa]">
-                <div>
-                  <img
-                    src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg"
-                    alt=""
-                    width="612"
-                    height="512"
-                    className="rounded md:block hidden"
-                  />
-                </div>
-                <div className="flex justify-center items-center">
-                  <img
-                    src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg"
-                    alt=""
-                    className="rounded md:hidden block w-[90%]"
-                  />
-                </div>
+            <div className="pt-8">
+              <div className="flex items-center text-center justify-center ">
+                <div className="h-4 w-1 bg-mainColor"></div>
+                <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                  We are AXSeva
+                </h1>
               </div>
 
-              <div className="flex flex-col space-y-6 w-full">
-                <div className="text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
-                  <h1>Transforming Businesses Through Technology</h1>
-                </div>
+              <div className="mx-auto max-w-[1000px] text-center mt-4">
+                <h1 className="text-4xl font-bold text-headingColor">
+                  Impact of Microsoft Dynamics 365
+                </h1>
+              </div>
 
-                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
-                  <p>
-                    AX Seva is engaged in mustering energy among people to
-                    create a better world and solve critical business problems
-                    through digital transformation.
-                  </p>
-                </div>
+              <div className="text-center mt-4">
+                <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
+                  Check out the Total Economic Impact of Dynamics 365 Finance
+                  and Dynamics 365 Supply Chain Management on businesses across
+                  the globe.
+                </h1>
+              </div>
+            </div>
 
-                <ul className="list-none text-sideHeading space-y-2 md:text-start text-center md:ml-2 px-2 md:px-0">
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">
-                      <img src={tick} alt="" className="w-6 h-6" />
-                    </span>
-                    <span>
-                      Centralizes customer data, tracks interactions, and
-                      automates sales.
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">
-                      <img src={tick} alt="" className="w-6 h-6" />
-                    </span>
-                    <span>
-                      Integrates financial, supply chain, and HR processes to
-                      optimize business operation
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">
-                      <img src={tick} alt="" className="w-6 h-6" />
-                    </span>
-                    <span>
-                      Uses AI to provide insights, forecast trends, and automate
-                      decision-making{" "}
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 mr-2">
-                      <img src={tick} alt="" className="w-6 h-6" />
-                    </span>
-                    <span>
-                      {" "}
-                      Modular system allows businesses to scale and customize
-                      workflows{" "}
-                    </span>
-                  </li>
-                </ul>
+            <div className="bg-white">
+              <div className="relative">
+                <div className="w-full">
+                  <div className="w-full px-4 mx-auto max-w-[1400px]">
+                    <div className="lg:block hidden">
+                      <Tabs>
+                        <Tab
+                          label="Dynamic 365 Finance & Operations"
+                          className="text-sm text-sideHeading"
+                        >
+                          <div className="py-4">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                              <div className="space-y-6 flex flex-col pl-8">
+                                <div className=" md:text-start text-center">
+                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                    Dynamic 365 Finance & Operations{" "}
+                                    <span className="text-mainColor">
+                                      innovation
+                                    </span>
+                                  </h1>
+                                </div>
+                                <div className="mt-4 md:text-start text-center text-gray-700 text-[18px]">
+                                  <p>
+                                    Microsoft Dynamics 365 Finance & Operations
+                                    streamlines financial processes, enhances
+                                    operational efficiency, and provides
+                                    real-time insights for informed
+                                    decision-making.
+                                  </p>
+                                </div>
 
-                <div className="md:flex items-center lg:justify-start justify-center hidden">
-                  <a
-                    href="/products"
-                    className="bg-mainColor font-medium outline-none
-                      rounded hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 md:py-3 py-2 text-center"
-                  >
-                    Let's get started
-                  </a>
+                                <div className="flex flex-col space-y-3 text-sideHeading text-lg">
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      Streamline business processes with
+                                      integrated finance and operations systems.
+                                    </p>
+                                  </div>
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      Supports growth through cloud-based
+                                      architecture and customizable solutions.
+                                    </p>
+                                  </div>
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      Enhance decision-making with AI-driven
+                                      analytics and financial visibility.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="w-[100%] flex justify-center items-center">
+                                <img
+                                  src="https://www.dynamicssmartz.com/img/dynamics-365-finance-info.png"
+                                  alt=""
+                                  className="h-auto w-auto"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </Tab>
+                        <Tab
+                          label="Dynamic 365 Supply Chain Management"
+                          className="text-sm text-sideHeading"
+                        >
+                          <div className="py-4">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                              <div className="space-y-6 flex flex-col pl-8">
+                                <div className=" md:text-start text-center">
+                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                    Dynamic 365 Supply Chain Management{" "}
+                                    <span className="text-mainColor">
+                                      features
+                                    </span>
+                                  </h1>
+                                </div>
+                                <div className="mt-4 md:text-start text-center text-gray-700 text-[18px]">
+                                  <p>
+                                    Microsoft Dynamics 365 Supply Chain
+                                    Management offers advanced analytics,
+                                    real-time inventory tracking, demand
+                                    forecasting, and seamless integration with
+                                    other Microsoft tools.
+                                  </p>
+                                </div>
+
+                                <div className="flex flex-col space-y-3 text-sideHeading text-lg">
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      Streamline workflows using AI-powered,
+                                      automated supply chain processes.
+                                    </p>
+                                  </div>
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      Connect operations with ERP, CRM, and
+                                      third-party systems effectively.
+                                    </p>
+                                  </div>
+                                  <div className="flex flex-row items-center">
+                                    <img
+                                      src={success}
+                                      alt=""
+                                      className="w-4 h-4"
+                                    />
+                                    <p className="ml-4">
+                                      ptimize operations with data-driven,
+                                      real-time analytics capabilities.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="w-[100%] flex justify-center items-center">
+                                <img
+                                  src="https://www.dynamicssmartz.com/img/supply-chain-management-info.png"
+                                  alt=""
+                                  className="h-auto w-auto"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </Tab>
+                      </Tabs>
+                    </div>
+
+                    <div className="lg:hidden block">
+                      <Tabs>
+                        <Tab
+                          label="Dynamic 365 Finance & Operations"
+                          className=" px-1 text-sideHeading"
+                        >
+                          <div className="py-4 ">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                              <div className="space-y-6 flex flex-col px-2">
+                                <div className=" md:text-start text-center">
+                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                    Dynamic 365 Finance & Operations{" "}
+                                    <span className="text-mainColor">
+                                      innovation?
+                                    </span>
+                                  </h1>
+                                </div>
+                                <div className="mt-4 md:text-start text-center text-gray-700">
+                                  <p>
+                                    Microsoft Dynamics 365 Finance & Operations
+                                    streamlines financial processes, enhances
+                                    operational efficiency, and provides
+                                    real-time insights for informed
+                                    decision-making.
+                                  </p>
+                                </div>
+
+                                <div className="flex items-center lg:justify-start justify-center">
+                                  <a
+                                    href="/login"
+                                    className="bg-mainColor outline-none
+                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
+                                  >
+                                    What we offer
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div className="w-[100%] flex justify-center items-center">
+                                <img
+                                  src="https://www.dynamicssmartz.com/img/dynamics-365-finance-info.png"
+                                  alt=""
+                                  className="h-auto w-auto"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </Tab>
+                        <Tab
+                          label="Dynamic 365 Supply Chain Management"
+                          className=" px-1 text-sideHeading"
+                        >
+                          <div className="py-4">
+                            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                              <div className="space-y-6 flex flex-col px-2">
+                                <div className=" md:text-start text-center">
+                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                    Empowering Connections, Cultivating
+                                    <span className="text-mainColor">
+                                      {" "}
+                                      Success
+                                    </span>
+                                  </h1>
+                                </div>
+                                <div className="mt-4 md:text-start text-center text-gray-700">
+                                  <p>
+                                    Microsoft Dynamics 365 Supply Chain
+                                    Management offers advanced analytics,
+                                    real-time inventory tracking, demand
+                                    forecasting, and seamless integration with
+                                    other Microsoft tools.
+                                  </p>
+                                </div>
+
+                                <div className="flex items-center lg:justify-start justify-center">
+                                  <a
+                                    href="/login"
+                                    className="bg-mainColor outline-none
+                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
+                                  >
+                                    Learn More
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div className="w-[100%] flex justify-center items-center">
+                                <img
+                                  src="https://www.dynamicssmartz.com/img/supply-chain-management-info.png"
+                                  alt=""
+                                  className="h-auto w-auto"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </Tab>
+                      </Tabs>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* <div className="relative w-64 h-64 mx-auto">
+              {icons.map((icon, index) => {
+                const angle = (360 / icons.length) * index; // Calculate angle for each icon
+                const x = 50 + 40 * Math.cos((angle * Math.PI) / 180); // X position
+                const y = 50 + 40 * Math.sin((angle * Math.PI) / 180); // Y position
+
+                return (
+                  <img
+                    key={index}
+                    src={icon}
+                    alt={`icon-${index}`}
+                    className="absolute w-12 h-12 transform -translate-x-1/2 -translate-y-1/2"
+                    style={{
+                      top: `${y}%`,
+                      left: `${x}%`,
+                    }}
+                  />
+                );
+              })}
+            </div> */}
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const AboutHero = () => {
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1335295270-2048x2048-1.jpg",
-      heading: "AX Seva specialized in Dynamics AX",
+      heading: "AXSeva specialized in Dynamics AX",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",

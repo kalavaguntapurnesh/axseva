@@ -36,7 +36,7 @@ const Footer = () => {
                             href="/learn-about-us"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            About AX Seva
+                            About AXSeva
                           </a>
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">

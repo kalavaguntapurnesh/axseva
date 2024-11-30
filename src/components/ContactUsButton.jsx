@@ -6,7 +6,7 @@ import { classNames } from "../components/classNames";
 const ContactUsButton = () => {
   const phoneNumber = "14042773220";
   const message =
-    "Hello AX Seva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+    "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;

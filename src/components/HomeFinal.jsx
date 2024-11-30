@@ -3,7 +3,7 @@ import Accordion from "./Accordion";
 
 const HomeFinal = () => {
   return (
-    <div className="mt-12">
+    <div className="pt-8">
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -14,7 +14,7 @@ const HomeFinal = () => {
                     We help you to grow your business big
                   </h2>
                   <p className="md:text-start text-sideHeading text-center mt-4 text-lg leading-8 text-colorTwo">
-                    At AX Seva, we help you execute digital transformation in
+                    At AXSeva, we help you execute digital transformation in
                     your organization by optimizing the solutions offered by
                     Microsoft.
                   </p>
@@ -69,7 +69,7 @@ const HomeFinal = () => {
               </div>
             </div> */}
 
-            <div className="pt-12 pb-12 px-2" id="faq">
+            <div className=" px-2" id="faq">
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">

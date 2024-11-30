@@ -538,7 +538,7 @@ const AboutUsContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">About AX Seva</h3>
+        <h3 className="font-semibold">About AXSeva</h3>
         <a href="/about-us" className="block text-sm hover:underline">
           About Us
         </a>
@@ -546,11 +546,11 @@ const AboutUsContent = () => {
           href="/collaborate-with-us"
           className="block text-sm hover:underline"
         >
-          Why AX Seva
+          Why AXSeva
         </a>
       </div>
       <div className="mb-6 space-y-3">
-        <h3 className="font-semibold">Careers at AX Seva</h3>
+        <h3 className="font-semibold">Careers at AXSeva</h3>
         <a
           href="/collaborate-with-us"
           className="block text-sm hover:underline"

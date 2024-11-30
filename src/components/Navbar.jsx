@@ -45,7 +45,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-navColor shadow-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-footerbg shadow-md py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
@@ -301,7 +301,6 @@ const NavBar = () => {
               </a>
             </li>
 
-
             <li className="p-4 border-b border-gray-600">
               <a
                 href="/contact"
@@ -542,7 +541,7 @@ const AboutUsContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">About AX Seva</h3>
+        <h3 className="font-semibold">About AXSeva</h3>
         <a href="/about-us" className="block text-sm hover:underline">
           About Us
         </a>
@@ -550,11 +549,8 @@ const AboutUsContent = () => {
           href="/collaborate-with-us"
           className="block text-sm hover:underline"
         >
-          Why AX Seva
+          Why AXSeva
         </a>
-      </div>
-      <div className="mb-6 space-y-3">
-        <h3 className="font-semibold">Careers at AX Seva</h3>
         <a
           href="/collaborate-with-us"
           className="block text-sm hover:underline"
@@ -562,6 +558,7 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
+      <div className="mb-6 space-y-3"></div>
       <button
         onClick={() => navigate("/about-us")}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
