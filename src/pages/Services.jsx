@@ -83,10 +83,10 @@ const Services = () => {
 
   const services1 = [
     {
-      title: "Quisitive Flex: IT Support Services",
+      title: "AXSeva Flex: IT Support Services",
       description:
         "Routine IT support and environment management across the Microsoft ecosystem",
-      subText: "Quisitive Flex Includes:",
+      subText: "AXSeva Flex Includes:",
       items: [
         "Management of requests/priorities to resolve issues",
         "Environment health checks and insights",
@@ -104,7 +104,7 @@ const Services = () => {
         "Assess your environment, develop baseline, create personalized roadmap",
         "Ongoing coaching led by dedicated customer experience person and SMEs",
         "Implementation of technical architecture, software, processes and policies",
-        "Includes IP (Quisitive and/or 3rd party) to extend Microsoft platforms",
+        "Includes IP (AXSeva and/or 3rd party) to extend Microsoft platforms",
         "Workshops & education to keep up with evolving Microsoft platforms & needs",
         "Includes Flex Support Services hours",
       ],
@@ -131,7 +131,7 @@ const Services = () => {
       title: "Data & AI",
       subTitle: "Velocity for Data & AI: ",
       description:
-        "Quisitive provides the operational support needed to run, monitor, and manage your services within the Azure Data Platform and AI technologies.",
+        "AXSeva provides the operational support needed to run, monitor, and manage your services within the Azure Data Platform and AI technologies.",
     },
     {
       imageUrl: "data:image/png;base64,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",
@@ -172,7 +172,7 @@ const Services = () => {
 
   const services4 = [
     {
-      title: "Benefits of Quisitive IT Management Services",
+      title: "Benefits of AXSeva IT Management Services",
       items: [
         "Dedicated customer success manager",
         "Proactive IT support services",
@@ -206,12 +206,12 @@ const Services = () => {
                     operations, enhancing security, and reducing downtime.
                   </p>
                   <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
-                    Quisitive offers efficient, secure, and scalable solutions
+                    AXSeva offers efficient, secure, and scalable solutions
                     for cloud management, data and AI programs, the digital
                     workplace, app development, and more.
                   </p>
                   <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
-                    Find out more about Managed Services and how Quisitive’s
+                    Find out more about Managed Services and how AXSeva’s
                     expertise can help you.
                   </p>
                   <button className="bg-mainColor text-white p-4 rounded-full lg:w-1/4 w-3/4 mx-auto md:mx-0">
@@ -265,7 +265,7 @@ const Services = () => {
                   </p>
                   <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
                     Explore our different Managed Services offers, or contact
-                    our team to learn more about how Quisitive can help.
+                    our team to learn more about how AXSeva can help.
                   </p>
                   <button className="text-2xl font-semibold">
                     <div className="flex gap-4 items-center justify-center md:justify-start">
@@ -348,7 +348,7 @@ const Services = () => {
                 </div>
                 {/* Description */}
                 <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
-                  See how Quisitive's Managed Services can benefit multiple
+                  See how AXSeva's Managed Services can benefit multiple
                   areas of your business by providing strategic guidance,
                   quality service, and expert technological support.
                 </p>
@@ -375,7 +375,7 @@ const Services = () => {
                       optimization of their cloud infrastructure.
                     </p>
                     <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
-                      With Quisitive’s services, you gain access to a team of
+                      With AXSeva’s services, you gain access to a team of
                       experts who handle everything from security updates to
                       scaling resources, ensuring your business runs smoothly
                       and efficiently.
@@ -422,7 +422,7 @@ const Services = () => {
                   {/* Grid 2 - Image */}
                   <div className="flex justify-center items-center w-full overflow-hidden">
                     <img
-                      src="https://quisitive.com/wp-content/uploads/2023/08/Command-line.jpg"
+                      src="https://.com/wp-content/uploads/2023/08/Command-line.jpg"
                       alt="Command Line"
                       className="lg:w-full w-[80%] h-auto rounded-lg object-contain"
                     />
@@ -444,12 +444,12 @@ const Services = () => {
               <div className="flex flex-col space-y-10">
                 {/* Heading */}
                 <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
-                  How Managed IT Services Work with Quisitive
+                  How Managed IT Services Work with AXSeva
                 </div>
 
                 {/* Description */}
                 <p className="md:text-lg text-base text-sideHeading text-center">
-                  Quisitive helps you identify your key business goals to choose
+                  AXSeva helps you identify your key business goals to choose
                   the level of service that fits your business model. Managed IT
                   Services are contracted based on a mix of a fixed monthly fee
                   and a committed monthly amount of technical execution hours.
@@ -624,7 +624,7 @@ const Services = () => {
                 {/* Right Grid (Image) */}
                 <div className="flex justify-center items-center">
                   <img
-                    src="https://quisitive.com/wp-content/uploads/2023/06/shutterstock_2136788157-scaled-1.jpg"
+                    src="https://.com/wp-content/uploads/2023/06/shutterstock_2136788157-scaled-1.jpg"
                     alt="Strategic Programs"
                     className="max-w-full lg:w-full w-[80%] h-auto object-contain"
                   />
@@ -653,21 +653,21 @@ const Services = () => {
                 {/* Images Section */}
                 <div className="flex justify-center">
                   <img
-                    src="https://quisitive.com/wp-content/uploads/2023/08/award-2022-23-inner-circle.png"
+                    src="https://.com/wp-content/uploads/2023/08/award-2022-23-inner-circle.png"
                     className="w-40 h-40 object-contain"
                     alt="Award"
                   />
                 </div>
                 <div className="flex justify-center">
                   <img
-                    src="https://quisitive.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
+                    src="https://.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
                     className="w-40 h-40 object-contain"
                     alt="Microsoft Partner"
                   />
                 </div>
                 <div className="flex justify-center">
                   <img
-                    src="https://quisitive.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
+                    src="https://.com/wp-content/uploads/2023/08/MSFT-solutions-partner.png"
                     className="w-40 h-40 object-contain"
                     alt="Microsoft Partner"
                   />
@@ -687,7 +687,7 @@ const Services = () => {
                 {/* Image Section */}
                 <div className="flex justify-center items-center">
                   <img
-                    src="https://quisitive.com/wp-content/uploads/2023/12/ISO-Certification-Logo.png"
+                    src="https://.com/wp-content/uploads/2023/12/ISO-Certification-Logo.png"
                     className="lg:w-full w-[80%] h-auto object-contain"
                     alt="ISO Certification"
                   />
@@ -696,10 +696,10 @@ const Services = () => {
                 {/* Text Section */}
                 <div className="flex flex-col space-y-8 w-full justify-center">
                   <h2 className="lg:text-4xl text-3xl text-headingColor text-center md:text-start font-semibold">
-                    Quisitive is an ISO Certified partner.
+                    AXSeva is an ISO Certified partner.
                   </h2>
                   <p className="md:text-lg text-base text-sideHeading text-center md:text-start">
-                    This ISO 27001 certification shows that Quisitive is
+                    This ISO 27001 certification shows that AXSeva is
                     compliant with cybersecurity standards, meaning we fiercely
                     protect the information assets integral to the information
                     and cloud technology solutions, managed services, AI managed

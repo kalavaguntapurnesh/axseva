@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import ContactNavbar from "../components/ContactNavbar";
-import { FaMicrophoneAlt } from "react-icons/fa";
-import { FaAddressBook } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants.js";
 import { MdArrowRightAlt } from "react-icons/md";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
@@ -100,7 +100,12 @@ const Contact = () => {
               <div className="w-full">
                 <div className="w-full px-4 mx-auto max-w-[1400px]">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                    <div>
+                    <motion.div
+                      variants={fadeIn("right", 0.1)} // Animate from left
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.5 }}
+                    >
                       <div className="flex flex-col space-y-4 mt-8">
                         <div className="flex items-center md:justify-start justify-center md:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
@@ -224,9 +229,15 @@ const Contact = () => {
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="mx-2">
+                    <motion.div
+                      variants={fadeIn("left", 0.1)} // Animate from right
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.2 }}
+                      className="mx-2"
+                    >
                       <form
                         onSubmit={handleSubmit}
                         className="mt-8 lg:p-6 lg:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded"
@@ -407,21 +418,33 @@ const Contact = () => {
                           Submit Form
                         </button>
                       </form>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="pt-16 md:px-0 px-2">
-              <div className="space-y-2">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="space-y-2"
+              >
                 <div className="text-center">
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     A word from the founder
                   </h1>
                 </div>
-              </div>
-              <div className="relative bg-[#f2f8fe] mt-8 rounded p-6 max-w-[1200px] lg:mx-auto mx-4 h-60">
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 0.1)} // Fade in from bottom to top
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="relative bg-[#f2f8fe] mt-8 rounded p-6 max-w-[1200px] lg:mx-auto mx-4 h-60"
+              >
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-left.png"
                   alt="Quote Left"
@@ -444,11 +467,17 @@ const Contact = () => {
                   alt="Quote Right"
                   className="absolute bottom-[-16px] right-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
-              </div>
+              </motion.div>
             </div>
 
             <div className="pt-16">
-              <div className="space-y-2">
+              <motion.div
+                variants={fadeIn("up", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="space-y-2"
+              >
                 <div className="text-center">
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Transformation has no boundaries.
@@ -504,11 +533,17 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-16 md:px-2 px-4">
-              <div class="flex md:justify-start justify-center w-full">
+            <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-6 gap-4 pt-16 md:px-2 px-4">
+              <motion.div
+                variants={fadeIn("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                class="flex md:justify-start justify-center w-full"
+              >
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
@@ -535,9 +570,15 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div class="flex md:justify-start justify-center">
+              <motion.div
+                variants={fadeIn("left", 0.1)} // Fade in with direction and delay
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                class="flex md:justify-start justify-center"
+              >
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
@@ -561,7 +602,7 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -43,7 +43,6 @@ const NavBar = () => {
   };
 
   return (
-    
     <nav
       className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
         isScrolled ? "bg-footerbg shadow-md py-6" : "bg-transparent py-6"
@@ -53,7 +52,12 @@ const NavBar = () => {
         <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-            <div className="flex gap-0">AX<span className={`${isScrolled ? 'text-white': 'text-black' }`}>Seva</span></div>
+            <div className="flex gap-0">
+              AX
+              <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+                Seva
+              </span>
+            </div>
           </h1>
         </a>
 
@@ -63,28 +67,40 @@ const NavBar = () => {
           <FlyoutLink
             href="/managed-it-services"
             FlyoutContent={ServicesContent}
-            
           >
-           <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Services </span> 
+            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              {" "}
+              Services{" "}
+            </span>
           </FlyoutLink>
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
-          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Solutions </span> 
-            
+            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              {" "}
+              Solutions{" "}
+            </span>
           </FlyoutLink>
           <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
-          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> Industries </span> 
-            
+            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              {" "}
+              Industries{" "}
+            </span>
           </FlyoutLink>
 
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
-          <span className={`${isScrolled ? 'text-white': 'text-black' }`}> About Us </span> 
-            
+            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              {" "}
+              About Us{" "}
+            </span>
           </FlyoutLink>
           <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
-            <a href="/dynamics-365-support-services"><span className={`${isScrolled ? 'text-white': 'text-black' }`}> Support</span> </a>
+            <a href="/dynamics-365-support-services">
+              <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+                {" "}
+                Support
+              </span>{" "}
+            </a>
             <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
           </li>
-        
         </ul>
 
         {/* Login Button */}
@@ -110,9 +126,17 @@ const NavBar = () => {
         <div className="xl:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
-              <AiOutlineClose className="w-6 h-6 text-black" />
+              <AiOutlineClose
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-[#ffffff]" : "text-footerbg"
+                }`}
+              />
             ) : (
-              <RiMenu3Fill className="w-6 h-6 text-black" />
+              <RiMenu3Fill
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-[#ffffff]" : "text-footerbg"
+                }`}
+              />
             )}
           </button>
         </div>
@@ -140,7 +164,6 @@ const NavBar = () => {
               <div
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer"
-                
               >
                 Solutions
                 <FaAngleDown
@@ -302,8 +325,6 @@ const NavBar = () => {
                 About Us
               </a>
             </li>
-
-           
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -565,7 +586,6 @@ const AboutUsContent = () => {
         View More
       </button>
     </div>
-    
   );
 };
 
