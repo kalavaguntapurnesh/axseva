@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Tabs, Tab } from "../components/Tabs";
 import success from "../assets/success.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants.js";
 
 const Carousel = () => {
   return (
@@ -9,27 +11,51 @@ const Carousel = () => {
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="w-full px-4 mx-auto max-w-[1400px] mt-20">
-              <div className="flex items-center text-center justify-center ">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex items-center text-center justify-center "
+              >
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
                   We are AXSeva
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="mx-auto max-w-[1000px] text-center mt-4">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="mx-auto max-w-[1000px] text-center mt-4"
+              >
                 <h1 className="text-4xl font-bold text-headingColor">
                   Our Products
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="text-center mt-4">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="text-center mt-4"
+              >
                 <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                   Discover the Comprehensive Suite of Microsoft Dynamics 365 and
                   other Microsoft Solutions for Your Business Transformation
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
+              <motion.div
+                variants={fadeIn("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8"
+              >
                 <a href="#" className="flex md:justify-start justify-center">
                   <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
                     <div className="space-y-3">
@@ -133,16 +159,22 @@ const Carousel = () => {
                     </div>
                   </div>
                 </a>
-              </div>
+              </motion.div>
 
-              <div className="flex justify-center items-center pt-4 pb-4">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex justify-center items-center pt-4 pb-4"
+              >
                 <a
                   href="/managed-it-services"
                   className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
                 >
                   Know More
                 </a>
-              </div>
+              </motion.div>
             </div>
 
             <div className="pt-16">
@@ -152,7 +184,13 @@ const Carousel = () => {
                     <div className="justify-center w-full ">
                       <div className="w-full max-w-[14000px] mx-auto space-y-4 ">
                         <div class="items-center px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
-                          <div class="col-span-2 mb-8 space-y-3">
+                          <motion.div
+                            variants={fadeIn("right", 0.1)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.5 }}
+                            class="col-span-2 mb-8 space-y-3"
+                          >
                             <div className="flex items-center md:justify-start justify-center ">
                               <div className="h-4 w-1 bg-mainColor"></div>
                               <h1 className="ml-2 text-lg font-bold text-mainColor ">
@@ -227,8 +265,14 @@ const Carousel = () => {
                                 </a>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
+                          </motion.div>
+                          <motion.div
+                            variants={fadeIn("left", 0.1)}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.5 }}
+                            class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0"
+                          >
                             <div className="flex flex-col lg:items-start items-center">
                               <img
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
@@ -279,7 +323,7 @@ const Carousel = () => {
                                 Students Sent From MAC to Various Universities.
                               </p>
                             </div>
-                          </div>
+                          </motion.div>
                         </div>
                       </div>
                     </div>
@@ -288,7 +332,13 @@ const Carousel = () => {
               </div>
             </div>
 
-            <div className="pt-8">
+            <motion.div
+              variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="pt-8"
+            >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
@@ -309,12 +359,18 @@ const Carousel = () => {
                   the globe.
                 </h1>
               </div>
-            </div>
+            </motion.div>
 
             <div className="bg-white">
               <div className="relative">
                 <div className="w-full">
-                  <div className="w-full px-4 mx-auto max-w-[1400px]">
+                  <motion.div
+                    variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="w-full px-4 mx-auto max-w-[1400px]"
+                  >
                     <div className="lg:block hidden">
                       <Tabs>
                         <Tab
@@ -560,7 +616,7 @@ const Carousel = () => {
                         </Tab>
                       </Tabs>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>

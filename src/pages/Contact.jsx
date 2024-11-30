@@ -471,20 +471,26 @@ const Contact = () => {
             </div>
 
             <div className="pt-16">
-              <motion.div
-                variants={fadeIn("up", 0.1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
-                className="space-y-2"
-              >
-                <div className="text-center">
+              <div className="space-y-2">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="text-center"
+                >
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Transformation has no boundaries.
                   </h1>
-                </div>
+                </motion.div>
 
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 pt-8 md:px-0 px-2">
+                <motion.div
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="grid md:grid-cols-3 grid-cols-1 gap-4 pt-8 md:px-0 px-2"
+                >
                   <div className="space-y-2">
                     <div className="flex justify-center items-center">
                       <img
@@ -532,8 +538,8 @@ const Contact = () => {
                       </h1>
                     </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </div>
             </div>
 
             <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-6 gap-4 pt-16 md:px-2 px-4">

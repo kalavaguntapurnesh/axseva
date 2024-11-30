@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { fadeIn } from "../variants.js";
 
 const Bento = () => {
   const images = [
@@ -269,7 +270,13 @@ const Bento = () => {
             </div> */}
 
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-6">
-              <div className="flex flex-col space-y-6 w-full">
+              <motion.div
+                variants={fadeIn("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex flex-col space-y-6 w-full"
+              >
                 <div className=" text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
                   <h1>Wondering why we are the best in market?</h1>
                 </div>
@@ -345,9 +352,15 @@ const Bento = () => {
                     </div>
                   </a>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex justify-center items-center w-[100%]">
+              <motion.div
+                variants={fadeIn("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex justify-center items-center w-[100%]"
+              >
                 <div>
                   <img
                     src="https://www.tectura.com/wp-content/uploads/2023/04/Industries_ProfessionalServices.jpg"
@@ -364,7 +377,7 @@ const Bento = () => {
                     className="rounded md:hidden block w-[90%]"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

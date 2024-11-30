@@ -1,5 +1,7 @@
 import React from "react";
 import Accordion from "./Accordion";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants.js";
 
 const HomeFinal = () => {
   return (
@@ -69,7 +71,14 @@ const HomeFinal = () => {
               </div>
             </div> */}
 
-            <div className=" px-2" id="faq">
+            <motion.div
+              variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className=" px-2"
+              id="faq"
+            >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
@@ -101,7 +110,7 @@ const HomeFinal = () => {
                   answer="It helps streamline business processes by centralizing data, automating tasks, and providing real-time insights. With Business Central, you can manage finance, sales, purchasing, inventory, and more from a single platform. It simplifies workflows, improves collaboration across teams, and enables data-driven decision-making."
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

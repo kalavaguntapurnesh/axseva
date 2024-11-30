@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { FaGlobe, FaHandshake, FaMedal } from "react-icons/fa";
 import world from "../assets/world.svg";
 import { FaLinkedinIn } from "react-icons/fa";
-import { IoBarChart } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants.js";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -23,7 +23,13 @@ const AboutOne = () => {
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-              <div className="flex flex-col space-y-6 w-full">
+              <motion.div
+                variants={fadeIn("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex flex-col space-y-6 w-full"
+              >
                 <div className="flex items-center md:justify-start justify-center md:ml-4">
                   <div className="h-4 w-1 bg-mainColor"></div>
                   <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
@@ -78,9 +84,15 @@ const AboutOne = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex justify-center items-center w-[100%]">
+              <motion.div
+                variants={fadeIn("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex justify-center items-center w-[100%]"
+              >
                 <div>
                   <img
                     src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -97,11 +109,17 @@ const AboutOne = () => {
                     className="rounded md:hidden block w-[90%]"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-20 md:px-0 px-2">
-              <div className="bg-[#f8f9fa] rounded p-8 shadow">
+              <motion.div
+                variants={fadeIn("right", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="bg-[#f8f9fa] rounded p-8 shadow"
+              >
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
@@ -120,8 +138,14 @@ const AboutOne = () => {
                     </h1>
                   </div>
                 </div>
-              </div>
-              <div className="bg-[#f8f9fa] rounded p-8 shadow">
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="bg-[#f8f9fa] rounded p-8 shadow"
+              >
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
@@ -140,10 +164,16 @@ const AboutOne = () => {
                     </h1>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="w-full px-4 mx-auto max-w-[1400px] mt-20">
+            <motion.div
+              variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.5 }}
+              className="w-full px-4 mx-auto max-w-[1400px] mt-20"
+            >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
@@ -276,40 +306,65 @@ const AboutOne = () => {
                   </div>
                 </a>
               </div>
-            </div>
+            </motion.div>
 
             <div className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
-                <div className="text-center">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="text-center"
+                >
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Where can you find us!
                   </h1>
-                </div>
+                </motion.div>
 
-                <a
-                  href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
-                  className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center"
+                <motion.div
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
                 >
-                  <img src={world} alt="" className="md:w-[90%] w-[100%]" />
-                </a>
+                  <a
+                    href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
+                    className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center"
+                  >
+                    <img src={world} alt="" className="md:w-[90%] w-[100%]" />
+                  </a>
+                </motion.div>
               </div>
             </div>
 
             <div className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
-                <div className="text-center">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="text-center"
+                >
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Our Leadership
                   </h1>
-                </div>
+                </motion.div>
 
-                <div className="text-center mt-4">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="text-center mt-4"
+                >
                   <h1 className="leading-relaxed tracking-wide text-base text-gray-600 dark:text-gray-800 ">
                     Running a business like AXSeva takes energy, creativity and
                     a love of just getting things done. Find out more about the
                     people we’ve chosen to lead the business.
                   </h1>
-                </div>
+                </motion.div>
 
                 {/* <div className="max-w-[1200px] mx-auto pt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
                   <div className="flex flex-col justify-center items-center space-y-1">
@@ -393,7 +448,13 @@ const AboutOne = () => {
                 </div> */}
 
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-12">
-                  <div className="flex justify-center items-center w-[100%]">
+                  <motion.div
+                    variants={fadeIn("right", 0.1)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="flex justify-center items-center w-[100%]"
+                  >
                     <div className="md:flex justify-center hidden w-[100%]">
                       <img
                         src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
@@ -410,9 +471,15 @@ const AboutOne = () => {
                         className="rounded w-[100%]"
                       />
                     </div>
-                  </div>
+                  </motion.div>
 
-                  <div className="flex flex-col space-y-6 w-full md:justify-start">
+                  <motion.div
+                    variants={fadeIn("left", 0.1)}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="flex flex-col space-y-6 w-full md:justify-start"
+                  >
                     <div className="flex items-center md:justify-start justify-center ">
                       <div className="h-4 w-1 bg-mainColor"></div>
                       <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
@@ -461,7 +528,7 @@ const AboutOne = () => {
                         <span className="ml-1">LinkedIn Profile</span>
                       </a>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
