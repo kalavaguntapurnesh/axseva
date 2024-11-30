@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../components/Navbar";
+import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import IndustriesLayout from "./../components/IndustriesLayout";
@@ -114,6 +114,11 @@ const Industries = () => {
           </div>
         </div>
       </div>
+
+
+      <ContactUsButton />
+
+
 
       <Footer />
     </>

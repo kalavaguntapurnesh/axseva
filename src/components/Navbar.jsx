@@ -115,10 +115,11 @@ const NavBar = () => {
 
         {/* Login Button */}
         <div className="hidden xl:flex space-x-4">
-          <button
-            onClick={() => {
-              navigate("/contact");
-            }}
+          <a
+            href="/contact"
+            // onClick={() => {
+            //   navigate("/contact");
+            // }}
             className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
                 ? "border-navGray hover:border-[1px]  font-light"
@@ -126,7 +127,7 @@ const NavBar = () => {
             }`}
           >
             Contact Us
-          </button>
+          </a>
         </div>
 
         <div className="xl:hidden">
