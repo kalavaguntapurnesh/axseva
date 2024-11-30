@@ -271,10 +271,10 @@ const Bento = () => {
 
             <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-6">
               <motion.div
-                variants={fadeIn("right", 0.1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+                 variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                 initial="hidden"
+                 whileInView="show"
+                 viewport={{ once: true, amount: 0.5 }}
                 className="flex flex-col space-y-6 w-full"
               >
                 <div className=" text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
@@ -355,10 +355,10 @@ const Bento = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("left", 0.1)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
                 className="flex justify-center items-center w-[100%]"
               >
                 <div>

@@ -101,7 +101,7 @@ const Contact = () => {
                 <div className="w-full px-4 mx-auto max-w-[1400px]">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <motion.div
-                      variants={fadeIn("right", 0.1)} // Animate from left
+                      variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                       initial="hidden"
                       whileInView="show"
                       viewport={{ once: true, amount: 0.5 }}
@@ -232,10 +232,10 @@ const Contact = () => {
                     </motion.div>
 
                     <motion.div
-                      variants={fadeIn("left", 0.1)} // Animate from right
+                      variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                       initial="hidden"
                       whileInView="show"
-                      viewport={{ once: true, amount: 0.2 }}
+                      viewport={{ once: true, amount: 0.5 }}
                       className="mx-2"
                     >
                       <form
@@ -544,7 +544,7 @@ const Contact = () => {
 
             <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-6 gap-4 pt-16 md:px-2 px-4">
               <motion.div
-                variants={fadeIn("right", 0.1)}
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -579,7 +579,7 @@ const Contact = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("left", 0.1)} // Fade in with direction and delay
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}

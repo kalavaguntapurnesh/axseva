@@ -50,7 +50,7 @@ const Carousel = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("right", 0.1)}
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -162,7 +162,7 @@ const Carousel = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -185,7 +185,7 @@ const Carousel = () => {
                       <div className="w-full max-w-[14000px] mx-auto space-y-4 ">
                         <div class="items-center px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
                           <motion.div
-                            variants={fadeIn("right", 0.1)}
+                            variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                             initial="hidden"
                             whileInView="show"
                             viewport={{ once: true, amount: 0.5 }}
@@ -267,10 +267,10 @@ const Carousel = () => {
                             </div>
                           </motion.div>
                           <motion.div
-                            variants={fadeIn("left", 0.1)}
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: true, amount: 0.5 }}
+                              variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                              initial="hidden"
+                              whileInView="show"
+                              viewport={{ once: true, amount: 0.5 }}
                             class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0"
                           >
                             <div className="flex flex-col lg:items-start items-center">

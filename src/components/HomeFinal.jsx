@@ -71,28 +71,39 @@ const HomeFinal = () => {
               </div>
             </div> */}
 
-            <motion.div
-              variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.5 }}
-              className=" px-2"
-              id="faq"
-            >
-              <div className="flex items-center text-center justify-center ">
+            <div className=" px-2" id="faq">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="flex items-center text-center justify-center "
+              >
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
                   Need Help
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="mx-auto max-w-[1000px] text-center mt-4">
+              <motion.div
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="mx-auto max-w-[1000px] text-center mt-4"
+              >
                 <h1 className="text-4xl font-bold text-headingColor">
                   Frequently Asked Questions
                 </h1>
-              </div>
+              </motion.div>
 
-              <div className="max-w-[1200px] mx-auto pt-12 ">
+              <motion.div
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.5 }}
+                className="max-w-[1200px] mx-auto pt-12 "
+              >
                 <Accordion
                   title="What is meant by Microsoft Dynamics 365 Finance & Operations?"
                   answer="If we were to give Dynamics 365 overview, it is basically a suite of enterprise-level intelligent cloud-based applications. It breaks down silos between customer relationship management and enterprise resource planning and offers purpose-built applications that seamlessly manage core business processes. The Dynamics 365 suite of applications can be implemented individually or in various combinations and include:"
@@ -109,8 +120,8 @@ const HomeFinal = () => {
                   title="How does Dynamics 365 Finance & Operations streamline business processes?"
                   answer="It helps streamline business processes by centralizing data, automating tasks, and providing real-time insights. With Business Central, you can manage finance, sales, purchasing, inventory, and more from a single platform. It simplifies workflows, improves collaboration across teams, and enables data-driven decision-making."
                 />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

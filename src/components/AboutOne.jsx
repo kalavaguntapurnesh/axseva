@@ -24,7 +24,7 @@ const AboutOne = () => {
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <motion.div
-                variants={fadeIn("right", 0.1)}
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -87,7 +87,7 @@ const AboutOne = () => {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("left", 0.1)}
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -114,7 +114,7 @@ const AboutOne = () => {
 
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-20 md:px-0 px-2">
               <motion.div
-                variants={fadeIn("right", 0.1)}
+                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -140,7 +140,7 @@ const AboutOne = () => {
                 </div>
               </motion.div>
               <motion.div
-                variants={fadeIn("left", 0.1)}
+                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
@@ -449,7 +449,7 @@ const AboutOne = () => {
 
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-12">
                   <motion.div
-                    variants={fadeIn("right", 0.1)}
+                    variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
@@ -474,7 +474,7 @@ const AboutOne = () => {
                   </motion.div>
 
                   <motion.div
-                    variants={fadeIn("left", 0.1)}
+                    variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
