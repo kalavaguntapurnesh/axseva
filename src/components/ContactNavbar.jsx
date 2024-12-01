@@ -397,7 +397,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
           className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded transition-transform duration-300 ease-out ${
-            isScrolled ? "bg-[#ffffff]" : "bg-navGray"
+            isScrolled ? "bg-[#ffffff]" : "bg-mainColor"
           }`}
         />
       </a>
@@ -426,10 +426,16 @@ const PricingContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">For Individuals</h3>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Introduction
         </a>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Pay as you go
         </a>
       </div>
@@ -438,10 +444,11 @@ const PricingContent = () => {
         <a href="#" className="block text-sm hover:underline">
           Startups
         </a>
-        <a href="#" className="block text-sm hover:underline">
-          SMBs
-        </a>
-        <a href="#" className="block text-sm hover:underline">
+
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Enterprise
         </a>
       </div>
@@ -463,31 +470,31 @@ const ServicesContent = () => {
         <h3 className="font-semibold">Services We Offer</h3>
         <a
           href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor hover:font-bold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Microsoft Dynamics 365
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Finance & Operations
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Implementation
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Implementation Partner
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Customer Engagement
         </a>
@@ -508,19 +515,28 @@ const IndustriesContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Our Vast Resources</h3>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Startups
         </a>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Not for profit
         </a>
-        <a href="#" className="block text-sm hover:underline">
-          Ecommerce
-        </a>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Manufacturing Services
         </a>
-        <a href="#" className="block text-sm hover:underline">
+        <a
+          href="#"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
           Professional Services
         </a>
       </div>
@@ -538,21 +554,16 @@ const AboutUsContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">About AXSeva</h3>
-        <a href="/about-us" className="block text-sm hover:underline">
-          About Us
-        </a>
+
         <a
-          href="/collaborate-with-us"
-          className="block text-sm hover:underline"
+          href="/about-us"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Why AXSeva
         </a>
-      </div>
-      <div className="mb-6 space-y-3">
-        <h3 className="font-semibold">Careers at AXSeva</h3>
         <a
           href="/collaborate-with-us"
-          className="block text-sm hover:underline"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Collaborate with Us
         </a>

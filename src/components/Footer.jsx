@@ -205,14 +205,7 @@ const Footer = () => {
                           Not for profit
                         </a>
                       </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          E-commerce
-                        </a>
-                      </li>
+
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/"
@@ -231,7 +224,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                           href="/"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Food & Beverages
