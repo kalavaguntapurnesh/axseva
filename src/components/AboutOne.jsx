@@ -508,13 +508,11 @@ const AboutOne = () => {
                     <div className="md:flex items-center lg:justify-start justify-center hidden">
                       <a
                         href="https://www.linkedin.com/in/sumanthdama/"
-                        className="border-mainColor border-[1px] font-medium outline-none
-                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm text-white px-8 md:py-3 py-2 text-center"
+                        className="border-mainColor text-mainColor hover:text-white hover:bg-mainColor  border-[1px] font-medium outline-none
+                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm px-8 md:py-3 py-2 text-center"
                       >
-                        <FaLinkedinIn className="text-mainColor" size={16} />
-                        <span className="ml-1 text-mainColor">
-                          LinkedIn Profile
-                        </span>
+                        <FaLinkedinIn size={16} />
+                        <span className="ml-1 ">LinkedIn Profile</span>
                       </a>
                     </div>
 
