@@ -258,7 +258,7 @@ const Carousel = () => {
 
                               <div className="flex md:justify-start justify-center items-center pb-4">
                                 <a
-                                  href="/managed-it-services"
+                                  href="/contact"
                                   className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out text-white bg-mainColor rounded  text-center font-medium hover:bg-opacity-90"
                                 >
                                   Request a Demo
@@ -267,10 +267,10 @@ const Carousel = () => {
                             </div>
                           </motion.div>
                           <motion.div
-                              variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                              initial="hidden"
-                              whileInView="show"
-                              viewport={{ once: true, amount: 0.5 }}
+                            variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: true, amount: 0.5 }}
                             class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0"
                           >
                             <div className="flex flex-col lg:items-start items-center">
@@ -548,7 +548,7 @@ const Carousel = () => {
 
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
-                                    href="/login"
+                                    href="/industries"
                                     className="bg-mainColor outline-none
                               rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
                                   >
@@ -595,7 +595,7 @@ const Carousel = () => {
 
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
-                                    href="/login"
+                                    href="/managed-it-services"
                                     className="bg-mainColor outline-none
                               rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
                                   >
