@@ -170,10 +170,57 @@ const NavBar = () => {
           <ul className="p-4">
             <li className="p-4 border-b border-gray-600">
               <div
+                onClick={() => toggleMobileDropdown("subscription")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                <a href="/managed-it-services">Our Services</a>
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "subscription"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "subscription" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365-finance"
+                        className="text-sm"
+                      >
+                        Dynamic 365 Finance & Operations
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Dynamic 365 Supply Chain
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a href="/pricing#pricing_silver" className="text-sm">
+                        Upgrade Services
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <div
                 onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                Solutions
+                Industries
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "home"
@@ -191,31 +238,15 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray ">
-                      <a href="/learn-about-us" className="text-sm">
-                        Dynamic 365 Chain
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/learn-about-us#logo_meaning"
-                        className="text-sm"
-                      >
-                        Customer Service
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/learn-about-us#about_founder"
-                        className="text-sm"
-                      >
-                        Business Central
+                      <a href="/industries" className="text-sm">
+                        Our Vast Resources
                       </a>
                     </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            {/* <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("products")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
@@ -250,48 +281,7 @@ const NavBar = () => {
                   </motion.ul>
                 )}
               </AnimatePresence>
-            </li>
-            <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("subscription")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                <a href="/managed-it-services">Our Services</a>
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "subscription"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "subscription" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-navGray">
-                      <a href="/pricing#pricing_platinum" className="text-sm">
-                        Implementation Services
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a href="/pricing#pricing_gold" className="text-sm">
-                        Support Services
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a href="/pricing#pricing_silver" className="text-sm">
-                        Upgrade Services
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
+            </li> */}
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -299,6 +289,15 @@ const NavBar = () => {
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 About Us
+              </a>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/dynamics-365-support-services"
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Support
               </a>
             </li>
 
@@ -318,7 +317,7 @@ const NavBar = () => {
             </h1>
             <div className="p-4">
               <div className="grid grid-cols-4">
-                <a href="https://www.linkedin.com/company/laoe-maom/">
+                <a href="https://www.linkedin.com/in/sumanthdama/">
                   <FaLinkedinIn className="w-6 h-6 text-navGray duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
                 <a href="">
@@ -404,6 +403,10 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 };
 
 const PricingContent = () => {
+  const navigate = useNavigate();
+  const handleServices = () => {
+    navigate("/contact"); // Navigate to the "About" page
+  };
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
@@ -427,8 +430,11 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
-        Contact sales
+      <button
+        onClick={handleServices}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        Contact us
       </button>
     </div>
   );
@@ -445,17 +451,18 @@ const ServicesContent = () => {
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Services We Offer</h3>
         <a
-          href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Microsoft Dynamics 365
-        </a>
-        <a
           href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor hover:font-bold"
         >
           Dynamics 365 Finance & Operations
         </a>
+        <a
+          href="/services-microsoft-dynamics-365"
+          className="block text-sm hover:text-mainColor hover:font-bold"
+        >
+          Microsoft Dynamics 365
+        </a>
+
         <a
           href="#"
           className="block text-sm hover:text-mainColor hover:font-bold"
@@ -473,24 +480,6 @@ const ServicesContent = () => {
           className="block text-sm hover:text-mainColor hover:font-bold"
         >
           Customer Engagement
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Upgrade
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Optimization
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Support
         </a>
       </div>
 
