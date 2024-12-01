@@ -10,7 +10,7 @@ const IndustriesHero = () => {
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
-      buttonLink: "/discover",
+      buttonLink: "/contact",
     },
   ];
 

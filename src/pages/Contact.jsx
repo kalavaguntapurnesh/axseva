@@ -551,7 +551,7 @@ const Contact = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 class="flex md:justify-start justify-center w-full"
               >
-                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
                       <h1 class="text-2xl font-bold text-headingColor">
@@ -586,7 +586,7 @@ const Contact = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 class="flex md:justify-start justify-center"
               >
-                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
                       <h1 class="text-2xl font-bold text-headingColor">
