@@ -25,7 +25,7 @@ const Footer = () => {
                       <ul className="pl-0 mt-4 space-y-3 list-none">
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/privacy-policy"
+                            href="/contact"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Privacy Policy
@@ -33,7 +33,7 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/learn-about-us"
+                            href="/about-us"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             About AXSeva
@@ -41,7 +41,7 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/learn-about-us#about_founder"
+                            href="/about-us"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Leadership
@@ -49,7 +49,7 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/learn-about-us#logo_meaning"
+                            href="/"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             News & Events
@@ -68,7 +68,7 @@ const Footer = () => {
                       <ul className="pl-0 mt-4 space-y-3 list-none">
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="mailto:info@laoemaom.com"
+                            href="mailto:info@axseva.com"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Help Center
@@ -76,7 +76,7 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="https://maps.app.goo.gl/G9qoFoUF2K1MPmv8A"
+                            href="https://www.google.com/maps/place/1691+Kettering+St,+Irvine,+CA+92614,+USA/@33.6979191,-117.8467571,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdebc76905421:0xc9b403b589d3cb99!8m2!3d33.6979191!4d-117.8467571!16s%2Fg%2F11bw3yyf27?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Location Map
@@ -85,7 +85,7 @@ const Footer = () => {
 
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="#"
+                            href="/"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Whatsapp Chat
@@ -98,14 +98,14 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h4 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Services
                       </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/privacy-policy"
+                          href="/managed-it-services"
                           className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Microsoft Dynamics 365
@@ -113,7 +113,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/consumer-privacy"
+                          href="/services-microsoft-dynamics-365-finance"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Finance & Operations
@@ -121,7 +121,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/consumer-privacy#cookie-use-policy"
+                          href="/services-microsoft-dynamics-365-finance"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Implementation
@@ -129,7 +129,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/privacy-policy"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Implementation Partner
@@ -137,26 +137,10 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/privacy-policy"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
                         >
                           Customer Engagement
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
-                        >
-                          Upgrade
-                        </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center   text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
-                        >
-                          Optimization
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -180,7 +164,7 @@ const Footer = () => {
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/privacy-policy"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Super & Hypermarkets Solution
@@ -188,7 +172,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us"
+                          href="/about-us"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Holistico - D365 Customer Service Solution
@@ -207,7 +191,7 @@ const Footer = () => {
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/privacy-policy"
+                          href="/industries"
                           className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Startups
@@ -215,7 +199,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Not for profit
@@ -223,7 +207,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us#about_founder"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           E-commerce
@@ -231,7 +215,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us#about_founder"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Manufacturing Services
@@ -239,7 +223,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us#logo_meaning"
+                          href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Professional Services
@@ -247,7 +231,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/learn-about-us#logo_meaning"
+                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Food & Beverages
