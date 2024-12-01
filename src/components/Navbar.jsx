@@ -173,7 +173,7 @@ const NavBar = () => {
                 onClick={() => toggleMobileDropdown("subscription")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
-                <a href="/managed-it-services">Our Services</a>
+                Our Services
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -191,6 +191,11 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray">
+                      <a href="/managed-it-services" className="text-sm">
+                        Services We Offer
+                      </a>
+                    </li>
+                    <li className="text-navGray">
                       <a
                         href="/services-microsoft-dynamics-365-finance"
                         className="text-sm"
@@ -204,11 +209,6 @@ const NavBar = () => {
                         className="text-sm"
                       >
                         Dynamic 365 Supply Chain
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a href="/pricing#pricing_silver" className="text-sm">
-                        Upgrade Services
                       </a>
                     </li>
                   </motion.ul>
@@ -284,12 +284,40 @@ const NavBar = () => {
             </li> */}
 
             <li className="p-4 border-b border-gray-600">
-              <a
-                href="/about-us"
+              <div
+                onClick={() => toggleMobileDropdown("aboutus")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 About Us
-              </a>
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "aboutus"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "aboutus" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray ">
+                      <a href="/about-us" className="text-sm">
+                        About AXSeva
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href="/collaborate-with-us" className="text-sm">
+                        Collaborate With Us
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
             </li>
 
             <li className="p-4 border-b border-gray-600">
