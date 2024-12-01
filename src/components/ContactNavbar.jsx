@@ -159,96 +159,14 @@ const NavBar = () => {
               AX <span className="text-black">Seva</span>
             </h1>
           </a>
+
           <ul className="p-4">
             <li className="p-4 border-b border-gray-600">
               <div
-                onClick={() => toggleMobileDropdown("home")}
-                className="flex items-center justify-between cursor-pointer"
-              >
-                Solutions
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "home"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "home" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-gray-700 ">
-                      <a href="/learn-about-us" className="text-sm">
-                        Dynamic 365 Chain
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a
-                        href="/learn-about-us#logo_meaning"
-                        className="text-sm"
-                      >
-                        Customer Service
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a
-                        href="/learn-about-us#about_founder"
-                        className="text-sm"
-                      >
-                        Business Central
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
-            <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("products")}
-                className="flex items-center justify-between cursor-pointer"
-              >
-                <a href="/industries">Industries</a>
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "products"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "products" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-gray-700">
-                      <a href="/" className="text-sm">
-                        Startups
-                      </a>
-                    </li>
-                    <li className="text-gray-700">
-                      <a href="/" className="text-sm">
-                        Professional Services
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
-            <li className="p-4 border-b border-gray-600">
-              <div
                 onClick={() => toggleMobileDropdown("subscription")}
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-headingColor"
               >
-                <a href="/managed-it-services">Our Services</a>
+                Our Services
                 <FaAngleDown
                   className={`transition-transform ${
                     openDropdownMobile === "subscription"
@@ -265,51 +183,92 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700">
-                      <a href="/pricing#pricing_platinum" className="text-sm">
-                        Implementation Services
+                    <li className="text-headingColor">
+                      <a href="/managed-it-services" className="text-sm">
+                        Services We Offer
                       </a>
                     </li>
-                    <li className="text-gray-700">
-                      <a href="/pricing#pricing_gold" className="text-sm">
-                        Support Services
+                    <li className="text-headingColor">
+                      <a
+                        href="/services-microsoft-dynamics-365-finance"
+                        className="text-sm"
+                      >
+                        Dynamic 365 Finance & Operations
                       </a>
                     </li>
-                    <li className="text-gray-700">
-                      <a href="/pricing#pricing_silver" className="text-sm">
-                        Upgrade Services
+                    <li className="text-headingColor">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Dynamic 365 Supply Chain
                       </a>
                     </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
             </li>
-
-            {/* <li className="p-4 border-b border-gray-600">
+            <li className="p-4 border-b border-gray-600">
               <div
-                onClick={() => toggleMobileDropdown("privacy")}
-                className="flex items-center justify-between cursor-pointer"
+                onClick={() => toggleMobileDropdown("home")}
+                className="flex items-center justify-between cursor-pointer text-headingColor"
               >
-                Company
+                Industries
                 <FaAngleDown
                   className={`transition-transform ${
-                    openDropdownMobile === "privacy"
+                    openDropdownMobile === "home"
                       ? "rotate-180 text-mainColor"
                       : ""
                   }`}
                 />
               </div>
               <AnimatePresence>
-                {openDropdownMobile === "privacy" && (
+                {openDropdownMobile === "home" && (
                   <motion.ul
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-gray-700">
-                      <a href="/about-us" className="text-sm">
-                        About Us
+                    <li className="text-headingColor ">
+                      <a href="/industries" className="text-sm">
+                        Our Vast Resources
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            {/* <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("products")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Industries
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "products"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "products" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray">
+                      <a href="/" className="text-sm">
+                        Startups
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a href="/" className="text-sm">
+                        Professional Services
                       </a>
                     </li>
                   </motion.ul>
@@ -318,18 +277,55 @@ const NavBar = () => {
             </li> */}
 
             <li className="p-4 border-b border-gray-600">
-              <a
-                href="/about-us"
-                className="flex items-center justify-between cursor-pointer"
+              <div
+                onClick={() => toggleMobileDropdown("aboutus")}
+                className="flex items-center justify-between cursor-pointer text-headingColor"
               >
                 About Us
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "aboutus"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "aboutus" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-headingColor ">
+                      <a href="/about-us" className="text-sm">
+                        About AXSeva
+                      </a>
+                    </li>
+                    <li className="text-headingColor ">
+                      <a href="/collaborate-with-us" className="text-sm">
+                        Collaborate With Us
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+
+            <li className="p-4 border-b border-gray-600">
+              <a
+                href="/dynamics-365-support-services"
+                className="flex items-center justify-between cursor-pointer text-headingColor"
+              >
+                Support
               </a>
             </li>
 
             <li className="p-4 border-b border-gray-600">
               <a
                 href="/contact"
-                className="flex items-center justify-between cursor-pointer"
+                className="flex items-center justify-between cursor-pointer text-headingColor"
               >
                 Contact Us
               </a>
@@ -450,7 +446,7 @@ const PricingContent = () => {
         </a>
       </div>
       <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
-        Contact sales
+        Contact Us
       </button>
     </div>
   );
@@ -494,24 +490,6 @@ const ServicesContent = () => {
           className="block text-sm hover:text-mainColor hover:font-bold"
         >
           Customer Engagement
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Upgrade
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Optimization
-        </a>
-        <a
-          href="#"
-          className="block text-sm hover:text-mainColor hover:font-bold"
-        >
-          Support
         </a>
       </div>
 

@@ -360,13 +360,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-6 gap-4 pb-8">
+            <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-5 gap-4 pb-8">
               <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
                 <h1>Cookie Settings</h1>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>Anti Spam</h1>
               </div>
 
               <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
