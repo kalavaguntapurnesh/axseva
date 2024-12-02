@@ -452,7 +452,7 @@ const Contact = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="relative bg-[#f2f8fe] mt-8 rounded p-6 max-w-[1200px] lg:mx-auto mx-4 h-60"
+                className="relative bg-[#f2f8fe] mt-8 rounded p-6 max-w-[1200px] lg:mx-auto mx-4 h-[380px] md:h-60"
               >
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-left.png"

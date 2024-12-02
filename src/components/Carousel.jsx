@@ -198,8 +198,7 @@ const Carousel = () => {
                               </h1>
                             </div>
                             <h1 className="text-4xl font-bold text-headingColor md:text-start text-center">
-                              What is Microsoft Dynamics 365 Finance &
-                              Operations?
+                              What is Dynamics 365 Finance & Operations?
                             </h1>
 
                             <div className="md:text-start text-center mt-4 mb-1">

@@ -207,8 +207,8 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="/contact"
-                      className="border-mainColor bg-mainColor text-white border-[1px] outline-none
-                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm px-12 py-3 text-center"
+                      className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor text-center text-white
+                      rounded flex items-center hover:shadow-form  md:text-base text-sm px-12 py-3"
                     >
                       Talk with us
                     </a>
@@ -269,8 +269,7 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      className="border-mainColor bg-mainColor text-white border-[1px] outline-none
-                      rounded flex items-center hover:shadow-form transition duration-1000 ease-in-out md:text-base text-sm px-12 py-3 text-center"
+                      className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor rounded text-white md:text-base text-sm px-12 py-3 text-center"
                     >
                       Learn More
                     </a>
@@ -356,7 +355,7 @@ const Services = () => {
                   {services3.map((service, index) => (
                     <div
                       key={index}
-                      className="p-6 border space-y-3 flex flex-col items-center rounded-lg shadow transition-transform hover:-translate-y-4 "
+                      className="p-6 border space-y-3 flex flex-col items-center rounded-lg shadow transition-transform hover:-translate-y-2 "
                     >
                       <div className="flex justify-center items-center">
                         {/* Replace image URLs with actual URLs for the service */}
@@ -371,21 +370,27 @@ const Services = () => {
                       <p className="text-gray-700 mb-4 text-center">
                         {service.description}
                       </p>
-                      <div className="flex justify-between items-center gap-4">
+                      <a
+                        href="/contact"
+                        className="flex justify-between items-center gap-4"
+                      >
                         <span className="font-semibold text-2xl cursor-pointer">
                           Learn more
                         </span>
                         <BsArrowRightCircle className="text-mainColor text-2xl hover:text-4xl" />
-                      </div>
+                      </a>
                     </div>
                   ))}
                 </motion.div>
 
                 {/* CTA Button */}
                 <div className="flex justify-center pt-6">
-                  <button className="bg-mainColor text-white p-4 rounded lg:w-1/4 w-3/4">
-                    <Link to="/contact">Talk to a managed services expert</Link>
-                  </button>
+                  <a
+                    href="/contact"
+                    className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor text-center text-white p-4 rounded lg:w-1/4 w-3/4"
+                  >
+                    Talk to a managed services expert
+                  </a>
                 </div>
               </div>
             </div>
@@ -495,7 +500,7 @@ const Services = () => {
                     {services1.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
+                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
@@ -514,11 +519,6 @@ const Services = () => {
                             </li>
                           ))}
                         </ul>
-                        <div className="flex justify-end">
-                          <button className="bg-mainColor text-white p-4 rounded lg:w-1/4 w-3/4">
-                            <Link to="#">Learn more</Link>
-                          </button>
-                        </div>
                       </div>
                     ))}
                   </div>
@@ -528,30 +528,25 @@ const Services = () => {
                     {services2.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:-translate-y-4"
+                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
                       >
-                        <h2 className="text-2xl font-semibold text-green-600 mb-4">
+                        <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
                         </h2>
                         <p className="text-gray-700 mb-4">
                           {service.description}
                         </p>
-                        <p className="text-green-600 text-2xl font-semibold mb-4">
+                        <p className="text-mainColor text-2xl font-semibold mb-4">
                           {service.subText}
                         </p>
                         <ul className="space-y-4">
                           {service.items.map((item, i) => (
                             <li key={i} className="flex items-center space-x-2">
-                              <FaCheckCircle className="text-green-600" />
+                              <FaCheckCircle className="text-mainColor" />
                               <span className="text-gray-600">{item}</span>
                             </li>
                           ))}
                         </ul>
-                        <div className="flex justify-end">
-                          <button className="bg-mainColor text-white p-4 rounded lg:w-1/4 w-3/4">
-                            <Link to="#">Learn more</Link>
-                          </button>
-                        </div>
                       </div>
                     ))}
                   </div>

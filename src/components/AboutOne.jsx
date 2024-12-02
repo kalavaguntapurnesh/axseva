@@ -53,7 +53,7 @@ const AboutOne = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-2">
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                  {/* <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>In-depth Product Knowledge</p>
                     </div>
@@ -62,25 +62,25 @@ const AboutOne = () => {
                     <div className="text-sideHeading font-semibold">
                       <p>Flexible Engagement Model</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Higher Customer Satisfaction</p>
+                      <p>Supply Chain Optimization</p>
                     </div>
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Quality Driven Products</p>
+                      <p>Complete Project Management</p>
                     </div>
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Adversiry Roles to CIO</p>
+                      <p>Global Compliance Support</p>
                     </div>
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>24/7 Support Available</p>
+                      <p>Around the clock Support</p>
                     </div>
                   </div>
                 </div>
@@ -213,14 +213,15 @@ const AboutOne = () => {
                       </div>
                       <div class="flex justify-center items-center">
                         <h1 class="text-3xl text-headingColor font-bold text-center">
-                          Innovation
+                          Seamless Integration
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Recognize member initiatives with businesses both
-                          locally and globally with incentives.
+                          We specialize in integrating Dynamics 365 Finance with
+                          your existing systems and workflows, minimizing
+                          disruptions and maximizing productivity.
                         </p>
                       </div>
 
@@ -250,14 +251,15 @@ const AboutOne = () => {
 
                       <div class="flex justify-center items-center">
                         <h1 class=" text-3xl text-headingColor font-bold text-center">
-                          Build Global Community
+                          Team of Professionals
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Establish a global presence that encourages networking
-                          and mutual benefits.
+                          Our certified consultants bring years of experience
+                          and deep expertise in financial systems, guaranteeing
+                          a smooth and efficient implementation process.
                         </p>
                       </div>
 
@@ -286,14 +288,15 @@ const AboutOne = () => {
 
                       <div class="flex justify-center items-center">
                         <h1 class=" text-3xl text-headingColor font-bold text-center">
-                          Foster Social Bonds
+                          Future-Proof Solutions
                         </h1>
                       </div>
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Develop a nurturing environment that fosters enduring
-                          friendships and a robust social network.
+                          We design implementations with scalability in mind, so
+                          your financial systems can grow and adapt alongside
+                          your business.
                         </p>
                       </div>
 
@@ -321,7 +324,7 @@ const AboutOne = () => {
                   className="text-center"
                 >
                   <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
-                    Where can you find us!
+                    Visit Us At This Location
                   </h1>
                 </motion.div>
 
