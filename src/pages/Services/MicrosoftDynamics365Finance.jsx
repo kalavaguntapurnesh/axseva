@@ -3,17 +3,19 @@ import Footer from "../../components/Footer";
 import AboutLayout from "../../components/AboutLayout";
 import ContactUsButton from "../../components/ContactUsButton";
 import Microsoft from "../../assets/Microsoft.svg";
+import ContactNavbar from "../../components/ContactNavbar.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 
 const MicrosoftDynamics365Finance = () => {
   return (
     <div>
-      <AboutLayout />
+      {/* <AboutLayout /> */}
+      <ContactNavbar />
 
       {/* section 1 */}
 
-      <div className="w-full pt-12">
+      <div className="w-full pt-28 pb-8">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4  ">
             <div className="flex flex-col gap-4 space-y-8">

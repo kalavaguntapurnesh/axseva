@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import AboutLayout from "../../components/AboutLayout";
+import ContactNavbar from "../../components/ContactNavbar.jsx";
 import ContactUsButton from "../../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
@@ -54,10 +55,11 @@ const MicrosoftDynamics365 = () => {
   ];
   return (
     <div>
-      <AboutLayout />
+      {/* <AboutLayout /> */}
+      <ContactNavbar />
 
       {/* section 2 */}
-      <div className="w-full pt-20">
+      <div className="w-full lg:pt-36 pt-28 pb-8">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
@@ -72,7 +74,7 @@ const MicrosoftDynamics365 = () => {
                 >
                   <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-headingColor">
                     Enterprise Solutions from{" "}
-                    <span className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-mainColor">
+                    <span className="lg:text-5xl text-4xl md:text-start text-center font-semibold text-mainColor">
                       AX <span className="text-headingColor">Seva</span>{" "}
                     </span>
                   </div>

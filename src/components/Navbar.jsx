@@ -17,6 +17,13 @@ const NavBar = () => {
   const [openDropdownMobile, setOpenDropdownMobile] = useState(null);
   const navigate = useNavigate();
 
+  const phoneNumber = "14042773220";
+  const message =
+    "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight / 4) {
       setIsScrolled(true);
@@ -83,7 +90,13 @@ const NavBar = () => {
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
             ABOUT US
           </FlyoutLink>
-          <li
+          <FlyoutLink
+            href="/dynamics-365-support-services"
+            FlyoutContent={SupportContent}
+          >
+            SUPPORT
+          </FlyoutLink>
+          {/* <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
               isScrolled
                 ? "text-[#ffffff] font-light"
@@ -96,7 +109,7 @@ const NavBar = () => {
                 isScrolled ? "bg-[#ffffff]" : "bg-navGray"
               }`}
             ></div>
-          </li>
+          </li> */}
           {/* <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
               isScrolled
@@ -191,16 +204,19 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray">
-                      <a href="/managed-it-services" className="text-sm">
-                        Services We Offer
-                      </a>
-                    </li>
-                    <li className="text-navGray">
                       <a
                         href="/services-microsoft-dynamics-365-finance"
                         className="text-sm"
                       >
-                        Dynamic 365 Finance & Operations
+                        Dynamics 365 Finance & Operations
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Microsoft Dynamic 365
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -209,6 +225,30 @@ const NavBar = () => {
                         className="text-sm"
                       >
                         Dynamic 365 Supply Chain
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Dynamic 365 Implementation
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Implementation Partner
+                      </a>
+                    </li>
+                    <li className="text-navGray">
+                      <a
+                        href="/services-microsoft-dynamics-365"
+                        className="text-sm"
+                      >
+                        Customer Engagement
                       </a>
                     </li>
                   </motion.ul>
@@ -240,6 +280,21 @@ const NavBar = () => {
                     <li className="text-navGray ">
                       <a href="/industries" className="text-sm">
                         Our Vast Resources
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href="/industries" className="text-sm">
+                        For Startups
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href="/industries" className="text-sm">
+                        Not For Profit
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href="/industries" className="text-sm">
+                        Manufacturing Services
                       </a>
                     </li>
                   </motion.ul>
@@ -321,12 +376,51 @@ const NavBar = () => {
             </li>
 
             <li className="p-4 border-b border-gray-600">
-              <a
-                href="/dynamics-365-support-services"
+              <div
+                onClick={() => toggleMobileDropdown("support")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Support
-              </a>
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "aboutus"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "support" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray ">
+                      <a
+                        href="/dynamics-365-support-services"
+                        className="text-sm"
+                      >
+                        Help Center
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a
+                        href="/dynamics-365-support-services"
+                        className="text-sm"
+                      >
+                        Location Map
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href={whatsappUrl} className="text-sm">
+                        Whatsapp Chat
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
             </li>
 
             <li className="p-4 border-b border-gray-600">
@@ -467,12 +561,12 @@ const PricingContent = () => {
           Enterprise
         </a>
       </div>
-      <button
+      {/* <button
         onClick={handleServices}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         Contact us
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -501,31 +595,31 @@ const ServicesContent = () => {
         </a>
 
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Implementation
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Implementation Partner
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Customer Engagement
         </a>
       </div>
 
-      <button
+      {/* <button
         onClick={handleServices}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         View More
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -537,38 +631,38 @@ const IndustriesContent = () => {
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Our Vast Resources</h3>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Startups
         </a>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Not for profit
         </a>
 
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Manufacturing Services
         </a>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Professional Services
         </a>
       </div>
 
-      <button
+      {/* <button
         onClick={() => navigate("/industries")}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         View More
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -593,13 +687,55 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <div className="mb-6 space-y-3"></div>
+      {/* <div className="mb-6 space-y-3"></div>
       <button
         onClick={() => navigate("/about-us")}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         View More
-      </button>
+      </button> */}
+    </div>
+  );
+};
+
+const SupportContent = () => {
+  const phoneNumber = "14042773220";
+  const message =
+    "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  const navigate = useNavigate();
+  return (
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        {/* <h3 className="font-semibold">About AXSeva</h3> */}
+
+        <a
+          href="/dynamics-365-support-services"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Help Center
+        </a>
+        <a
+          href="/dynamics-365-support-services"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Location Map
+        </a>
+        <a
+          href={whatsappUrl}
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Whatsapp Chat
+        </a>
+      </div>
+      {/* <button
+        onClick={() => navigate("/about-us")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        View More
+      </button> */}
     </div>
   );
 };

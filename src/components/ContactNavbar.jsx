@@ -17,6 +17,13 @@ const NavBar = () => {
   const [openDropdownMobile, setOpenDropdownMobile] = useState(null);
   const navigate = useNavigate();
 
+  const phoneNumber = "14042773220";
+  const message =
+    "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setIsScrolled(true);
@@ -92,7 +99,17 @@ const NavBar = () => {
               About Us{" "}
             </span>
           </FlyoutLink>
-          <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
+          <FlyoutLink
+            href="/dynamics-365-support-services"
+            FlyoutContent={SupportContent}
+          >
+            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              {" "}
+              SUPPORT
+            </span>
+          </FlyoutLink>
+
+          {/* <li className="group mt-[4px] cursor-pointer text-black tracking-wider transition duration-1000 ease-in-out uppercase">
             <a href="/dynamics-365-support-services">
               <span className={`${isScrolled ? "text-white" : "text-black"}`}>
                 {" "}
@@ -100,7 +117,7 @@ const NavBar = () => {
               </span>{" "}
             </a>
             <div className="bg-mainColor mt-[2px] rounded-full h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
-          </li>
+          </li> */}
         </ul>
 
         {/* Login Button */}
@@ -313,13 +330,61 @@ const NavBar = () => {
               </AnimatePresence>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
+            {/* <li className="p-4 border-b border-gray-600">
               <a
                 href="/dynamics-365-support-services"
                 className="flex items-center justify-between cursor-pointer text-headingColor"
               >
                 Support
               </a>
+            </li> */}
+
+            <li className="p-4 border-b border-gray-600">
+              <div
+                onClick={() => toggleMobileDropdown("support")}
+                className="flex items-center justify-between cursor-pointer text-navGray"
+              >
+                Support
+                <FaAngleDown
+                  className={`transition-transform ${
+                    openDropdownMobile === "aboutus"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "support" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="pl-4 mt-6 space-y-2"
+                  >
+                    <li className="text-navGray ">
+                      <a
+                        href="/dynamics-365-support-services"
+                        className="text-sm"
+                      >
+                        Help Center
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a
+                        href="/dynamics-365-support-services"
+                        className="text-sm"
+                      >
+                        Location Map
+                      </a>
+                    </li>
+                    <li className="text-navGray ">
+                      <a href={whatsappUrl} className="text-sm">
+                        Whatsapp Chat
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
             </li>
 
             <li className="p-4 border-b border-gray-600">
@@ -427,13 +492,13 @@ const PricingContent = () => {
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">For Individuals</h3>
         <a
-          href="#"
+          href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Introduction
         </a>
         <a
-          href="#"
+          href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Pay as you go
@@ -441,20 +506,20 @@ const PricingContent = () => {
       </div>
       <div className="mb-6 space-y-3">
         <h3 className="font-semibold">For Companies</h3>
-        <a href="#" className="block text-sm hover:underline">
+        <a href="/" className="block text-sm hover:underline">
           Startups
         </a>
 
         <a
-          href="#"
+          href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Enterprise
         </a>
       </div>
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      {/* <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         Contact Us
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -475,37 +540,37 @@ const ServicesContent = () => {
           Microsoft Dynamics 365
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Finance & Operations
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Implementation
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Implementation Partner
         </a>
         <a
-          href="#"
+          href="/services-microsoft-dynamics-365"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Customer Engagement
         </a>
       </div>
 
-      <button
+      {/* <button
         onClick={handleServices}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         View More
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -516,34 +581,34 @@ const IndustriesContent = () => {
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Our Vast Resources</h3>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Startups
         </a>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Not for profit
         </a>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Manufacturing Services
         </a>
         <a
-          href="#"
+          href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Professional Services
         </a>
       </div>
 
-      <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
+      {/* <button className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none">
         View More
-      </button>
+      </button> */}
     </div>
   );
 };
@@ -568,14 +633,55 @@ const AboutUsContent = () => {
           Collaborate with Us
         </a>
       </div>
-      <button
+      {/* <button
         onClick={() => navigate("/about-us")}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
       >
         View More
-      </button>
+      </button> */}
     </div>
   );
 };
 
+const SupportContent = () => {
+  const phoneNumber = "14042773220";
+  const message =
+    "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  const navigate = useNavigate();
+  return (
+    <div className="w-64 bg-white p-6 shadow-xl">
+      <div className="mb-3 space-y-3">
+        {/* <h3 className="font-semibold">About AXSeva</h3> */}
+
+        <a
+          href="/dynamics-365-support-services"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Help Center
+        </a>
+        <a
+          href="/dynamics-365-support-services"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Location Map
+        </a>
+        <a
+          href={whatsappUrl}
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Whatsapp Chat
+        </a>
+      </div>
+      {/* <button
+        onClick={() => navigate("/about-us")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        View More
+      </button> */}
+    </div>
+  );
+};
 export default NavBar;

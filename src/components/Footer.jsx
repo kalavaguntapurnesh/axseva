@@ -143,12 +143,29 @@ const Footer = () => {
                           Customer Engagement
                         </a>
                       </li>
+                    </ul>
+
+                    <div className="mt-8 flex items-center md:justify-start justify-center">
+                      {/* <div className="h-4 w-1 bg-mainColor"></div> */}
+                      <h4 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                        About Us
+                      </h4>
+                    </div>
+                    <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/dynamics-365-support-services"
+                          href="/about-us"
+                          className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Why AXSeva
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/collaborate-with-us"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Support
+                          Collaborate With Us
                         </a>
                       </li>
                     </ul>
