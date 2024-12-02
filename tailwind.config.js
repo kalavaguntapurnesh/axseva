@@ -36,6 +36,7 @@ export default {
         footerbg: "#24272b",
         footerItems: "#9ca3af",
         navColor: "#24272b",
+        privacyColor: "#7A7A7A",
       },
     },
   },

@@ -83,10 +83,7 @@ const NavBar = () => {
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
             ABOUT US
           </FlyoutLink>
-          <FlyoutLink href="/about-us" FlyoutContent={SupportContent}>
-            SUPPORT
-          </FlyoutLink>
-          {/* <li
+          <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
               isScrolled
                 ? "text-[#ffffff] font-light"
@@ -99,7 +96,7 @@ const NavBar = () => {
                 isScrolled ? "bg-[#ffffff]" : "bg-navGray"
               }`}
             ></div>
-          </li> */}
+          </li>
           {/* <li
             className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
               isScrolled
@@ -123,7 +120,7 @@ const NavBar = () => {
             // onClick={() => {
             //   navigate("/contact");
             // }}
-            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-300 ${
+            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
                 ? "border-navGray hover:border-[1px]  font-light"
                 : "border-navGray font-light"
@@ -194,109 +191,46 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray">
-                    {/* <h3 className="font-semibold">Services We Offer</h3> */}
-
+                      <a href="/managed-it-services" className="text-sm">
+                        Services We Offer
+                      </a>
                     </li>
                     <li className="text-navGray">
                       <a
                         href="/services-microsoft-dynamics-365-finance"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                        className="text-sm"
                       >
-                        Dynamics 365 Finance & Operations
+                        Dynamic 365 Finance & Operations
                       </a>
                     </li>
                     <li className="text-navGray">
                       <a
                         href="/services-microsoft-dynamics-365"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+                        className="text-sm"
                       >
-                        Microsoft Dynamics 365
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/services-microsoft-dynamics-365"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Dynamics 365 Implementation
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/services-microsoft-dynamics-365"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Implementation Partner
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/services-microsoft-dynamics-365"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Customer Engagement
+                        Dynamic 365 Supply Chain
                       </a>
                     </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
             </li>
-
             <li className="p-4 border-b border-gray-600">
               <div
-                onClick={() => toggleMobileDropdown("solutions")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                Solutions
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "solutions"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "solutions" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                          Dynamics 365 Super & Hypermarkets Solution
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                        Holistico - D365 Customer Service Solution
-                      </a>
-                    </li>
-
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
-
-
-            <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("industries")}
+                onClick={() => toggleMobileDropdown("home")}
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Industries
                 <FaAngleDown
                   className={`transition-transform ${
-                    openDropdownMobile === "industries"
+                    openDropdownMobile === "home"
                       ? "rotate-180 text-mainColor"
                       : ""
                   }`}
                 />
               </div>
               <AnimatePresence>
-                {openDropdownMobile === "industries" && (
+                {openDropdownMobile === "home" && (
                   <motion.ul
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
@@ -304,23 +238,8 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                      Startups
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                      Not for profit
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                      Manufacturing Services
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-                      Professional Services
+                      <a href="/industries" className="text-sm">
+                        Our Vast Resources
                       </a>
                     </li>
                   </motion.ul>
@@ -402,57 +321,13 @@ const NavBar = () => {
             </li>
 
             <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("support")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                Support
-                <FaAngleDown
-                  className={`transition-transform ${
-                    openDropdownMobile === "support"
-                      ? "rotate-180 text-mainColor"
-                      : ""
-                  }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "support" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-navGray ">
-                      <a href="/about-us" className="text-sm">
-                      Help Center
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/collaborate-with-us" className="text-sm">
-                      Location Map
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a href="/collaborate-with-us" className="text-sm">
-                      Whatsapp Chat
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
-
-
-
-            {/* <li className="p-4 border-b border-gray-600">
               <a
                 href="/dynamics-365-support-services"
                 className="flex items-center justify-between cursor-pointer text-navGray"
               >
                 Support
               </a>
-            </li> */}
+            </li>
 
             <li className="p-4 border-b border-gray-600">
               <a
@@ -561,43 +436,46 @@ const PricingContent = () => {
     navigate("/contact"); // Navigate to the "About" page
   };
   return (
-       <div className="w-64 bg-white p-6 shadow-xl">
-      <div className="mb-3 space-y-3 ">
-      <div className="font-bold">Solutions</div>
-        <a href="#" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-        Dynamics 365 Super & Hypermarkets Solution
-        </a>
-        <a href="#" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-        Holistico - D365 Customer Service Solution
-        </a>
-      </div>
-    </div>
-  );
-};
-
-
-const SupportContent = () => {
-  const navigate = useNavigate();
-  return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">Our Supports</h3>
-        <a href="#" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-          Help Center
+        <h3 className="font-semibold">For Individuals</h3>
+        <a
+          href="/"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Introduction
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-          Location Map
+        <a
+          href="/"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Pay as you go
         </a>
-        <a href="#" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold">
-          Whatsapp Chat
-        </a>
-        
       </div>
-
+      <div className="mb-6 space-y-3">
+        <h3 className="font-semibold">For Companies</h3>
+        <a
+          href="/"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Startups
+        </a>
+        <a
+          href="/"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Enterprise
+        </a>
+      </div>
+      <button
+        onClick={handleServices}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        Contact us
+      </button>
     </div>
   );
 };
-
 
 const ServicesContent = () => {
   const navigate = useNavigate();
@@ -611,37 +489,43 @@ const ServicesContent = () => {
         <h3 className="font-semibold">Services We Offer</h3>
         <a
           href="/services-microsoft-dynamics-365-finance"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Finance & Operations
         </a>
         <a
           href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Microsoft Dynamics 365
         </a>
 
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamics 365 Implementation
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Implementation Partner
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Customer Engagement
         </a>
       </div>
 
+      <button
+        onClick={handleServices}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        View More
+      </button>
     </div>
   );
 };
@@ -654,32 +538,37 @@ const IndustriesContent = () => {
         <h3 className="font-semibold">Our Vast Resources</h3>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Startups
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Not for profit
         </a>
 
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Manufacturing Services
         </a>
         <a
           href="#"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Professional Services
         </a>
       </div>
 
-  
+      <button
+        onClick={() => navigate("/industries")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        View More
+      </button>
     </div>
   );
 };
@@ -693,19 +582,24 @@ const AboutUsContent = () => {
 
         <a
           href="/about-us"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Why AXSeva
         </a>
         <a
           href="/collaborate-with-us"
-          className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Collaborate with Us
         </a>
       </div>
       <div className="mb-6 space-y-3"></div>
-     
+      <button
+        onClick={() => navigate("/about-us")}
+        className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
+      >
+        View More
+      </button>
     </div>
   );
 };

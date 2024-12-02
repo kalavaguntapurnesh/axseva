@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Lottie from "lottie-react";
 import { useState } from "react";
 import Loading from "./assets/Loading.json";
+import PrivacyPolicy from "./pages/Privacy";
 import Industries from "./pages/Industries";
 import Support from "./pages/Support";
 import Benefits from "./pages/Benefits";
@@ -38,14 +39,21 @@ function App() {
       ) : ( */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about-us" element={<About />} />
         <Route path="/managed-it-services" element={<Services />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/dynamics-365-support-services" element={<Support />} />
         <Route path="/collaborate-with-us" element={<Benefits />} />
-        <Route path="/services-microsoft-dynamics-365" element={<MicrosoftDynamics365/>}/>
-        <Route path="/services-microsoft-dynamics-365-finance" element={<MicrosoftDynamics365Finance/>}/>
+        <Route
+          path="/services-microsoft-dynamics-365"
+          element={<MicrosoftDynamics365 />}
+        />
+        <Route
+          path="/services-microsoft-dynamics-365-finance"
+          element={<MicrosoftDynamics365Finance />}
+        />
       </Routes>
       {/* )} */}
     </BrowserRouter>
