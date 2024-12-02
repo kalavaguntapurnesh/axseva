@@ -143,17 +143,10 @@ const Footer = () => {
                           Customer Engagement
                         </a>
                       </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="#"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Support
-                        </a>
-                      </li>
                     </ul>
                   </div>
 
+                  <div className="flex flex-col gap-10">
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
@@ -164,7 +157,7 @@ const Footer = () => {
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/"
+                          href="/privacy-policy"
                           className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Dynamics 365 Super & Hypermarkets Solution
@@ -172,13 +165,42 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/about-us"
+                          href="/learn-about-us"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Holistico - D365 Customer Service Solution
                         </a>
                       </li>
                     </ul>
+                  </div>
+
+                  <div className="mb-12 md:mb-0 ">
+                      <div className="flex items-center md:justify-start justify-center">
+                        {/* <div className="h-4 w-1 bg-mainColor"></div> */}
+                        <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                          About us
+                        </h4>
+                      </div>
+                      <ul className="pl-0 mt-4 space-y-3 list-none">
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="https://maps.app.goo.gl/G9qoFoUF2K1MPmv8A"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Why AxSeva
+                          </a>
+                        </li>
+
+                        <li className=" flex items-start md:justify-start justify-center">
+                          <a
+                            href="#"
+                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          >
+                            Collaborate with Us
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className="mb-12 md:mb-0">
@@ -334,28 +356,6 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-5 gap-4 pb-8">
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>Cookie Settings</h1>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>User Privacy</h1>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>User Agreement</h1>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>Legal Notice</h1>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <h1>Responsible Disclosure</h1>
               </div>
             </div>
 
