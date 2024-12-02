@@ -342,7 +342,7 @@ const NavBar = () => {
             <li className="p-4 border-b border-gray-600">
               <div
                 onClick={() => toggleMobileDropdown("support")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
+                className="flex items-center justify-between cursor-pointer text-headingColor"
               >
                 Support
                 <FaAngleDown
