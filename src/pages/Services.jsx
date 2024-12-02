@@ -245,7 +245,7 @@ const Services = () => {
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
-                      Managed Services
+                      We thrive for a future
                     </h1>
                   </div>
 

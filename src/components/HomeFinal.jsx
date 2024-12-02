@@ -80,7 +80,7 @@ const HomeFinal = () => {
                 className="flex items-center text-center justify-center "
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                   Need Help
                 </h1>
               </motion.div>

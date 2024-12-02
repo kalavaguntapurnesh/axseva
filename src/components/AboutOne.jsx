@@ -38,7 +38,7 @@ const AboutOne = () => {
                 </div>
 
                 <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
-                  <h1>Transforming Businesses Through Technology</h1>
+                  <h1> Empowering Your Financial Future with us</h1>
                 </div>
 
                 <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
@@ -128,13 +128,14 @@ const AboutOne = () => {
                     </h1>
                   </div>
                   <div className="md:text-4xl text-3xl font-bold text-headingColor md:w-3/4">
-                    <h1>Building Trust Among Companies</h1>
+                    <h1>Transform your financial operations</h1>
                   </div>
                   <div className="text-sideHeading">
                     <h1>
-                      Building Trust Among Companies & Customers Relationships
-                      are built over an ever-valuable commodity, Trust. We're
-                      out with a simple motto in mind.
+                      To help you transform your financial operations, so you
+                      can focus on what you do best—growing your business. We
+                      believe that with the right tools and the right partner,
+                      there's no limit to what you can achieve.
                     </h1>
                   </div>
                 </div>
@@ -154,13 +155,15 @@ const AboutOne = () => {
                     </h1>
                   </div>
                   <div className="md:text-4xl text-3xl font-bold text-headingColor md:w-3/4">
-                    <h1>Simplify the business processes</h1>
+                    <h1>Empower businesses process</h1>
                   </div>
                   <div className="text-sideHeading">
                     <h1>
-                      Improve customer experience, boost sales ROI by breaking
-                      data silos into meaningful insights by integrating Power
-                      BI, AI, and ML.
+                      To empower businesses to reach their full potential
+                      through innovative financial technology solutions. In
+                      today's dynamic and competitive marketplace, having a
+                      robust financial management system isn't just an
+                      advantage—it's a necessity.
                     </h1>
                   </div>
                 </div>
@@ -491,17 +494,24 @@ const AboutOne = () => {
                       <h1>Sumanth Dama</h1>
                     </div>
 
-                    <div className="md:text-lg text-sideHeading md:text-start text-center">
+                    <div className="md:text-lg text-sideHeading md:text-start text-center space-y-1">
                       <p>
-                        As a Microsoft Dynamics AX Solutions Architect, I am
-                        responsible for overseeing the design of software
-                        solutions that provide seamless automation of business
-                        operations and support for my clients. My experience as
-                        a consultant and architect supporting Microsoft Dynamics
-                        AX extends nearly 12 years. A long-standing career in
-                        software consulting and a passion for coaching and
-                        mentoring other software engineers has helped me to
-                        build
+                        When I founded AXSeva, my vision was clear: to empower
+                        businesses to reach their full potential through
+                        innovative financial technology solutions. In today's
+                        dynamic and competitive marketplace, having a robust
+                        financial management system isn't just an advantage—it's
+                        a necessity. That's why we've dedicated ourselves to
+                        mastering Microsoft Dynamics 365 Finance.
+                      </p>
+                      <p>
+                        This powerful platform has the capacity to revolutionize
+                        the way you manage your financial operations, providing
+                        real-time insights, automating complex processes, and
+                        enabling strategic decision-making like never before
+                        through a thoughtful, customized implementation—one that
+                        aligns perfectly with your unique business needs and
+                        goals.
                       </p>
                     </div>
 

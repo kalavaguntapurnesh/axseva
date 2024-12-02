@@ -111,18 +111,25 @@ const Contact = () => {
                         <div className="flex items-center md:justify-start justify-center md:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
                           <h1 className="uppercase ml-2 text-lg font-bold text-mainColor ">
-                            get in touch
+                            Partner With AXSeva
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
                           <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
-                            Ready for Business Innovation? Let’s talk!
+                            Your Expert Microsoft Dynamix Finance Parter
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="leading-relaxed tracking-wide lg:text-[20px] text-[16px] text-gray-600 dark:text-gray-800 ">
-                            Leverage Microsoft solutions customized specifically
-                            for your business needs!
+                          <h1 className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                            While these functions all stand to benefit your
+                            business, they can be difficult to navigate without
+                            the help of an experienced ERP specialist. AXSeva
+                            can help. As a Microsoft ERP Gold Certified Partner,
+                            AXSeva offers years of experience in both Microsoft
+                            Dynamics 365 and other ERP and Cloud Systems. We’ll
+                            help your business make the most of the Microsoft
+                            Dynamics 365 system, giving you the competitive edge
+                            you need to succeed.
                           </h1>
                         </div>
 
@@ -289,7 +296,7 @@ const Contact = () => {
                             htmlFor="email"
                             className="mb-3 block text-base font-medium text-[#07074D]"
                           >
-                            Work Email
+                            Your Email
                           </label>
                           <input
                             type="email"
@@ -297,7 +304,7 @@ const Contact = () => {
                             id="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="Your Work Email"
+                            placeholder="Your Email"
                             className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                           />
                         </div>
@@ -454,10 +461,13 @@ const Contact = () => {
                 />
                 <div className="flex flex-col text-center justify-center items-center h-full max-w-[900px] mx-auto">
                   <p className="text-gray-600 text-center mt-2">
-                    At AXSeva, I’ve built a company rooted in expertise,
-                    transparency, tailored strategies, strong partnerships, and
-                    measurable results in the field of Microsoft Dynamics 365
-                    Finance & Operations.
+                    Our mission is simple yet profound: to help you transform
+                    your financial operations, so you can focus on what you do
+                    best—growing your business. We believe that with the right
+                    tools and the right partner, there's no limit to what you
+                    can achieve. We're excited about the opportunity to work
+                    with you and are confident that together, we can build a
+                    foundation for sustained success.
                   </p>
                   <h2 className="text-black text-2xl mt-4 font-bold text-center flex flex-row items-center">
                     Sumanth Dama

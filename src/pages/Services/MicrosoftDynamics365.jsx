@@ -59,7 +59,7 @@ const MicrosoftDynamics365 = () => {
       <ContactNavbar />
 
       {/* section 2 */}
-      <div className="w-full lg:pt-36 pt-28 pb-8">
+     <div className="w-full lg:pt-36 pt-28 pb-8"> 
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
