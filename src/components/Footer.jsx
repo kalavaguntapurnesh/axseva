@@ -346,30 +346,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-5 gap-4 pb-8">
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <a href="https://policies.google.com/technologies/partner-sites">
-                  Cookie Settings
-                </a>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <a href="/privacy-policy">User Privacy</a>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <a href="/privacy-policy">User Agreement</a>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <a href="/privacy-policy">Responsible Disclosure</a>
-              </div>
-
-              <div className="text-[14px] leading-6 flex md:justify-start text-white justify-center">
-                <a href="/privacy-policy">Legal Notice</a>
-              </div>
-            </div>
-
+          
             <div className="text-center text-sm pb-6">
               <p className="text-footerItems">
                 Copyright © 2024 AxSeva. All rights reserved
