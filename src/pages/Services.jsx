@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { FaCheckCircle } from "react-icons/fa";
 import ServicesLayout from "../components/ServicesLayout";
-import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import ContactUsButton from "../components/ContactUsButton";
@@ -100,44 +98,23 @@ const Services = () => {
     {
       imageUrl:
         "https://cdn.iconscout.com/icon/premium/png-512-thumb/infrastructure-4636450-3840692.png?f=webp&w=512",
-      title: "Financial Management",
+      title: "Dynamic 365 & ERP Implementation",
       description:
-        "Automate and modernize global financial operations with in-depth reporting, financial intelligence, and embedded real-time analytics.",
+        "We offer specialized services in Microsoft Dynamics 365 and enterprise-grade ERP (Enterprise Resource Planning) solutions that transform your operations, boost efficiency, and unlock new levels of performance.",
     },
     {
       imageUrl:
         "https://cdn.iconscout.com/icon/premium/png-512-thumb/security-3243645-2705338.png?f=webp&w=512",
-      title: "Supply Chain Planning",
+      title: "Business Intelligence Analytical Services",
       description:
-        "Improve forecast accuracy with AI-powered predictions and historical data, ensuring faster replenishment cycles and shorter delivery",
+        "Business Intelligence Analytics in Microsoft 365 Dynamics empowers organizations with data-driven insights, enhancing decision-making, performance, and operational efficiency seamlessly for a better future.",
     },
     {
       imageUrl:
         "https://cdn.iconscout.com/icon/premium/png-512-thumb/data-59-100759.png?f=webp&w=512",
-      title: "Manufacturing Operations",
+      title: "Expert Support & Managed Solutions",
       description:
-        "mplement manufacturing processes that accelerate new product time-to-market using Internet of Things (IoT)",
-    },
-    {
-      imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512",
-      title: "Procurement and Sourcing",
-      description:
-        "Streamline and optimize sourcing decisions with features that help buyers rapidly assess the impact of order changes",
-    },
-    {
-      imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/data-1892287-1606873.png?f=webp&w=512",
-      title: "Digital Workplace",
-      description:
-        "We guide you on your Microsoft 365 roadmap, helping to optimize security, usage, and user adoption, make ongoing enhancements, and provide reporting.",
-    },
-    {
-      imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/adaptive-1892334-1606920.png?f=webp&w=512",
-      title: "Business Applications",
-      description:
-        "This program ensures the health of your Dynamics environments, optimizes usage and user adoption, implements ongoing enhancements and provides reporting.",
+        "Empowering businesses with expert Microsoft 365 support and managed services, ensuring seamless operations, enhanced productivity, secure collaboration, and tailored solutions to drive dynamic digital transformation.",
     },
   ];
 
@@ -269,7 +246,7 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor rounded text-white md:text-base text-sm px-12 py-3 text-center"
+                      className="bg-white hover:bg-mainColor hover:text-mainColor transition duration-500 ease-in-out border border-mainColor rounded text-mainColor  md:text-base text-sm px-12 py-3 text-center"
                     >
                       Learn More
                     </a>
@@ -326,9 +303,9 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="md:text-5xl text-4xl text-sideHeading font-bold text-center"
+                  className=" text-4xl text-sideHeading font-bold text-center"
                 >
-                  Explore our Strategic Programs
+                  Services We Offer
                 </motion.div>
 
                 {/* Description */}
@@ -339,9 +316,11 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.3 }}
                   className="text-base text-sideHeading text-center md:text-lg"
                 >
-                  The Advanced Level of managed support services includes the
-                  standard level PLUS a programmatic, roadmap-driven delivery of
-                  new capabilities each month.
+                  AXSeva specializes in Dynamics AX implementations with core
+                  focus on Dynamics AX + Analytics. Our expertise with Dynamics
+                  AX includes customization in X++, Business intelligence with
+                  SSRS, Analytics with OLAP, Power BI and AX Integration with
+                  external systems.
                 </motion.div>
 
                 {/* Cards Grid */}
@@ -353,32 +332,57 @@ const Services = () => {
                   className="grid md:grid-cols-3 grid-cols-1 gap-6 pt-10 max-w-full"
                 >
                   {services3.map((service, index) => (
+                    // <div
+                    //   key={index}
+                    //   className="p-6 border space-y-3 flex flex-col items-center rounded-lg shadow transition-transform hover:-translate-y-2 "
+                    // >
+                    //   <div className="flex justify-center items-center">
+                    //     {/* Replace image URLs with actual URLs for the service */}
+                    //     <img
+                    //       src={service.imageUrl} // Assuming each service object has an 'imageUrl' property
+                    //       alt="icon"
+                    //       className="w-24 h-24"
+                    //     />
+                    //   </div>
+                    //   <h3 className="text-xl mb-4">{service.title}</h3>
+                    //   <h3 className="text-xl mb-4">{service.subTitle}</h3>
+                    //   <p className="text-gray-700 mb-4 text-center">
+                    //     {service.description}
+                    //   </p>
+                    //   <a
+                    //     href="/contact"
+                    //     className="flex justify-between items-center gap-4"
+                    //   >
+                    //     <span className="font-semibold text-2xl cursor-pointer">
+                    //       Learn more
+                    //     </span>
+                    //     <BsArrowRightCircle className="text-mainColor text-2xl" />
+                    //   </a>
+                    // </div>
+
                     <div
                       key={index}
-                      className="p-6 border space-y-3 flex flex-col items-center rounded-lg shadow transition-transform hover:-translate-y-2 "
+                      className="flex md:justify-start justify-center"
                     >
-                      <div className="flex justify-center items-center">
-                        {/* Replace image URLs with actual URLs for the service */}
-                        <img
-                          src={service.imageUrl} // Assuming each service object has an 'imageUrl' property
-                          alt="icon"
-                          className="w-24 h-24"
-                        />
+                      <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
+                        <div className="space-y-3">
+                          <div className="flex justify-center items-center">
+                            <img
+                              src={service.imageUrl}
+                              alt=""
+                              className="w-24 h-24"
+                            />
+                          </div>
+                          <div className="flex justify-center items-center">
+                            <h1 className="text-2xl text-headingColor font-bold text-center">
+                              {service.title}
+                            </h1>
+                          </div>
+                          <div className="flex justify-center items-center text-gray-600 text-center">
+                            <p>{service.description}</p>
+                          </div>
+                        </div>
                       </div>
-                      <h3 className="text-xl mb-4">{service.title}</h3>
-                      <h3 className="text-xl mb-4">{service.subTitle}</h3>
-                      <p className="text-gray-700 mb-4 text-center">
-                        {service.description}
-                      </p>
-                      <a
-                        href="/contact"
-                        className="flex justify-between items-center gap-4"
-                      >
-                        <span className="font-semibold text-2xl cursor-pointer">
-                          Learn more
-                        </span>
-                        <BsArrowRightCircle className="text-mainColor text-2xl hover:text-4xl" />
-                      </a>
                     </div>
                   ))}
                 </motion.div>
@@ -387,9 +391,9 @@ const Services = () => {
                 <div className="flex justify-center pt-6">
                   <a
                     href="/contact"
-                    className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor text-center text-white p-4 rounded lg:w-1/4 w-3/4"
+                    className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-1000 ease-in-out hover:border hover:border-mainColor text-center text-white p-4 rounded lg:w-1/4 w-3/4"
                   >
-                    Talk to a managed services expert
+                    Speak with a Managed Services Expert
                   </a>
                 </div>
               </div>

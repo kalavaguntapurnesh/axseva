@@ -202,7 +202,7 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor">
                       <a href="/managed-it-services" className="text-sm">
-                        Services We Offer
+                        Dynamic 365 & ERP Implementation
                       </a>
                     </li>
                     <li className="text-headingColor">
@@ -210,7 +210,7 @@ const NavBar = () => {
                         href="/services-microsoft-dynamics-365-finance"
                         className="text-sm"
                       >
-                        Dynamic 365 Finance & Operations
+                        Business Intelligence Analytics
                       </a>
                     </li>
                     <li className="text-headingColor">
@@ -218,7 +218,7 @@ const NavBar = () => {
                         href="/services-microsoft-dynamics-365"
                         className="text-sm"
                       >
-                        Dynamic 365 Supply Chain
+                        Support & Managed Services
                       </a>
                     </li>
                   </motion.ul>
@@ -249,7 +249,25 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor ">
                       <a href="/industries" className="text-sm">
-                        Our Vast Resources
+                        Financial Services
+                      </a>
+                    </li>
+
+                    <li className="text-headingColor ">
+                      <a href="/industries" className="text-sm">
+                        Manufacturing Services
+                      </a>
+                    </li>
+
+                    <li className="text-headingColor ">
+                      <a href="/industries" className="text-sm">
+                        Public Sector Services
+                      </a>
+                    </li>
+
+                    <li className="text-headingColor ">
+                      <a href="/industries" className="text-sm">
+                        Software Services
                       </a>
                     </li>
                   </motion.ul>
@@ -525,35 +543,25 @@ const ServicesContent = () => {
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
         <h3 className="font-semibold">Services We Offer</h3>
-        <a
-          href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
-        >
-          Microsoft Dynamics 365
-        </a>
+
         <a
           href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Dynamics 365 Finance & Operations
+          Dynamic 365 & ERP Implementation
         </a>
         <a
           href="/services-microsoft-dynamics-365"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Dynamics 365 Implementation
+          Business Intelligence Analytics
         </a>
+
         <a
-          href="/services-microsoft-dynamics-365"
+          href="/services-microsoft-dynamics-365-finance"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Implementation Partner
-        </a>
-        <a
-          href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
-        >
-          Customer Engagement
+          Support & Managed Services
         </a>
       </div>
 
@@ -571,18 +579,12 @@ const IndustriesContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">Our Vast Resources</h3>
+        <h3 className="font-semibold">Industries We Serve</h3>
         <a
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Startups
-        </a>
-        <a
-          href="/industries"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
-        >
-          Not for profit
+          Financial Services
         </a>
         <a
           href="/industries"
@@ -594,7 +596,13 @@ const IndustriesContent = () => {
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Professional Services
+          Public Sector Service
+        </a>
+        <a
+          href="/industries"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Software Services
         </a>
       </div>
 

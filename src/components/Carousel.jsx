@@ -56,7 +56,7 @@ const Carousel = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8"
               >
-                <a href="#" className="flex md:justify-start justify-center">
+                <div className="flex md:justify-start justify-center">
                   <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
                     <div className="space-y-3">
                       <div className="flex justify-center items-center">
@@ -80,9 +80,9 @@ const Carousel = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
 
-                <a href="#" className="flex md:justify-start justify-center">
+                <div className="flex md:justify-start justify-center">
                   <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
                     <div className="space-y-3">
                       <div className="flex justify-center items-center">
@@ -106,9 +106,9 @@ const Carousel = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
 
-                <a href="#" className="flex md:justify-start justify-center">
+                <div className="flex md:justify-start justify-center">
                   <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
                     <div className="space-y-3">
                       <div className="flex justify-center items-center">
@@ -132,9 +132,9 @@ const Carousel = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
 
-                <a href="#" className="flex md:justify-start justify-center">
+                <div className="flex md:justify-start justify-center">
                   <div className="w-full p-4 bg-white border border-gray-200 rounded sm:p-6 md:p-8 transition-transform duration-300 hover:-translate-y-2">
                     <div className="space-y-3">
                       <div className="flex justify-center items-center">
@@ -158,7 +158,7 @@ const Carousel = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </motion.div>
 
               <motion.div

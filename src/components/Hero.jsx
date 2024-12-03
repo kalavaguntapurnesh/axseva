@@ -27,7 +27,7 @@ const Hero = () => {
       heading: "SHAPE THE FUTURE OF YOUR BUSINESS",
       paragraph:
         "We ensure smooth implementation and ongoing support for your success.",
-      buttonText: "Speak to us",
+      buttonText: "Speak With Us",
       buttonLink: "/managed-it-services",
     },
   ];
