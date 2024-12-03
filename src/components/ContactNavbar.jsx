@@ -689,7 +689,7 @@ const SupportContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        {/* <h3 className="font-semibold">About AXSeva</h3> */}
+        <h3 className="font-semibold">Dedicated to Assisting You</h3>
 
         <a
           href="/dynamics-365-support-services"
@@ -701,7 +701,7 @@ const SupportContent = () => {
           href={whatsappUrl}
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Whatsapp Chat
+          Connect via WhatsApp
         </a>
       </div>
       {/* <button
