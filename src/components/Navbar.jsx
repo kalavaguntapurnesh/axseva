@@ -322,7 +322,7 @@ const NavBar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                        Dynamics 365 Super & Hypermarkets Solution
+                        Integration Consulting
                       </a>
                     </li>
                     <li className="text-navGray">
@@ -331,7 +331,7 @@ const NavBar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                        Holistico - D365 Customer Service Solution
+                        Business Needs
                       </a>
                     </li>
                   </motion.ul>
@@ -538,17 +538,18 @@ const PricingContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
+        <h3 className="font-semibold">We Provide Solutions For</h3>
         <a
           href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Dynamics 365 Super & Hypermarkets Solution
+          Integration Consulting
         </a>
         <a
           href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Holistico - D365 Customer Service Solution
+          Business Needs
         </a>
       </div>
 
@@ -613,26 +614,26 @@ const IndustriesContent = () => {
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-         Financial Services
+          Financial Services
         </a>
         <a
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-           Manufacturing Services
+          Manufacturing Services
         </a>
 
         <a
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-         Public Sector Service
+          Public Sector Service
         </a>
         <a
           href="/industries"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-           Software Services
+          Software Services
         </a>
       </div>
 
