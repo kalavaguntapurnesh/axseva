@@ -282,26 +282,38 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/industries"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         Our Vast Resources
                       </a>
                     </li>
                     <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/industries"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         For Startups
                       </a>
                     </li>
                     <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/industries"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         Not For Profit
                       </a>
                     </li>
                     <li className="text-navGray ">
-                      <a href="/industries" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/industries"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         Manufacturing Services
                       </a>
                     </li>
@@ -332,15 +344,21 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray">
-                      <a href="/" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
-                      Dynamics 365 Super & Hypermarkets Solution
+                      <a
+                        href="/"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                        Dynamics 365 Super & Hypermarkets Solution
                       </a>
                     </li>
                     <li className="text-navGray">
-                      <a href="/" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
-                      Holistico - D365 Customer Service Solution
+                      <a
+                        href="/"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
+                        Holistico - D365 Customer Service Solution
                       </a>
                     </li>
                   </motion.ul>
@@ -371,14 +389,20 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-navGray ">
-                      <a href="/about-us" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/about-us"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         About AXSeva
                       </a>
                     </li>
                     <li className="text-navGray ">
-                      <a href="/collaborate-with-us" className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href="/collaborate-with-us"
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         Collaborate With Us
                       </a>
                     </li>
@@ -415,21 +439,15 @@ const NavBar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                        Help Center
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
-                      <a
-                        href="/dynamics-365-support-services"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-"
-                      >
                         Location Map
                       </a>
                     </li>
                     <li className="text-navGray ">
-                      <a href={whatsappUrl} className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-">
+                      <a
+                        href={whatsappUrl}
+                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
+"
+                      >
                         Whatsapp Chat
                       </a>
                     </li>
@@ -547,7 +565,6 @@ const PricingContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-       
         <a
           href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
@@ -558,10 +575,10 @@ const PricingContent = () => {
           href="/"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-        Holistico - D365 Customer Service Solution
+          Holistico - D365 Customer Service Solution
         </a>
       </div>
-      
+
       {/* <button
         onClick={handleServices}
         className="w-full rounded border-[1px] border-mainColor px-4 py-2 font-medium hover:font-normal duration-500 ease-in-out transition text-mainColor hover:text-white hover:bg-mainColor hover:border-none"
@@ -712,12 +729,6 @@ const SupportContent = () => {
       <div className="mb-3 space-y-3">
         {/* <h3 className="font-semibold">About AXSeva</h3> */}
 
-        <a
-          href="/dynamics-365-support-services"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
-        >
-          Help Center
-        </a>
         <a
           href="/dynamics-365-support-services"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"

@@ -41,7 +41,7 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/about-us"
+                            href="/about-us#our_leadership"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
                             Leadership
@@ -49,10 +49,10 @@ const Footer = () => {
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
-                            href="/"
+                            href="/terms-and-conditions"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            News & Events
+                            Terms & Conditions
                           </a>
                         </li>
                       </ul>
@@ -66,14 +66,6 @@ const Footer = () => {
                         </h4>
                       </div>
                       <ul className="pl-0 mt-4 space-y-3 list-none">
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="mailto:info@axseva.com"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Help Center
-                          </a>
-                        </li>
                         <li className=" flex items-start md:justify-start justify-center">
                           <a
                             href="https://www.google.com/maps/place/1691+Kettering+St,+Irvine,+CA+92614,+USA/@33.6979191,-117.8467571,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdebc76905421:0xc9b403b589d3cb99!8m2!3d33.6979191!4d-117.8467571!16s%2Fg%2F11bw3yyf27?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
@@ -346,7 +338,6 @@ const Footer = () => {
               </div>
             </div>
 
-          
             <div className="text-center text-sm pb-6">
               <p className="text-footerItems">
                 Copyright © 2024 AxSeva. All rights reserved

@@ -18,6 +18,7 @@ import Support from "./pages/Support";
 import Benefits from "./pages/Benefits";
 import MicrosoftDynamics365 from "./pages/Services/MicrosoftDynamics365";
 import MicrosoftDynamics365Finance from "./pages/Services/MicrosoftDynamics365Finance";
+import TermsAndConditions from "./pages/TermsAndConditions";
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -46,6 +47,7 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/dynamics-365-support-services" element={<Support />} />
         <Route path="/collaborate-with-us" element={<Benefits />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route
           path="/services-microsoft-dynamics-365"
           element={<MicrosoftDynamics365 />}

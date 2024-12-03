@@ -361,15 +361,7 @@ const NavBar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="pl-4 mt-6 space-y-2"
                   >
-                    <li className="text-navGray ">
-                      <a
-                        href="/dynamics-365-support-services"
-                        className="text-sm"
-                      >
-                        Help Center
-                      </a>
-                    </li>
-                    <li className="text-navGray ">
+                    <li className="text-headingColor">
                       <a
                         href="/dynamics-365-support-services"
                         className="text-sm"
@@ -377,7 +369,7 @@ const NavBar = () => {
                         Location Map
                       </a>
                     </li>
-                    <li className="text-navGray ">
+                    <li className="text-headingColor">
                       <a href={whatsappUrl} className="text-sm">
                         Whatsapp Chat
                       </a>
@@ -656,12 +648,6 @@ const SupportContent = () => {
       <div className="mb-3 space-y-3">
         {/* <h3 className="font-semibold">About AXSeva</h3> */}
 
-        <a
-          href="/dynamics-365-support-services"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
-        >
-          Help Center
-        </a>
         <a
           href="/dynamics-365-support-services"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"

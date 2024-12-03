@@ -344,7 +344,7 @@ const AboutOne = () => {
               </div>
             </div>
 
-            <div className="pt-20 md:px-0 px-2">
+            <div id="our_leadership" className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom

@@ -395,7 +395,7 @@ const Contact = () => {
                         </div>
 
                         {/* Terms and Conditions */}
-                        <div className="flex items-start justify-center mb-5">
+                        <div className="flex items-center justify-center mb-5">
                           <input
                             type="checkbox"
                             id="termsAccepted"
@@ -410,12 +410,19 @@ const Contact = () => {
                           >
                             I accept the{" "}
                             <a
+                              href="/terms-and-conditions"
+                              className="font-medium text-primary-600 hover:underline"
+                            >
+                              Terms and Conditions
+                            </a>{" "}
+                            &{" "}
+                            <a
                               href="/privacy-policy"
                               className="font-medium text-primary-600 hover:underline"
                             >
-                              Terms and Conditions & Privacy Policy of the
-                              company
-                            </a>
+                              Privacy Policy
+                            </a>{" "}
+                            of the company.
                           </label>
                         </div>
 
