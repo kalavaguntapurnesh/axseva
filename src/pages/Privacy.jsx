@@ -1,38 +1,66 @@
-import React from "react";
-import Footer from "../components/Footer";
-import ContactNavbar from "../components/ContactNavbar";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import NavBar from "../components/Navbar";
 import ContactUsButton from "../components/ContactUsButton";
+import Footer from "../components/Footer";
 
 const Privacy = () => {
-  const image =
-    "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-  const heading = "Privacy Policy";
+  const slides = [
+    {
+      image:
+        "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      heading: "AXSeva's Privacy Policy",
+      // paragraph: "Terms and Conditions for Consultation Request",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically change slides every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [slides.length]);
 
   return (
     <div>
-      <ContactNavbar />
-      <section className=" text-black ">
-        <div className="bg-white relative">
-          <div className="pt-20 lg:pb-8">
-            <div className="w-full relative">
-              <div className="inset-0 z-0">
-                <img
-                  src={image}
-                  alt=""
-                  className="opacity-[97%] inset-0 object-cover w-full lg:h-[400px] md:h-[360px] h-auto"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h1 className="text-white lg:text-5xl text-4xl font-bold">
-                    {heading}
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="flex flex-col h-screen">
+        {/* NavBar */}
+        <NavBar />
 
-      <div className="xl:pt-1 pt-8">
+        <section className="relative h-full w-full overflow-hidden">
+          {/* Background Images */}
+          <div className="absolute inset-0 z-0">
+            <AnimatePresence>
+              <motion.img
+                key={slides[currentIndex].image}
+                src={slides[currentIndex].image}
+                alt={`Slide ${currentIndex + 1}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1 }}
+                className="absolute inset-0 object-cover w-full h-full"
+              />
+            </AnimatePresence>
+          </div>
+
+          {/* Static Text Content */}
+          <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
+            <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+              {slides[currentIndex].heading}
+            </h1>
+            {/* <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
+              {slides[currentIndex].paragraph}
+            </p> */}
+          </div>
+        </section>
+      </div>
+
+      <div className="xl:pt-8 pt-16">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12 space-y-4">
