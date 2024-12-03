@@ -15,68 +15,74 @@ const MicrosoftDynamics365Finance = () => {
 
       {/* section 1 */}
 
-      <div className="w-full pt-28 pb-8">
+      <div className="lg:pt-12">
         <div className="relative">
-          <div className="max-w-[1400px] mx-auto px-4  ">
-            <div className="flex flex-col gap-4 space-y-8">
-              <div className="p-6">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="w-full">
+            <div className="w-full mx-auto max-w-[1400px] pb-12">
+              <div className="w-full pt-28">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                   <motion.div
                     variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
-                    className="p-6 border flex flex-col space-y-4 rounded  transition-transform hover:-translate-y-4  bg-transparent"
+                    className="flex flex-col space-y-6 w-full"
                   >
-                    <div className="flex justify-center items-center  rounded">
-                      {/* <IoBarChart size={32} className="text-mainColor" /> */}
-                      <img
-                        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/automation-3460215-2892846.png?f=webp&w=512"
-                        className="w-24 h-24"
-                      />
+                    <div className="flex items-center md:justify-start justify-center md:ml-4">
+                      <div className="h-4 w-1 bg-mainColor"></div>
+                      <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                        Dynamic 365 & ERP
+                      </h1>
                     </div>
-                    <h3 className="text-xl font-bold text-center">
-                      Cost-effective solution
-                    </h3>
-                    <p className="text-gray-700 text-center">
-                      Dynamics 365 Finance and Operations streamlines operations
-                      by eliminating unnecessary resources and reducing costs
-                      through digitalization. It simplifies customization and
-                      integration, saving on expenses and lowering training
-                      costs.
-                    </p>
-                  </motion.div>
 
-                  <motion.div
-                    variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.5 }}
-                    className="p-6 border flex flex-col space-y-4  rounded shadow   transition-transform hover:-translate-y-4  bg-transparent"
-                  >
-                    <div className="flex justify-center items-center  rounded-full">
-                      {/* <IoBarChart size={32} className="text-mainColor" /> */}
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/2861/2861472.png"
-                        className="w-24 h-24"
-                      />
+                    <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                      <h1>Our Comprehensive Dynamics 365 & ERP Services</h1>
                     </div>
-                    <h3 className="text-xl font-bold text-center">
-                      Improved data security & accessibility
-                    </h3>
-                    <p className="text-gray-700 text-center">
-                      Microsoft Dynamics 365 Finance and Operations, hosted on
-                      the Azure cloud platform, delivers unmatched flexibility
-                      and security for your business. With robust data
-                      protection, built-in disaster recovery, and 24/7 support,
-                      it ensures business continuity and peace of mind. Its
-                      cross-platform UI support enables users to access the
-                      system seamlessly from any device, anywhere in the world.
-                      Additionally, the platform leverages Azure's scalability
-                      and performance to adapt to your growing business needs,
-                      empowering your organization to drive efficiency and
-                      innovation in a secure, cloud-based environment.
-                    </p>
+
+                    <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                      <p>
+                        In today’s fast-paced digital landscape, businesses need
+                        agile and robust solutions to stay competitive and grow.
+                        At AXSeva, we offer specialized services in Microsoft
+                        Dynamics 365 and enterprise-grade ERP (Enterprise
+                        Resource Planning) solutions that transform your
+                        operations, boost efficiency, and unlock new levels of
+                        performance.
+                      </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-2">
+                      {/* <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                    <div className="text-sideHeading font-semibold">
+                      <p>In-depth Product Knowledge</p>
+                    </div>
+                  </div>
+                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                    <div className="text-sideHeading font-semibold">
+                      <p>Flexible Engagement Model</p>
+                    </div>
+                  </div> */}
+                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                        <div className="text-sideHeading font-semibold">
+                          <p>End-to-End Implementation</p>
+                        </div>
+                      </div>
+                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                        <div className="text-sideHeading font-semibold">
+                          <p>Customization & Integration</p>
+                        </div>
+                      </div>
+                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                        <div className="text-sideHeading font-semibold">
+                          <p>Global Compliance Support</p>
+                        </div>
+                      </div>
+                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
+                        <div className="text-sideHeading font-semibold">
+                          <p>Around the clock Support</p>
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
 
                   <motion.div
@@ -84,62 +90,266 @@ const MicrosoftDynamics365Finance = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
-                    className="p-6 border flex flex-col space-y-4  rounded shadow   transition-transform hover:-translate-y-4  bg-transparent"
+                    className="flex justify-center items-center w-[100%]"
                   >
-                    <div className="flex justify-center items-center  rounded-full">
-                      {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                    <div>
                       <img
-                        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
-                        className="w-24 h-24"
+                        src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt=""
+                        width="612"
+                        height="512"
+                        className="rounded md:block hidden"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-center">
-                      Enhanced visibility and control
-                    </h3>
-                    <p className="text-gray-700 text-center">
-                      Microsoft Dynamics 365 Finance and Operations delivers
-                      powerful data-driven insights by unifying intelligence
-                      across key business functions and supply chain
-                      touchpoints. This enables leaders to make informed
-                      decisions, enhance productivity, and access real-time
-                      financial and operational data. With its robust analytics
-                      and reporting capabilities, the platform empowers
-                      businesses to drive efficiency, optimize performance, and
-                      maintain a competitive edge in a dynamic marketplace.
-                    </p>
-                  </motion.div>
-
-                  <motion.div
-                    variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.5 }}
-                    className="p-6 border flex flex-col space-y-4  rounded shadow   transition-transform hover:-translate-y-4  bg-transparent"
-                  >
-                    <div className="flex justify-center items-center  rounded-full">
-                      {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                    <div className="flex justify-center items-center">
                       <img
-                        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/security-1999897-1697833.png?f=webp&w=512"
-                        className="w-24 h-24"
+                        src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt=""
+                        className="rounded md:hidden block w-[90%]"
                       />
                     </div>
-                    <h3 className="text-xl font-bold text-center">
-                      Optimized business operations
-                    </h3>
-                    <p className="text-gray-700 text-center">
-                      Microsoft Dynamics 365’s cloud-based ERP solution is
-                      tailored for businesses across various industries,
-                      providing flexible, customizable applications to automate
-                      processes and enhance productivity. By seamlessly
-                      integrating data and workflows, it empowers organizations
-                      to respond swiftly to evolving customer needs, streamline
-                      operations, and drive business growth. With its
-                      scalability and adaptability, Dynamics 365 enables
-                      businesses to stay competitive and efficient in an
-                      ever-changing market landscape.
-                    </p>
                   </motion.div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>{" "}
+      </div>
+
+      <div className="pt-12 md:px-0 px-2">
+        <div className="relative">
+          <div className="w-full">
+            <div className="w-full mx-auto max-w-[1400px] pb-12">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center">
+                        <div className="flex justify-center items-center  rounded-full">
+                          {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                          <img
+                            src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
+                            alt="icon"
+                            className="w-20 h-20"
+                          />
+                        </div>
+                      </div>
+                      <div class="flex justify-center items-center">
+                        <h1 class="text-3xl text-headingColor font-bold text-center">
+                          User Training Management
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Provide hands-on training sessions for your team to
+                          maximize productivity. Develop a robust change
+                          management strategy to ensure a smooth transition to
+                          the new system.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
+
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center  rounded-full">
+                        {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                        <img
+                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/automation-3460215-2892846.png?f=webp&w=512"
+                          alt="icon"
+                          className="w-20 h-20"
+                        />
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
+                          End-to-End Implementation
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Tailor the Dynamics 365 and ERP system architecture to
+                          align with your operations and objectives. Seamless
+                          installation and configuration of the solution,
+                          ensuring minimal disruption to your business.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center  rounded-full">
+                        {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                        <img
+                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/security-1999897-1697833.png?f=webp&w=512"
+                          className="w-20 h-20"
+                        />
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
+                          Data Migration Services
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Transition your legacy data to the new ERP platform
+                          with precision and accuracy. Data Cleansing &
+                          Validation will ensure clean, reliable data that
+                          supports your business goals.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
+
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center  rounded-full">
+                        {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                        <img
+                          src="https://cdn-icons-png.flaticon.com/512/2861/2861472.png"
+                          className="w-20 h-20"
+                        />
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
+                          Post-Implementation Support
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Deliver ongoing technical support to resolve issues
+                          and improve system performance. Regularly optimize
+                          workflows and implement upgrades to keep your business
+                          ahead of the curve.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
+
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center  rounded-full">
+                        {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                        <img
+                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/unity-4870710-4061698.png?f=webp&w=512"
+                          className="w-20 h-20"
+                        />
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
+                          ERP Health Checks & Maintenance
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Conduct periodic assessments of your system to ensure
+                          compliance, efficiency, and optimal performance. Offer
+                          proactive maintenance to prevent downtime and address
+                          potential risks.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
+
+                <a href="" class="flex md:justify-start justify-center">
+                  <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
+                    <div class="space-y-4">
+                      <div className="flex justify-center items-center  rounded-full">
+                        {/* <IoBarChart size={32} className="text-mainColor" /> */}
+                        <img
+                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/innovation-2277793-1897480.png?f=webp&w=512"
+                          className="w-20 h-20"
+                        />
+                      </div>
+
+                      <div class="flex justify-center items-center">
+                        <h1 class=" text-3xl text-headingColor font-bold text-center">
+                          Customization and Integration
+                        </h1>
+                      </div>
+
+                      <div class="flex justify-center items-center text-gray-600 text-center">
+                        <p>
+                          Adapt Dynamics 365 and ERP features to fit your unique
+                          processes. Integrate with existing tools like CRM
+                          systems, supply chain management software, and
+                          third-party applications for a unified ecosystem.
+                        </p>
+                      </div>
+
+                      {/* <div className="flex justify-center">
+                        <a
+                          href="/contact-us"
+                          class="border-[1px] border-mainColor text-mainColor transition duration-1000 font-semibold text-colorFour py-2 px-4 rounded"
+                        >
+                          View Features
+                        </a>
+                      </div> */}
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -147,14 +357,13 @@ const MicrosoftDynamics365Finance = () => {
       </div>
 
       {/* section 2 */}
-      <div className="w-full pt-16">
+      {/* <div className="w-full pt-16">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto md:px-0 px-4 ">
             <div className="flex flex-col gap-4 space-y-8">
               <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                {/* grid 1 */}
                 <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  variants={fadeIn("down", 0.1)}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
@@ -190,10 +399,9 @@ const MicrosoftDynamics365Finance = () => {
                     </a>
                   </div>
                 </motion.div>
-                {/* grid 2 */}
 
                 <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  variants={fadeIn("up", 0.1)}
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
@@ -207,11 +415,11 @@ const MicrosoftDynamics365Finance = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* section 3 */}
 
-      <div className="w-full pt-16">
+      <div className="w-full pt-12">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto md:px-0 px-4 ">
             <div className="flex flex-col gap-8 space-y-8">

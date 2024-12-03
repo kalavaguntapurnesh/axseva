@@ -389,6 +389,11 @@ const NavBar = () => {
                         Collaborate With Us
                       </a>
                     </li>
+                    <li className="text-headingColor ">
+                      <a href="/privacy-policy" className="text-sm">
+                        Our Privacy Policy
+                      </a>
+                    </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
@@ -666,6 +671,12 @@ const AboutUsContent = () => {
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Collaborate with Us
+        </a>
+        <a
+          href="/privacy-policy"
+          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+        >
+          Our Privacy Policy
         </a>
       </div>
       {/* <button
