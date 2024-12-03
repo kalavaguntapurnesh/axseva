@@ -44,7 +44,7 @@ const Footer = () => {
                             href="/about-us#our_leadership"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            Leadership
+                            Our Leadership
                           </a>
                         </li>
                         <li className=" flex items-start md:justify-start justify-center">
@@ -80,7 +80,7 @@ const Footer = () => {
                             href="/"
                             className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                           >
-                            Whatsapp Chat
+                            Connect via WhatsApp
                           </a>
                         </li>
                       </ul>
@@ -100,7 +100,7 @@ const Footer = () => {
                           href="/managed-it-services"
                           className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Microsoft Dynamics 365
+                          Dynamic 365 & ERP Implementation
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -108,7 +108,7 @@ const Footer = () => {
                           href="/services-microsoft-dynamics-365-finance"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Dynamics 365 Finance & Operations
+                          Business Intelligence Analytics
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -116,17 +116,17 @@ const Footer = () => {
                           href="/services-microsoft-dynamics-365-finance"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Dynamics 365 Implementation
+                          Support & Managed Services
                         </a>
                       </li>
-                      <li className=" flex items-start md:justify-start justify-center">
+                      {/* <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Implementation Partner
                         </a>
-                      </li>
+                      </li> */}
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/"
@@ -176,7 +176,7 @@ const Footer = () => {
                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Dynamics 365 Super & Hypermarkets Solution
+                          Integration Consulting
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -184,7 +184,7 @@ const Footer = () => {
                           href="/about-us"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Holistico - D365 Customer Service Solution
+                          Business Needs
                         </a>
                       </li>
                     </ul>
@@ -203,7 +203,7 @@ const Footer = () => {
                           href="/industries"
                           className="hover:text-mainColor text-footerItems hover:font-bold lg:text-start text-center  no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Startups
+                          Financial Services
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -211,7 +211,7 @@ const Footer = () => {
                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Not for profit
+                          Manufacturing Services
                         </a>
                       </li>
 
@@ -220,7 +220,7 @@ const Footer = () => {
                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Manufacturing Services
+                          Software Services
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -228,7 +228,7 @@ const Footer = () => {
                           href="/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Professional Services
+                          Public Sector Services
                         </a>
                       </li>
                     </ul>

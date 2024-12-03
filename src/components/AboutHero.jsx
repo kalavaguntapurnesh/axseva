@@ -19,7 +19,7 @@ const AboutHero = () => {
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
       buttonText: "Find Out More",
-      buttonLink: "/industries",
+      buttonLink: "/contact",
     },
   ];
 

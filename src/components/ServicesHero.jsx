@@ -10,7 +10,7 @@ const ServicesHero = () => {
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
-      buttonLink: "/services-microsoft-dynamics-365-finance",
+      buttonLink: "/contact",
     },
     {
       image:
@@ -19,7 +19,7 @@ const ServicesHero = () => {
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
       buttonText: "Find Out More",
-      buttonLink: "/about-us",
+      buttonLink: "/contact",
     },
     {
       image:

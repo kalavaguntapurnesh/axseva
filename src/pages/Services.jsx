@@ -197,7 +197,7 @@ const Services = () => {
                       className="bg-mainColor flex items-center justify-center hover:bg-white hover:text-mainColor hover:border-[1px] hover:border-mainColor outline-none
                       rounded hover:shadow-form transition duration-1000 ease-in-out text-base text-white px-8 py-2.5 text-center"
                     >
-                      Talk to us
+                      Talk with us
                     </a>
                   </div>
                 </motion.div>
@@ -246,7 +246,7 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      className="bg-white hover:bg-mainColor hover:text-mainColor transition duration-500 ease-in-out border border-mainColor rounded text-mainColor  md:text-base text-sm px-12 py-3 text-center"
+                      className="bg-white hover:bg-mainColor hover:text-white transition duration-500 ease-in-out border border-mainColor rounded text-mainColor  md:text-base text-sm px-12 py-3 text-center"
                     >
                       Learn More
                     </a>
