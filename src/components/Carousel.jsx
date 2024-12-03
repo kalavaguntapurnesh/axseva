@@ -198,17 +198,19 @@ const Carousel = () => {
                               </h1>
                             </div>
                             <h1 className="text-4xl font-bold text-headingColor md:text-start text-center">
-                              What is Dynamics 365 Finance & Operations?
+                              Driving Innovation with Microsoft Dynamics
+                              Expertise
                             </h1>
 
                             <div className="md:text-start text-center mt-4 mb-1">
                               <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
-                                Dynamics 365 Finance & Operations takes center
-                                stage among the flagship business solutions
-                                launched by Microsoft. It is an advanced ERP
-                                solution that integrates finance, supply chain,
-                                and operations to enjoy maximum visibility and
-                                control to grow more than your competitors.
+                                AXSeva specializes in Dynamics AX
+                                implementations with core focus on Dynamics AX +
+                                Analytics. Our expertise with Dynamics AX
+                                includes customization in X++, Business
+                                intelligence with SSRS, Analytics with OLAP,
+                                Power BI and AX Integration with external
+                                systems.
                               </h1>
                             </div>
                             <div class=" mt-6 space-y-4 border-t-[2px] border-gray-200 dark:border-gray-700">
@@ -278,10 +280,11 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h3 class="mb-2 text-2xl font-bold text-colorTwo ">
-                                Financial Management
+                                Business Intelligence Analytics
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
-                                rate of visa approval to various countries.
+                                Seamless integration with apps, data and
+                                processes.
                               </p>
                             </div>
                             <div className="flex flex-col lg:items-start items-center">
@@ -290,10 +293,11 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h3 class="mb-2 text-2xl font-bold ">
-                                Microsoft Ecosystem Integration
+                                Dynamic 365 & ERP Implementation
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
-                                Students Sent From MAC to Various Universities.
+                                Turn relevant and timely business data into
+                                actionable insights.
                               </p>
                             </div>
 
@@ -303,10 +307,11 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
-                                Integration and Scalability
+                                Support & Managed Services
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
-                                Students Sent From MAC to Various Universities.
+                                Ongoing support and partnership after the
+                                go-live activities.
                               </p>
                             </div>
 
@@ -316,10 +321,11 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
-                                Process Automation
+                                Tailoring Applications in X++
                               </h3>
                               <p class="font-normal text-gray-500 dark:text-gray-500">
-                                Students Sent From MAC to Various Universities.
+                                Tailoring Dynamics AX to meet specific business
+                                requirements.
                               </p>
                             </div>
                           </motion.div>

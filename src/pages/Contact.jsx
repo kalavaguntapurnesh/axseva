@@ -116,7 +116,7 @@ const Contact = () => {
                         </div>
                         <div className="lg:text-start text-center">
                           <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
-                            Your Expert Microsoft Dynamix Finance Parter
+                            Your Expert Microsoft Dynamics Finance Parter
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
