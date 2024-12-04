@@ -18,7 +18,7 @@ const Contact = () => {
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg",
-      heading: "Want to get advice?",
+      heading: "Want to get an advice?",
       paragraph:
         "AXSeva is here to provide good recommendations for your business",
     },
@@ -624,23 +624,23 @@ const Contact = () => {
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
                       <h1 class="text-2xl font-bold text-headingColor">
-                        Businesses Meet Expected ROI
+                        Discovery and Planning
                       </h1>
                     </div>
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
                       <p>
-                        For press or investor queries, please reach out to our
-                        Communications team
+                        We begin by understanding your business goals,
+                        challenges and requirements.
                       </p>
                     </div>
 
                     <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
                       <a
-                        href="/contact"
+                        href="/privacy-policy"
                         class="flex  font-semibold transition duration-1000 ease-out"
                       >
-                        See Investor Relations
+                        Know about privacy policy
                       </a>
                       <MdArrowRightAlt size={24} className="text-mainColor" />
                     </div>
@@ -664,15 +664,18 @@ const Contact = () => {
                     </div>
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
-                      <p>Interested in joining the AXSeva team?</p>
+                      <p>
+                        Our team configures Dynamics 365 Finance to align with
+                        your specific processes and workflows.
+                      </p>
                     </div>
 
                     <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
                       <a
-                        href="/contact"
+                        href="/terms-and-conditions"
                         class="flex  font-semibold transition duration-1000 ease-out"
                       >
-                        Explore open positions
+                        Our Terms & Conditions
                       </a>
                       <MdArrowRightAlt size={24} className="text-mainColor" />
                     </div>
