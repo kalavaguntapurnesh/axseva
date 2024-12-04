@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Lottie from "lottie-react";
 import { useState } from "react";
 import Loading from "./assets/Loading.json";
+import CookieConsent from "./components/CookieConsent";
 import PrivacyPolicy from "./pages/Privacy";
 import Industries from "./pages/Industries";
 import Support from "./pages/Support";
@@ -58,6 +59,7 @@ function App() {
         />
       </Routes>
       {/* )} */}
+      <CookieConsent /> {/* Add CookieConsent here */}
     </BrowserRouter>
   );
 }
