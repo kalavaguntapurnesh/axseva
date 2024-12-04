@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import AboutLayout from "../../components/AboutLayout";
 import ContactNavbar from "../../components/ContactNavbar.jsx";
 import ContactUsButton from "../../components/ContactUsButton";
 import { motion } from "framer-motion";

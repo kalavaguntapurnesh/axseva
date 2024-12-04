@@ -1,18 +1,39 @@
 import Footer from "../components/Footer";
-import ContactNavbar from "../components/ContactNavbar";
-import { motion } from "framer-motion";
+import NavBar from "../components/Navbar";
+import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { MdArrowRightAlt } from "react-icons/md";
 import ContactUsButton from "../components/ContactUsButton";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 const Contact = () => {
   // const handleCaptcha = (value) => {
   //   const [verified, setVerified] = useState(false); // Captcha verification state
   //   setVerified(true);
   // };
+
+  const slides = [
+    {
+      image:
+        "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg",
+      heading: "Want to get advice?",
+      paragraph:
+        "AXSeva is here to provide good recommendations for your business",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Automatically change slides every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [slides.length]);
 
   const [formData, setFormData] = useState({
     fullname: "",
@@ -91,13 +112,43 @@ const Contact = () => {
 
   return (
     <div>
-      <ContactNavbar />
-      {/* <ScrollToTop /> */}
+      <div className="flex flex-col h-screen">
+        {/* NavBar */}
+        <NavBar />
+
+        <section className="relative h-full w-full overflow-hidden">
+          {/* Background Images */}
+          <div className="absolute inset-0 z-0">
+            <AnimatePresence>
+              <motion.img
+                key={slides[currentIndex].image}
+                src={slides[currentIndex].image}
+                alt={`Slide ${currentIndex + 1}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1 }}
+                className="absolute inset-0 object-cover w-full h-full"
+              />
+            </AnimatePresence>
+          </div>
+
+          {/* Static Text Content */}
+          <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
+            <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+              {slides[currentIndex].heading}
+            </h1>
+            <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
+              {slides[currentIndex].paragraph}
+            </p>
+          </div>
+        </section>
+      </div>
 
       <section className=" text-black">
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-white">
-            <div className="relative lg:pt-28 pt-20 lg:pb-8">
+            <div className="relative xl:pt-8 pt-12">
               <div className="w-full">
                 <div className="w-full px-4 mx-auto max-w-[1400px]">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
