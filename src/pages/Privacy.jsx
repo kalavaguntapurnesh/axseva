@@ -18,7 +18,15 @@ const Privacy = () => {
   const [selectedHeading, setSelectedHeading] = useState(0);
 
   // Refs to scroll to specific sections in the desktop view
-  const sectionRefs = [useRef(null), useRef(null), useRef(null)];
+  const sectionRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
 
   // Handle select change for mobile
   const handleSelectChange = (event) => {
@@ -108,45 +116,45 @@ const Privacy = () => {
                     <div className="space-y-5 col-span-1">
                       <h2
                         onClick={() => scrollToSection(0)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         Information We Collect From the User
                       </h2>
                       <h2
                         onClick={() => scrollToSection(1)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         How We Use The Collected Information
                       </h2>
                       <h2
                         onClick={() => scrollToSection(2)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         Data Sharing, Disclosure & Data Security
                       </h2>
                       <h2
                         onClick={() => scrollToSection(3)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         Your Choices, Rights & Changes to the policy
                       </h2>
                       <h2
                         onClick={() => scrollToSection(4)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         Why does the Company collect user information?
                       </h2>
                       <h2
                         onClick={() => scrollToSection(5)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
                         How does the Company collect user information?
                       </h2>
                       <h2
                         onClick={() => scrollToSection(6)}
-                        className={`text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000`}
+                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
                       >
-                        Personal Infomation Disclosure by Company
+                        Personal Information Disclosure by Company
                       </h2>
                     </div>
 
