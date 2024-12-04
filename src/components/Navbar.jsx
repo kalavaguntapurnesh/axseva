@@ -52,7 +52,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-footerbg shadow-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-[#f2f8fe] py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
@@ -63,7 +63,9 @@ const NavBar = () => {
               AX{" "}
               <span
                 className={` ${
-                  isScrolled ? "text-[#ffffff] font-semibold" : "text-navGray"
+                  isScrolled
+                    ? "text-black font-semibold"
+                    : "text-navGray semibold"
                 }`}
               >
                 Seva
@@ -133,10 +135,10 @@ const NavBar = () => {
             // onClick={() => {
             //   navigate("/contact");
             // }}
-            className={`border-[1px] text-white  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
+            className={`border-[1px]  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
-                ? "border-navGray hover:border-[1px]  font-light"
-                : "border-navGray font-light"
+                ? "border-black hover:border-[1px] text-black font-medium"
+                : "border-navGray font-light text-white"
             }`}
           >
             Contact Us
@@ -148,13 +150,13 @@ const NavBar = () => {
             {isMobileMenuOpen ? (
               <AiOutlineClose
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-[#ffffff]" : "text-navGray"
+                  isScrolled ? "text-black" : "text-navGray"
                 }`}
               />
             ) : (
               <RiMenu3Fill
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-[#ffffff]" : "text-navGray"
+                  isScrolled ? "text-black" : "text-navGray"
                 }`}
               />
             )}
@@ -417,7 +419,7 @@ const NavBar = () => {
                   >
                     <li className="text-navGray ">
                       <a
-                        href="/dynamics-365-support-services"
+                        href="/about-us#location_map"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
@@ -506,7 +508,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
       <a
         href={href}
         className={`relative ${
-          isScrolled ? "text-[#ffffff] font-light" : "text-navGray"
+          isScrolled ? "text-black" : "text-navGray"
         }`}
       >
         {children}
@@ -707,7 +709,7 @@ const SupportContent = () => {
         <h3 className="font-semibold">Dedicated to Assisting You</h3>
 
         <a
-          href="/dynamics-365-support-services"
+          href="/about-us#location_map"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Location Map

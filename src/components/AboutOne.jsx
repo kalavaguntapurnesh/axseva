@@ -65,7 +65,7 @@ const AboutOne = () => {
                   </div> */}
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Supply Chain Optimization</p>
+                      <p>Customized Execution Strategy</p>
                     </div>
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
@@ -75,12 +75,12 @@ const AboutOne = () => {
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Global Compliance Support</p>
+                      <p>Supply Chain Optimization</p>
                     </div>
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Around the clock Support</p>
+                      <p>Ongoing Support & Training</p>
                     </div>
                   </div>
                 </div>
@@ -314,7 +314,7 @@ const AboutOne = () => {
               </div>
             </motion.div>
 
-            <div className="pt-20 md:px-0 px-2">
+            <div id="location_map" className="pt-20 md:px-0 px-2">
               <div className="space-y-2">
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom

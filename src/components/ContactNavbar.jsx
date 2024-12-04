@@ -52,7 +52,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-footerbg shadow-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-[#f2f8fe] py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
@@ -61,7 +61,7 @@ const NavBar = () => {
           <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
             <div className="flex gap-0">
               AX
-              <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+              <span className={`${isScrolled ? "text-black" : "text-black"}`}>
                 Seva
               </span>
             </div>
@@ -75,26 +75,26 @@ const NavBar = () => {
             href="/managed-it-services"
             FlyoutContent={ServicesContent}
           >
-            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+            <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               Services{" "}
             </span>
           </FlyoutLink>
           <FlyoutLink href="#" FlyoutContent={PricingContent}>
-            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+            <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               Solutions{" "}
             </span>
           </FlyoutLink>
           <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
-            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+            <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               Industries{" "}
             </span>
           </FlyoutLink>
 
           <FlyoutLink href="/about-us" FlyoutContent={AboutUsContent}>
-            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+            <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               About Us{" "}
             </span>
@@ -103,7 +103,7 @@ const NavBar = () => {
             href="/dynamics-365-support-services"
             FlyoutContent={SupportContent}
           >
-            <span className={`${isScrolled ? "text-white" : "text-black"}`}>
+            <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               SUPPORT
             </span>
@@ -145,13 +145,13 @@ const NavBar = () => {
             {isMobileMenuOpen ? (
               <AiOutlineClose
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-[#ffffff]" : "text-footerbg"
+                  isScrolled ? "text-black" : "text-footerbg"
                 }`}
               />
             ) : (
               <RiMenu3Fill
                 className={`w-6 h-6 ${
-                  isScrolled ? "text-[#ffffff]" : "text-footerbg"
+                  isScrolled ? "text-black" : "text-footerbg"
                 }`}
               />
             )}
@@ -432,7 +432,7 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor">
                       <a
-                        href="/dynamics-365-support-services"
+                        href="/about-us#location_map"
                         className="text-sm"
                       >
                         Location Map
@@ -703,7 +703,7 @@ const SupportContent = () => {
         <h3 className="font-semibold">Dedicated to Assisting You</h3>
 
         <a
-          href="/dynamics-365-support-services"
+          href="/about-us#location_map"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Location Map
