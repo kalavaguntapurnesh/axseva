@@ -279,10 +279,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl font-bold text-colorTwo ">
+                              <h3 class="mb-2 text-2xl md:text-start text-center font-bold text-colorTwo ">
                                 Business Intelligence Analytics
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Seamless integration with apps, data and
                                 processes.
                               </p>
@@ -292,10 +292,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-1848708-1568040.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl font-bold ">
+                              <h3 class="mb-2 text-2xl font-bold md:text-start text-center">
                                 Dynamic 365 & ERP Implementation
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Turn relevant and timely business data into
                                 actionable insights.
                               </p>
@@ -306,10 +306,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/percentage-pie-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-graph-circle-circular-infographic-pack-infographics-icons-1813279.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
+                              <h3 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
                                 Support & Managed Services
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Ongoing support and partnership after the
                                 go-live activities.
                               </p>
@@ -320,10 +320,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl text-colorTwo font-bold ">
+                              <h3 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
                                 Tailoring Applications in X++
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Tailoring Dynamics AX to meet specific business
                                 requirements.
                               </p>

@@ -517,7 +517,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
             transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
           }}
           className={`absolute -bottom-2 -left-2 -right-2 h-[2px] origin-left scale-x-0 rounded transition-transform duration-300 ease-out ${
-            isScrolled ? "bg-[#ffffff]" : "bg-navGray"
+            isScrolled ? "bg-black" : "bg-navGray"
           }`}
         />
       </a>
