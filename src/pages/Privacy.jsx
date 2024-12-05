@@ -10,7 +10,7 @@ const Privacy = () => {
       image:
         "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       heading: "AXSeva's Privacy Policy",
-      // paragraph: "Terms and Conditions for Consultation Request",
+      paragraph: "Protecting Your Information and Ensuring Transparency",
     },
   ];
 
@@ -80,9 +80,9 @@ const Privacy = () => {
             <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
               {slides[currentIndex].heading}
             </h1>
-            {/* <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
+            <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
               {slides[currentIndex].paragraph}
-            </p> */}
+            </p>
           </div>
         </section>
       </div>
@@ -113,49 +113,64 @@ const Privacy = () => {
                   {/* Desktop View: Two Columns */}
                   <div className="hidden lg:grid grid-cols-3 gap-8">
                     {/* Left side: Headings */}
-                    <div className="space-y-5 col-span-1">
-                      <h2
+                    <div className="space-y-4 col-span-1">
+                      <div
                         onClick={() => scrollToSection(0)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        Information We Collect From the User
-                      </h2>
-                      <h2
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          Information We Collect From the User
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(1)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        How We Use The Collected Information
-                      </h2>
-                      <h2
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          How We Use The Collected Information
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(2)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        Data Sharing, Disclosure & Data Security
-                      </h2>
-                      <h2
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          Data Sharing, Disclosure & Data Security
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(3)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        Your Choices, Rights & Changes to the policy
-                      </h2>
-                      <h2
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          Your Choices, Rights & Changes to the policy
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(4)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        Why does the Company collect user information?
-                      </h2>
-                      <h2
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          Why does the Company collect user information?
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(5)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        How does the Company collect user information?
-                      </h2>
-                      <h2
+                        {" "}
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          How does the Company collect user information?
+                        </h2>
+                      </div>
+                      <div
                         onClick={() => scrollToSection(6)}
-                        className="text-lg cursor-pointer text-blue-600 hover:text-headingColor ease-in-out duration-1000"
+                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
                       >
-                        Personal Information Disclosure by Company
-                      </h2>
+                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
+                          Personal Information Disclosure by Company
+                        </h2>
+                      </div>
                     </div>
 
                     {/* Right side: Display all data */}

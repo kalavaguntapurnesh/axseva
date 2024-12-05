@@ -553,7 +553,7 @@ const Carousel = () => {
 
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
-                                    href="/industries"
+                                    href="/contact"
                                     className="bg-mainColor outline-none
                               rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
                                   >
@@ -600,7 +600,7 @@ const Carousel = () => {
 
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
-                                    href="/managed-it-services"
+                                    href="/contact"
                                     className="bg-mainColor outline-none
                               rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
                                   >
