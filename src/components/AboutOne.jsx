@@ -22,7 +22,7 @@ const AboutOne = () => {
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               <motion.div
                 variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                 initial="hidden"
@@ -30,18 +30,18 @@ const AboutOne = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="flex flex-col space-y-6 w-full"
               >
-                <div className="flex items-center md:justify-start justify-center md:ml-4">
+                <div className="flex items-center lg:justify-start justify-center md:ml-4">
                   <div className="h-4 w-1 bg-mainColor"></div>
                   <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                     About AXSeva
                   </h1>
                 </div>
 
-                <div className="lg:text-5xl text-4xl md:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                <div className="lg:text-5xl text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
                   <h1> Empowering Your Financial Future with us</h1>
                 </div>
 
-                <div className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                <div className="md:text-lg text-base text-sideHeading lg:text-start text-center lg:ml-2 px-2 md:px-0">
                   <p>
                     AXSeva is engaged in mustering energy among people to create
                     a better world and solve critical business problems through
@@ -52,7 +52,7 @@ const AboutOne = () => {
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:px-0 px-2">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:px-0 px-2">
                   {/* <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
                       <p>In-depth Product Knowledge</p>
@@ -99,14 +99,14 @@ const AboutOne = () => {
                     alt=""
                     width="612"
                     height="512"
-                    className="rounded md:block hidden"
+                    className="rounded lg:block hidden"
                   />
                 </div>
                 <div className="flex justify-center items-center">
                   <img
                     src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt=""
-                    className="rounded md:hidden block w-[90%]"
+                    className="rounded lg:hidden block w-[90%]"
                   />
                 </div>
               </motion.div>

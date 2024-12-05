@@ -125,7 +125,7 @@ const Privacy = () => {
                   {/* Desktop View: Two Columns */}
                   <div className="hidden lg:grid grid-cols-3 gap-8">
                     {/* Left side: Headings */}
-                    <div className="space-y-4 col-span-1">
+                    <div className="space-y-4 col-span-1 h-max sticky top-28">
                       <div
                         onClick={() => scrollToSection(0)}
                         className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
@@ -186,7 +186,7 @@ const Privacy = () => {
                     </div>
 
                     {/* Right side: Display all data */}
-                    <div className="space-y-12 col-span-2">
+                    <div className="space-y-12 col-span-2 overflow-y-auto">
                       <div ref={sectionRefs[0]} className="space-y-4">
                         <h3 className="text-2xl font-bold text-gray-800">
                           Information We Collect From the User

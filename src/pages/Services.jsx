@@ -415,7 +415,7 @@ const Services = () => {
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
               <div className="flex flex-col space-y-10">
                 {/* Heading */}
-                <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
+                <div className=" text-4xl text-sideHeading font-bold text-center">
                   8 everyday IT problems that Managed Services can fix
                 </div>
                 {/* Description */}
@@ -473,7 +473,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="md:text-5xl text-4xl text-sideHeading font-bold text-center"
+                  className=" text-4xl text-sideHeading font-bold text-center"
                 >
                   How Managed IT Services Work with AXSeva
                 </motion.div>

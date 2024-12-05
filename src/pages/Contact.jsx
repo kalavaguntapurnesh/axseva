@@ -159,7 +159,7 @@ const Contact = () => {
                       viewport={{ once: true, amount: 0.5 }}
                     >
                       <div className="flex flex-col space-y-4 mt-8">
-                        <div className="flex items-center md:justify-start justify-center md:text-start text-center">
+                        <div className="flex items-center lg:justify-start justify-center lg:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
                           <h1 className="uppercase ml-2 text-lg font-bold text-mainColor ">
                             Partner With AXSeva

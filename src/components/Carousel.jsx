@@ -191,18 +191,18 @@ const Carousel = () => {
                             viewport={{ once: true, amount: 0.5 }}
                             class="col-span-2 mb-8 space-y-3"
                           >
-                            <div className="flex items-center md:justify-start justify-center ">
+                            <div className="flex items-center lg:justify-start justify-center ">
                               <div className="h-4 w-1 bg-mainColor"></div>
                               <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                                 Services we offer
                               </h1>
                             </div>
-                            <h1 className="text-4xl font-bold text-headingColor md:text-start text-center">
+                            <h1 className="text-4xl font-bold text-headingColor lg:text-start text-center">
                               Driving Innovation with Microsoft Dynamics
                               Expertise
                             </h1>
 
-                            <div className="md:text-start text-center mt-4 mb-1">
+                            <div className="lg:text-start text-center mt-4 mb-1">
                               <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
                                 AXSeva specializes in Dynamics AX
                                 implementations with core focus on Dynamics AX +
@@ -257,7 +257,7 @@ const Carousel = () => {
                                 </div>
                               </div> */}
 
-                              <div className="flex md:justify-start justify-center items-center pb-4">
+                              <div className="flex lg:justify-start justify-center items-center pb-4">
                                 {/* <a
                                   href="/contact"
                                   className="mt-8 inline-block px-12 py-3 border-[1px] border-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out text-white bg-mainColor rounded  text-center font-medium hover:bg-opacity-90"
@@ -296,10 +296,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl md:text-start text-center font-bold text-colorTwo ">
+                              <h3 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
                                 Business Intelligence Analytics
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Seamless integration with apps, data and
                                 processes.
                               </p>
@@ -309,10 +309,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-1848708-1568040.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl font-bold md:text-start text-center">
+                              <h3 class="mb-2 text-2xl font-bold lg:text-start text-center">
                                 Dynamic 365 & ERP Implementation
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Turn relevant and timely business data into
                                 actionable insights.
                               </p>
@@ -323,10 +323,10 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/percentage-pie-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-graph-circle-circular-infographic-pack-infographics-icons-1813279.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
+                              <h3 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
                                 Support & Managed Services
                               </h3>
-                              <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
+                              <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Ongoing support and partnership after the
                                 go-live activities.
                               </p>
@@ -571,10 +571,11 @@ const Carousel = () => {
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
                                     href="/contact"
-                                    className="bg-mainColor outline-none
-                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
+                                    class="relative mt-2 flex h-[44px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                                   >
-                                    What we offer
+                                    <span class="relative z-10">
+                                      What we offer
+                                    </span>
                                   </a>
                                 </div>
                               </div>
@@ -618,10 +619,11 @@ const Carousel = () => {
                                 <div className="flex items-center lg:justify-start justify-center">
                                   <a
                                     href="/contact"
-                                    className="bg-mainColor outline-none
-                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white px-12 py-3 text-center"
+                                    class="relative mt-2 flex h-[44px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                                   >
-                                    Learn More
+                                    <span class="relative z-10">
+                                      Learn More
+                                    </span>
                                   </a>
                                 </div>
                               </div>
