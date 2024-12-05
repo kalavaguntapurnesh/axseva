@@ -73,9 +73,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>
@@ -102,9 +102,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>
@@ -131,9 +131,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>
@@ -167,9 +167,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>
@@ -195,9 +195,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>
@@ -223,9 +223,9 @@ const Industries = () => {
                     <div class="px-6 pb-4">
                       <a
                         href="/contact"
-                        className="mt-8 inline-block px-12 py-2 border-[1px] border-mainColor hover:bg-mainColor hover:text-white transition duration-500 ease-in-out text-mainColor rounded  text-center font-semibold hover:bg-opacity-90"
+                        class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                       >
-                        Know More
+                        <span class="relative z-10">Know More</span>
                       </a>
                     </div>
                   </div>

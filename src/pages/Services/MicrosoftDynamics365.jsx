@@ -58,7 +58,7 @@ const MicrosoftDynamics365 = () => {
       <ContactNavbar />
 
       {/* section 2 */}
-     <div className="w-full lg:pt-36 pt-28 pb-8"> 
+      <div className="w-full lg:pt-36 pt-28 pb-8">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
@@ -95,10 +95,9 @@ const MicrosoftDynamics365 = () => {
                   <div className="flex items-center lg:justify-start justify-center">
                     <a
                       href="/contact"
-                      className="bg-mainColor hover:bg-white hover:border-mainColor hover:border outline-none
-                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white hover:text-mainColor px-12 py-3 text-center"
+                      class="relative flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                     >
-                      Learn More
+                      <span class="relative z-10">Learn More</span>
                     </a>
                   </div>
                 </motion.div>

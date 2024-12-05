@@ -184,10 +184,9 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="/contact"
-                      className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-500 ease-in-out hover:border hover:border-mainColor text-center text-white
-                      rounded flex items-center hover:shadow-form  md:text-base text-sm px-12 py-3"
+                      class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                     >
-                      Talk with us
+                      <span class="relative z-10">Request a Demo</span>
                     </a>
                   </div>
 
@@ -246,9 +245,9 @@ const Services = () => {
                   <div className="md:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      className="bg-white hover:bg-mainColor hover:text-white transition duration-500 ease-in-out border border-mainColor rounded text-mainColor  md:text-base text-sm px-12 py-3 text-center"
+                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                     >
-                      Learn More
+                      <span class="relative z-10">Know More</span>
                     </a>
                   </div>
 
@@ -391,9 +390,11 @@ const Services = () => {
                 <div className="flex justify-center pt-6">
                   <a
                     href="/contact"
-                    className="bg-mainColor hover:bg-white hover:text-mainColor transition duration-1000 ease-in-out hover:border hover:border-mainColor text-center text-white p-4 rounded lg:w-1/4 w-3/4"
+                    class="relative mt-2 flex h-[54px] lg:w-1/4 w-3/4 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                   >
-                    Speak with a Managed Services Expert
+                    <span class="relative z-10">
+                      Speak with a Managed Services Expert
+                    </span>
                   </a>
                 </div>
               </div>
