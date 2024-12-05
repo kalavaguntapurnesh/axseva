@@ -23,11 +23,12 @@ export default {
       container: {},
       colors: {
         // mainColor: "#16b6ea",
-        mainColor: "#0064c8",
         // mainColor: "#1e5caf",
         // mainColor: "#bb2b36",
         // mainColor: "#187e4c",
         // headingColor: "#19191B",
+        mainColor: "#0064c8",
+        // mainColor: "#081a59",
         headingColor: "#444",
         sideHeading: "#474749",
         grayColor: "#585858",

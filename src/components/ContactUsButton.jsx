@@ -34,10 +34,10 @@ const ContactUsButton = () => {
         href={whatsappUrl}
         className={classNames(
           isVisible ? "opacity-100" : "opacity-0",
-          "bg-mainColor fixed flex items-center justify-center bottom-4 right-5 z-20 p-3 rounded-full transition duration-1000 ease-in-out"
+          "bg-mainColor  hover:bg-white fixed flex items-center text-white hover:text-mainColor justify-center bottom-4 right-5 z-20 p-3 rounded-full transition duration-500 ease-in-out"
         )}
       >
-        <SiWhatsapp className="h-6 w-6 text-white " aria-hidden="true" />
+        <SiWhatsapp className="h-6 w-6" aria-hidden="true" />
       </a>
     </>
   );

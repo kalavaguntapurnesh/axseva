@@ -27,59 +27,77 @@ const CookieConsent = () => {
   if (!isVisible) return null;
 
   return (
-    // <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    //   <div className="bg-white w-11/12 max-w-md rounded shadow shadow-blue-400 p-6">
-    //     <h2 className="text-lg font-semibold mb-4">We Value Your Privacy</h2>
-    //     <p className="text-sm text-gray-600 mb-6">
-    //       We use cookies to improve your browser experience, serve personalized
-    //       ads content and analyze the traffic on our site. By clicking "Accept
-    //       All", you consent to use our cookies. Click here to{" "}
-    //       <a href="/privacy-policy" className="text-blue-500 underline">
+    // <div className="fixed bottom-0 left-0 w-full bg-white py-4 px-6 flex flex-col md:flex-row items-center md:justify-between gap-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-50">
+    //   <div>
+    //     <h2 className="text-lg text-[#212121] font-bold mb-2 text-center md:text-left">
+    //       We value your privacy
+    //     </h2>
+    //     <div className="text-center md:text-left font-light">
+    //       We use cookies to improve your experience. By using this site, you
+    //       agree to our use of cookies.{" "}
+    //       <a
+    //         href="/privacy-policy#learn_more_privacy"
+    //         className="underline text-mainColor"
+    //       >
     //         Learn more
     //       </a>
-    //       .
-    //     </p>
-    //     <div className="flex justify-end space-x-4">
-    //       <button
-    //         onClick={handleDecline}
-    //         className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700"
-    //       >
-    //         Decline
-    //       </button>
-    //       <button
-    //         onClick={handleAccept}
-    //         className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
-    //       >
-    //         Accept
-    //       </button>
     //     </div>
+    //   </div>
+
+    //   <div className="flex flex-row gap-2">
+    //     <button
+    //       onClick={handleAccept}
+    //       className="bg-mainColor text-white hover:border hover:border-mainColor px-10 py-2 hover:bg-white hover:text-mainColor transition ease-in-out duration-1000 w-full md:w-auto"
+    //     >
+    //       Accept
+    //     </button>
+    //     <button
+    //       onClick={handleDecline}
+    //       className="bg-white border-mainColor border text-mainColor hover:text-white px-10 py-2 hover:bg-mainColor w-full md:w-auto transition ease-in-out duration-1000"
+    //     >
+    //       Decline
+    //     </button>
     //   </div>
     // </div>
 
-    <div className="fixed bottom-0 left-0 w-full bg-white py-4 px-6 flex flex-col md:flex-row items-center md:justify-between gap-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-50">
-      <div>
-        <h2 className="text-lg font-bold mb-2 text-center md:text-left">
-          We Value Your Privacy
+    <div
+      className="fixed bottom-0 md:bottom-8 md:left-8 w-full md:w-auto bg-white py-4 px-6 flex flex-col items-center md:justify-between gap-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-50
+      rounded md:max-w-sm"
+    >
+      <div className="flex flex-col">
+        <h2 className="text-lg text-[#212121] font-bold mb-2 text-center">
+          We value your privacy
         </h2>
-        <div className="text-center md:text-left font-light">
+
+        <div className="flex items-center justify-center">
+          <img
+            src="https://www.sliderrevolution.com/wp-content/uploads/2020/05/cookie_icon.png"
+            className="w-[64px] h-[64px]"
+            alt=""
+          />
+        </div>
+        <div className="text-center font-light">
           We use cookies to improve your experience. By using this site, you
           agree to our use of cookies.{" "}
-          <a href="/privacy-policy" className="underline text-mainColor">
+          <a
+            href="/privacy-policy#learn_more_privacy"
+            className="underline text-mainColor"
+          >
             Learn more
           </a>
         </div>
       </div>
 
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 w-[100%]">
         <button
           onClick={handleAccept}
-          className="bg-white border-mainColor border text-mainColor hover:text-white px-6 py-2 hover:bg-mainColor w-full md:w-auto transition ease-in-out duration-1000"
+          className="bg-mainColor text-white hover:border hover:border-mainColor px-6 py-2 hover:bg-white hover:text-mainColor transition ease-in-out duration-1000 w-full"
         >
           Accept
         </button>
         <button
           onClick={handleDecline}
-          className="bg-mainColor text-white hover:border hover:border-mainColor px-6 py-2 hover:bg-white hover:text-mainColor transition ease-in-out duration-1000 w-full md:w-auto"
+          className="bg-white border-mainColor border text-mainColor hover:text-white px-6 py-2 hover:bg-mainColor w-full transition ease-in-out duration-1000"
         >
           Decline
         </button>

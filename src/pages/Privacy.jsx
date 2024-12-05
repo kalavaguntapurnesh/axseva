@@ -3,8 +3,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "../components/Navbar";
 import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router-dom";
 
 const Privacy = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   const slides = [
     {
       image:
@@ -305,7 +317,11 @@ const Privacy = () => {
                         </div>
                       </div>
 
-                      <div ref={sectionRefs[4]} className="space-y-4">
+                      <div
+                        id="learn_more_privacy"
+                        ref={sectionRefs[4]}
+                        className="space-y-4"
+                      >
                         <h3 className="text-2xl font-bold text-gray-800">
                           Why does the Company collect user information?
                         </h3>
