@@ -8,13 +8,13 @@ const Benefits = () => {
   return (
     <>
       <AboutLayout />
-      <div className="mt-12">
+      <div>
         {/* Section 1 */}
         <div className="pt-16">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {/* grid 1 */}
 
                   {/* grid 2 */}
@@ -25,10 +25,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center md:text-start font-semibold text-headingColor">
+                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
                       Deep Industry Expertise:
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                       With extensive experience in Microsoft 365 and Dynamics
                       365 Finance, we bring unparalleled expertise to every
                       project. Our deep understanding of these platforms enables
@@ -68,7 +68,7 @@ const Benefits = () => {
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {/* grid 1 */}
 
                   <motion.div
@@ -94,10 +94,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center md:text-start font-semibold text-headingColor">
+                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
                       Certified Professionals:
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                       Our team consists of certified Microsoft 365 and Dynamics
                       365 Finance experts, committed to delivering exceptional
                       results. With in-depth knowledge of ERP systems and
@@ -117,7 +117,7 @@ const Benefits = () => {
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {/* grid 1 */}
 
                   <motion.div
@@ -127,10 +127,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center md:text-start font-semibold text-headingColor">
+                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
                       Customer-Centric Approach:
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                       We craft and implement tailored Microsoft 365 and Dynamics
                       365 Finance solutions that address your unique business
                       challenges, ensuring measurable outcomes and long-term
@@ -167,7 +167,7 @@ const Benefits = () => {
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {/* grid 1 */}
 
                   <motion.div
@@ -192,10 +192,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center md:text-start font-semibold text-headingColor">
+                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
                       End-to-End Support:
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                       From initial consultation to seamless implementation and
                       ongoing maintenance, we stand as your trusted partner at
                       every stage. Our comprehensive support ensures your

@@ -72,45 +72,6 @@ const Support = () => {
     },
   ];
 
-  const values3 = [
-    {
-      icon: <IoBagCheckSharp />,
-      title: "Drive Smoother Business Flow",
-      description:
-        "Our experts can help to diagnose whether your current system is compatible to manage your current workflow or not. Our Dynamics 365 Support Services are offered to drive your system health check and upgrade your system accordingly to seamlessly carry out all your practices.",
-    },
-    {
-      icon: <MdOutlineSettings />,
-      title: "Bring Quick Adaption",
-      description:
-        "To ensure quick adaption, enterprises are required to acquire proper end-user training to know how to use the newly implemented or updated system efficiently. Here, availing of support and consulting services for Microsoft Business Applications from a trusted Microsoft Partner could be a productive deal for your enterprise.",
-    },
-    {
-      icon: <SlEqualizer />,
-      title: "Drive Seamless Operational Flow",
-      description:
-        "To drive seamless flow across your operational unit, enterprises should comprise a set of practices, skilled people, and the right working strategies. To gain so, we can help enterprises by configuring their system with required or updated functionality, providing proper training to the end-users, and other support to encourage and bring smoother operational flow.",
-    },
-    {
-      icon: <GiAlarmClock />,
-      title: "Ensure Compatibility with Trends",
-      description:
-        "Considering the continuously changing market, industrial scenarios, and rising critical business challenges, Microsoft ensures regular updates and releases to support your concurrent processes as well as futuristic approach. Through our dedicated support system, we upgrade your system with all the required system capabilities to ensure and drive compatibility with growing market trends.",
-    },
-    {
-      icon: <FcCustomerSupport />,
-      title: "Custom Support Model",
-      description:
-        "Every business involves different processes, different workflow, and strategies. To support your custom processes, your supporting needs could be different. Analyzing and evaluating your specific business flow and the challenges you drive; we can provide customized support services to drive smoother and productive flow across your operational space.",
-    },
-    {
-      icon: <FaDatabase />,
-      title: "Competitive Pricing",
-      description:
-        "TAt Dynamics Square, we believe in providing optimum support services wrapped with standard methodology and a modernized approach to our clients at competitive rates. We offer our Microsoft Dynamics 365 support services at 40% less pricing compared to other Microsoft support services providers. Connect and get the best quote to support your business context.",
-    },
-  ];
-
   return (
     <>
       <SupportLayout />
@@ -129,17 +90,17 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-sideHeading">
+                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
                     Microsoft Dynamics 365 Support
                   </div>
-                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
+                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                     Get seamless and reliable Dynamics 365 support to get your
                     system going even in tough times. Employ your Dynamics 365
                     solution to its full potential, leveraging the established
                     infrastructure of Dynamics Square, the USA’s leading
                     Microsoft Solutions Partner.
                   </p>
-                  <div className="flex justify-center md:justify-start">
+                  <div className="flex justify-center lg:justify-start">
                     <a
                       href="/contact"
                       class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
@@ -194,10 +155,10 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-sideHeading">
+                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
                     Dedicated Dynamics 365 Support Partner
                   </div>
-                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
+                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                     To ensure process continuity, stabilize your process
                     optimization, and focus on your business scope, enterprises
                     are required to have an optimal support system. A smoother,
@@ -205,7 +166,7 @@ const Support = () => {
                     through dedicated Dynamics 365 Support Services designed for
                     a specific business model and custom business practices.
                   </p>
-                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
+                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                     Our Microsoft certified can help you to diagnose your
                     support requirement and can provide proactive support to
                     enable productive and scalable flow across your
@@ -213,7 +174,7 @@ const Support = () => {
                     services, we can promptly identify your system issues and
                     can resolve them with accuracy and reliability.
                   </p>
-                  <div className="flex justify-center md:justify-start">
+                  <div className="flex justify-center lg:justify-start">
                     <a
                       href="/contact"
                       class="relative h-[50px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -268,14 +229,14 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="max-w-[1200px] mx-auto grid md:grid-cols-2 grid-cols-1 gap-6 justify-center pt-8 pb-6"
+                  className="max-w-[1200px] mx-auto grid lg:grid-cols-2 grid-cols-1 gap-6 justify-center lg:pt-8 pt-4 pb-6"
                 >
                   {/* grid 1 */}
                   <div className="flex flex-col space-y-4 w-full justify-center">
-                    <div className=" text-4xl text-center md:text-start font-bold text-sideHeading">
+                    <div className=" text-4xl text-center lg:text-start font-bold text-sideHeading">
                       Dynamics 365 Support Plans We Offer
                     </div>
-                    <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
+                    <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                       Dynamics Square, your trusted Microsoft Dynamics partner
                       will handle every aspect of your Dynamics 365 system from
                       user support, training, customization, technical
@@ -345,7 +306,7 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="md:text-5xl text-4xl text-sideHeading font-bold text-center"
+                  className="lg:text-5xl text-4xl text-sideHeading font-bold text-center"
                 >
                   Uncover Your Business Scope With Our Dynamics 365 Consulting
                   Services

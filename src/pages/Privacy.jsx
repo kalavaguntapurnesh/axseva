@@ -545,6 +545,36 @@ const Privacy = () => {
 
                         <div className="space-y-2 xl:text-start text-center ">
                           <p>
+                            This Privacy Policy belongs to the Terms of Service
+                            of <a className="underline text-blue-600" href="https://axseva.com/">AXSeva</a> and should be followed as a
+                            part of it. Your Privacy is our priority and
+                            responsibility what we always remain committed to.
+                            This Privacy Policy comprises how we protect your
+                            data and what sort of measuring tools we adopt just
+                            to ensure confidentiality and integrity for all the
+                            personal or non-personal data that you entrust to
+                            us. This Privacy Policy consists of how we collect,
+                            use, and distribute your data that imbibes your
+                            identity or personal information as well as how we
+                            manage the security and protection part of your
+                            confidential data.
+                          </p>
+                          <p>
+                            <span className="font-semibold">
+                              The Privacy Act of 1974, as amended to present (5
+                              U.S.C. 552a)
+                            </span>
+                            , protects records about individuals retrieved by
+                            personal identifiers such as a name, social security
+                            number, or other identifying number or symbol.
+                            Adhering to the USA's privacy policy act, we are
+                            highly committed to protecting your data privacy.
+                            Thereby, we remain careful and transparent about
+                            what certain data we collect, process, and
+                            distribute.
+                          </p>
+
+                          <p>
                             We may collect various types of information from
                             you, including:
                           </p>

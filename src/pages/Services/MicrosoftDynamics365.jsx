@@ -62,7 +62,7 @@ const MicrosoftDynamics365 = () => {
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 {/* grid 1 */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -71,14 +71,14 @@ const MicrosoftDynamics365 = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-headingColor">
+                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-headingColor">
                     Enterprise Solutions from{" "}
                     <span className="lg:text-5xl text-4xl md:text-start text-center font-semibold text-mainColor">
                       AX <span className="text-headingColor">Seva</span>{" "}
                     </span>
                   </div>
 
-                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
+                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                     Microsoft Dynamics 365 Enterprise represents the future of
                     intelligent business applications, empowering organizations
                     to innovate, grow, and adapt in an ever-changing landscape.
@@ -92,12 +92,22 @@ const MicrosoftDynamics365 = () => {
                     and achieve sustainable success with confidence.
                   </p>
 
-                  <div className="flex items-center lg:justify-start justify-center">
+                  <div className="lg:flex items-center lg:justify-start justify-center hidden">
                     <a
-                      href="/contact"
-                      class="relative flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
+                      href="https://www.linkedin.com/in/sumanthdama/"
+                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                     >
-                      <span class="relative z-10">Learn More</span>
+                      <span class="relative z-10">Know More</span>
+                    </a>
+                  </div>
+
+                  <div className="mx-8 lg:hidden block">
+                    <a
+                      href="https://www.linkedin.com/in/sumanthdama/"
+                      className="bg-mainColor flex items-center justify-center hover:bg-white hover:text-mainColor hover:border-[1px] hover:border-mainColor outline-none
+                      rounded hover:shadow-form transition duration-1000 ease-in-out text-base text-white px-8 py-2.5 text-center"
+                    >
+                      Learn More
                     </a>
                   </div>
                 </motion.div>
@@ -110,10 +120,10 @@ const MicrosoftDynamics365 = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full"
                 >
-                  <div className="flex justify-center md:justify-start w-full h-full">
+                  <div className="flex justify-center lg:justify-start w-full h-full">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2023/01/Mask-Group-30.png"
-                      className="h-auto w-auto rounded"
+                      className="h-auto w-[90%] lg:w-auto rounded"
                     />
                   </div>
                 </motion.div>
@@ -125,7 +135,7 @@ const MicrosoftDynamics365 = () => {
 
       {/* section 3 */}
 
-      <div className="w-full pt-20">
+      <div className="w-full pt-12 lg:pt-20">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
@@ -138,7 +148,7 @@ const MicrosoftDynamics365 = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="grid md:grid-cols-5 grid-cols-1 gap-4 lg:h-[300px] "
+                className="grid md:grid-cols-3 lg:grid-cols-5 grid-cols-1 gap-4 lg:h-[300px] "
               >
                 <div className="shadow rounded border flex flex-col items-center justify-center space-y-4 w-full p-6 ">
                   <div className="flex justify-center items-center">

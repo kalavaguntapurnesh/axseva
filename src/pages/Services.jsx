@@ -122,11 +122,11 @@ const Services = () => {
     <>
       <ServicesLayout />
 
-      <div className="mt-20">
+      <div className="lg:mt-20 mt-12">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12 md:px-0 px-2">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-6 pt-12">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-12">
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
@@ -159,19 +159,19 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full md:justify-start"
                 >
-                  <div className="flex items-center md:justify-start justify-center ">
+                  <div className="flex items-center lg:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                       Managed Services
                     </h1>
                   </div>
 
-                  <div className="text-4xl md:text-start text-center font-bold text-headingColor">
+                  <div className="text-4xl lg:text-start text-center font-bold text-headingColor">
                     <h1>Your Blueprint for Success</h1>
                   </div>
 
-                  <div className="md:text-lg text-sideHeading md:text-start text-center">
-                    <p>
+                  <div className="md:text-lg text-sideHeading lg:text-start text-center">
+                    <p className="lg:px-0 px-2">
                       Managed Services transform IT management by streamlining
                       operations, enhancing security, and reducing downtime.
                       AXSeva offers efficient, secure, and scalable solutions
@@ -181,7 +181,7 @@ const Services = () => {
                     </p>
                   </div>
 
-                  <div className="md:flex items-center lg:justify-start justify-center hidden">
+                  <div className="lg:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="/contact"
                       class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
@@ -190,7 +190,7 @@ const Services = () => {
                     </a>
                   </div>
 
-                  <div className="mx-8 md:hidden block">
+                  <div className="mx-8 lg:hidden block">
                     <a
                       href="/contact"
                       className="bg-mainColor flex items-center justify-center hover:bg-white hover:text-mainColor hover:border-[1px] hover:border-mainColor outline-none
@@ -210,7 +210,7 @@ const Services = () => {
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12 md:px-0 px-2">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-6 pt-12">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-12">
                 <motion.div
                   variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                   initial="hidden"
@@ -218,19 +218,19 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full md:justify-start"
                 >
-                  <div className="flex items-center md:justify-start justify-center ">
+                  <div className="flex items-center lg:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                       We thrive for a future
                     </h1>
                   </div>
 
-                  <div className="text-4xl md:text-start text-center font-bold text-headingColor">
+                  <div className="text-4xl lg:text-start text-center font-bold text-headingColor">
                     <h1>What are Managed Services?</h1>
                   </div>
 
-                  <div className="md:text-lg text-sideHeading md:text-start text-center">
-                    <p>
+                  <div className="md:text-lg text-sideHeading lg:text-start text-center">
+                    <p className="lg:px-0 px-2">
                       With our cloud managed services programs, you gain access
                       to our team of experts who act as an extension of your
                       team and help solve day-to-day IT operational challenges.
@@ -242,7 +242,7 @@ const Services = () => {
                     </p>
                   </div>
 
-                  <div className="md:flex items-center lg:justify-start justify-center hidden">
+                  <div className="lg:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
                       class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -251,7 +251,7 @@ const Services = () => {
                     </a>
                   </div>
 
-                  <div className="mx-8 md:hidden block">
+                  <div className="mx-8 lg:hidden block">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
                       className="bg-mainColor flex items-center justify-center hover:bg-white hover:text-mainColor hover:border-[1px] hover:border-mainColor outline-none
@@ -268,16 +268,16 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex justify-center items-center w-[100%]"
                 >
-                  <div className="md:flex justify-center hidden w-[100%]">
+                  <div className="lg:flex justify-center hidden w-[100%]">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp"
                       alt=""
                       // width="612"
                       // height="512"
-                      className="rounded md:block hidden w-[90%] h-auto"
+                      className="rounded lg:block hidden w-[90%] h-auto"
                     />
                   </div>
-                  <div className="flex justify-center items-center md:hidden w-[90%]">
+                  <div className="flex justify-center items-center lg:hidden w-[90%]">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp"
                       alt=""
@@ -328,7 +328,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.3 }}
-                  className="grid md:grid-cols-3 grid-cols-1 gap-6 pt-10 max-w-full"
+                  className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6 pt-10 max-w-full"
                 >
                   {services3.map((service, index) => (
                     // <div
@@ -419,13 +419,13 @@ const Services = () => {
                   8 everyday IT problems that Managed Services can fix
                 </div>
                 {/* Description */}
-                <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2">
+                <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                   Explore how Managed Services can help your organization
                   address these common challenges that disrupt efficient system
                   management and security.
                 </p>
                 {/* Grid Section */}
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {/* Left Grid */}
                   <div className="space-y-4">
                     {problems.map((problem, index) => (
