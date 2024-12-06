@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 
 const Privacy = () => {
   const location = useLocation();
+  const [activeHeading, setActiveHeading] = useState(null);
 
   useEffect(() => {
     if (location.hash) {
@@ -44,6 +45,7 @@ const Privacy = () => {
   };
 
   const scrollToSection = (index) => {
+    setActiveHeading(index); // Set the clicked heading as active
     const element = sectionRefs[index].current;
     if (element) {
       const headerOffset = 100;
@@ -66,7 +68,7 @@ const Privacy = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [slides.length]);
 
   return (
@@ -126,72 +128,38 @@ const Privacy = () => {
                   </p>
                 </div>
 
-                <div className="pt-8 mx-auto p-4">
+                <div className="pt-8">
                   {/* Desktop View: Two Columns */}
                   <div className="hidden lg:grid grid-cols-3 gap-8">
                     {/* Left side: Headings */}
                     <div className="space-y-4 col-span-1 h-max sticky top-28">
-                      <div
-                        onClick={() => scrollToSection(0)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          Information We Collect From the User
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(1)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          How We Use The Collected Information
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(2)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          Data Sharing, Disclosure & Data Security
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(3)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          Your Choices, Rights & Changes to the policy
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(4)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          Why does the Company collect user information?
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(5)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        {" "}
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          How does the Company collect user information?
-                        </h2>
-                      </div>
-                      <div
-                        onClick={() => scrollToSection(6)}
-                        className="py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded bg-[#f8f9fa]"
-                      >
-                        <h2 className="pl-2 text-lg cursor-pointer font-medium text-gray-800 hover:text-blue-600 ease-in-out duration-1000">
-                          Personal Information Disclosure by Company
-                        </h2>
-                      </div>
+                      {[
+                        "Information We Collect From the User",
+                        "How We Use The Collected Information",
+                        "Data Sharing, Disclosure & Data Security",
+                        "Your Choices, Rights & Changes to the policy",
+                        "Why does the Company collect user information?",
+                        "How does the Company collect user information?",
+                        "Personal Information Disclosure by Company",
+                      ].map((heading, index) => (
+                        <div
+                          key={index}
+                          onClick={() => scrollToSection(index)}
+                          className={`py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded ${
+                            activeHeading === index
+                              ? "bg-blue-100 text-blue-600" // Active heading styles
+                              : "bg-[#f8f9fa] text-headingColor" // Default styles
+                          }`}
+                        >
+                          <h2 className="pl-2 text-lg cursor-pointer font-medium ease-in-out duration-1000">
+                            {heading}
+                          </h2>
+                        </div>
+                      ))}
                     </div>
 
                     {/* Right side: Display all data */}
-                    <div className="space-y-12 col-span-2 overflow-y-auto">
+                    <div className="space-y-12 col-span-2 overflow-y-auto pl-3">
                       <div ref={sectionRefs[0]} className="space-y-4">
                         <h3 className="text-2xl font-bold text-gray-800">
                           Information We Collect From the User
