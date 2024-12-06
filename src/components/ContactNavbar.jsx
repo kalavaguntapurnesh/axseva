@@ -121,23 +121,21 @@ const NavBar = () => {
         </ul>
 
         {/* Login Button */}
+
         <div className="hidden xl:flex space-x-4">
-          {/* <button
-            onClick={() => {
-              navigate("/login");
-            }}
-            className="bg-mainColor hover:text-mainColor hover:border-[1px] hover:border-mainColor text-white lg:px-6 md:px-4 py-2 rounded-full font-medium text-sm hover:bg-white transition duration-500"
+          <a
+            href="/contact"
+            // onClick={() => {
+            //   navigate("/contact");
+            // }}
+            className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
+              isScrolled
+                ? "border-black hover:border-[1px] text-black font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48"
+                : "border-black font-light text-black"
+            }`}
           >
-            Contact Us{" "}
-          </button> */}
-          <button
-            onClick={() => {
-              navigate("/contact");
-            }}
-            className="border-[1px] border-mainColor text-white hover:border-[1px] hover:border-mainColor hover:text-mainColor bg-mainColor hover:bg-white lg:px-6 md:px-4 py-2 rounded text-sm font-medium transition duration-500"
-          >
-            Contact Us
-          </button>
+            <span class="relative z-10">Contact Us</span>
+          </a>
         </div>
 
         <div className="xl:hidden">
@@ -431,10 +429,7 @@ const NavBar = () => {
                     className="pl-4 mt-6 space-y-2"
                   >
                     <li className="text-headingColor">
-                      <a
-                        href="/about-us#location_map"
-                        className="text-sm"
-                      >
+                      <a href="/about-us#location_map" className="text-sm">
                         Location Map
                       </a>
                     </li>

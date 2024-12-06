@@ -135,13 +135,13 @@ const NavBar = () => {
             // onClick={() => {
             //   navigate("/contact");
             // }}
-            className={`border-[1px]  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
+            className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
-                ? "border-black hover:border-[1px] text-black font-medium"
+                ? "border-black hover:border-[1px] text-black font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
                 : "border-navGray font-light text-white"
             }`}
           >
-            Contact Us
+            <span class="relative z-10">Contact Us</span>
           </a>
         </div>
 
@@ -507,9 +507,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     >
       <a
         href={href}
-        className={`relative ${
-          isScrolled ? "text-black" : "text-navGray"
-        }`}
+        className={`relative ${isScrolled ? "text-black" : "text-navGray"}`}
       >
         {children}
         <span

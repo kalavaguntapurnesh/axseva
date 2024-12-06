@@ -97,7 +97,7 @@ const AboutOne = () => {
                   <img
                     src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt=""
-                    width="612"
+                    // width="612"
                     height="512"
                     className="rounded lg:block hidden"
                   />
