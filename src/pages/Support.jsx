@@ -1,22 +1,20 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 import { BiSupport } from "react-icons/bi";
 import { GiAlarmClock } from "react-icons/gi";
 import { MdBusiness } from "react-icons/md";
 import { useState } from "react";
-import { VscAccount } from "react-icons/vsc";
+import { FaUserAlt } from "react-icons/fa";
 import { MdOutlineSettings } from "react-icons/md";
-import { LuPackagePlus } from "react-icons/lu";
-import { GiTeacher } from "react-icons/gi";
-import { IoBagCheckSharp } from "react-icons/io5";
-import { SlEqualizer } from "react-icons/sl";
-import { FcCustomerSupport } from "react-icons/fc";
-import { FaDatabase } from "react-icons/fa6";
+import { GrPersonalComputer } from "react-icons/gr";
 import SupportLayout from "./../components/SupportLayout";
 import ContactUsButton from "../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
+import { FaCircleArrowRight } from "react-icons/fa6";
+import { FaHandPaper } from "react-icons/fa";
+import { IoIosCheckmarkCircle } from "react-icons/io";
+import { IoSettings } from "react-icons/io5";
 const Support = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -47,28 +45,46 @@ const Support = () => {
 
   const values1 = [
     {
-      icon: <VscAccount />,
-      Title: "Account Management",
+      icon: <FaCircleArrowRight />,
+      Title: "Getting Started",
       description:
-        "Since Microsoft continuously comes up with regular updates and enhancements in their Dynamics 365 products. Experts at Dynamics Square take care of your timely system updates and requirement enhancements. We seamlessly manage your Dynamics 365 account to ensure your system compatibility with the latest releases and updates fulfilling your core requirement and future changes.",
+        "Getting started, Begin your journey with simple, clear steps forward",
+      color: "text-green-500", // Blue color for this icon
     },
     {
-      icon: <GiTeacher />,
-      Title: "Training",
+      icon: <FaUserAlt />,
+      Title: "Account Settings",
       description:
-        "There could be several stages where enterprises require dedicated training to bring and ensure productive flow across their organization. Such training can be provided in the form of end-user training to understand the newly implemented system and ensure successful user adaptation. Training can also be ensured when you avail of any sort of system update, integration, or enhancements.",
+        "Manage personal information, security & specific configurations.",
+      color: "text-blue-500", // Green color for this icon
     },
     {
-      icon: <LuPackagePlus />,
-      Title: "Add-ons",
+      icon: <FaHandPaper />,
+      Title: "Trust & Safety",
       description:
-        "With time, there could be possible frequent changes in your process optimization. To support your customer process flow, our support team can extend your system capabilities with required functionalities in terms of add-ons. Considering the enterprise challenges and ways to overcome them, Microsoft comes up with regular updates and features enhancements.",
+        "Ensures platform integrity & compliance against harmful activities.",
+      color: "text-yellow-500", // Red color for this icon
     },
     {
-      icon: <MdOutlineSettings />,
-      Title: "Modifications",
+      icon: <IoSettings />,
+      Title: "Spam Free Support",
       description:
-        "Whenever changes take place in your enterprise, you are required to modify your functional requirement, and this generates a need for an adequate support system that can take responsibility to ensure potential changes in terms of updating your system with required functionality or advanced features that can be made possible either by Microsoft configuration or with third-party integration.",
+        "Spam Free, Ensuring clean, secure, & reliable digital communication.",
+      color: "text-teal-500", // Yellow color for this icon
+    },
+    {
+      icon: <IoIosCheckmarkCircle />,
+      Title: "Services Advice",
+      description:
+        "Deliver reliable, customer-focused solutions with innovation.",
+      color: "text-pink-500", // Purple color for this icon
+    },
+    {
+      icon: <GrPersonalComputer />,
+      Title: "Location Map",
+      description:
+        "Interactive tool of geographical positions & navigation details.",
+      color: "text-violet-500", // Pink color for this icon
     },
   ];
 
@@ -80,47 +96,67 @@ const Support = () => {
       <div className="mt-12">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-                {/* grid 1 */}
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
+              <div className="flex flex-col">
+                {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-6 w-full justify-center"
+                  className="text-4xl text-sideHeading font-bold text-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
-                    Microsoft Dynamics 365 Support
-                  </div>
-                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                    Get seamless and reliable Dynamics 365 support to get your
-                    system going even in tough times. Employ your Dynamics 365
-                    solution to its full potential, leveraging the established
-                    infrastructure of Dynamics Square, the USA’s leading
-                    Microsoft Solutions Partner.
-                  </p>
-                  <div className="flex justify-center lg:justify-start">
-                    <a
-                      href="/contact"
-                      class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
-                    >
-                      <span class="relative z-10">Request a Demo</span>
-                    </a>
-                  </div>
+                  Uncover Your Business Scope With Us
                 </motion.div>
-                {/* grid 2 */}
+
+                {/* Description */}
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                >
+                  <p className="text-base text-sideHeading text-center md:text-lg pt-4">
+                    AXSeva has an extensive team with end-to-end expertise to
+                    take care of system and process integrity. Whether you want
+                    to eliminate your system risks, improve your system
+                    capabilities, want to train your end-users, or more, we are
+                    here to serve our optimal support services.
+                  </p>
+                </motion.div>
+                {/* Cards Grid */}
                 <motion.div
                   variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="flex justify-center items-center w-full"
+                  className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10 max-w-full"
                 >
-                  <img
-                    src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupport-service-banner.png&w=1920&q=75"
-                    className="lg:w-full w-auto h-auto"
-                  />
+                  {values1.map((value, index) => (
+                    <div
+                      key={index}
+                      className="flex md:justify-start justify-center"
+                    >
+                      <div className="w-full bg-white border border-gray-200 rounded p-6">
+                        <div className="space-y-3">
+                          <div
+                            className={`text-4xl flex justify-center items-center ${value.color}`}
+                          >
+                            {value.icon}
+                          </div>
+
+                          <div className="flex justify-center items-center">
+                            <h1 className="text-2xl text-headingColor font-semibold text-center">
+                              {value.Title}
+                            </h1>
+                          </div>
+                          <div className="flex justify-center items-center text-gray-600 text-center">
+                            <p>{value.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </motion.div>
               </div>
             </div>
@@ -136,16 +172,28 @@ const Support = () => {
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 {/* grid 1 */}
                 <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="flex justify-center items-center w-full"
+                  className="flex justify-center items-center w-[100%]"
                 >
-                  <img
-                    src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupper-img.png&w=1200&q=75"
-                    className="lg:w-full w-[80%] h-auto"
-                  />
+                  <div>
+                    <img
+                      src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupper-img.png&w=1200&q=75"
+                      alt=""
+                      // width="612"
+                      height="512"
+                      className="rounded lg:block hidden"
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupper-img.png&w=1200&q=75"
+                      alt=""
+                      className="rounded lg:hidden block w-[90%]"
+                    />
+                  </div>
                 </motion.div>
                 {/* grid 2 */}
                 <motion.div
@@ -155,7 +203,7 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className="text-4xl text-center lg:text-start font-bold text-sideHeading">
                     Dedicated Dynamics 365 Support Partner
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -204,7 +252,7 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="hidden lg:block"
                 >
-                  <div className="md:text-5xl text-4xl text-sideHeading font-bold text-center">
+                  <div className="text-4xl text-sideHeading font-bold text-center">
                     Microsoft dynamics 365 Suite
                   </div>
 
@@ -294,110 +342,52 @@ const Support = () => {
       {/* section 4 */}
 
       {/* section 5 */}
-
+      {/* 
       <div className="mt-12">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
-              <div className="flex flex-col">
-                {/* Heading */}
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+               
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="lg:text-5xl text-4xl text-sideHeading font-bold text-center"
+                  className="flex flex-col space-y-6 w-full justify-center"
                 >
-                  Uncover Your Business Scope With Our Dynamics 365 Consulting
-                  Services
-                </motion.div>
-
-                {/* Description */}
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                >
-                  <p className="text-base text-sideHeading text-center md:text-lg pt-4">
-                    Dynamics Square has an extensive team with end-to-end
-                    expertise to take care of system and process integrity.
-                    Whether you want to eliminate your system risks, improve
-                    your system capabilities, want to train your end-users, or
-                    more, we are here to serve our optimal support services.
+                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
+                    Microsoft Dynamics 365 Support
+                  </div>
+                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
+                    Get seamless and reliable Dynamics 365 support to get your
+                    system going even in tough times. Employ your Dynamics 365
+                    solution to its full potential, leveraging the established
+                    infrastructure of Dynamics Square, the USA’s leading
+                    Microsoft Solutions Partner.
                   </p>
+                  <div className="flex justify-center lg:justify-start">
+                    <a
+                      href="/contact"
+                      class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
+                    >
+                      <span class="relative z-10">Request a Demo</span>
+                    </a>
+                  </div>
                 </motion.div>
-                {/* Cards Grid */}
+            
                 <motion.div
                   variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-10 max-w-full"
+                  className="flex justify-center items-center w-full"
                 >
-                  {values1.map((value, index) => (
-                    <div
-                      key={index}
-                      className="flex gap-10 p-6 space-y-4 text-center"
-                    >
-                      {/* Icon */}
-                      <div className="p-4 text-4xl rounded-full">
-                        <span className="text-mainColor text-5xl">
-                          {value.icon}
-                        </span>
-                      </div>
-                      <div className="flex flex-col gap-6 text-start">
-                        {/* Title */}
-                        <h3 className="text-2xl font-bold text-sideHeading">
-                          {value.Title}
-                        </h3>
-
-                        {/* Description */}
-                        <p className="text-base text-gray-600">
-                          {value.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                  <img
+                    src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupport-service-banner.png&w=1920&q=75"
+                    className="lg:w-full w-auto h-auto"
+                  />
                 </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* section 6 */}
-      {/* <div className="mt-28">
-        <div className="relative">
-          <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
-              <div className="flex w-full justify-center">
-                <div className="lg:text-5xl text-4xl text-center font-semibold text-headingColor m-8">
-                  How Dynamics 365 Support Team Can Help You To Boost Your
-                  Business Capabilities
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-3 grid-cols-1 gap-6 mt-10 max-w-full">
-                {values3.map((item, index) => (
-                  <div
-                    key={index}
-                    className="p-6 border rounded-lg shadow-xl flex flex-col justify-center hover:shadow-lg transition-transform hover:-translate-y-4 group relative overflow-hidden"
-                  >
-                    <div className="flex flex-col items-center justify-center space-y-4 group-hover:opacity-0 group-hover:absolute group-hover:invisible transition-all duration-300">
-                      <div className="text-4xl text-mainColor shadow-md rounded-full p-4">
-                        {item.icon}
-                      </div>
-                      <h1 className="text-2xl font-bold text-center">
-                        {item.title}
-                      </h1>
-                    </div>
-
-                    <p className="text-center text-base text-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:relative transition-all duration-300">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
