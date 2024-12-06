@@ -29,7 +29,6 @@ const Privacy = () => {
   // State to manage selected heading for mobile
   const [selectedHeading, setSelectedHeading] = useState(0);
 
-  // Refs to scroll to specific sections in the desktop view
   const sectionRefs = [
     useRef(null),
     useRef(null),
@@ -40,17 +39,23 @@ const Privacy = () => {
     useRef(null),
   ];
 
-  // Handle select change for mobile
   const handleSelectChange = (event) => {
     setSelectedHeading(parseInt(event.target.value));
   };
 
-  // Function to handle scroll on desktop
   const scrollToSection = (index) => {
-    sectionRefs[index].current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const element = sectionRefs[index].current;
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
   };
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,7 +66,7 @@ const Privacy = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval); 
   }, [slides.length]);
 
   return (
@@ -546,18 +551,24 @@ const Privacy = () => {
                         <div className="space-y-2 xl:text-start text-center ">
                           <p>
                             This Privacy Policy belongs to the Terms of Service
-                            of <a className="underline text-blue-600" href="https://axseva.com/">AXSeva</a> and should be followed as a
-                            part of it. Your Privacy is our priority and
-                            responsibility what we always remain committed to.
-                            This Privacy Policy comprises how we protect your
-                            data and what sort of measuring tools we adopt just
-                            to ensure confidentiality and integrity for all the
-                            personal or non-personal data that you entrust to
-                            us. This Privacy Policy consists of how we collect,
-                            use, and distribute your data that imbibes your
-                            identity or personal information as well as how we
-                            manage the security and protection part of your
-                            confidential data.
+                            of{" "}
+                            <a
+                              className="underline text-blue-600"
+                              href="https://axseva.com/"
+                            >
+                              AXSeva
+                            </a>{" "}
+                            and should be followed as a part of it. Your Privacy
+                            is our priority and responsibility what we always
+                            remain committed to. This Privacy Policy comprises
+                            how we protect your data and what sort of measuring
+                            tools we adopt just to ensure confidentiality and
+                            integrity for all the personal or non-personal data
+                            that you entrust to us. This Privacy Policy consists
+                            of how we collect, use, and distribute your data
+                            that imbibes your identity or personal information
+                            as well as how we manage the security and protection
+                            part of your confidential data.
                           </p>
                           <p>
                             <span className="font-semibold">
