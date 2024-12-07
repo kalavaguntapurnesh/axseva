@@ -98,43 +98,12 @@ const NavBar = () => {
           >
             SUPPORT
           </FlyoutLink>
-          {/* <li
-            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
-              isScrolled
-                ? "text-[#ffffff] font-light"
-                : "text-gray-200 font-light"
-            } `}
-          >
-            <a href="/dynamics-365-support-services">Support</a>
-            <div
-              className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-[#ffffff]" : "bg-navGray"
-              }`}
-            ></div>
-          </li> */}
-          {/* <li
-            className={`group mt-[4px] cursor-pointer tracking-wider transition duration-1000 ease-in-out uppercase ${
-              isScrolled
-                ? "text-[#ffffff] font-light"
-                : "text-gray-200 font-light"
-            } `}
-          >
-            <a href="/solutions">Our Blogs</a>
-            <div
-              className={`mt-[2px] rounded h-[2px] w-0 group-hover:w-full transition-all duration-300 ${
-                isScrolled ? "bg-[#ffffff]" : "bg-navGray"
-              }`}
-            ></div>
-          </li> */}
         </ul>
 
         {/* Login Button */}
         <div className="hidden xl:flex space-x-4">
           <a
             href="/contact"
-            // onClick={() => {
-            //   navigate("/contact");
-            // }}
             className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
                 ? "border-black hover:border-[1px] text-black font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
@@ -170,11 +139,6 @@ const NavBar = () => {
               : "xl:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
-          {/* <a href="/">
-            <h1 className="w-full text-2xl text-mainColor font-bold m-4 cursor-pointer">
-              LM <span className="text-black">Club.</span>
-            </h1>
-          </a> */}
           <a href="/" className="flex flex-row items-center ml-6 mt-6 mb-2">
             <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
             <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
