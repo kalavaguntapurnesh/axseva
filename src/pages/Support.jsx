@@ -172,7 +172,7 @@ const Support = () => {
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 {/* grid 1 */}
                 <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
@@ -285,10 +285,10 @@ const Support = () => {
                       Dynamics 365 Support Plans We Offer
                     </div>
                     <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                      Dynamics Square, your trusted Microsoft Dynamics partner
-                      will handle every aspect of your Dynamics 365 system from
-                      user support, training, customization, technical
-                      consultancy to development work.
+                      AXSeva, your trusted Microsoft Dynamics partner will
+                      handle every aspect of your Dynamics 365 system from user
+                      support, training, customization, technical consultancy to
+                      development work.
                     </p>
                   </div>
 
