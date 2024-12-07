@@ -229,7 +229,7 @@ const Carousel = () => {
                                     >
                                       <path
                                         fill-rule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11h1a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"
                                       ></path>
                                     </svg>
@@ -249,7 +249,7 @@ const Carousel = () => {
                                     >
                                       <path
                                         fill-rule="evenodd"
-                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11h1a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"
                                       ></path>
                                     </svg>
@@ -296,9 +296,9 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
+                              <h1 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
                                 Business Intelligence Analytics
-                              </h3>
+                              </h1>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Seamless integration with apps, data and
                                 processes.
@@ -309,9 +309,9 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-1848708-1568040.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl font-bold lg:text-start text-center">
+                              <h1 class="mb-2 text-2xl font-bold lg:text-start text-center">
                                 Dynamic 365 & ERP Implementation
-                              </h3>
+                              </h1>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Turn relevant and timely business data into
                                 actionable insights.
@@ -323,9 +323,9 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/percentage-pie-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-graph-circle-circular-infographic-pack-infographics-icons-1813279.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
+                              <h1 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
                                 Support & Managed Services
-                              </h3>
+                              </h1>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Ongoing support and partnership after the
                                 go-live activities.
@@ -337,9 +337,9 @@ const Carousel = () => {
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h3 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
+                              <h1 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
                                 Tailoring Applications in X++
-                              </h3>
+                              </h1>
                               <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Tailoring Dynamics AX to meet specific business
                                 requirements.

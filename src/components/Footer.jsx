@@ -4,7 +4,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
 import { SiPaloaltosoftware } from "react-icons/si";
-import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-footerbg mt-20 p-15">
@@ -18,9 +17,9 @@ const Footer = () => {
                     <div className="mb-12 md:mb-0">
                       <div className="flex items-center md:justify-start justify-center">
                         {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                        <h4 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                        <h1 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                           Company
-                        </h4>
+                        </h1>
                       </div>
                       <ul className="pl-0 mt-4 space-y-3 list-none">
                         <li className=" flex items-start md:justify-start justify-center">
@@ -61,9 +60,9 @@ const Footer = () => {
                     <div className="mb-12 md:mb-0 ">
                       <div className="flex items-center md:justify-start justify-center">
                         {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                        <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                        <h1 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                           Support
-                        </h4>
+                        </h1>
                       </div>
                       <ul className="pl-0 mt-4 space-y-3 list-none">
                         <li className=" flex items-start md:justify-start justify-center">
@@ -90,9 +89,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h1 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Services
-                      </h4>
+                      </h1>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -139,9 +138,9 @@ const Footer = () => {
 
                     <div className="mt-8 flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h1 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         About Us
-                      </h4>
+                      </h1>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -166,9 +165,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className="  text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h1 className="  text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Solutions
-                      </h4>
+                      </h1>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -193,9 +192,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h1 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Industries
-                      </h4>
+                      </h1>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -328,9 +327,12 @@ const Footer = () => {
                       </div>
 
                       <div className="flex justify-center items-center md:justify-start py-2 w-[100%]">
-                        <button className="bg-mainColor text-white py-3 px-6  rounded w-full">
-                          <Link to="/contact">Join </Link>
-                        </button>
+                        <a
+                          href="/contact"
+                          className="bg-mainColor text-center text-white py-3 px-6  rounded w-full"
+                        >
+                          Join
+                        </a>
                       </div>
                     </div>
                   </div>

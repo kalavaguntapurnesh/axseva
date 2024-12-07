@@ -242,8 +242,8 @@ const Support = () => {
       <div className="mt-12">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] px-4 sm:px-6 mx-auto">
-              <div className="flex flex-col space-y-4">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
                 {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom

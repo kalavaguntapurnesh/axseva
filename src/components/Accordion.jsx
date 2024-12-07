@@ -13,9 +13,9 @@ const Accordion = ({ title, answer }) => {
         className="flex justify-between w-full"
       >
         <div className=" flex justify-start w-full md:pl-8 md:pt-4 pt-2">
-          <span className="font-medium text-headingColor tracking-normal">
+          <h1 className="font-medium text-headingColor tracking-normal">
             {title}
-          </span>
+          </h1>
         </div>
         <div className="px-4 pt-3 md:pt-6">
           {accordionOpen ? (
@@ -33,7 +33,7 @@ const Accordion = ({ title, answer }) => {
         }`}
       >
         <div className="overflow-hidden md:mx-0 mx-1 md:text-start text-center md:pl-8">
-          <span className="text-lg text-headingColor">{answer}</span>
+          <h1 className="text-lg text-headingColor">{answer}</h1>
         </div>
       </div>
     </div>
