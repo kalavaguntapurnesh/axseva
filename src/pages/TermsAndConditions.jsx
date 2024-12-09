@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "../components/Navbar";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
 
 const TermsAndConditions = () => {
@@ -141,7 +141,7 @@ const TermsAndConditions = () => {
         </div>
       </div>
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
 
       <Footer />
     </div>

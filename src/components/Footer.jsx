@@ -342,11 +342,11 @@ const Footer = () => {
 
             <div className="text-center text-sm pb-6">
               <p className="text-footerItems">
-                Copyright © 2024 AxSeva. All rights reserved
+                Copyright © 2024 AXSeva. All rights reserved
               </p>
               <p className="text-footerItems pt-2">
                 All images related to Microsoft & other images are trademarks of
-                Microsoft. Developed by Cloud Data Networks
+                Microsoft.
               </p>
             </div>
           </div>

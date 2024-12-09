@@ -387,10 +387,10 @@ const NavBar = () => {
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
-                        Location Map
+                        Where to Find Us
                       </a>
                     </li>
-                    <li className="text-navGray ">
+                    {/* <li className="text-navGray ">
                       <a
                         href={whatsappUrl}
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
@@ -398,7 +398,7 @@ const NavBar = () => {
                       >
                         Whatsapp Chat
                       </a>
-                    </li>
+                    </li> */}
                   </motion.ul>
                 )}
               </AnimatePresence>
@@ -674,14 +674,14 @@ const SupportContent = () => {
           href="/about-us#location_map"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Location Map
+          Where to Find Us
         </a>
-        <a
+        {/* <a
           href={whatsappUrl}
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Connect via WhatsApp
-        </a>
+        </a> */}
       </div>
       {/* <button
         onClick={() => navigate("/about-us")}

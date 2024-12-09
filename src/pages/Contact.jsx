@@ -3,17 +3,13 @@ import NavBar from "../components/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { MdArrowRightAlt } from "react-icons/md";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 const Contact = () => {
-  // const handleCaptcha = (value) => {
-  //   const [verified, setVerified] = useState(false); // Captcha verification state
-  //   setVerified(true);
-  // };
-
   const slides = [
     {
       image:
@@ -26,7 +22,17 @@ const Contact = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically change slides every 5 seconds
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
@@ -145,10 +151,10 @@ const Contact = () => {
         </section>
       </div>
 
-      <section className=" text-black">
+      <section id="contact_form" className=" text-black">
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-white">
-            <div className="relative xl:pt-8 pt-12">
+            <div className="relative xl:pt-20 pt-12">
               <div className="w-full">
                 <div className="w-full px-4 mx-auto max-w-[1400px]">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -166,7 +172,7 @@ const Contact = () => {
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                          <h1 className="text-4xl font-bold text-headingColor">
                             Your Expert Microsoft Dynamics Finance Parter
                           </h1>
                         </div>
@@ -482,7 +488,7 @@ const Contact = () => {
                           type="submit"
                           class="relative flex h-[50px] w-full items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                         >
-                          <span class="relative z-10">Request a Demo</span>
+                          <span class="relative z-10">Submit</span>
                         </button>
                       </form>
                     </motion.div>
@@ -500,7 +506,7 @@ const Contact = () => {
                 className="space-y-2"
               >
                 <div className="text-center">
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                  <h1 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     A word from the founder
                   </h1>
                 </div>
@@ -518,7 +524,7 @@ const Contact = () => {
                   className="absolute top-[-16px] left-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
                 <div className="flex flex-col text-center justify-center items-center h-full max-w-[900px] mx-auto">
-                  <p className="text-gray-600 text-center mt-2">
+                  <p className="text-gray-600 text-center mt-2 lg:text-lg">
                     Our mission is simple yet profound: to help you transform
                     your financial operations, so you can focus on what you do
                     best—growing your business. We believe that with the right
@@ -549,7 +555,7 @@ const Contact = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-center"
                 >
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                  <h1 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Transformation has no boundaries.
                   </h1>
                 </motion.div>
@@ -638,7 +644,7 @@ const Contact = () => {
                     <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
                       <a
                         href="/privacy-policy"
-                        class="flex  font-semibold transition duration-1000 ease-out"
+                        class="flex text-headingColor  font-semibold transition duration-1000 ease-out"
                       >
                         Know about privacy policy
                       </a>
@@ -673,7 +679,7 @@ const Contact = () => {
                     <div class="flex flex-row lg:justify-start justify-center items-center space-x-2 pt-1">
                       <a
                         href="/terms-and-conditions"
-                        class="flex  font-semibold transition duration-1000 ease-out"
+                        class="flex text-headingColor  font-semibold transition duration-1000 ease-out"
                       >
                         Our Terms & Conditions
                       </a>
@@ -687,7 +693,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
 
       <Footer />
     </div>

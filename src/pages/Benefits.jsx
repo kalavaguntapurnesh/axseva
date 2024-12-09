@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import Footer from "./../components/Footer";
 import AboutLayout from "./../components/AboutLayout";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 const Benefits = () => {
   return (
     <>
@@ -25,10 +25,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
-                      Deep Industry Expertise:
+                    <div className="text-4xl text-center lg:text-start font-semibold text-headingColor">
+                      Extensive Knowledge Across Industries
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center">
                       With extensive experience in Microsoft 365 and Dynamics
                       365 Finance, we bring unparalleled expertise to every
                       project. Our deep understanding of these platforms enables
@@ -94,8 +94,8 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
-                      Certified Professionals:
+                    <div className="text-4xl text-center lg:text-start font-semibold text-headingColor">
+                      Accredited Experts You Can Trust
                     </div>
                     <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
                       Our team consists of certified Microsoft 365 and Dynamics
@@ -127,10 +127,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
-                      Customer-Centric Approach:
+                    <div className=" text-4xl text-center lg:text-start font-semibold text-headingColor">
+                      Focused on Delivering Exceptional Customer Value
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center">
                       We craft and implement tailored Microsoft 365 and Dynamics
                       365 Finance solutions that address your unique business
                       challenges, ensuring measurable outcomes and long-term
@@ -192,10 +192,10 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
-                    <div className="lg:text-5xl text-4xl text-center lg:text-start font-semibold text-headingColor">
-                      End-to-End Support:
+                    <div className=" text-4xl text-center lg:text-start font-semibold text-headingColor">
+                      Comprehensive Assistance from Start to Finish
                     </div>
-                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
+                    <p className="md:text-lg text-base text-sideHeading lg:text-start text-center">
                       From initial consultation to seamless implementation and
                       ongoing maintenance, we stand as your trusted partner at
                       every stage. Our comprehensive support ensures your
@@ -211,8 +211,8 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-
-      <ContactUsButton />
+      {/* 
+      <ContactUsButton /> */}
       <Footer />
     </>
   );

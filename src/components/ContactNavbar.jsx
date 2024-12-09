@@ -430,14 +430,14 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor">
                       <a href="/about-us#location_map" className="text-sm">
-                        Location Map
+                        Where to Find Us
                       </a>
                     </li>
-                    <li className="text-headingColor">
+                    {/* <li className="text-headingColor">
                       <a href={whatsappUrl} className="text-sm">
                         Whatsapp Chat
                       </a>
-                    </li>
+                    </li> */}
                   </motion.ul>
                 )}
               </AnimatePresence>
@@ -701,14 +701,14 @@ const SupportContent = () => {
           href="/about-us#location_map"
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Location Map
+          Where to Find Us
         </a>
-        <a
+        {/* <a
           href={whatsappUrl}
           className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Connect via WhatsApp
-        </a>
+        </a> */}
       </div>
       {/* <button
         onClick={() => navigate("/about-us")}

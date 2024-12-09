@@ -5,10 +5,9 @@ import { GiAlarmClock } from "react-icons/gi";
 import { MdBusiness } from "react-icons/md";
 import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
-import { MdOutlineSettings } from "react-icons/md";
 import { GrPersonalComputer } from "react-icons/gr";
 import SupportLayout from "./../components/SupportLayout";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -81,9 +80,9 @@ const Support = () => {
     },
     {
       icon: <GrPersonalComputer />,
-      Title: "Location Map",
+      Title: "Where to Find Us",
       description:
-        "Interactive tool of geographical positions & navigation details.",
+        "Discover our location with an interactive map offering geographic insights & navigation guidance.",
       color: "text-violet-500", // Pink color for this icon
     },
   ];
@@ -243,7 +242,7 @@ const Support = () => {
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+              <div>
                 {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -339,62 +338,7 @@ const Support = () => {
         </div>
       </div>
 
-      {/* section 4 */}
-
-      {/* section 5 */}
-      {/* 
-      <div className="mt-12">
-        <div className="relative">
-          <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-               
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-6 w-full justify-center"
-                >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
-                    Microsoft Dynamics 365 Support
-                  </div>
-                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                    Get seamless and reliable Dynamics 365 support to get your
-                    system going even in tough times. Employ your Dynamics 365
-                    solution to its full potential, leveraging the established
-                    infrastructure of Dynamics Square, the USA’s leading
-                    Microsoft Solutions Partner.
-                  </p>
-                  <div className="flex justify-center lg:justify-start">
-                    <a
-                      href="/contact"
-                      class="relative mt-2 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
-                    >
-                      <span class="relative z-10">Request a Demo</span>
-                    </a>
-                  </div>
-                </motion.div>
-            
-                <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex justify-center items-center w-full"
-                >
-                  <img
-                    src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupport-service-banner.png&w=1920&q=75"
-                    className="lg:w-full w-auto h-auto"
-                  />
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
 
       <Footer />
     </>

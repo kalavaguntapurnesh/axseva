@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import ContactNavbar from "../../components/ContactNavbar.jsx";
-import ContactUsButton from "../../components/ContactUsButton";
+// import ContactUsButton from "../../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 const MicrosoftDynamics365 = () => {
@@ -71,11 +71,9 @@ const MicrosoftDynamics365 = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-headingColor">
-                    Enterprise Solutions from{" "}
-                    <span className="lg:text-5xl text-4xl md:text-start text-center font-semibold text-mainColor">
-                      AX <span className="text-headingColor">Seva</span>{" "}
-                    </span>
+                  <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
+                    <span className="text-mainColor">AX</span>Seva:Transforming Businesses with Enterprise
+                    Solutions
                   </div>
 
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -139,7 +137,7 @@ const MicrosoftDynamics365 = () => {
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
-              <h1 className="lg:text-5xl text-4xl text-center font-bold text-headingColor">
+              <h1 className="text-4xl text-center font-bold text-headingColor">
                 Accelerate impact and drive efficiency with Microsoft Dynamics
                 365
               </h1>
@@ -231,9 +229,9 @@ const MicrosoftDynamics365 = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.5 }}
-                className="space-y-3"
+                className="space-y-4"
               >
-                <h1 className="lg:text-5xl text-4xl text-center font-bold text-sideHeading">
+                <h1 className="text-4xl text-center font-bold text-sideHeading">
                   Microsoft Dynamics 365 Capabilities and Features
                 </h1>
                 <p className="md:text-lg text-base text-center text-sideHeading">
@@ -281,7 +279,7 @@ const MicrosoftDynamics365 = () => {
         </div>
       </div>
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
       <Footer />
     </div>
   );

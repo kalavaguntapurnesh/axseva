@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import AboutLayout from "../../components/AboutLayout";
-import ContactUsButton from "../../components/ContactUsButton";
+// import AboutLayout from "../../components/AboutLayout";
+// import ContactUsButton from "../../components/ContactUsButton";
 import ContactNavbar from "../../components/ContactNavbar.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
@@ -34,7 +34,7 @@ const MicrosoftDynamics365Finance = () => {
                       </h1>
                     </div>
 
-                    <div className="lg:text-5xl text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                    <div className="text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
                       <h1>Our Comprehensive Dynamics 365 & ERP Services</h1>
                     </div>
 
@@ -449,7 +449,7 @@ const MicrosoftDynamics365Finance = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className=" text-4xl text-center lg:text-start font-bold text-sideHeading">
                     Supply chain
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -479,7 +479,7 @@ const MicrosoftDynamics365Finance = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className="lg:text-5xl text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className="text-4xl text-center lg:text-start font-bold text-sideHeading">
                     Cloud Services
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -523,7 +523,7 @@ const MicrosoftDynamics365Finance = () => {
 
       {/* section 4   */}
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
       <Footer />
     </div>
   );

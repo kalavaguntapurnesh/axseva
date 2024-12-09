@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "../components/Navbar";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
 
@@ -859,7 +859,7 @@ const Privacy = () => {
         </div>
       </div>
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
 
       <Footer />
     </div>

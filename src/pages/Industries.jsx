@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
@@ -257,7 +257,7 @@ const Industries = () => {
                     </h1>
                   </div>
 
-                  <div className="lg:text-5xl text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                  <div className="text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
                     <h1>Industry Solutions: AI and Cloud Technology</h1>
                   </div>
 
@@ -302,7 +302,7 @@ const Industries = () => {
                     </div>
                     <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                       <div className="text-sideHeading font-semibold">
-                        <p>Around the clock Support</p>
+                        <p>Strategic Advisor to CIOs</p>
                       </div>
                     </div>
                   </div>
@@ -338,7 +338,7 @@ const Industries = () => {
         </div>
       </div>
 
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
 
       <Footer />
     </>

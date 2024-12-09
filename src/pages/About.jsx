@@ -1,7 +1,7 @@
 import AboutOne from "../components/AboutOne";
 import Footer from "./../components/Footer";
 import AboutLayout from "./../components/AboutLayout";
-import ContactUsButton from "../components/ContactUsButton";
+// import ContactUsButton from "../components/ContactUsButton";
 
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
     <div>
       <AboutLayout />
       <AboutOne />
-      <ContactUsButton />
+      {/* <ContactUsButton /> */}
       <Footer />
     </div>
   );

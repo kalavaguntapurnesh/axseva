@@ -10,7 +10,7 @@ const Hero = () => {
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
-      buttonLink: "/contact",
+      buttonLink: "/contact#contact_form",
     },
     {
       image:
@@ -19,7 +19,7 @@ const Hero = () => {
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
       buttonText: "Find Out More",
-      buttonLink: "/contact",
+      buttonLink: "/contact#contact_form",
     },
     {
       image:
@@ -28,7 +28,7 @@ const Hero = () => {
       paragraph:
         "We ensure smooth implementation and ongoing support for your success.",
       buttonText: "Speak With Us",
-      buttonLink: "/contact",
+      buttonLink: "/contact#contact_form",
     },
   ];
 

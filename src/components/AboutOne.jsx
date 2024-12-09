@@ -37,18 +37,17 @@ const AboutOne = () => {
                   </h1>
                 </div>
 
-                <div className="lg:text-5xl text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
-                  <h1> Empowering Your Financial Future with us</h1>
+                <div className="text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
+                  <h1>Building a Brighter Financial Future Together</h1>
                 </div>
 
                 <div className="md:text-lg text-base text-sideHeading lg:text-start text-center lg:ml-2 px-2 md:px-0">
                   <p>
-                    AXSeva is engaged in mustering energy among people to create
-                    a better world and solve critical business problems through
-                    digital transformation and innovative cloud technology
-                    solutions. We are not only helping businesses become
-                    resilient but also empowering them to stay ahead of the
-                    curve.
+                    AXSeva is engaged in solving critical business problems
+                    through digital transformation and innovative cloud
+                    technology solutions. We are not only helping businesses
+                    become resilient but also empowering them to stay ahead of
+                    the curve.
                   </p>
                 </div>
 
@@ -80,7 +79,7 @@ const AboutOne = () => {
                   </div>
                   <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                     <div className="text-sideHeading font-semibold">
-                      <p>Ongoing Support & Training</p>
+                      <p>Strategic Advisor to CIO's</p>
                     </div>
                   </div>
                 </div>
@@ -123,7 +122,7 @@ const AboutOne = () => {
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-semibold text-mainColor">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                       Our Mission
                     </h1>
                   </div>
@@ -150,7 +149,7 @@ const AboutOne = () => {
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-semibold text-mainColor">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
                       Our Vision
                     </h1>
                   </div>
@@ -323,8 +322,8 @@ const AboutOne = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-center"
                 >
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
-                    Visit Us At This Location
+                  <h1 className="text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                    Visit us at this location
                   </h1>
                 </motion.div>
 
@@ -353,7 +352,7 @@ const AboutOne = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-center"
                 >
-                  <h1 className="lg:text-5xl text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                  <h1 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Our Leadership
                   </h1>
                 </motion.div>
