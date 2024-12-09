@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { IoMdArrowRoundUp } from "react-icons/io";
+import { FaAngleUp } from "react-icons/fa";
 import { classNames } from "../components/classNames";
 
 const ContactUsButton = () => {
@@ -44,7 +44,7 @@ const ContactUsButton = () => {
           "bg-mainColor fixed flex items-center text-white  justify-center bottom-4 right-5 z-20 p-3 rounded-full"
         )}
       >
-        <IoMdArrowRoundUp className="h-6 w-6" aria-hidden="true" />
+        <FaAngleUp className="h-5 w-5" aria-hidden="true" />
       </button>
     </>
   );
