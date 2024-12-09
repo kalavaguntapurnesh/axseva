@@ -32,7 +32,7 @@ const AboutOne = () => {
               >
                 <div className="flex items-center lg:justify-start justify-center md:ml-4">
                   <div className="h-4 w-1 bg-mainColor"></div>
-                  <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                  <h1 className="ml-2 text-lg font-bold text-mainColor ">
                     About AXSeva
                   </h1>
                 </div>
@@ -122,7 +122,7 @@ const AboutOne = () => {
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
                       Our Mission
                     </h1>
                   </div>
@@ -149,7 +149,7 @@ const AboutOne = () => {
                 <div className="space-y-2 md:text-start text-center md:mx-4">
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
                       Our Vision
                     </h1>
                   </div>
@@ -178,8 +178,8 @@ const AboutOne = () => {
             >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
-                  Our spectacular strength
+                <h1 className="ml-2 text-lg font-bold text-mainColor">
+                  Our amazing strength
                 </h1>
               </div>
 
@@ -406,7 +406,7 @@ const AboutOne = () => {
                   >
                     <div className="flex items-center md:justify-start justify-center ">
                       <div className="h-4 w-1 bg-mainColor"></div>
-                      <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
                         About the founder
                       </h1>
                     </div>

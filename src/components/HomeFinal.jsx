@@ -18,7 +18,7 @@ const HomeFinal = () => {
                 className="flex items-center text-center justify-center "
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                <h1 className="ml-2 text-lg font-bold text-mainColor ">
                   Require Assistance
                 </h1>
               </motion.div>

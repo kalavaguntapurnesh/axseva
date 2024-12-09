@@ -170,13 +170,13 @@ const Contact = () => {
                       <div className="flex flex-col space-y-4 mt-8">
                         <div className="flex items-center lg:justify-start justify-center lg:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
-                          <h1 className="uppercase ml-2 text-lg font-bold text-mainColor ">
+                          <h1 className=" ml-2 text-lg font-bold text-mainColor ">
                             Partner With AXSeva
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
                           <h1 className="text-4xl font-bold text-headingColor">
-                            Your Expert Microsoft Dynamics Finance Parter
+                            Your Expert Microsoft Dynamics Finance & Operations
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">

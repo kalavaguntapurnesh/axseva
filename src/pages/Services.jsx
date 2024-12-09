@@ -275,7 +275,7 @@ const Services = () => {
                 >
                   <div className="flex items-center lg:justify-start justify-center md:ml-4">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
                       Streamline Your Operations
                     </h1>
                   </div>
@@ -473,7 +473,7 @@ const Services = () => {
                 >
                   <div className="flex items-center lg:justify-start justify-center md:ml-4">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
                       We thrive for your future
                     </h1>
                   </div>
