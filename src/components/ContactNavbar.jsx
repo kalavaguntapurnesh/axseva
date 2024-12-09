@@ -200,7 +200,7 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor">
                       <a href="/managed-it-services" className="text-sm">
-                        Dynamic 365 & ERP Implementation
+                        Dynamic 365 Finance & Operations
                       </a>
                     </li>
                     <li className="text-headingColor">
@@ -583,7 +583,7 @@ const ServicesContent = () => {
           href="/services-microsoft-dynamics-365-finance"
           className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
-          Dynamic 365 & ERP Implementation
+          Dynamic 365 Finance & Operations
         </a>
         <a
           href="/services-microsoft-dynamics-365"
