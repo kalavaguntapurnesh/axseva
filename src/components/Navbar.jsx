@@ -64,7 +64,7 @@ const NavBar = () => {
               <span
                 className={` ${
                   isScrolled
-                    ? "text-black font-semibold"
+                    ? "text-black font-bold"
                     : "text-navGray semibold"
                 }`}
               >

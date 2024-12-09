@@ -313,7 +313,7 @@ const AboutOne = () => {
               </div>
             </motion.div>
 
-            <div id="location_map" className="pt-20 md:px-0 px-2">
+            <div id="location_map" className="pt-24 md:px-0 px-2">
               <div className="space-y-2">
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
