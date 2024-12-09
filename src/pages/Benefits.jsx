@@ -26,19 +26,17 @@ const Benefits = () => {
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
                     <div className="text-4xl text-center lg:text-start font-semibold text-headingColor">
-                      Extensive Knowledge Across Industries
+                      Collaborate with{" "}
+                      <span className="text-mainColor">AX</span>Seva for
+                      Seamless Synergy
                     </div>
                     <p className="md:text-lg text-base text-sideHeading lg:text-start text-center">
-                      With extensive experience in Microsoft 365 and Dynamics
-                      365 Finance, we bring unparalleled expertise to every
+                      With extensive experience in Dynamics 365 Finance &
+                      Operations we bring unparalleled expertise to every
                       project. Our deep understanding of these platforms enables
                       us to deliver tailored solutions that optimize business
                       processes, enhance financial management, and drive
-                      operational efficiency. Whether it’s streamlining
-                      workflows, implementing advanced financial analytics, or
-                      integrating with existing systems, we ensure every
-                      solution is designed to meet your specific industry needs
-                      and deliver measurable outcomes.
+                      operational efficiency.
                     </p>
                   </motion.div>
 
