@@ -9,7 +9,7 @@ const Tabs = ({ children }) => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white select-none">
       <div className="relative md:pt-12 pt-8 pb-8">
         <div className="w-full">
           <div className="w-full px-2 mx-auto max-w-[1400px]">

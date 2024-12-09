@@ -121,11 +121,11 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen ">
         {/* NavBar */}
         <NavBar />
 
-        <section className="relative h-full w-full overflow-hidden">
+        <section className="relative h-full w-full overflow-hidden select-none">
           {/* Background Images */}
           <div className="absolute inset-0 z-0">
             <AnimatePresence>
@@ -154,7 +154,7 @@ const Contact = () => {
         </section>
       </div>
 
-      <section id="contact_form" className=" text-black pb-12">
+      <section id="contact_form" className=" text-black pb-12 select-none">
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-white">
             <div className="relative xl:pt-20 pt-12">

@@ -177,7 +177,7 @@ const Services = () => {
     <>
       <ServicesLayout />
 
-      <div className="lg:mt-16 mt-12">
+      <div className="lg:mt-16 mt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
@@ -261,7 +261,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="pt-12">
+      <div className="pt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -345,7 +345,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="mt-12 mb-12 lg:block hidden">
+      <div className="mt-12 mb-12 lg:block hidden select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
@@ -434,7 +434,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="pt-12">
+      <div className="pt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -522,7 +522,7 @@ const Services = () => {
       {/* Section 4 */}
 
       {/* Section 5 */}
-      <div className="mt-12">
+      <div className="mt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">

@@ -26,7 +26,7 @@ const IndustriesHero = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative h-full w-full overflow-hidden ">
+    <section className="relative h-full w-full overflow-hidden select-none">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence>

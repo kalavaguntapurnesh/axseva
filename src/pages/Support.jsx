@@ -92,7 +92,7 @@ const Support = () => {
       <SupportLayout />
 
       {/* section 1 */}
-      <div className="mt-12">
+      <div className="mt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
@@ -164,7 +164,7 @@ const Support = () => {
       </div>
 
       {/* section 2 */}
-      <div className="mt-12">
+      <div className="mt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
@@ -238,7 +238,7 @@ const Support = () => {
 
       {/* section 3 */}
 
-      <div className="mt-12">
+      <div className="mt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">

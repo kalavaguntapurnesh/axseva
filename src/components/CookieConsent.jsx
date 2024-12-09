@@ -61,7 +61,7 @@ const CookieConsent = () => {
     // </div>
 
     <div
-      className="fixed bottom-0 md:bottom-8 md:left-8 w-full md:w-auto bg-white py-4 px-6 flex flex-col items-center md:justify-between gap-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-50
+      className="select-none fixed bottom-0 md:bottom-8 md:left-8 w-full md:w-auto bg-white py-4 px-6 flex flex-col items-center md:justify-between gap-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] z-50
       rounded md:max-w-sm"
     >
       <div className="flex flex-col">

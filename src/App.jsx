@@ -18,7 +18,19 @@ import MicrosoftDynamics365 from "./pages/Services/MicrosoftDynamics365";
 import MicrosoftDynamics365Finance from "./pages/Services/MicrosoftDynamics365Finance";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PageNotFound from "./pages/PageNotFound";
+import React, { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    // Disable right-click globally
+    const disableRightClick = (e) => e.preventDefault();
+
+    document.addEventListener("contextmenu", disableRightClick);
+
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>

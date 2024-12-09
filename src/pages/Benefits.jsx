@@ -140,7 +140,7 @@ const Benefits = () => {
       <div>
         {/* Section 1 */}
 
-        <div className="pt-12 bg-[#f6f8f9]">
+        <div className="pt-12 bg-[#f6f8f9] select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
@@ -212,7 +212,7 @@ const Benefits = () => {
 
         {/* section 2 */}
 
-        <div className="pt-20">
+        <div className="pt-20 select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
@@ -273,7 +273,7 @@ const Benefits = () => {
 
         {/* section 3 */}
 
-        <div className="pt-16 ">
+        <div className="pt-16 select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
@@ -331,7 +331,7 @@ const Benefits = () => {
 
         {/* section 4 */}
 
-        <div className="pt-20 bg-[#f6f8f9]">
+        <div className="pt-20 bg-[#f6f8f9] select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-16 px-4">

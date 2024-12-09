@@ -10,7 +10,7 @@ const Industries = () => {
       <IndustriesLayout />
       {/* Section 1 */}
 
-      <div className="pt-16">
+      <div className="pt-16 select-none" >
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -238,7 +238,7 @@ const Industries = () => {
 
       {/* Section 2 */}
 
-      <div className="lg:pt-28 pt-16">
+      <div className="lg:pt-28 pt-16 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">

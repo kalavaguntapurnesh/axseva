@@ -11,7 +11,7 @@ const Bento = () => {
 
   return (
     <div>
-      <div className="relative">
+      <div className="relative select-none">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4 gap-6">
