@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import ServicesLayout from "../components/ServicesLayout";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
-// import ContactUsButton from "../components/ContactUsButton";
+import ContactUsButton from "../components/ContactUsButton";
 const Services = () => {
   const services1 = [
     {
@@ -622,7 +622,7 @@ const Services = () => {
         </div>
       </div>
 
-      {/* <ContactUsButton /> */}
+      <ContactUsButton />
 
       {/* Footer */}
       <Footer />

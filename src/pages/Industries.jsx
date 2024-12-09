@@ -1,5 +1,5 @@
 import React from "react";
-// import ContactUsButton from "../components/ContactUsButton";
+import ContactUsButton from "../components/ContactUsButton";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
@@ -338,7 +338,7 @@ const Industries = () => {
         </div>
       </div>
 
-      {/* <ContactUsButton /> */}
+      <ContactUsButton />
 
       <Footer />
     </>

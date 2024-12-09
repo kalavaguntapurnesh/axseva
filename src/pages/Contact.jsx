@@ -3,7 +3,7 @@ import NavBar from "../components/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { MdArrowRightAlt } from "react-icons/md";
-// import ContactUsButton from "../components/ContactUsButton";
+import ContactUsButton from "../components/ContactUsButton";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
 import { useState, useEffect } from "react";
@@ -704,7 +704,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* <ContactUsButton /> */}
+      <ContactUsButton />
 
       <Footer />
     </div>
