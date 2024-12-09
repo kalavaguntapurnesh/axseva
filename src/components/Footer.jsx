@@ -99,7 +99,7 @@ const Footer = () => {
                           href="/managed-it-services"
                           className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
-                          Dynamic 365 & ERP Implementation
+                          Dynamic 365 Finance & Operations
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
