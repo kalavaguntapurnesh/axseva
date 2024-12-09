@@ -103,7 +103,7 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="text-4xl text-sideHeading font-bold text-center"
+                  className="text-4xl text-headingColor font-bold text-center"
                 >
                   Uncover Your Business Scope With Us
                 </motion.div>
@@ -202,7 +202,7 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
-                  <div className="text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
                     Dedicated Dynamics 365 Support Partner
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -251,7 +251,7 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="hidden lg:block"
                 >
-                  <div className="text-4xl text-sideHeading font-bold text-center">
+                  <div className="text-4xl text-headingColor font-bold text-center">
                     Microsoft dynamics 365 Suite
                   </div>
 
@@ -280,7 +280,7 @@ const Support = () => {
                 >
                   {/* grid 1 */}
                   <div className="flex flex-col space-y-4 w-full justify-center">
-                    <div className=" text-4xl text-center lg:text-start font-bold text-sideHeading">
+                    <div className=" text-4xl text-center lg:text-start font-bold text-headingColor">
                       Dynamics 365 Support Plans We Offer
                     </div>
                     <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
