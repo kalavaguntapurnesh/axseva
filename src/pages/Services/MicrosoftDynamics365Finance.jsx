@@ -449,7 +449,7 @@ const MicrosoftDynamics365Finance = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className=" text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className=" text-4xl text-center lg:text-start font-bold text-headingColor">
                     Supply chain
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -479,7 +479,7 @@ const MicrosoftDynamics365Finance = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-                  <div className="text-4xl text-center lg:text-start font-bold text-sideHeading">
+                  <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
                     Cloud Services
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">

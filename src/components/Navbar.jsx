@@ -52,7 +52,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-[#f2f8fe] py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-[#F6F8F9] py-6" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
@@ -106,7 +106,7 @@ const NavBar = () => {
             href="/contact"
             className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
               isScrolled
-                ? "border-black hover:border-[1px] text-black font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
+                ? "border-black hover:border-none text-black font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
                 : "border-navGray font-light text-white"
             }`}
           >
@@ -511,16 +511,16 @@ const PricingContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">We Provide Solutions For</h3>
+        <h3 className="font-semibold text-sideHeading">We Provide Solutions For</h3>
         <a
           href="/"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sideHeading text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Integration Consulting
         </a>
         <a
           href="/"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Business Needs
         </a>
@@ -545,23 +545,23 @@ const ServicesContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">Services We Offer</h3>
+        <h3 className="font-semibold text-sideHeading">Services We Offer</h3>
         <a
           href="/services-microsoft-dynamics-365-finance"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Dynamic 365 & ERP Implementation
         </a>
         <a
           href="/services-microsoft-dynamics-365"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Business Intelligence Analytics
         </a>
 
         <a
           href="/services-microsoft-dynamics-365-finance"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Support & Managed Services
         </a>
@@ -582,29 +582,29 @@ const IndustriesContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">Industries We Serve</h3>
+        <h3 className="font-semibold text-sideHeading">Industries We Serve</h3>
         <a
           href="/industries"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Financial Services
         </a>
         <a
           href="/industries"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Manufacturing Services
         </a>
 
         <a
           href="/industries"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Public Sector Service
         </a>
         <a
           href="/industries"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Software Services
         </a>
@@ -625,23 +625,23 @@ const AboutUsContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">About AXSeva</h3>
+        <h3 className="font-semibold text-sideHeading">About AXSeva</h3>
 
         <a
           href="/about-us"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Why AXSeva
         </a>
         <a
           href="/collaborate-with-us"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Collaborate with Us
         </a>
         <a
           href="/privacy-policy"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Our Privacy Policy
         </a>
@@ -668,11 +668,11 @@ const SupportContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold">Dedicated to Assisting You</h3>
+        <h3 className="font-semibold text-sideHeading">Dedicated to Assisting You</h3>
 
         <a
           href="/about-us#location_map"
-          className="block text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
+          className="block text-sm text-sideHeading hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
         >
           Where to Find Us
         </a>

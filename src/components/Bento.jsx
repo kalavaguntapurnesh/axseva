@@ -37,7 +37,7 @@ const Bento = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-4 lg:px-0 px-2">
-                  <a href="" class="flex lg:justify-start justify-center">
+                  <div  class="flex lg:justify-start justify-center">
                     <div class="w-full p-4 bg-[#f8f9fa] border border-gray-200 rounded shadow-md sm:p-6">
                       <div class="space-y-2">
                         <div class="flex justify-center lg:justify-start items-center">
@@ -65,9 +65,9 @@ const Bento = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
 
-                  <a href="" class="flex lg:justify-start justify-center">
+                  <div class="flex lg:justify-start justify-center">
                     <div class="w-full p-4 bg-[#f8f9fa] border border-gray-200 rounded shadow-md sm:p-6">
                       <div class="space-y-2">
                         <div class="flex justify-center lg:justify-start items-center">
@@ -95,7 +95,7 @@ const Bento = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </motion.div>
 

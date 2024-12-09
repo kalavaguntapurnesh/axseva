@@ -356,7 +356,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className=" text-4xl text-sideHeading font-bold text-center"
+                  className=" text-4xl text-headingColor font-bold text-center"
                 >
                   5 Common Challenges We Can Resolve
                 </motion.div>
@@ -533,7 +533,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className=" text-4xl text-sideHeading font-bold text-center"
+                  className=" text-4xl text-headingColor font-bold text-center"
                 >
                   How Managed IT Services Work with AXSeva
                 </motion.div>
@@ -565,7 +565,7 @@ const Services = () => {
                     {services1.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
+                        className="border border-mainColor space-y-6 rounded p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
@@ -593,7 +593,7 @@ const Services = () => {
                     {services2.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded-lg p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
+                        className="border border-mainColor space-y-6 rounded p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}

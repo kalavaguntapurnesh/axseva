@@ -66,10 +66,10 @@ const TermsAndConditions = () => {
               <div className="lg:px-2 px-1 space-y-4">
                 <div className="space-y-2 xl:text-start text-center pt-4">
                   <div className="space-y-2 xl:text-start text-center ">
-                    <h1 className="text-headingColor text-xl font-medium pb-4">
+                    <h1 className="text-headingColor text-xl font-semibold pb-4">
                       Terms and Conditions for Consultation Request
                     </h1>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       By submitting a consultation request, you acknowledge and
                       agree to the following terms and conditions. The
                       consultation service is intended to provide tailored
@@ -81,7 +81,7 @@ const TermsAndConditions = () => {
                       consultation may be impacted by any inaccuracies or
                       omissions in the information supplied.
                     </p>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       All information shared during the consultation will be
                       handled with strict confidentiality and will not be
                       disclosed to third parties without your consent, except as
@@ -89,7 +89,7 @@ const TermsAndConditions = () => {
                       maintaining the confidentiality of any insights,
                       recommendations, or materials shared by the consultant.
                     </p>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       While we strive to offer valuable insights, the
                       consultation is provided on a good-faith, best-effort
                       basis, and no guarantees or warranties regarding specific
@@ -101,7 +101,7 @@ const TermsAndConditions = () => {
                       submitted at least 24 hours in advance. Late cancellations
                       or missed appointments will result in forfeiture of fees.
                     </p>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       Any materials or intellectual property shared during the
                       consultation remain the exclusive property of the
                       consultant and may not be reproduced, distributed, or used
@@ -111,7 +111,7 @@ const TermsAndConditions = () => {
                       agree to use the guidance provided at your own discretion
                       and risk.
                     </p>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       The consultant reserves the right to terminate a session
                       or engagement if the terms are violated or if the
                       engagement is deemed unsuitable. These terms and
@@ -121,7 +121,7 @@ const TermsAndConditions = () => {
                       from time to time, and any changes will be communicated
                       prior to subsequent consultations.
                     </p>
-                    <p className="text-privacyColor">
+                    <p className="text-sideHeading">
                       By submitting your consultation request, you confirm that
                       you have read, understood, and agreed to these terms and
                       conditions. If you have any questions or need further

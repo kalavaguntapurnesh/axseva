@@ -161,7 +161,7 @@ const Privacy = () => {
                     {/* Right side: Display all data */}
                     <div className="space-y-12 col-span-2 overflow-y-auto pl-3">
                       <div ref={sectionRefs[0]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           Information We Collect From the User
                         </h3>
 
@@ -189,7 +189,7 @@ const Privacy = () => {
                         </div>
                       </div>
                       <div ref={sectionRefs[1]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           How We Use The Collected Information
                         </h3>
 
@@ -224,7 +224,7 @@ const Privacy = () => {
                         </div>
                       </div>
                       <div ref={sectionRefs[2]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           Data Sharing, Disclosure & Data Security
                         </h3>
 
@@ -257,7 +257,7 @@ const Privacy = () => {
                         </div>
                       </div>
                       <div ref={sectionRefs[3]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           Your Choices, Rights & Changes to the policy
                         </h3>
 
@@ -295,7 +295,7 @@ const Privacy = () => {
                         ref={sectionRefs[4]}
                         className="space-y-4"
                       >
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           Why does the Company collect user information?
                         </h3>
 
@@ -342,7 +342,7 @@ const Privacy = () => {
                       </div>
 
                       <div ref={sectionRefs[5]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           How does the Company collect user information?
                         </h3>
 
@@ -433,7 +433,7 @@ const Privacy = () => {
                       </div>
 
                       <div ref={sectionRefs[6]} className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-800">
+                        <h3 className="text-2xl font-bold text-headingColor">
                           Personal Infomation Disclosure by Company
                         </h3>
 
