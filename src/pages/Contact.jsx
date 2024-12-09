@@ -9,6 +9,9 @@ import Swal from "sweetalert2";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   const slides = [
     {
@@ -151,7 +154,7 @@ const Contact = () => {
         </section>
       </div>
 
-      <section id="contact_form" className=" text-black">
+      <section id="contact_form" className=" text-black pb-12">
         <div className="max-w-[1400px] mx-auto">
           <div className="bg-white">
             <div className="relative xl:pt-20 pt-12">
@@ -181,88 +184,63 @@ const Contact = () => {
                             While these functions all stand to benefit your
                             business, they can be difficult to navigate without
                             the help of an experienced ERP specialist. AXSeva
-                            can help. As a Microsoft ERP Gold Certified Partner,
-                            AXSeva offers years of experience in both Microsoft
-                            Dynamics 365 and other ERP and Cloud Systems. We’ll
-                            help your business make the most of the Microsoft
-                            Dynamics 365 system, giving you the competitive edge
-                            you need to succeed.
+                            can help. We’ll help your business make the most of
+                            the Microsoft Dynamics 365 system, giving you the
+                            competitive edge you need to succeed.
                           </h1>
                         </div>
 
-                        {/* <ul className="space-y-2 pt-3 md:px-0 px-2 hidden md:flex flex-col justify-center">
-                          <li>
-                            <div className="flex items-center">
-                              <div className="flex flex-row items-center mr-3">
-                                <FaHandshake className="w-7 h-7 text-gray-600" />
-                              </div>
-                              <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium">
-                                350+ Successful Handovers and Counting!
-                              </h1>
-                            </div>
-                          </li>
-
-                          <li>
-                            <div className="flex items-center ">
-                              <div className="flex flex-row items-center mr-3">
-                                <FaNetworkWired className="w-7 h-7 text-gray-600" />
-                              </div>
-                              <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium">
-                                150+ Qualified Professionals at Your Disposal!
-                              </h1>
-                            </div>
-                          </li>
-
-                          <li>
-                            <div className="flex items-center">
-                              <div className="flex flex-row items-center mr-3">
-                                <FaClockRotateLeft className="w-7 h-7 text-gray-600" />
-                              </div>
-                              <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium">
-                                24/7 Round-the-Clock Support!
-                              </h1>
-                            </div>
-                          </li>
-
-                          <li>
-                            <div className="flex items-center">
-                              <div className="flex flex-row items-center mr-3">
-                                <IoIosSpeedometer className="w-7 h-7 text-gray-600" />
-                              </div>
-                              <div className="h-6 w-1 bg-mainColor"></div>
-                              <h1 className="ml-3 text-lg font-medium">
-                                2x Boost in Efficiency and Productivity!
-                              </h1>
-                            </div>
-                          </li>
-                        </ul> */}
-
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
                           <a
-                            href="mailto:info@axseva.com"
+                            href="https://maps.app.goo.gl/86cEfhqBVqryeg8x9"
                             class="flex md:justify-start justify-center"
                           >
-                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
-                              <div class="space-y-1">
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow">
+                              <div class="space-y-2">
                                 <div className="flex justify-center items-center">
                                   <img
-                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/location-11114533-9194397.png?f=webp&w=512"
+                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/statue-of-liberty-5251958-4426372.png?f=webp&w=512"
                                     alt="icon"
                                     className="w-20 h-20"
                                   />
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <h1 class="text-xl text-headingColor font-semibold text-center">
-                                    Address
+                                    Headquarters
                                   </h1>
                                 </div>
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
                                   <p>1691 Kettering St.</p>
-                                  <p>Irvine, CA 92614</p>
+                                  <p>Irvine, California, USA-92614</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="https://maps.app.goo.gl/n6xipDDg3NYg4bqs8"
+                            class="flex md:justify-start justify-center"
+                          >
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow">
+                              <div class="space-y-2">
+                                <div className="flex justify-center items-center">
+                                  <img
+                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/hyderabad-icon-download-in-svg-png-gif-file-formats--charminar-monument-mosque-heritage-buildings-icons-112414.png?f=webp&w=512"
+                                    alt="icon"
+                                    className="w-20 h-20"
+                                  />
+                                </div>
+                                <div class="flex justify-center items-center">
+                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                    Indian Location
+                                  </h1>
+                                </div>
+
+                                <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium ">
+                                  <p>
+                                    1-53, P NO.27, SY NO.41/P, 42/P Guttala,
+                                  </p>
+                                  <p>Begumpet, Hyderabad, India-500016</p>
                                 </div>
                               </div>
                             </div>
@@ -271,11 +249,11 @@ const Contact = () => {
                             href="mailto:info@axseva.com"
                             class="flex md:justify-start justify-center"
                           >
-                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
-                              <div class="space-y-1">
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow">
+                              <div class="space-y-2">
                                 <div className="flex justify-center items-center">
                                   <img
-                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/domain-8235601-6839704.png?f=webp&w=512"
+                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/email-address-8510581-6701837.png?f=webp&w=512"
                                     alt="icon"
                                     className="w-20 h-20"
                                   />
@@ -288,6 +266,39 @@ const Contact = () => {
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
                                   <p>info@axseva.com</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a
+                            href="mailto:info@axseva.com"
+                            class="flex md:justify-start justify-center"
+                          >
+                            <div class="w-full p-4 bg-white border border-gray-200 rounded shadow">
+                              <div class="space-y-2">
+                                <div className="flex justify-center items-center">
+                                  <img
+                                    src="https://cdn.iconscout.com/icon/premium/png-512-thumb/social-media-5686022-4752631.png?f=webp&w=512"
+                                    alt="icon"
+                                    className="w-20 h-20"
+                                  />
+                                </div>
+                                <div class="flex justify-center items-center">
+                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                    Social Media Links
+                                  </h1>
+                                </div>
+
+                                <div class="grid grid-cols-3 pt-2">
+                                  <a href="https://www.linkedin.com/in/sumanthdama/" className="flex justify-center items-center">
+                                    <FaLinkedin className="text-headingColor w-6 h-6" />
+                                  </a>
+                                  <div className="flex justify-center items-center">
+                                    <FaXTwitter className="text-headingColor w-6 h-6" />
+                                  </div>
+                                  <div className="flex justify-center items-center">
+                                    <FaInstagram className="text-headingColor w-6 h-6" />
+                                  </div>
                                 </div>
                               </div>
                             </div>
