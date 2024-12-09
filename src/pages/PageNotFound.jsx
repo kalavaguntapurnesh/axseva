@@ -2,7 +2,7 @@ import Navbar from "../components/ContactNavbar";
 
 const PageNotFound = () => {
   return (
-    <section class="bg-white h-screen ">
+    <section class="bg-white h-screen select-none">
       <Navbar />
       <div class="py-8 mx-auto max-w-[1400px] lg:py-16 h-[100%] ">
         <div class="flex flex-col justify-center items-center h-[100%]">

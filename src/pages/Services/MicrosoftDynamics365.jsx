@@ -58,7 +58,7 @@ const MicrosoftDynamics365 = () => {
       <ContactNavbar />
 
       {/* section 2 */}
-      <div className="w-full lg:pt-36 pt-28 pb-8">
+      <div className="w-full lg:pt-36 pt-28 pb-8 select-none">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
@@ -133,7 +133,7 @@ const MicrosoftDynamics365 = () => {
 
       {/* section 3 */}
 
-      <div className="w-full pt-12 lg:pt-20">
+      <div className="w-full pt-12 lg:pt-20 select-none">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
@@ -220,7 +220,7 @@ const MicrosoftDynamics365 = () => {
 
       {/* section 4 */}
 
-      <div className="w-full pt-20 pb-12">
+      <div className="w-full pt-20 pb-12 select-none">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-2 space-y-3">

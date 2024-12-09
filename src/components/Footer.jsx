@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { SiPaloaltosoftware } from "react-icons/si";
 const Footer = () => {
   return (
-    <div className="bg-footerbg p-15">
+    <div className="bg-footerbg p-15 select-none">
       <div className="relative ">
         <div className="w-full">
           <div className="w-full px-4 mx-auto max-w-[1400px]">

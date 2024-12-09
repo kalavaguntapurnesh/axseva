@@ -7,7 +7,7 @@ import { fadeIn } from "../variants.js";
 const Carousel = () => {
   return (
     <div>
-      <div className="relative">
+      <div className="relative select-none">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="w-full px-4 mx-auto max-w-[1400px] mt-20">

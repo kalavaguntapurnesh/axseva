@@ -30,7 +30,7 @@ const TermsAndConditions = () => {
         {/* NavBar */}
         <NavBar />
 
-        <section className="relative h-full w-full overflow-hidden">
+        <section className="relative h-full w-full overflow-hidden select-none">
           {/* Background Images */}
           <div className="absolute inset-0 z-0">
             <AnimatePresence>
@@ -59,7 +59,7 @@ const TermsAndConditions = () => {
         </section>
       </div>
 
-      <div className="xl:pt-8 pt-16 pb-12">
+      <div className="xl:pt-8 pt-16 pb-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12 space-y-4">

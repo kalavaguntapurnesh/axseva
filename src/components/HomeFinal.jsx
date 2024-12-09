@@ -5,7 +5,7 @@ import { fadeIn } from "../variants.js";
 
 const HomeFinal = () => {
   return (
-    <div className="pt-8">
+    <div className="pt-8 select-none">
       <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
