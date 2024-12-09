@@ -1,46 +1,53 @@
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { SiWhatsapp } from "react-icons/si";
-// import { classNames } from "../components/classNames";
+import { useEffect } from "react";
+import { useState } from "react";
+import { IoMdArrowRoundUp } from "react-icons/io";
+import { classNames } from "../components/classNames";
 
-// const ContactUsButton = () => {
-//   const phoneNumber = "14042773220";
-//   const message =
-//     "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
-//   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-//     message
-//   )}`;
+const ContactUsButton = () => {
+  // const phoneNumber = "14042773220";
+  // const message =
+  //   "Hello AXSeva, I would like your guidance on Microsoft Dynamics 365 Finance and Operations.";
+  // const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+  //   message
+  // )}`;
 
-//   const [isVisible, setIsVisible] = useState(true);
-//   const toggleVisibility = () => {
-//     if (window.pageYOffset > 120) {
-//       setIsVisible(true);
-//     } else {
-//       setIsVisible(true);
-//     }
-//   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-//   useEffect(() => {
-//     window.addEventListener("scroll", toggleVisibility);
+  const [isVisible, setIsVisible] = useState(true);
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 120) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(true);
+    }
+  };
 
-//     return () => {
-//       window.removeEventListener("scroll", toggleVisibility);
-//     };
-//   }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
 
-//   return (
-//     <>
-//       <a
-//         href={whatsappUrl}
-//         className={classNames(
-//           isVisible ? "opacity-100" : "opacity-0",
-//           "bg-mainColor hover:border-mainColor hover:border-[2px] hover:bg-white fixed flex items-center text-white hover:text-mainColor justify-center bottom-4 right-5 z-20 p-3 rounded-full transition duration-500 ease-in-out"
-//         )}
-//       >
-//         <SiWhatsapp className="h-6 w-6" aria-hidden="true" />
-//       </a>
-//     </>
-//   );
-// };
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
 
-// export default ContactUsButton;
+  return (
+    <>
+      <button
+        onClick={scrollToTop}
+        className={classNames(
+          isVisible ? "opacity-100" : "opacity-0",
+          "bg-mainColor fixed flex items-center text-white  justify-center bottom-4 right-5 z-20 p-3 rounded-full"
+        )}
+      >
+        <IoMdArrowRoundUp className="h-6 w-6" aria-hidden="true" />
+      </button>
+    </>
+  );
+};
+
+export default ContactUsButton;

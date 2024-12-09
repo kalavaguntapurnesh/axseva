@@ -11,6 +11,7 @@ import { FaMessage } from "react-icons/fa6";
 import { RiEmotionHappyFill } from "react-icons/ri";
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from "sweetalert2";
+import ContactUsButton from "../components/ContactUsButton";
 import { useState } from "react";
 const Benefits = () => {
   const values1 = [
@@ -555,8 +556,8 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-      {/* 
-      <ContactUsButton /> */}
+      
+      <ContactUsButton />
       <Footer />
     </>
   );

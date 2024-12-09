@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 // import AboutLayout from "../../components/AboutLayout";
-// import ContactUsButton from "../../components/ContactUsButton";
+import ContactUsButton from "../../components/ContactUsButton";
 import ContactNavbar from "../../components/ContactNavbar.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
@@ -462,7 +462,7 @@ const MicrosoftDynamics365Finance = () => {
 
       {/* section 4   */}
 
-      {/* <ContactUsButton /> */}
+      <ContactUsButton />
       <Footer />
     </div>
   );

@@ -7,7 +7,7 @@ import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { GrPersonalComputer } from "react-icons/gr";
 import SupportLayout from "./../components/SupportLayout";
-// import ContactUsButton from "../components/ContactUsButton";
+import ContactUsButton from "../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -338,7 +338,7 @@ const Support = () => {
         </div>
       </div>
 
-      {/* <ContactUsButton /> */}
+      <ContactUsButton />
 
       <Footer />
     </>
