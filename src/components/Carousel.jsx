@@ -310,7 +310,7 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h1 class="mb-2 text-2xl font-bold lg:text-start text-center">
-                                Dynamic 365 & ERP Implementation
+                                Dynamic 365 Finance & Operations
                               </h1>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Turn relevant and timely business data into
@@ -376,9 +376,8 @@ const Carousel = () => {
 
               <div className="text-center mt-4">
                 <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
-                  Check out the Total Economic Impact of Dynamics 365 Finance
-                  and Dynamics 365 Supply Chain Management on businesses across
-                  the globe.
+                  Check out the total economic impact of Dynamics 365 Finance
+                  and Operations on businesses across the globe.
                 </h1>
               </div>
             </motion.div>

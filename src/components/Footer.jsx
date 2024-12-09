@@ -73,15 +73,6 @@ const Footer = () => {
                             Location Map
                           </a>
                         </li>
-
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Connect via WhatsApp
-                          </a>
-                        </li>
                       </ul>
                     </div>
                   </div>
@@ -340,13 +331,12 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="text-center text-sm pb-6">
+            <div className="text-center text-xs pb-6">
               <p className="text-footerItems">
                 Copyright © 2024 AXSeva. All rights reserved
               </p>
               <p className="text-footerItems pt-2">
-                All images related to Microsoft & other images are trademarks of
-                Microsoft.
+                All images related to Microsoft are trademarks of Microsoft.
               </p>
             </div>
           </div>

@@ -19,7 +19,7 @@ const HomeFinal = () => {
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
                 <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                  Require Assistance
+                  Require assistance
                 </h1>
               </motion.div>
 

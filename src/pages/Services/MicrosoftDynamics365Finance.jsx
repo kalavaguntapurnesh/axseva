@@ -30,12 +30,14 @@ const MicrosoftDynamics365Finance = () => {
                     <div className="flex items-center lg:justify-start justify-center md:ml-4">
                       <div className="h-4 w-1 bg-mainColor"></div>
                       <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                        Dynamic 365 F & O
+                        Dynamics 365 F & O
                       </h1>
                     </div>
 
                     <div className="text-4xl lg:text-start text-center font-bold text-headingColor md:ml-2 px-2 md:px-0">
-                      <h1>Our Comprehensive Dynamics 365 Finance & Operations</h1>
+                      <h1>
+                        Our Comprehensive Dynamics 365 Finance & Operations
+                      </h1>
                     </div>
 
                     <div className="md:text-lg text-base text-sideHeading lg:text-start text-center lg:ml-2 px-2 md:px-0">

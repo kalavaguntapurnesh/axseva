@@ -276,7 +276,7 @@ const Services = () => {
                   <div className="flex items-center lg:justify-start justify-center md:ml-4">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                      Streamline Your Operations
+                      Streamline your operations
                     </h1>
                   </div>
                   <div className=" text-4xl lg:text-start text-center font-bold text-headingColor lg:ml-2 px-2 lg:px-0">
