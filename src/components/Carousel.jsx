@@ -19,7 +19,7 @@ const Carousel = () => {
                 className="flex items-center text-center justify-center "
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                <h1 className="ml-2 text-lg font-bold text-mainColor">
                   We are AXSeva
                 </h1>
               </motion.div>
@@ -193,7 +193,7 @@ const Carousel = () => {
                           >
                             <div className="flex items-center lg:justify-start justify-center ">
                               <div className="h-4 w-1 bg-mainColor"></div>
-                              <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                              <h1 className="ml-2 text-lg font-bold text-mainColor ">
                                 Services we offer
                               </h1>
                             </div>
@@ -363,7 +363,7 @@ const Carousel = () => {
             >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                <h1 className="ml-2 text-lg font-bold text-mainColor">
                   We are AXSeva
                 </h1>
               </div>

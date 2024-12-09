@@ -29,7 +29,7 @@ const MicrosoftDynamics365Finance = () => {
                   >
                     <div className="flex items-center lg:justify-start justify-center md:ml-4">
                       <div className="h-4 w-1 bg-mainColor"></div>
-                      <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
+                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
                         Dynamic 365 F & O
                       </h1>
                     </div>

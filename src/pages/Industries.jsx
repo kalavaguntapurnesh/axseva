@@ -23,8 +23,8 @@ const Industries = () => {
               >
                 <div className="flex items-center lg:justify-start justify-center md:ml-4">
                   <div className="h-4 w-1 bg-mainColor"></div>
-                  <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
-                    serving industries
+                  <h1 className="ml-2 text-lg font-bold text-mainColor">
+                    Serving Industries
                   </h1>
                 </div>
 
@@ -252,8 +252,8 @@ const Industries = () => {
                 >
                   <div className="flex items-center lg:justify-start justify-center md:ml-4">
                     <div className="h-4 w-1 bg-mainColor"></div>
-                    <h1 className="ml-2 text-lg font-bold text-mainColor uppercase">
-                      Transformative power
+                    <h1 className="ml-2 text-lg font-bold text-mainColor">
+                      Transformative Power
                     </h1>
                   </div>
 
