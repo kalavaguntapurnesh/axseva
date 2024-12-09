@@ -220,7 +220,7 @@ const MicrosoftDynamics365 = () => {
 
       {/* section 4 */}
 
-      <div className="w-full pt-20">
+      <div className="w-full pt-20 pb-12">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-2 space-y-3">

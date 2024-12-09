@@ -355,70 +355,9 @@ const MicrosoftDynamics365Finance = () => {
         </div>
       </div>
 
-      {/* section 2 */}
-      {/* <div className="w-full pt-16">
-        <div className="relative">
-          <div className="max-w-[1400px] mx-auto md:px-0 px-4 ">
-            <div className="flex flex-col gap-4 space-y-8">
-              <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-                <motion.div
-                  variants={fadeIn("down", 0.1)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-8 w-full justify-center"
-                >
-                  <div className="lg:text-5xl text-4xl text-center md:text-start font-bold text-headingColor">
-                    Enterprise Solutions from{" "}
-                    <span className="lg:text-5xl text-2xl md:text-start text-center font-semibold text-mainColor">
-                      AX <span className="text-headingColor">Seva</span>{" "}
-                    </span>
-                  </div>
-
-                  <p className="md:text-lg text-base text-center md:text-start text-sideHeading">
-                    Elevate your business performance with Microsoft Dynamics
-                    365 Finance and Operations, a cutting-edge cloud-based ERP
-                    solution designed to streamline and automate critical
-                    business functions. Empower your organization to optimize
-                    financial management, enhance supply chain efficiency, and
-                    drive seamless commerce operations. With built-in AI and
-                    real-time analytics, Microsoft Dynamics 365 enables smarter
-                    decision-making, scalability, and compliance with global
-                    standards, ensuring your business stays competitive in an
-                    ever-evolving marketplace.
-                  </p>
-
-                  <div className="flex items-center lg:justify-start justify-center">
-                    <a
-                      href="/managed-it-services"
-                      className="bg-mainColor hover:bg-white hover:border-mainColor hover:border-[1px] outline-none
-                              rounded over:shadow-form transition font-medium duration-1000 ease-in-out md:text-base text-sm text-white hover:text-mainColor px-12 py-3 text-center"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </motion.div>
-
-                <motion.div
-                  variants={fadeIn("up", 0.1)}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col w-full"
-                >
-                  <div className="flex justify-center">
-                    <img src={Microsoft} className="w-auto h-auto" />
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       {/* section 3 */}
 
-      <div className="w-full pt-12">
+      <div className="w-full pt-12 pb-12">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto md:px-0 px-4 ">
             <div className="flex flex-col gap-8 space-y-8">

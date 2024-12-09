@@ -75,7 +75,7 @@ const NavBar = () => {
         </a>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden xl:flex flex-grow justify-center space-x-8 items-center">
+        <ul className="hidden lg:flex flex-grow justify-center space-x-8 items-center">
           {/* <Tabs /> */}
           <FlyoutLink
             href="/managed-it-services"
@@ -101,7 +101,7 @@ const NavBar = () => {
         </ul>
 
         {/* Login Button */}
-        <div className="hidden xl:flex space-x-4">
+        <div className="hidden lg:flex space-x-4">
           <a
             href="/contact"
             className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
@@ -114,7 +114,7 @@ const NavBar = () => {
           </a>
         </div>
 
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
               <AiOutlineClose
@@ -135,8 +135,8 @@ const NavBar = () => {
         <div
           className={
             !isMobileMenuOpen
-              ? "xl:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "xl:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              ? "lg:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
+              : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-[#24272b] ease-in-out duration-1000 rounded-b-lg z-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           <a href="/" className="flex flex-row items-center ml-6 mt-6 mb-2">
