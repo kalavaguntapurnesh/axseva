@@ -153,7 +153,7 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="text-4xl text-headingColor font-bold text-center"
                   >
-                    Why partner with AXSeva?
+                    Why collaborate with AXSeva?
                   </motion.div>
 
                   {/* Description */}
@@ -164,7 +164,7 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                   >
                     <p className="text-base text-sideHeading text-center md:text-lg pt-4">
-                      Partnering with us unlocks an opportunity to elevate your
+                      Collaborating with us unlocks an opportunity to elevate your
                       offerings and maximize growth opportunities together.
                     </p>
                   </motion.div>
@@ -342,11 +342,11 @@ const Benefits = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-4xl text-headingColor font-bold text-center"
                 >
-                  Become a partner today
+                  Become a valuable customer today
                 </motion.div>
 
                 {/* Description */}
-                <motion.div
+                {/* <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
@@ -356,14 +356,14 @@ const Benefits = () => {
                     Partnering with us unlocks an opportunity to elevate your
                     offerings and maximize growth opportunities together.
                   </p>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                   variants={fadeIn("up", 0.1)} // Fade in from top to bottom
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="mx-auto max-w-[900px]"
+                  className="mx-auto max-w-[900px] pt-6"
                 >
                   <form
                     onSubmit={handleSubmit}

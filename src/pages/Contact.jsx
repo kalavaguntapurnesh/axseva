@@ -171,12 +171,13 @@ const Contact = () => {
                         <div className="flex items-center lg:justify-start justify-center lg:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
                           <h1 className=" ml-2 text-lg font-bold text-mainColor ">
-                            Partner With AXSeva
+                            Collaborate with AXSeva
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
                           <h1 className="text-4xl font-bold text-headingColor">
-                            Your Expert Microsoft Dynamics Finance & Operations
+                            Your Expert Microsoft Dynamics 365 Finance &
+                            Operations
                           </h1>
                         </div>
                         <div className="lg:text-start text-center">
@@ -232,7 +233,7 @@ const Contact = () => {
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <h1 class="text-xl text-headingColor font-semibold text-center">
-                                    Indian Location
+                                    Offshore Development Center
                                   </h1>
                                 </div>
 
@@ -290,7 +291,10 @@ const Contact = () => {
                                 </div>
 
                                 <div class="grid grid-cols-3 pt-2">
-                                  <a href="https://www.linkedin.com/in/sumanthdama/" className="flex justify-center items-center">
+                                  <a
+                                    href="https://www.linkedin.com/in/sumanthdama/"
+                                    className="flex justify-center items-center"
+                                  >
                                     <FaLinkedin className="text-headingColor w-6 h-6" />
                                   </a>
                                   <div className="flex justify-center items-center">
