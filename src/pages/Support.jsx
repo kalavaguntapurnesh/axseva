@@ -116,11 +116,10 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                 >
                   <p className="text-base text-sideHeading text-center md:text-lg pt-4">
-                    AXSeva has an extensive team with end-to-end expertise to
-                    take care of system and process integrity. Whether you want
-                    to eliminate your system risks, improve your system
-                    capabilities, want to train your end-users, or more, we are
-                    here to serve our optimal support services.
+                    Axseva specializes in Dynamics AX implementations, offering
+                    expertise in customization, business intelligence,
+                    analytics, and seamless integration, ensuring tailored
+                    solutions for diverse business needs.
                   </p>
                 </motion.div>
                 {/* Cards Grid */}
@@ -203,7 +202,7 @@ const Support = () => {
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
                   <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
-                    Dedicated Dynamics 365 Support Partner
+                    Dedicated Dynamics 365 Finance & Operations Expert
                   </div>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
                     To ensure process continuity, stabilize your process
@@ -214,12 +213,12 @@ const Support = () => {
                     a specific business model and custom business practices.
                   </p>
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                    Our Microsoft certified can help you to diagnose your
-                    support requirement and can provide proactive support to
-                    enable productive and scalable flow across your
-                    organizational structure. Through our dedicated support
-                    services, we can promptly identify your system issues and
-                    can resolve them with accuracy and reliability.
+                    We can help you to diagnose your support requirement and can
+                    provide proactive support to enable productive and scalable
+                    flow across your organizational structure. Through our
+                    dedicated support services, we can promptly identify your
+                    system issues and can resolve them with accuracy and
+                    reliability.
                   </p>
                   <div className="flex justify-center lg:justify-start">
                     <a
@@ -261,12 +260,12 @@ const Support = () => {
                     business premises with intelligent connected processes, data
                     insights, and adaptive{" "}
                     <span className="text-mainColor cursor-pointer">
-                      Dynamics 365 CRM
+                      Dynamics 365 F & O.
                     </span>{" "}
-                    &{" "}
+                    {/* &{" "}
                     <span className="text-mainColor cursor-pointer">
                       ERP solutions.
-                    </span>
+                    </span> */}
                   </p>
                 </motion.div>
 

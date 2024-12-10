@@ -191,7 +191,7 @@ const AboutOne = () => {
 
               <div className="text-center mt-4">
                 <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
-                  AXSeva is the leading Microsoft Solution partner, offering
+                  AXSeva is the leading Microsoft solution partner, offering
                   future-ready business solutions to global organizations.
                 </h1>
               </div>
@@ -423,7 +423,7 @@ const AboutOne = () => {
                         dynamic and competitive marketplace, having a robust
                         financial management system isn't just an advantage—it's
                         a necessity. That's why we've dedicated ourselves to
-                        mastering Microsoft Dynamics 365 Finance.
+                        mastering Microsoft Dynamics 365 Finance & Operations.
                       </p>
                       <p>
                         This powerful platform has the capacity to revolutionize

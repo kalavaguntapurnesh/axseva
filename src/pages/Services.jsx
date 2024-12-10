@@ -36,9 +36,9 @@ const Services = () => {
     {
       imageUrl:
         "https://cdn.iconscout.com/icon/premium/png-512-thumb/infrastructure-4636450-3840692.png?f=webp&w=512",
-      title: "Dynamic 365 & ERP Implementation",
+      title: "Dynamic 365 Finance & Operations",
       description:
-        "We offer specialized services in Microsoft Dynamics 365 and enterprise-grade ERP (Enterprise Resource Planning) solutions that transform your operations, boost efficiency, and unlock new levels of performance.",
+        "We offer specialized services in Microsoft Dynamics 365 Finance and Operations that transform your operations, boost efficiency, and unlock new levels of performance.",
     },
     {
       imageUrl:

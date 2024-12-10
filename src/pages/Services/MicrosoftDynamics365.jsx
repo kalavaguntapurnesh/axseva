@@ -71,6 +71,13 @@ const MicrosoftDynamics365 = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
+
+<div className="flex items-center lg:justify-start justify-center md:ml-2">
+                      <div className="h-4 w-1 bg-mainColor"></div>
+                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                        Dynamics 365 Supply Chain
+                      </h1>
+                    </div>
                   <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
                     <span className="text-mainColor">AX</span>Seva:Transforming Businesses with Enterprise
                     Solutions
@@ -82,7 +89,7 @@ const MicrosoftDynamics365 = () => {
                     to innovate, grow, and adapt in an ever-changing landscape.
                     At AXSeva, we harness the power of Dynamics 365 to deliver
                     tailored solutions that drive transformation. By unifying
-                    CRM and ERP functionalities, Microsoft Dynamics 365 Business
+                    CRM functionalities, Microsoft Dynamics 365 Business
                     Editions offers purpose-built applications designed to
                     seamlessly integrate and optimize specific business
                     processes. This unified approach enables organizations to
@@ -236,7 +243,7 @@ const MicrosoftDynamics365 = () => {
                 </h1>
                 <p className="md:text-lg text-base text-center text-sideHeading">
                   The Dynamics 365 suite combines various business solutions,
-                  including Microsoft Dynamics ERP, Microsoft Dynamics CRM,
+                  including Microsoft Dynamics F & O, Microsoft Dynamics CRM,
                   Microsoft Cloud for Industry, Collaboration, Power Platform,
                   AI, Mixed Reality, Services, and Microsoft Platform.
                 </p>
