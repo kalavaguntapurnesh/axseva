@@ -42,7 +42,7 @@ const Bento = () => {
                         <div class="flex justify-center lg:justify-start items-center">
                           <img
                             src="https://cdn.iconscout.com/icon/premium/png-512-thumb/circle-mixing-chart-icon-download-in-svg-png-gif-file-formats--infographic-rgb-pack-infographics-icons-1813284.png?f=webp&w=512"
-                            alt=""
+                            alt="bento_three"
                             className="w-12 h-12"
                           />
                           <h1 class="text-4xl ml-2 text-mainColor font-bold text-start">
@@ -72,7 +72,7 @@ const Bento = () => {
                         <div class="flex justify-center lg:justify-start items-center">
                           <img
                             src="https://cdn.iconscout.com/icon/premium/png-512-thumb/arrow-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-bar-sequence-infographic-pack-infographics-icons-1813257.png?f=webp&w=512"
-                            alt=""
+                            alt="bento_four"
                             className="w-12 h-12"
                           />
                           <h1 class="text-4xl ml-2 mt-2 text-mainColor font-bold text-start">
@@ -108,7 +108,7 @@ const Bento = () => {
                 <div>
                   <img
                     src="https://www.tectura.com/wp-content/uploads/2023/04/Industries_ProfessionalServices.jpg"
-                    alt=""
+                    alt="bento_one"
                     // width="612"
                     // height="600"
                     className="rounded lg:block hidden h-auto w-auto"
@@ -117,7 +117,7 @@ const Bento = () => {
                 <div className="flex justify-center items-center">
                   <img
                     src="https://www.tectura.com/wp-content/uploads/2023/04/Industries_ProfessionalServices.jpg"
-                    alt=""
+                    alt="bento_two"
                     className="rounded lg:hidden block w-[90%]"
                   />
                 </div>

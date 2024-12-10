@@ -95,7 +95,7 @@ const MicrosoftDynamics365Finance = () => {
                     <div>
                       <img
                         src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt=""
+                        alt="one"
                         width="612"
                         height="512"
                         className="rounded lg:block hidden"
@@ -104,7 +104,7 @@ const MicrosoftDynamics365Finance = () => {
                     <div className="flex justify-center items-center">
                       <img
                         src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt=""
+                        alt="two"
                         className="rounded lg:hidden block w-[90%]"
                       />
                     </div>
@@ -207,6 +207,7 @@ const MicrosoftDynamics365Finance = () => {
                         <img
                           src="https://cdn.iconscout.com/icon/premium/png-512-thumb/security-1999897-1697833.png?f=webp&w=512"
                           className="w-20 h-20"
+                          alt="three"
                         />
                       </div>
 
@@ -245,6 +246,7 @@ const MicrosoftDynamics365Finance = () => {
                         <img
                           src="https://cdn-icons-png.flaticon.com/512/2861/2861472.png"
                           className="w-20 h-20"
+                          alt="four"
                         />
                       </div>
 
@@ -283,6 +285,7 @@ const MicrosoftDynamics365Finance = () => {
                         <img
                           src="https://cdn.iconscout.com/icon/premium/png-512-thumb/unity-4870710-4061698.png?f=webp&w=512"
                           className="w-20 h-20"
+                          alt="five"
                         />
                       </div>
 
@@ -321,6 +324,7 @@ const MicrosoftDynamics365Finance = () => {
                         <img
                           src="https://cdn.iconscout.com/icon/premium/png-512-thumb/innovation-2277793-1897480.png?f=webp&w=512"
                           className="w-20 h-20"
+                          alt="six"
                         />
                       </div>
 
@@ -376,6 +380,7 @@ const MicrosoftDynamics365Finance = () => {
                     <img
                       src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
                       className="lg:w-auto h-auto rounded w-[90%]"
+                      alt="seven"
                     />
                   </div>
                 </motion.div>
@@ -451,6 +456,7 @@ const MicrosoftDynamics365Finance = () => {
                   <div className="flex justify-center lg:justify-start w-full h-full ">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2023/04/Industries_ProfessionalServices.jpg"
+                      alt="eight"
                       className="lg:w-auto h-auto rounded w-[90%]"
                     />
                   </div>

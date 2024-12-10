@@ -179,7 +179,7 @@ const Support = () => {
                   <div>
                     <img
                       src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupper-img.png&w=1200&q=75"
-                      alt=""
+                      alt="support_one"
                       // width="612"
                       height="512"
                       className="rounded lg:block hidden"
@@ -188,7 +188,7 @@ const Support = () => {
                   <div className="flex justify-center items-center">
                     <img
                       src="https://www.dynamicssquare.com/_next/image/?url=%2Fimg%2Fsupper-img.png&w=1200&q=75"
-                      alt=""
+                      alt="support_two"
                       className="rounded lg:hidden block w-[90%]"
                     />
                   </div>

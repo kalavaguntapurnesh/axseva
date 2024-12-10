@@ -262,6 +262,7 @@ const Benefits = () => {
                       <img
                         src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1303809341-2048x2048-1.jpg"
                         className="w-full h-full rounded"
+                        alt="benefits_one"
                       />
                     </div>
                   </motion.div>
@@ -289,6 +290,7 @@ const Benefits = () => {
                       <img
                         src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1346944001-2048x2048-1.jpg"
                         className="w-full h-full rounded"
+                        alt="benefits_two"
                       />
                     </div>
                   </motion.div>

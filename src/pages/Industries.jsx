@@ -318,7 +318,7 @@ const Industries = () => {
                   <div>
                     <img
                       src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                      alt=""
+                      alt="industries_one"
                       width="612"
                       height="512"
                       className="rounded lg:block hidden"
@@ -327,7 +327,7 @@ const Industries = () => {
                   <div className="flex justify-center items-center">
                     <img
                       src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                      alt=""
+                      alt="industries_two"
                       className="rounded lg:hidden block w-[90%]"
                     />
                   </div>

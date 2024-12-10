@@ -73,7 +73,7 @@ const CookieConsent = () => {
           <img
             src="https://www.sliderrevolution.com/wp-content/uploads/2020/05/cookie_icon.png"
             className="w-[64px] h-[64px]"
-            alt=""
+            alt="cookie_image"
           />
         </div>
         <div className="text-center font-light">
