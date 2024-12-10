@@ -129,6 +129,7 @@ const MicrosoftDynamics365 = () => {
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2023/01/Mask-Group-30.png"
                       className="h-auto w-[90%] lg:w-auto rounded"
+                      alt="one"
                     />
                   </div>
                 </motion.div>

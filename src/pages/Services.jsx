@@ -226,7 +226,7 @@ const Services = () => {
                           <div className="flex justify-center items-center">
                             <img
                               src={service.imageUrl}
-                              alt=""
+                              alt="services_five"
                               className="w-24 h-24"
                             />
                           </div>
@@ -324,7 +324,7 @@ const Services = () => {
                   <div>
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp"
-                      alt=""
+                      alt="services_one"
                       // width="612"
                       // height="600"
                       height="512"
@@ -334,7 +334,7 @@ const Services = () => {
                   <div className="flex justify-center items-center">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp"
-                      alt=""
+                      alt="services_two"
                       className="rounded lg:hidden block w-[90%]"
                     />
                   </div>
@@ -449,7 +449,7 @@ const Services = () => {
                   <div>
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1346944001-2048x2048-1.jpg"
-                      alt=""
+                      alt="services_three"
                       // width="612"
                       // height="600"
                       height="512"
@@ -459,7 +459,7 @@ const Services = () => {
                   <div className="flex justify-center items-center">
                     <img
                       src="https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1346944001-2048x2048-1.jpg"
-                      alt=""
+                      alt="services_four"
                       className="rounded lg:hidden block w-[90%]"
                     />
                   </div>

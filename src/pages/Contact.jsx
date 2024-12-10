@@ -201,7 +201,7 @@ const Contact = () => {
                                 <div className="flex justify-center items-center">
                                   <img
                                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/statue-of-liberty-5251958-4426372.png?f=webp&w=512"
-                                    alt="icon"
+                                    alt="contact_one"
                                     className="w-20 h-20"
                                   />
                                 </div>
@@ -227,7 +227,7 @@ const Contact = () => {
                                 <div className="flex justify-center items-center">
                                   <img
                                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/hyderabad-icon-download-in-svg-png-gif-file-formats--charminar-monument-mosque-heritage-buildings-icons-112414.png?f=webp&w=512"
-                                    alt="icon"
+                                    alt="contact_two"
                                     className="w-20 h-20"
                                   />
                                 </div>
@@ -255,7 +255,7 @@ const Contact = () => {
                                 <div className="flex justify-center items-center">
                                   <img
                                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/email-address-8510581-6701837.png?f=webp&w=512"
-                                    alt="icon"
+                                    alt="contact_three"
                                     className="w-20 h-20"
                                   />
                                 </div>
@@ -280,7 +280,7 @@ const Contact = () => {
                                 <div className="flex justify-center items-center">
                                   <img
                                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/social-media-5686022-4752631.png?f=webp&w=512"
-                                    alt="icon"
+                                    alt="contact_four"
                                     className="w-20 h-20"
                                   />
                                 </div>
@@ -535,7 +535,7 @@ const Contact = () => {
               >
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-left.png"
-                  alt="Quote Left"
+                  alt="QuoteLeft"
                   className="absolute top-[-16px] left-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
                 <div className="flex flex-col text-center justify-center items-center h-full max-w-[900px] mx-auto">
@@ -555,7 +555,7 @@ const Contact = () => {
                 {/* Bottom-right image */}
                 <img
                   src="https://www.dynamicssquare.com/img/home/quote-right.png"
-                  alt="Quote Right"
+                  alt="QuoteRight"
                   className="absolute bottom-[-16px] right-4 lg:w-16 lg:h-16 w-10 h-10"
                 />
               </motion.div>
@@ -586,7 +586,7 @@ const Contact = () => {
                     <div className="flex justify-center items-center">
                       <img
                         src="https://cdn.iconscout.com/icon/premium/png-512-thumb/location-form-1885282-1596727.png?f=webp&w=512"
-                        alt=""
+                        alt="contact_five"
                         className="w-24 h-24"
                       />
                     </div>
@@ -602,7 +602,7 @@ const Contact = () => {
                     <div className="flex justify-center items-center">
                       <img
                         src="https://cdn.iconscout.com/icon/premium/png-512-thumb/computer-502-189023.png?f=webp&w=512"
-                        alt=""
+                        alt="contact_six"
                         className="w-24 h-24"
                       />
                     </div>
@@ -618,7 +618,7 @@ const Contact = () => {
                     <div className="flex justify-center items-center">
                       <img
                         src="https://cdn.iconscout.com/icon/premium/png-512-thumb/done-1885316-1596761.png?f=webp&w=512"
-                        alt=""
+                        alt="contact_seven"
                         className="w-24 h-24"
                       />
                     </div>

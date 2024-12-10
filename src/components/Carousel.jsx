@@ -62,7 +62,7 @@ const Carousel = () => {
                       <div className="flex justify-center items-center">
                         <img
                           src="https://tripearltech.com/wp-content/uploads/2023/09/BusinessCentral_scalable.svg"
-                          alt=""
+                          alt="c_twelve"
                           className="w-16 h-16"
                         />
                       </div>
@@ -88,7 +88,7 @@ const Carousel = () => {
                       <div className="flex justify-center items-center">
                         <img
                           src="https://tripearltech.com/wp-content/uploads/2023/09/Finance_scalable.svg"
-                          alt=""
+                          alt="c_thirteen"
                           className="w-16 h-16"
                         />
                       </div>
@@ -114,7 +114,7 @@ const Carousel = () => {
                       <div className="flex justify-center items-center">
                         <img
                           src="https://www.confiz.com/wp-content/uploads/2023/10/supply-chain.png"
-                          alt=""
+                          alt="c_fourteen"
                           className="w-16 h-16"
                         />
                       </div>
@@ -140,7 +140,7 @@ const Carousel = () => {
                       <div className="flex justify-center items-center">
                         <img
                           src="https://www.encorebusiness.com/wp-content/uploads/2024/11/Sales_scalable.svg"
-                          alt=""
+                          alt="c_fifteen"
                           className="w-16 h-16"
                         />
                       </div>
@@ -294,6 +294,7 @@ const Carousel = () => {
                             <div className="flex flex-col lg:items-start items-center">
                               <img
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/benefit-4484739-3715579.png?f=webp&w=512"
+                                alt="c_sixteen"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h1 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
@@ -307,6 +308,7 @@ const Carousel = () => {
                             <div className="flex flex-col lg:items-start items-center">
                               <img
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/settings-1848708-1568040.png?f=webp&w=512"
+                                alt="c_seventeen"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h1 class="mb-2 text-2xl font-bold lg:text-start text-center">
@@ -322,6 +324,7 @@ const Carousel = () => {
                               <img
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/percentage-pie-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-graph-circle-circular-infographic-pack-infographics-icons-1813279.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
+                                alt="carousel_one"
                               />
                               <h1 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
                                 Support & Managed Services
@@ -336,6 +339,7 @@ const Carousel = () => {
                               <img
                                 src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
                                 class="w-16 h-16 mb-2 text-mainColor"
+                                alt="carousel_two"
                               />
                               <h1 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
                                 Tailoring Applications in X++
@@ -423,7 +427,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="carousel_three"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -434,7 +438,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="carousel_four"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -445,7 +449,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="carousel_five"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -458,7 +462,7 @@ const Carousel = () => {
                               <div className="w-[100%] flex justify-center items-center">
                                 <img
                                   src="https://www.dynamicssmartz.com/img/dynamics-365-finance-info.png"
-                                  alt=""
+                                  alt="carousel_six"
                                   className="h-auto w-auto"
                                 />
                               </div>
@@ -494,7 +498,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="c_eighteen"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -505,7 +509,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="carousel_seven"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -516,7 +520,7 @@ const Carousel = () => {
                                   <div className="flex flex-row items-center">
                                     <img
                                       src={success}
-                                      alt=""
+                                      alt="carousel_eight"
                                       className="w-4 h-4"
                                     />
                                     <p className="ml-4">
@@ -530,7 +534,7 @@ const Carousel = () => {
                               <div className="w-[100%] flex justify-center items-center">
                                 <img
                                   src="https://www.dynamicssmartz.com/img/supply-chain-management-info.png"
-                                  alt=""
+                                  alt="nine"
                                   className="h-auto w-auto"
                                 />
                               </div>
@@ -582,7 +586,7 @@ const Carousel = () => {
                               <div className="w-[100%] flex justify-center items-center">
                                 <img
                                   src="https://www.dynamicssmartz.com/img/dynamics-365-finance-info.png"
-                                  alt=""
+                                  alt="c_ten"
                                   className="h-auto w-auto"
                                 />
                               </div>
@@ -630,7 +634,7 @@ const Carousel = () => {
                               <div className="w-[100%] flex justify-center items-center">
                                 <img
                                   src="https://www.dynamicssmartz.com/img/supply-chain-management-info.png"
-                                  alt=""
+                                  alt="c_eleven"
                                   className="h-auto w-auto"
                                 />
                               </div>

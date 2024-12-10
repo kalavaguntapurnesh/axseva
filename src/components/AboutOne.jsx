@@ -95,7 +95,7 @@ const AboutOne = () => {
                 <div>
                   <img
                     src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
+                    alt="about_five"
                     // width="612"
                     height="512"
                     className="rounded lg:block hidden"
@@ -104,7 +104,7 @@ const AboutOne = () => {
                 <div className="flex justify-center items-center">
                   <img
                     src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt=""
+                    alt="about_six"
                     className="rounded lg:hidden block w-[90%]"
                   />
                 </div>
@@ -282,6 +282,7 @@ const AboutOne = () => {
                         <img
                           src="https://cdn.iconscout.com/icon/premium/png-512-thumb/unity-4870710-4061698.png?f=webp&w=512"
                           className="w-20 h-20"
+                          alt="about_one"
                         />
                       </div>
 
@@ -337,7 +338,11 @@ const AboutOne = () => {
                     href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
                     className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center"
                   >
-                    <img src={world} alt="" className="md:w-[90%] w-[100%]" />
+                    <img
+                      src={world}
+                      alt="about_two"
+                      className="md:w-[90%] w-[100%]"
+                    />
                   </a>
                 </motion.div>
               </div>
@@ -382,7 +387,7 @@ const AboutOne = () => {
                     <div className="md:flex justify-center hidden w-[100%]">
                       <img
                         src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
-                        alt=""
+                        alt="about_three"
                         // width="612"
                         // height="512"
                         className="rounded md:block hidden w-[80%] h-[460px]"
@@ -391,7 +396,7 @@ const AboutOne = () => {
                     <div className="flex justify-center items-center md:hidden w-[90%]">
                       <img
                         src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
-                        alt=""
+                        alt="about_four"
                         className="rounded w-[100%]"
                       />
                     </div>
