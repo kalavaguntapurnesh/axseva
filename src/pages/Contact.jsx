@@ -644,7 +644,7 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold text-headingColor">
+                      <h1 class="text-2xl font-bold lg:text-start text-center  text-headingColor">
                         Discovery and Planning
                       </h1>
                     </div>
@@ -679,7 +679,7 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold text-headingColor">
+                      <h1 class="text-2xl font-bold lg:text-start text-center text-headingColor">
                         Your Path to Success Starts Here.
                       </h1>
                     </div>

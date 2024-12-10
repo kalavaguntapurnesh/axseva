@@ -20,16 +20,16 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import PageNotFound from "./pages/PageNotFound";
 import React, { useEffect } from "react";
 function App() {
-  useEffect(() => {
-    // Disable right-click globally
-    const disableRightClick = (e) => e.preventDefault();
+  // useEffect(() => {
+  //   // Disable right-click globally
+  //   const disableRightClick = (e) => e.preventDefault();
 
-    document.addEventListener("contextmenu", disableRightClick);
+  //   document.addEventListener("contextmenu", disableRightClick);
 
-    return () => {
-      document.removeEventListener("contextmenu", disableRightClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", disableRightClick);
+  //   };
+  // }, []);
 
   return (
     <BrowserRouter>
