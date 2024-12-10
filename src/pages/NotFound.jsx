@@ -1,6 +1,6 @@
 import Navbar from "../components/ContactNavbar";
 
-const PageNotFound = () => {
+const NotFound = () => {
   return (
     <section class="bg-white h-screen select-none">
       <Navbar />
@@ -30,4 +30,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default NotFound;
