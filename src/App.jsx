@@ -18,7 +18,7 @@ import MicrosoftDynamics365 from "./pages/Services/MicrosoftDynamics365";
 import MicrosoftDynamics365Finance from "./pages/Services/MicrosoftDynamics365Finance";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import React, { useEffect } from "react";
-import NotFound from './pages/NotFound';
+import PageNotFound from './pages/PageNotFound';
 function App() {
   // useEffect(() => {
   //   // Disable right-click globally
@@ -43,7 +43,7 @@ function App() {
         <Route path="/dynamics-365-support-services" element={<Support />} />
         <Route path="/collaborate-with-us" element={<Benefits />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route path="*" element={<NotFound />}></Route>
+        <Route path="*" element={<PageNotFound />}></Route>
         <Route
           path="/services-microsoft-dynamics-365"
           element={<MicrosoftDynamics365 />}
