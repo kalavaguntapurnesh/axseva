@@ -28,16 +28,15 @@ const Bento = () => {
 
                 <div className="lg:text-lg text-base text-sideHeading lg:text-start text-center lg:ml-2 px-2 lg:px-0">
                   <p>
-                    Microsoft Dynamics 365 excels with seamless integration of
-                    CRM and ERP, AI-driven insights, scalability, and
-                    adaptability across industries. Its cloud-based platform
-                    ensures accessibility, while tight integration with
-                    Microsoft 365.
+                    Dynamics 365 Finance & Operations excels with its seamless
+                    integration, robust analytics, scalability, real-time
+                    insights, and comprehensive tools for financial management,
+                    supply chain, and global operations.
                   </p>
                 </div>
 
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-4 lg:px-0 px-2">
-                  <div  class="flex lg:justify-start justify-center">
+                  <div class="flex lg:justify-start justify-center">
                     <div class="w-full p-4 bg-[#f8f9fa] border border-gray-200 rounded shadow-md sm:p-6">
                       <div class="space-y-2">
                         <div class="flex justify-center lg:justify-start items-center">
@@ -58,9 +57,9 @@ const Bento = () => {
 
                         <div class="flex justify-center lg:justify-start items-center">
                           <p className="lg:text-start text-center">
-                            Businesses that have upgraded to Microsoft ERP or
-                            CRM solutions have reported improved cost savings
-                            while limiting resources.
+                            Businesses that have upgraded to Dynamics 365 have
+                            reported improved cost savings while limiting
+                            resources.
                           </p>
                         </div>
                       </div>
@@ -89,8 +88,8 @@ const Bento = () => {
                         <div class="flex justify-center lg:justify-start items-center">
                           <p className="lg:text-start text-center">
                             Different businesses have achieved the expected ROI
-                            on time after the successful implementation of the
-                            Microsoft ERP solution.
+                            on time after the successful implementation of
+                            Dynamics 365.
                           </p>
                         </div>
                       </div>

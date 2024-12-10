@@ -17,7 +17,7 @@ const Contact = () => {
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg",
-      heading: "Want to get an advice?",
+      heading: "Want to get a valuable advice?",
       paragraph:
         "AXSeva is here to provide good recommendations for your business",
     },
@@ -176,7 +176,7 @@ const Contact = () => {
                         </div>
                         <div className="lg:text-start text-center">
                           <h1 className="text-4xl font-bold text-headingColor">
-                            Your Expert Microsoft Dynamics 365 Finance &
+                            Your Expert in Microsoft Dynamics 365 Finance &
                             Operations
                           </h1>
                         </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                           <h1 className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
                             While these functions all stand to benefit your
                             business, they can be difficult to navigate without
-                            the help of an experienced ERP specialist. AXSeva
+                            the help of an experienced specialist. AXSeva
                             can help. We’ll help your business make the most of
                             the Microsoft Dynamics 365 system, giving you the
                             competitive edge you need to succeed.
@@ -686,7 +686,7 @@ const Contact = () => {
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
                       <p>
-                        Our team configures Dynamics 365 Finance to align with
+                        Our team configures Dynamics 365 Finance & Operations to align with
                         your specific processes and workflows.
                       </p>
                     </div>

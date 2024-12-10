@@ -45,8 +45,7 @@ const MicrosoftDynamics365Finance = () => {
                         In today’s fast-paced digital landscape, businesses need
                         agile and robust solutions to stay competitive and grow.
                         At AXSeva, we offer specialized services in Microsoft
-                        Dynamics 365 and enterprise-grade ERP (Enterprise
-                        Resource Planning) solutions that transform your
+                        Dynamics 365 F & O solutions that transform your
                         operations, boost efficiency, and unlock new levels of
                         performance.
                       </p>
@@ -182,7 +181,7 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Tailor the Dynamics 365 and ERP system architecture to
+                          Tailor the Dynamics 365 system architecture to
                           align with your operations and objectives. Seamless
                           installation and configuration of the solution,
                           ensuring minimal disruption to your business.
@@ -219,7 +218,7 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Transition your legacy data to the new ERP platform
+                          Transition your legacy data to our platform
                           with precision and accuracy. Data Cleansing &
                           Validation will ensure clean, reliable data that
                           supports your business goals.
@@ -289,7 +288,7 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center">
                         <h1 class=" text-3xl text-headingColor font-bold text-center">
-                          ERP Health Checks & Maintenance
+                          Business Upload & Maintenance
                         </h1>
                       </div>
 
@@ -333,7 +332,7 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Adapt Dynamics 365 and ERP features to fit your unique
+                          Adapt Dynamics 365 and its features to fit your unique
                           processes. Integrate with existing tools like CRM
                           systems, supply chain management software, and
                           third-party applications for a unified ecosystem.

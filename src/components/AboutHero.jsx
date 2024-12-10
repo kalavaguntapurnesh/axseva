@@ -15,7 +15,7 @@ const AboutHero = () => {
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp",
-      heading: "DYNAMIC 365 & Finance & Operations",
+      heading: "Unmatched scalability & efficiency",
       paragraph:
         "Stay ahead in the market with our innovative and reliable services.",
       buttonText: "Find Out More",
