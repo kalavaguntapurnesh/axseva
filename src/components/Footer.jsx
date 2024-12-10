@@ -12,69 +12,69 @@ const Footer = () => {
           <div className="w-full px-4 mx-auto max-w-[1400px]">
             <div className="pb-8 mb-8 border-b border-gray-600">
               <div className="w-full p-8">
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-6 lg:grid-cols-5 mt-12">
-                  <div className="flex flex-col gap-10">
-                    <div className="mb-12 md:mb-0">
-                      <div className="flex items-center md:justify-start justify-center">
-                        {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                        <h1 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                          Company
+                <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5 mt-8">
+                  <div className="flex flex-col lg:mb-0 mb-8 gap-4 md:col-span-1 col-span-2">
+                    <div className="w-full ">
+                      <a
+                        href="/"
+                        className="flex flex-row items-center md:justify-start justify-center"
+                      >
+                        <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
+                        <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+                          AX<span className="text-footerItems">Seva</span>
                         </h1>
-                      </div>
-                      <ul className="pl-0 mt-4 space-y-3 list-none">
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/privacy-policy"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Privacy Policy
-                          </a>
-                        </li>
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/about-us"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            About AXSeva
-                          </a>
-                        </li>
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/about-us#our_leadership"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Our Leadership
-                          </a>
-                        </li>
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="/terms-and-conditions"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Terms & Conditions
-                          </a>
-                        </li>
-                      </ul>
+                      </a>
                     </div>
-
-                    <div className="mb-12 md:mb-0 ">
-                      <div className="flex items-center md:justify-start justify-center">
-                        {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                        <h1 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                          Support
-                        </h1>
-                      </div>
-                      <ul className="pl-0 mt-4 space-y-3 list-none">
-                        <li className=" flex items-start md:justify-start justify-center">
-                          <a
-                            href="https://www.google.com/maps/place/1691+Kettering+St,+Irvine,+CA+92614,+USA/@33.6979191,-117.8467571,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdebc76905421:0xc9b403b589d3cb99!8m2!3d33.6979191!4d-117.8467571!16s%2Fg%2F11bw3yyf27?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
-                            className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                          >
-                            Location Map
-                          </a>
-                        </li>
-                      </ul>
+                  </div>
+                  <div className="mb-12 md:mb-0">
+                    <div className="flex items-center md:justify-start justify-center">
+                      {/* <div className="h-4 w-1 bg-mainColor"></div> */}
+                      <h1 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                        About us
+                      </h1>
                     </div>
+                    <ul className="pl-0 mt-4 space-y-3 list-none">
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/privacy-policy"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Our Privacy Policy
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/about-us"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          About AXSeva
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/about-us#our_leadership"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Our Leadership
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/terms-and-conditions"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Terms & Conditions
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/collaborate-with-us"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Collaborate with us
+                        </a>
+                      </li>
+                    </ul>
                   </div>
 
                   <div className="mb-12 md:mb-0">
@@ -109,14 +109,7 @@ const Footer = () => {
                           Support & Managed Services
                         </a>
                       </li>
-                      {/* <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Implementation Partner
-                        </a>
-                      </li> */}
+
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/"
@@ -125,31 +118,15 @@ const Footer = () => {
                           Customer Engagement
                         </a>
                       </li>
-                    </ul>
 
-                    <div className="mt-8 flex items-center md:justify-start justify-center">
-                      {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h1 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                        About Us
-                      </h1>
-                    </div>
-                    <ul className="pl-0 mt-4 space-y-3 list-none">
-                      <li className=" flex items-start md:justify-start justify-center">
+                      {/* <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/about-us"
-                          className="hover:text-mainColor text-footerItems   hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                          href="/about-us#location_map"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks  transition duration-300 ease-in-out"
                         >
-                          Why AXSeva
+                          Where to Find Us
                         </a>
-                      </li>
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/collaborate-with-us"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
-                        >
-                          Collaborate With Us
-                        </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
 
@@ -157,7 +134,7 @@ const Footer = () => {
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
                       <h1 className="  text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
-                        Solutions
+                        Quick Links
                       </h1>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
@@ -175,6 +152,22 @@ const Footer = () => {
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           Business Needs
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="https://www.linkedin.com/in/sumanthdama/"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          LinkedIn Page
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="https://www.google.com/maps/place/1691+Kettering+St,+Irvine,+CA+92614,+USA/@33.6979191,-117.8467571,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdebc76905421:0xc9b403b589d3cb99!8m2!3d33.6979191!4d-117.8467571!16s%2Fg%2F11bw3yyf27?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
+                        >
+                          Location Map
                         </a>
                       </li>
                     </ul>
@@ -223,109 +216,105 @@ const Footer = () => {
                       </li>
                     </ul>
                   </div>
+                </div>
+              </div>
 
-                  <div className="flex flex-col gap-4  ">
-                    <div className="w-full ">
-                      <a
-                        href="/"
-                        className="flex flex-row items-center md:justify-start justify-center"
+              <div className="w-full">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-4 w-full">
+                  <div className="grid grid-cols-5">
+                    <a
+                      href="https://www.linkedin.com/in/sumanthdama/"
+                      className="flex justify-center items-center "
+                    >
+                      <FaLinkedin
+                        size={25}
+                        className="cursor-pointer"
+                        color="white  "
+                      />
+                    </a>
+                    <a
+                      href="/about"
+                      className="flex justify-center items-center"
+                    >
+                      <FaXTwitter
+                        size={25}
+                        className="cursor-pointer"
+                        color="white"
+                      />
+                    </a>
+                    <a
+                      href="/about"
+                      className="flex justify-center items-center"
+                    >
+                      <FaInstagram
+                        size={25}
+                        className="cursor-pointer"
+                        color="white"
+                      />
+                    </a>
+                    <a
+                      href="/about"
+                      className="flex justify-center items-center"
+                    >
+                      <FaGoogle
+                        size={25}
+                        className="cursor-pointer"
+                        color="white"
+                      />
+                    </a>
+                    <a
+                      href="/about"
+                      className="flex justify-center items-center"
+                    >
+                      <FaFacebook
+                        size={25}
+                        className="cursor-pointer text-white"
+                        color="footerItems"
+                      />
+                    </a>{" "}
+                  </div>
+
+                  <div className="flex justify-center items-center">
+                    <form className="lg:w-[70%] w-[90%]">
+                      <label
+                        for="search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only"
                       >
-                        <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
-                        <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
-                          AX <span className="text-white">Seva</span>
-                        </h1>
-                      </a>
-                    </div>
-
-                    <div className="flex md:flex-row flex-col ">
-                      <div className="w-full pt-8">
-                        <div className="grid grid-cols-5">
-                          <a
-                            href="https://www.linkedin.com/in/sumanthdama/"
-                            className="flex justify-center items-center "
+                        Subscribe
+                      </label>
+                      <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                          {/* <svg
+                            class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 20"
                           >
-                            <FaLinkedin
-                              size={25}
-                              className="cursor-pointer"
-                              color="white  "
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                             />
-                          </a>
-                          <a
-                            href="/about"
-                            className="flex justify-center items-center"
-                          >
-                            <FaXTwitter
-                              size={25}
-                              className="cursor-pointer"
-                              color="white"
-                            />
-                          </a>
-                          <a
-                            href="/about"
-                            className="flex justify-center items-center"
-                          >
-                            <FaInstagram
-                              size={25}
-                              className="cursor-pointer"
-                              color="white"
-                            />
-                          </a>
-                          <a
-                            href="/about"
-                            className="flex justify-center items-center"
-                          >
-                            <FaGoogle
-                              size={25}
-                              className="cursor-pointer"
-                              color="white"
-                            />
-                          </a>
-                          <a
-                            href="/about"
-                            className="flex justify-center items-center"
-                          >
-                            <FaFacebook
-                              size={25}
-                              className="cursor-pointer text-white"
-                              color="footerItems"
-                            />
-                          </a>{" "}
+                          </svg> */}
                         </div>
-                      </div>
-                    </div>
-
-                    <div className="w-full md:gap-4 flex flex-col py-10 gap-4">
-                      <div className="text-white font-bold text-xl">
-                        <h1>Join our family</h1>
-                      </div>
-                      <div className="w-full">
                         <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Your Full Name"
-                          className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                          type="search"
+                          id="search"
+                          class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded bg-gray-50 focus:outline-none"
+                          placeholder="Enter your email address"
+                          required
                         />
-                      </div>
-                      <div className="w-full">
-                        <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Your Email"
-                          className="w-full rounded bg-[#f1f0f4] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                        />
-                      </div>
-
-                      <div className="flex justify-center items-center md:justify-start py-2 w-[100%]">
-                        <a
-                          href="/contact"
-                          className="bg-mainColor text-center text-white py-3 px-6  rounded w-full"
+                        <button
+                          type="submit"
+                          class="text-white absolute end-2.5 bottom-2.5 bg-mainColor font-medium rounded text-sm px-4 py-2 "
                         >
-                          Join
-                        </a>
+                          Search
+                        </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
