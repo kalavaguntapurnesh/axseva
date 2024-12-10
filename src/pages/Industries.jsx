@@ -60,17 +60,17 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center text-headingColor text-xl mb-2">
                         Manufacturing Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         From smart factories to predictive maintenance to
                         inventory management, we help manufacturers unlock
                         deeper insights and improve production efficiency with
                         better manufacturing technology and AI solutions.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -89,17 +89,17 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center  text-headingColor text-xl mb-2">
                         Financial Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         Our cloud and data solutions increase agility, support
                         data-driven decision making, and enable innovative,
                         secure customer experiences to keep pace with evolving
                         market demands.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -118,17 +118,17 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center  text-headingColor text-xl mb-2">
                         Software Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         Our full suite of digital transformation services will
                         help maximize IT investments, meet business goals and
                         support the pace of change in the technology industry
                         using the dynamic capabilities.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -147,16 +147,16 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center  text-headingColor text-xl mb-2">
                         Retail Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         Our retail cloud solutions enhance omni-channel customer
                         experiences, operational efficiency, and real-time
                         insights, helping you meet today’s customer demands.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -175,16 +175,16 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center  text-headingColor text-xl mb-2">
                         Public Sector Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         Empower your citizens with modern cloud-based platforms
                         and management tools for permitting, business licensing,
                         code inspections, maintenance and more.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
@@ -202,17 +202,17 @@ const Industries = () => {
                       alt="Sunset in the mountains"
                     />
                     <div class="px-6 pt-4">
-                      <div class="font-bold text-headingColor text-xl mb-2">
+                      <div class="font-bold lg:text-start text-center  text-headingColor text-xl mb-2">
                         Health Care Services
                       </div>
-                      <p class="text-gray-700 text-base">
+                      <p class="text-gray-700 text-base lg:text-start text-center ">
                         Healthcare technology experts will help you leverage the
                         cloud to optimize operations, increase patient
                         engagement, improve data insights and much more
                         developments.
                       </p>
                     </div>
-                    <div class="px-6 pb-4">
+                    <div class="px-6 pb-4 flex lg:justify-start justify-center">
                       <a
                         href="/contact"
                         class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"

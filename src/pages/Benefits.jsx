@@ -174,7 +174,7 @@ const Benefits = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
-                    className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10 max-w-full"
+                    className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:mt-10 mt-6 max-w-full"
                   >
                     {values1.map((value, index) => (
                       <div
