@@ -1,9 +1,10 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import world from "../assets/world.svg";
+// import world from "../assets/world.svg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
+import world_two from "../assets/world_two.png";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -324,7 +325,7 @@ const AboutOne = () => {
                   className="text-center"
                 >
                   <h1 className="text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
-                    Visit us at this location
+                    Where to find us!
                   </h1>
                 </motion.div>
 
@@ -334,16 +335,17 @@ const AboutOne = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <a
-                    href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
-                    className="max-w-[1200px] mx-auto pt-8 flex justify-center items-center"
+                  <div
+                    // href="https://maps.app.goo.gl/MVjv2DyeQkwUS8Wr5"
+                    className="max-w-[1200px] mx-auto pt-4 flex justify-center items-center"
                   >
                     <img
-                      src={world}
+                      // src={world}
+                      src={world_two}
                       alt="about_two"
-                      className="md:w-[90%] w-[100%]"
+                      className="md:w-[80%] w-[100%]"
                     />
-                  </a>
+                  </div>
                 </motion.div>
               </div>
             </div>
