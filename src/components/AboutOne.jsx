@@ -395,7 +395,7 @@ const AboutOne = () => {
                           // width="612"
                           // height="512"
                           // className="rounded md:block hidden w-[80%] h-[460px]"
-                          className="md:block hidden w-[70%] h-[160px]"
+                          className="md:block hidden w-[65%] h-[140px]"
                         />
                       </div>
                       <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-4 lg:px-0 px-2">
