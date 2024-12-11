@@ -35,21 +35,21 @@ const Services = () => {
   const services3 = [
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/infrastructure-4636450-3840692.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/premium/png-512-thumb/bag-49-86123.png?f=webp&w=512",
       title: "Dynamic 365 Finance & Operations",
       description:
         "We offer specialized services in Microsoft Dynamics 365 Finance and Operations that transform your operations, boost efficiency, and unlock new levels of performance.",
     },
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/security-3243645-2705338.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/premium/png-512-thumb/analytics-40-86115.png?f=webp&w=512",
       title: "Business Intelligence Analytical Services",
       description:
         "Business Intelligence Analytics in Microsoft 365 Dynamics empowers organizations with data-driven insights, enhancing decision-making, performance, and operational efficiency seamlessly for a better future.",
     },
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/data-59-100759.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/premium/png-512-thumb/bag-48-86122.png?f=webp&w=512",
       title: "Expert Support & Managed Solutions",
       description:
         "Empowering businesses with expert Microsoft 365 support and managed services, ensuring seamless operations, enhanced productivity, secure collaboration, and tailored solutions to drive dynamic digital transformation.",

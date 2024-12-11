@@ -164,8 +164,8 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                   >
                     <p className="text-base text-sideHeading text-center md:text-lg pt-4">
-                      Collaborating with us unlocks an opportunity to elevate your
-                      offerings and maximize growth opportunities together.
+                      Collaborating with us unlocks an opportunity to elevate
+                      your offerings and maximize growth opportunities together.
                     </p>
                   </motion.div>
                   {/* Cards Grid */}
@@ -227,6 +227,12 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full lg:justify-start justify-center"
                   >
+                    <div className="flex items-center lg:justify-start justify-center md:ml-2">
+                      <div className="h-4 w-1 bg-mainColor"></div>
+                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                        Building a better future
+                      </h1>
+                    </div>
                     <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
                       Collaborate with{" "}
                       <span className="text-mainColor">AX</span>Seva for
@@ -243,10 +249,10 @@ const Benefits = () => {
 
                     <div className="flex lg:justify-start justify-center">
                       <a
-                        href="/contact"
-                        class="relative mt-8 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
+                        href="/contact#contact_form"
+                        class="relative mt-4 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                       >
-                        <span class="relative z-10">Browse our network</span>
+                        <span class="relative z-10">Read More</span>
                       </a>
                     </div>
                   </motion.div>
@@ -302,6 +308,12 @@ const Benefits = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex flex-col space-y-6 w-full justify-start"
                   >
+                    <div className="flex items-center lg:justify-start justify-center md:ml-4">
+                      <div className="h-4 w-1 bg-mainColor"></div>
+                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                        Collaborate with us for success
+                      </h1>
+                    </div>
                     <div className="text-4xl text-center lg:text-start font-bold text-headingColor md:ml-4">
                       Certified Professionals Delivering Unmatched Business
                       Solutions
@@ -318,10 +330,10 @@ const Benefits = () => {
 
                     <div className="flex lg:justify-start justify-center lg:ml-4">
                       <a
-                        href="/contact"
-                        class="relative mt-8 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
+                        href="/contact#contact_form"
+                        class="relative mt-4 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                       >
-                        <span class="relative z-10">Browse our network</span>
+                        <span class="relative z-10">Read More</span>
                       </a>
                     </div>
                   </motion.div>
@@ -558,7 +570,7 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-      
+
       <ContactUsButton />
       <Footer />
     </>

@@ -52,16 +52,6 @@ const MicrosoftDynamics365Finance = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:px-0 px-2">
-                      {/* <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                    <div className="text-sideHeading font-semibold">
-                      <p>In-depth Product Knowledge</p>
-                    </div>
-                  </div>
-                  <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                    <div className="text-sideHeading font-semibold">
-                      <p>Flexible Engagement Model</p>
-                    </div>
-                  </div> */}
                       <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
                         <div className="text-sideHeading font-semibold">
                           <p>End-to-End Implementation</p>
@@ -116,7 +106,13 @@ const MicrosoftDynamics365Finance = () => {
         </div>{" "}
       </div>
 
-      <div className="pt-12 lg:px-0 px-2 select-none">
+      <motion.div
+        variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.5 }}
+        className="pt-12 lg:px-0 px-2 select-none"
+      >
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -128,7 +124,7 @@ const MicrosoftDynamics365Finance = () => {
                         <div className="flex justify-center items-center  rounded-full">
                           {/* <IoBarChart size={32} className="text-mainColor" /> */}
                           <img
-                            src="https://cdn.iconscout.com/icon/premium/png-512-thumb/decision-tree-chart-icon-download-in-svg-png-gif-file-formats--hierarchy-organisational-family-infographic-pack-infographics-icons-1813297.png?f=webp&w=512"
+                            src="https://cdn.iconscout.com/icon/premium/png-512-thumb/analytics-40-86115.png?f=webp&w=512"
                             alt="icon"
                             className="w-20 h-20"
                           />
@@ -181,8 +177,8 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Tailor the Dynamics 365 system architecture to
-                          align with your operations and objectives. Seamless
+                          Tailor the Dynamics 365 system architecture to align
+                          with your operations and objectives. Seamless
                           installation and configuration of the solution,
                           ensuring minimal disruption to your business.
                         </p>
@@ -219,10 +215,10 @@ const MicrosoftDynamics365Finance = () => {
 
                       <div class="flex justify-center items-center text-gray-600 text-center">
                         <p>
-                          Transition your legacy data to our platform
-                          with precision and accuracy. Data Cleansing &
-                          Validation will ensure clean, reliable data that
-                          supports your business goals.
+                          Transition your legacy data to our platform with
+                          precision and accuracy. Data Cleansing & Validation
+                          will ensure clean, reliable data that supports your
+                          business goals.
                         </p>
                       </div>
 
@@ -283,7 +279,7 @@ const MicrosoftDynamics365Finance = () => {
                       <div className="flex justify-center items-center  rounded-full">
                         {/* <IoBarChart size={32} className="text-mainColor" /> */}
                         <img
-                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/unity-4870710-4061698.png?f=webp&w=512"
+                          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/bag-48-86122.png?f=webp&w=512"
                           className="w-20 h-20"
                           alt="five"
                         />
@@ -358,7 +354,7 @@ const MicrosoftDynamics365Finance = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* section 3 */}
 
@@ -374,13 +370,22 @@ const MicrosoftDynamics365Finance = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-6 w-full"
+                  className="flex justify-center items-center w-[100%]"
                 >
-                  <div className="flex justify-center md:justify-start w-full h-full ">
+                  <div>
                     <img
                       src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
-                      className="lg:w-auto h-auto rounded w-[90%]"
-                      alt="seven"
+                      alt="one"
+                      width="612"
+                      height="512"
+                      className="rounded lg:block hidden"
+                    />
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <img
+                      src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
+                      alt="two"
+                      className="rounded lg:hidden block w-[90%]"
                     />
                   </div>
                 </motion.div>
@@ -392,12 +397,20 @@ const MicrosoftDynamics365Finance = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-8 w-full justify-center"
+                  className="flex flex-col space-y-6 w-full lg:justify-start justify-center"
                 >
-                  <div className=" text-4xl text-center lg:text-start font-bold text-headingColor">
-                    Supply chain
+                  <div className="flex items-center lg:justify-start justify-center md:ml-2">
+                    <div className="h-4 w-1 bg-mainColor"></div>
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                      Building a better future
+                    </h1>
                   </div>
-                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
+                  <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
+                    Dynamics 365 Finance and Operations with{" "}
+                    <span className="text-mainColor">AX</span>
+                    Seva
+                  </div>
+                  <p className="md:text-lg text-base text-sideHeading lg:text-start text-center">
                     Gain end-to-end visibility and control over your supply
                     chain with Microsoft Dynamics 365 Supply Chain Management.
                     Connect sales, logistics, production, and warehousing
@@ -412,53 +425,14 @@ const MicrosoftDynamics365Finance = () => {
                     Dynamics 365 Supply Chain Management, optimize every stage
                     of your supply chain for efficiency and agility.
                   </p>
-                </motion.div>
-              </div>
 
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 pt-8">
-                {/* grid 1 */}
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-8 w-full justify-center"
-                >
-                  <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
-                    Cloud Services
-                  </div>
-                  <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                    Empower your IT department to drive efficiency and
-                    innovation with Microsoft 365 Cloud Services. From seamless
-                    collaboration tools to advanced lifecycle management,
-                    Microsoft 365 offers flexible deployment options tailored to
-                    your organization's needs. Enhance system agility while
-                    ensuring enterprise-grade security, compliance, and data
-                    integrity. With built-in AI capabilities and integration
-                    across apps like Teams, SharePoint, and OneDrive, your IT
-                    team can streamline operations, support a modern hybrid
-                    workforce, and scale effortlessly in a secure cloud
-                    environment. Microsoft 365 Cloud Services provide the
-                    foundation for digital transformation, keeping your
-                    organization connected and productive.
-                  </p>
-                </motion.div>
-
-                {/* grid 2 */}
-
-                <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="flex flex-col space-y-6 w-full"
-                >
-                  <div className="flex justify-center lg:justify-start w-full h-full ">
-                    <img
-                      src="https://www.tectura.com/wp-content/uploads/2023/04/Industries_ProfessionalServices.jpg"
-                      alt="eight"
-                      className="lg:w-auto h-auto rounded w-[90%]"
-                    />
+                  <div className="flex lg:justify-start justify-center">
+                    <a
+                      href="/contact#contact_form"
+                      class="relative mt-4 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
+                    >
+                      <span class="relative z-10">Read More</span>
+                    </a>
                   </div>
                 </motion.div>
               </div>

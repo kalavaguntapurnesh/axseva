@@ -123,7 +123,7 @@ const AboutOne = () => {
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                      Our Mission
+                      Our mission
                     </h1>
                   </div>
                   <div className="md:text-4xl text-3xl font-bold text-headingColor md:w-3/4">
@@ -150,7 +150,7 @@ const AboutOne = () => {
                   <div className="flex items-center md:justify-start justify-center ">
                     <div className="h-4 w-1 bg-mainColor"></div>
                     <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                      Our Vision
+                      Our vision
                     </h1>
                   </div>
                   <div className="md:text-4xl text-3xl font-bold text-headingColor md:w-3/4">
