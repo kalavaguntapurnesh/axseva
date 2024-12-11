@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import world_two from "../assets/world_two.png";
+import logo from "../assets/logo.png";
 
 const AboutOne = () => {
   const location = useLocation();
@@ -22,7 +23,7 @@ const AboutOne = () => {
     <div className="lg:pt-28 pt-16 select-none">
       <div className="relative">
         <div className="w-full">
-          <div className="w-full mx-auto max-w-[1400px] pb-12">
+          <div className="w-full mx-auto max-w-[1400px] pb-16">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               <motion.div
                 variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -371,14 +372,14 @@ const AboutOne = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-center mt-4"
                 >
-                  <h1 className="leading-relaxed tracking-wide text-base text-gray-600 dark:text-gray-800 ">
+                  <h1 className="lg:mx-0 mx-4 leading-relaxed tracking-wide text-base text-gray-600 dark:text-gray-800 ">
                     Running a business like AXSeva takes energy, creativity and
                     a love of just getting things done. Find out more about the
                     people we’ve chosen to lead the business.
                   </h1>
                 </motion.div>
 
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-4 pt-16">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:pt-16 pt-8">
                   <motion.div
                     variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                     initial="hidden"
@@ -386,20 +387,85 @@ const AboutOne = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     className="flex justify-center items-center w-[100%]"
                   >
-                    <div className="md:flex justify-center hidden w-[100%]">
-                      <img
-                        src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
-                        alt="about_three"
-                        // width="612"
-                        // height="512"
-                        className="rounded md:block hidden w-[80%] h-[460px]"
-                      />
+                    <div className="lg:flex lg:flex-col hidden w-[100%]">
+                      <div>
+                        <img
+                          src={logo}
+                          alt="about_three"
+                          // width="612"
+                          // height="512"
+                          // className="rounded md:block hidden w-[80%] h-[460px]"
+                          className="md:block hidden w-[70%] h-[160px]"
+                        />
+                      </div>
+                      <div className="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-4 lg:px-0 px-2">
+                        <div class="flex lg:justify-start justify-center">
+                          <div class="w-full p-4 bg-[#f8f9fa] border border-gray-200 rounded shadow-md sm:p-6">
+                            <div class="space-y-2">
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <img
+                                  src="https://cdn.iconscout.com/icon/premium/png-512-thumb/circle-mixing-chart-icon-download-in-svg-png-gif-file-formats--infographic-rgb-pack-infographics-icons-1813284.png?f=webp&w=512"
+                                  alt="bento_three"
+                                  className="w-12 h-12"
+                                />
+                                <h1 class="text-4xl ml-2 text-mainColor font-bold text-start">
+                                  86%
+                                </h1>
+                              </div>
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <p class="text-2xl text-colorTwo font-semibold lg:text-start text-center">
+                                  Improved Cost Saving
+                                </p>
+                              </div>
+
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <p className="lg:text-start text-center">
+                                  Businesses that have upgraded to Dynamics 365
+                                  have reported improved cost savings while
+                                  limiting resources.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flex lg:justify-start justify-center">
+                          <div class="w-full p-4 bg-[#f8f9fa] border border-gray-200 rounded shadow-md sm:p-6">
+                            <div class="space-y-2">
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <img
+                                  src="https://cdn.iconscout.com/icon/premium/png-512-thumb/arrow-chart-icon-download-in-svg-png-gif-file-formats--analytics-logo-bar-sequence-infographic-pack-infographics-icons-1813257.png?f=webp&w=512"
+                                  alt="bento_four"
+                                  className="w-12 h-12"
+                                />
+                                <h1 class="text-4xl ml-2 mt-2 text-mainColor font-bold text-start">
+                                  2x
+                                </h1>
+                              </div>
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <p class="text-2xl text-colorTwo font-semibold lg:text-start text-center">
+                                  Businesses Meet Targets
+                                </p>
+                              </div>
+
+                              <div class="flex justify-center lg:justify-start items-center">
+                                <p className="lg:text-start text-center">
+                                  Different businesses have achieved the
+                                  expected ROI on time after the successful
+                                  implementation of Dynamics 365.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex justify-center items-center md:hidden w-[90%]">
+                    <div className="flex justify-center items-center lg:hidden w-[90%]">
                       <img
-                        src="https://media.licdn.com/dms/image/v2/C5103AQFs7wvNUQZNDw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516344652480?e=1738195200&v=beta&t=qb2KkU0HEe9LkCvIdEaYrGDDq7LXgz_m26loLWdCADg"
+                        src={logo}
+                        className="w-[80%] h-auto"
                         alt="about_four"
-                        className="rounded w-[100%]"
+                        // className="rounded w-[100%]"
                       />
                     </div>
                   </motion.div>
@@ -409,20 +475,20 @@ const AboutOne = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
-                    className="flex flex-col space-y-6 w-full md:justify-start"
+                    className="flex flex-col space-y-6 w-full lg:justify-start"
                   >
-                    <div className="flex items-center md:justify-start justify-center ">
+                    <div className="flex items-center lg:justify-start justify-center ">
                       <div className="h-4 w-1 bg-mainColor"></div>
                       <h1 className="ml-2 text-lg font-bold text-mainColor ">
                         About the founder
                       </h1>
                     </div>
 
-                    <div className="text-4xl md:text-start text-center font-bold text-headingColor">
+                    <div className="lg:mx-0 mx-2 text-4xl lg:text-start text-center font-bold text-headingColor">
                       <h1>Sumanth Dama</h1>
                     </div>
 
-                    <div className="md:text-lg text-sideHeading md:text-start text-center space-y-1">
+                    <div className="lg:mx-0 mx-4 md:text-lg text-sideHeading lg:text-start text-center space-y-1">
                       <p>
                         When I founded AXSeva, my vision was clear: to empower
                         businesses to reach their full potential through
