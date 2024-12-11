@@ -311,7 +311,7 @@ const Footer = () => {
                           type="submit"
                           class="text-white absolute end-2.5 bottom-2.5 bg-mainColor font-medium rounded text-sm px-4 py-2 "
                         >
-                          Search
+                          Subscribe
                         </button>
                       </div>
                     </form>
