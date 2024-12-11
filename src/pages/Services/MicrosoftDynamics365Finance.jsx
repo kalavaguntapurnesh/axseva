@@ -5,6 +5,7 @@ import ContactUsButton from "../../components/ContactUsButton";
 import ContactNavbar from "../../components/ContactNavbar.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
+import partner from "../../assets/partner.png";
 
 const MicrosoftDynamics365Finance = () => {
   return (
@@ -17,7 +18,7 @@ const MicrosoftDynamics365Finance = () => {
       <div className="lg:pt-12 select-none">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] pb-12">
+            <div className="w-full mx-auto max-w-[1400px] lg:pb-12 pb-4">
               <div className="w-full pt-28">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <motion.div
@@ -84,18 +85,22 @@ const MicrosoftDynamics365Finance = () => {
                   >
                     <div>
                       <img
-                        src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        // src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src={partner}
                         alt="one"
-                        width="612"
-                        height="512"
-                        className="rounded lg:block hidden"
+                        // width="612"
+                        // height="512"
+                        // className="rounded lg:block hidden"
+                        className="lg:block hidden h-auto w-auto"
                       />
                     </div>
                     <div className="flex justify-center items-center">
                       <img
-                        src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        // src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src={partner}
                         alt="two"
-                        className="rounded lg:hidden block w-[90%]"
+                        // className="rounded lg:hidden block w-[90%]"
+                        className="lg:hidden block h-auto w-auto"
                       />
                     </div>
                   </motion.div>
@@ -111,7 +116,7 @@ const MicrosoftDynamics365Finance = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
-        className="pt-12 lg:px-0 px-2 select-none"
+        className="lg:pt-12 pt-4 lg:px-0 px-2 select-none"
       >
         <div className="relative">
           <div className="w-full">

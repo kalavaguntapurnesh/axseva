@@ -5,6 +5,7 @@ import ServicesLayout from "../components/ServicesLayout";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import ContactUsButton from "../components/ContactUsButton";
+
 const Services = () => {
   const services1 = [
     {
@@ -345,95 +346,6 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="mt-12 mb-12 lg:block hidden select-none">
-        <div className="relative">
-          <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-              <div className="flex flex-col space-y-6">
-                {/* Heading */}
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className=" text-4xl text-headingColor font-bold text-center"
-                >
-                  5 Common Challenges We Can Resolve
-                </motion.div>
-                {/* Description */}
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                >
-                  <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
-                    Explore how dynamics 365 Services can help your organization
-                    address these common challenges that disrupt efficient
-                    system management and security.
-                  </p>
-                </motion.div>
-                {/* Grid Section */}
-
-                <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="pt-16"
-                >
-                  {/* Desktop View: Two Columns */}
-                  <div className="hidden lg:grid grid-cols-3 gap-8">
-                    {/* Left side: Headings */}
-                    <div className="space-y-4 col-span-1 w-[100%] h-max sticky top-28 ">
-                      {headings.map((heading, index) => (
-                        <div
-                          key={index}
-                          onClick={() => setActiveHeading(index)}
-                          className={`py-4 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded ${
-                            activeHeading === index
-                              ? "bg-blue-100 text-blue-600" // Active heading styles
-                              : "bg-[#f8f9fa] text-gray-800" // Default styles
-                          }`}
-                        >
-                          <h2 className="pl-2 text-lg cursor-pointer font-medium ease-in-out duration-1000">
-                            {heading}
-                          </h2>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Right side: Display data dynamically */}
-                    <div className="space-y-12 col-span-2 overflow-y-auto">
-                      <div
-                        ref={sectionRefs[activeHeading]}
-                        className="space-y-6"
-                      >
-                        <h3 className="text-2xl font-bold text-gray-800">
-                          {content[activeHeading].title}
-                        </h3>
-                        <div className="space-y-2 text-lg xl:text-start text-center text-sideHeading">
-                          {content[activeHeading].details}
-                        </div>
-
-                        <div className="mt-4 flex justify-start">
-                          <img
-                            src={content[activeHeading].image}
-                            alt={content[activeHeading].title}
-                            // width={512}
-                            className="w-[92%] h-[380px] rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="pt-12 select-none">
         <div className="relative">
           <div className="w-full">
@@ -614,6 +526,95 @@ const Services = () => {
                         </ul>
                       </div>
                     ))}
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-12 mb-12 lg:block hidden select-none">
+        <div className="relative">
+          <div className="w-full">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
+              <div className="flex flex-col space-y-6">
+                {/* Heading */}
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className=" text-4xl text-headingColor font-bold text-center"
+                >
+                  5 Common Challenges We Can Resolve
+                </motion.div>
+                {/* Description */}
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                >
+                  <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
+                    Explore how dynamics 365 Services can help your organization
+                    address these common challenges that disrupt efficient
+                    system management and security.
+                  </p>
+                </motion.div>
+                {/* Grid Section */}
+
+                <motion.div
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="pt-16"
+                >
+                  {/* Desktop View: Two Columns */}
+                  <div className="hidden lg:grid grid-cols-3 gap-8">
+                    {/* Left side: Headings */}
+                    <div className="space-y-4 col-span-1 w-[100%] h-max sticky top-28 ">
+                      {headings.map((heading, index) => (
+                        <div
+                          key={index}
+                          onClick={() => setActiveHeading(index)}
+                          className={`py-4 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded ${
+                            activeHeading === index
+                              ? "bg-blue-100 text-blue-600" // Active heading styles
+                              : "bg-[#f8f9fa] text-gray-800" // Default styles
+                          }`}
+                        >
+                          <h2 className="pl-2 text-lg cursor-pointer font-medium ease-in-out duration-1000">
+                            {heading}
+                          </h2>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Right side: Display data dynamically */}
+                    <div className="space-y-12 col-span-2 overflow-y-auto">
+                      <div
+                        ref={sectionRefs[activeHeading]}
+                        className="space-y-6"
+                      >
+                        <h3 className="text-2xl font-bold text-gray-800">
+                          {content[activeHeading].title}
+                        </h3>
+                        <div className="space-y-2 text-lg xl:text-start text-center text-sideHeading">
+                          {content[activeHeading].details}
+                        </div>
+
+                        <div className="mt-4 flex justify-start">
+                          <img
+                            src={content[activeHeading].image}
+                            alt={content[activeHeading].title}
+                            // width={512}
+                            className="w-[92%] h-[380px] rounded"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               </div>
