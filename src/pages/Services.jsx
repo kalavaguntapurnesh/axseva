@@ -9,26 +9,25 @@ import ContactUsButton from "../components/ContactUsButton";
 const Services = () => {
   const services1 = [
     {
-      title: "AXSeva Flex: IT Support Services",
-      description: "Routine IT support and environment management",
-      subText: "AXSeva Flex Includes:",
+      title: "Client-Centric Customization",
+      description:
+        "Axseva adopts a client-centric customization approach by focusing to meet the specific needs and goals of their clients.",
       items: [
-        "Management of requests/priorities to resolve issues",
-        "Environment health checks and insights",
-        "On-demand access to technical expertise across Microsoft platform",
+        "Conducting in-depth consultations to understand the unique business processes and objectives of the client",
+        "Ensuring that customizations are implemented with minimal disruption in faster time.",
+        "Designing solutions that can adapt to evolving business needs, offering scalability to support future growth.",
       ],
     },
   ];
   const services2 = [
     {
-      title: "Strategic Programs",
+      title: "Continuous Support & Collaboration",
       description:
-        "Programmatic, roadmap-driven delivery of new and improved capabilities",
-      subText: "Strategic Programs Includes:",
+        "Analytics investments while aligning technology solutions with their unique business goals.",
       items: [
-        "Assess your environment, develop baseline",
-        "Ongoing coaching led by dedicated customer",
-        "Implementation of technical architecture, software",
+        "Providing a team of experts available to assist with troubleshooting & general inquiries.",
+        "Offering insights & recommendations for leveraging new technologies to meet requirements.",
+        "Building strong, collaborative relationships that go beyond transactional interactions.",
       ],
     },
   ];
@@ -178,7 +177,7 @@ const Services = () => {
     <>
       <ServicesLayout />
 
-      <div className="lg:mt-16 mt-12 select-none">
+      <div className="lg:pt-16 pt-12 select-none bg-[#f6f8f9]">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
@@ -189,7 +188,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.3 }}
-                  className=" text-4xl text-sideHeading font-bold text-center"
+                  className=" text-4xl text-headingColor font-bold text-center"
                 >
                   Services We Offer
                 </motion.div>
@@ -251,9 +250,7 @@ const Services = () => {
                     href="/contact"
                     class="relative mt-2 flex h-[54px] lg:w-1/4 w-[90%] items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                   >
-                    <span class="relative z-10">
-                      Speak with our service expert
-                    </span>
+                    <span class="relative z-10">Speak with us now</span>
                   </a>
                 </div>
               </div>
@@ -262,7 +259,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="pt-12 select-none">
+      <div className="lg:pt-20 pt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -434,11 +431,11 @@ const Services = () => {
       {/* Section 4 */}
 
       {/* Section 5 */}
-      <div className="mt-12 select-none">
+      <div className="lg:pt-20 pt-12 pb-12 select-none bg-[#f6f8f9]">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
-              <div className="flex flex-col space-y-10">
+              <div className="flex flex-col space-y-6">
                 {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -447,7 +444,7 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className=" text-4xl text-headingColor font-bold text-center"
                 >
-                  How Managed IT Services Work with AXSeva
+                  Our approach to achieving seamless solutions
                 </motion.div>
 
                 {/* Description */}
@@ -470,14 +467,14 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="max-w-[1200px] md:mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-10"
+                  className="max-w-[1400px] lg:mx-auto grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-10"
                 >
                   {/* Left Column */}
                   <div>
                     {services1.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
+                        className="border space-y-6 rounded p-6 shadow bg-white"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
@@ -490,8 +487,8 @@ const Services = () => {
                         </p>
                         <ul className="space-y-4">
                           {service.items.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2">
-                              <FaCheckCircle className="text-mainColor" />
+                            <li key={i} className="flex items-center space-x-4">
+                              <FaCheckCircle className="text-mainColor w-4 h-4" />
                               <span className="text-gray-600">{item}</span>
                             </li>
                           ))}
@@ -505,7 +502,7 @@ const Services = () => {
                     {services2.map((service, index) => (
                       <div
                         key={index}
-                        className="border border-mainColor space-y-6 rounded p-6 shadow-md transition-transform duration-300 hover:-translate-y-2"
+                        className="border space-y-6 rounded p-6 shadow bg-white"
                       >
                         <h2 className="text-2xl font-semibold text-mainColor mb-4">
                           {service.title}
@@ -518,8 +515,8 @@ const Services = () => {
                         </p>
                         <ul className="space-y-4">
                           {service.items.map((item, i) => (
-                            <li key={i} className="flex items-center space-x-2">
-                              <FaCheckCircle className="text-mainColor" />
+                            <li key={i} className="flex items-center space-x-4">
+                              <FaCheckCircle className="text-mainColor w-4 h-4" />
                               <span className="text-gray-600">{item}</span>
                             </li>
                           ))}
@@ -534,12 +531,11 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="mt-12 mb-12 lg:block hidden select-none">
+      {/* <div className="mt-12 mb-12 lg:block hidden select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
               <div className="flex flex-col space-y-6">
-                {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
@@ -549,7 +545,7 @@ const Services = () => {
                 >
                   5 Common Challenges We Can Resolve
                 </motion.div>
-                {/* Description */}
+
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
@@ -562,7 +558,6 @@ const Services = () => {
                     system management and security.
                   </p>
                 </motion.div>
-                {/* Grid Section */}
 
                 <motion.div
                   variants={fadeIn("up", 0.1)} // Fade in from top to bottom
@@ -571,9 +566,7 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="pt-16"
                 >
-                  {/* Desktop View: Two Columns */}
                   <div className="hidden lg:grid grid-cols-3 gap-8">
-                    {/* Left side: Headings */}
                     <div className="space-y-4 col-span-1 w-[100%] h-max sticky top-28 ">
                       {headings.map((heading, index) => (
                         <div
@@ -592,7 +585,6 @@ const Services = () => {
                       ))}
                     </div>
 
-                    {/* Right side: Display data dynamically */}
                     <div className="space-y-12 col-span-2 overflow-y-auto">
                       <div
                         ref={sectionRefs[activeHeading]}
@@ -621,7 +613,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <ContactUsButton />
 
