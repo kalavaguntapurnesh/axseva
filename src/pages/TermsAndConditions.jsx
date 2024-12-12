@@ -49,9 +49,9 @@ const TermsAndConditions = () => {
 
           {/* Static Text Content */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
-            <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+            <h2 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
               {slides[currentIndex].heading}
-            </h1>
+            </h2>
             <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
               {slides[currentIndex].paragraph}
             </p>

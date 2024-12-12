@@ -20,18 +20,18 @@ const Footer = () => {
                         className="flex flex-row items-center md:justify-start justify-center"
                       >
                         <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
-                        <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+                        <h3 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
                           AX<span className="text-footerItems">Seva</span>
-                        </h1>
+                        </h3>
                       </a>
                     </div>
                   </div>
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h1 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h4 className=" text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         About us
-                      </h1>
+                      </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -80,9 +80,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h1 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h4 className=" text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Services
-                      </h1>
+                      </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -133,9 +133,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h1 className="  text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h4 className="  text-sm leading-5 font-bold text-white tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Quick Links
-                      </h1>
+                      </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
@@ -176,9 +176,9 @@ const Footer = () => {
                   <div className="mb-12 md:mb-0">
                     <div className="flex items-center md:justify-start justify-center">
                       {/* <div className="h-4 w-1 bg-mainColor"></div> */}
-                      <h1 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
+                      <h4 className="  text-sm leading-5 text-white font-bold tracking-wider uppercase flex md:justify-start justify-center items-start mt-1 text-footerLinks">
                         Industries
-                      </h1>
+                      </h4>
                     </div>
                     <ul className="pl-0 mt-4 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
