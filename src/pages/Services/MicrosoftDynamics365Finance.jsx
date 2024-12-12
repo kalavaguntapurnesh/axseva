@@ -6,6 +6,7 @@ import ContactNavbar from "../../components/ContactNavbar.jsx";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
 import partner from "../../assets/partner.png";
+import Dynamics_Two from "../../assets/Dynamics_Two.png";
 
 const MicrosoftDynamics365Finance = () => {
   return (
@@ -379,16 +380,18 @@ const MicrosoftDynamics365Finance = () => {
                 >
                   <div>
                     <img
-                      src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
+                      src={Dynamics_Two}
+                      // src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
                       alt="one"
-                      width="612"
-                      height="512"
-                      className="rounded lg:block hidden"
+                      // width="612"
+                      // height="512"
+                      className="rounded lg:block hidden h-auto w-auto"
                     />
                   </div>
                   <div className="flex justify-center items-center">
                     <img
-                      src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
+                      src={Dynamics_Two}
+                      // src="https://www.beyondkey.com/blog/wp-content/uploads/2022/09/Microsoft-Dynamics-365-Supply-Chain-Management-Features.jpg"
                       alt="two"
                       className="rounded lg:hidden block w-[90%]"
                     />
