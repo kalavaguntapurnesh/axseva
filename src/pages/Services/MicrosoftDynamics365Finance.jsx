@@ -116,7 +116,7 @@ const MicrosoftDynamics365Finance = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
-        className="lg:pt-12 pt-4 lg:px-0 px-2 select-none"
+        className="lg:pt-12 lg:px-0 px-2 select-none"
       >
         <div className="relative">
           <div className="w-full">
