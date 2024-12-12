@@ -80,7 +80,7 @@ const NavBar = () => {
               Services{" "}
             </span>
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={PricingContent}>
+          <FlyoutLink href="/solutions" FlyoutContent={PricingContent}>
             <span className={`${isScrolled ? "text-black" : "text-black"}`}>
               {" "}
               Solutions{" "}
@@ -248,7 +248,7 @@ const NavBar = () => {
                   >
                     <li className="text-headingColor">
                       <a
-                        href="/"
+                        href="/solutions"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
@@ -257,7 +257,7 @@ const NavBar = () => {
                     </li>
                     <li className="text-headingColor">
                       <a
-                        href="/"
+                        href="/solutions"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
@@ -546,7 +546,9 @@ const PricingContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold text-sideHeading">We Provide Solutions For</h3>
+        <h3 className="font-semibold text-sideHeading">
+          We Provide Solutions For
+        </h3>
 
         <a
           href="/"
@@ -695,7 +697,9 @@ const SupportContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold text-sideHeading">Dedicated to Assisting You</h3>
+        <h3 className="font-semibold text-sideHeading">
+          Dedicated to Assisting You
+        </h3>
 
         <a
           href="/about-us#location_map"

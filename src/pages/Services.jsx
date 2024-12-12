@@ -35,149 +35,149 @@ const Services = () => {
   const services3 = [
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/bag-49-86123.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/free/png-512/free-startup-icon-download-in-svg-png-gif-file-formats--business-report-future-plan-culture-pack-icons-29319.png?f=webp&w=512",
       title: "Dynamic 365 Finance & Operations",
       description:
         "We offer specialized services in Microsoft Dynamics 365 Finance and Operations that transform your operations, boost efficiency, and unlock new levels of performance.",
     },
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/analytics-40-86115.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/free/png-512/free-future-icon-download-in-svg-png-gif-file-formats--goal-target-market-company-mission-startup-culture-pack-business-icons-29321.png?f=webp&w=512",
       title: "Business Intelligence Analytical Services",
       description:
         "Business Intelligence Analytics in Microsoft 365 Dynamics empowers organizations with data-driven insights, enhancing decision-making, performance, and operational efficiency seamlessly for a better future.",
     },
     {
       imageUrl:
-        "https://cdn.iconscout.com/icon/premium/png-512-thumb/bag-48-86122.png?f=webp&w=512",
+        "https://cdn.iconscout.com/icon/free/png-512/free-creative-icon-download-in-svg-png-gif-file-formats--business-idea-next-startup-culture-pack-icons-29325.png?f=webp&w=512",
       title: "Expert Support & Managed Solutions",
       description:
         "Empowering businesses with expert Microsoft 365 support and managed services, ensuring seamless operations, enhanced productivity, secure collaboration, and tailored solutions to drive dynamic digital transformation.",
     },
   ];
 
-  const [activeHeading, setActiveHeading] = useState(0); // Default to the first heading
-  const sectionRefs = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
+  // const [activeHeading, setActiveHeading] = useState(0); // Default to the first heading
+  // const sectionRefs = [
+  //   useRef(null),
+  //   useRef(null),
+  //   useRef(null),
+  //   useRef(null),
+  //   useRef(null),
+  // ];
 
-  const headings = [
-    "Unified Business Process Integration",
-    "Real-Time Data Insights Availability",
-    "Scalable and Customizable Platform",
-    "Enhanced Customer Relationship Management",
-  ];
+  // const headings = [
+  //   "Unified Business Process Integration",
+  //   "Real-Time Data Insights Availability",
+  //   "Scalable and Customizable Platform",
+  //   "Enhanced Customer Relationship Management",
+  // ];
 
-  const content = [
-    {
-      title: "Information We Collect From the User",
-      details: (
-        <div>
-          <p>
-            Dynamics 365 integrates multiple business processes into a single
-            platform, improving efficiency, communication, and operational
-            consistency.
-          </p>
-          <ul className="list-disc ml-4">
-            <li>
-              Personal Information: This includes your name, email address,
-              contact details, etc.
-            </li>
-            <li>
-              Non-Personal Information: Technical information such as IP
-              addresses, browser type, device information, etc.
-            </li>
-          </ul>
-        </div>
-      ),
-      image:
-        "https://images.pexels.com/photos/7567591/pexels-photo-7567591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      title: "Real-Time Data Insights Availability",
-      details: (
-        <div>
-          <p>
-            Provides actionable insights through real-time data analysis,
-            enabling informed decision-making and proactive business strategies.
-          </p>
-          <ul className="list-disc ml-4">
-            <li>
-              Supports on-the-go access to insights via mobile apps, keeping
-              stakeholders informed anytime, anywhere.
-            </li>
-            <li>
-              Integrates with Power BI for advanced analytics and visualization
-              of complex data sets.
-            </li>
-            <li>
-              Offers predictive analytics for better forecasting and planning
-              across departments.
-            </li>
-          </ul>
-        </div>
-      ),
-      image:
-        "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      title: "Scalable and Customizable Platform",
-      details: (
-        <div>
-          <p>
-            Adapts to business growth and requirements with customizable
-            modules, ensuring flexibility and future-proofing investments.
-          </p>
-          <ul className="list-disc ml-4">
-            <li>
-              Designed to grow with your business, accommodating increased data,
-              users, and processes without performance degradation.
-            </li>
-            <li>
-              Allows integration with third-party applications and APIs,
-              ensuring compatibility with existing tools.
-            </li>
-          </ul>
-        </div>
-      ),
-      image:
-        "https://images.pexels.com/photos/7693142/pexels-photo-7693142.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    },
-    {
-      title: "Enhanced Customer Relationship Management",
-      details: (
-        <div>
-          <p>
-            It streamlines customer interactions, offering personalized
-            experiences, improved engagement, and better support through
-            comprehensive CRM tools.
-          </p>
-          <ul className="list-disc ml-4">
-            <li>
-              Offers a comprehensive view of customer interactions, enabling
-              businesses to understand and predict customer needs effectively.
-            </li>
-            <li>
-              Automates customer service workflows, reducing response times and
-              enhancing satisfaction.
-            </li>
-          </ul>
-        </div>
-      ),
-      image:
-        "https://images.pexels.com/photos/8867201/pexels-photo-8867201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-  ];
+  // const content = [
+  //   {
+  //     title: "Information We Collect From the User",
+  //     details: (
+  //       <div>
+  //         <p>
+  //           Dynamics 365 integrates multiple business processes into a single
+  //           platform, improving efficiency, communication, and operational
+  //           consistency.
+  //         </p>
+  //         <ul className="list-disc ml-4">
+  //           <li>
+  //             Personal Information: This includes your name, email address,
+  //             contact details, etc.
+  //           </li>
+  //           <li>
+  //             Non-Personal Information: Technical information such as IP
+  //             addresses, browser type, device information, etc.
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     ),
+  //     image:
+  //       "https://images.pexels.com/photos/7567591/pexels-photo-7567591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //   },
+  //   {
+  //     title: "Real-Time Data Insights Availability",
+  //     details: (
+  //       <div>
+  //         <p>
+  //           Provides actionable insights through real-time data analysis,
+  //           enabling informed decision-making and proactive business strategies.
+  //         </p>
+  //         <ul className="list-disc ml-4">
+  //           <li>
+  //             Supports on-the-go access to insights via mobile apps, keeping
+  //             stakeholders informed anytime, anywhere.
+  //           </li>
+  //           <li>
+  //             Integrates with Power BI for advanced analytics and visualization
+  //             of complex data sets.
+  //           </li>
+  //           <li>
+  //             Offers predictive analytics for better forecasting and planning
+  //             across departments.
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     ),
+  //     image:
+  //       "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //   },
+  //   {
+  //     title: "Scalable and Customizable Platform",
+  //     details: (
+  //       <div>
+  //         <p>
+  //           Adapts to business growth and requirements with customizable
+  //           modules, ensuring flexibility and future-proofing investments.
+  //         </p>
+  //         <ul className="list-disc ml-4">
+  //           <li>
+  //             Designed to grow with your business, accommodating increased data,
+  //             users, and processes without performance degradation.
+  //           </li>
+  //           <li>
+  //             Allows integration with third-party applications and APIs,
+  //             ensuring compatibility with existing tools.
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     ),
+  //     image:
+  //       "https://images.pexels.com/photos/7693142/pexels-photo-7693142.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  //   },
+  //   {
+  //     title: "Enhanced Customer Relationship Management",
+  //     details: (
+  //       <div>
+  //         <p>
+  //           It streamlines customer interactions, offering personalized
+  //           experiences, improved engagement, and better support through
+  //           comprehensive CRM tools.
+  //         </p>
+  //         <ul className="list-disc ml-4">
+  //           <li>
+  //             Offers a comprehensive view of customer interactions, enabling
+  //             businesses to understand and predict customer needs effectively.
+  //           </li>
+  //           <li>
+  //             Automates customer service workflows, reducing response times and
+  //             enhancing satisfaction.
+  //           </li>
+  //         </ul>
+  //       </div>
+  //     ),
+  //     image:
+  //       "https://images.pexels.com/photos/8867201/pexels-photo-8867201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  //   },
+  // ];
 
   return (
     <>
       <ServicesLayout />
 
-      <div className="lg:pt-16 pt-12 select-none bg-[#f6f8f9]">
+      <div className="lg:pt-16 pt-12 select-none ">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
@@ -431,7 +431,7 @@ const Services = () => {
       {/* Section 4 */}
 
       {/* Section 5 */}
-      <div className="lg:pt-20 pt-12 pb-12 select-none bg-[#f6f8f9]">
+      <div className="lg:pt-20 pt-12 pb-12 select-none ">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">

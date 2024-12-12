@@ -19,6 +19,7 @@ import MicrosoftDynamics365Finance from "./pages/Services/MicrosoftDynamics365Fi
 import TermsAndConditions from "./pages/TermsAndConditions";
 import React, { useEffect } from "react";
 import Custom404 from "./pages/Custom404";
+import Solutions from "./pages/Solutions";
 function App() {
   // useEffect(() => {
   //   // Disable right-click globally
@@ -46,11 +47,13 @@ function App() {
           path="/services-microsoft-dynamics-365"
           element={<MicrosoftDynamics365 />}
         />
+        <Route path="/solutions" element={<Solutions />} />
         <Route
           path="/services-microsoft-dynamics-365-finance"
           element={<MicrosoftDynamics365Finance />}
         />
       </Routes>
+
       <CookieConsent />
     </BrowserRouter>
   );
