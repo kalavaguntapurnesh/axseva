@@ -4,6 +4,8 @@ import ContactNavbar from "../../components/ContactNavbar.jsx";
 import ContactUsButton from "../../components/ContactUsButton";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants.js";
+import sc_one from "../../assets/sc_one.png";
+
 const MicrosoftDynamics365 = () => {
   const services = [
     {
@@ -71,16 +73,15 @@ const MicrosoftDynamics365 = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-8 w-full justify-center"
                 >
-
-<div className="flex items-center lg:justify-start justify-center md:ml-2">
-                      <div className="h-4 w-1 bg-mainColor"></div>
-                      <h1 className="ml-2 text-lg font-bold text-mainColor ">
-                        Dynamics 365 Supply Chain
-                      </h1>
-                    </div>
+                  <div className="flex items-center lg:justify-start justify-center md:ml-2">
+                    <div className="h-4 w-1 bg-mainColor"></div>
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                      Dynamics 365 Supply Chain
+                    </h1>
+                  </div>
                   <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
-                    <span className="text-mainColor">AX</span>Seva:Transforming Businesses with Enterprise
-                    Solutions
+                    <span className="text-mainColor">AX</span>Seva:Transforming
+                    Businesses with Enterprise Solutions
                   </div>
 
                   <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
@@ -127,8 +128,9 @@ const MicrosoftDynamics365 = () => {
                 >
                   <div className="flex justify-center lg:justify-start w-full h-full">
                     <img
-                      src="https://www.tectura.com/wp-content/uploads/2023/01/Mask-Group-30.png"
-                      className="h-auto w-[90%] lg:w-auto rounded"
+                      // src="https://www.tectura.com/wp-content/uploads/2023/01/Mask-Group-30.png"
+                      src={sc_one}
+                      className="h-auto w-auto"
                       alt="one"
                     />
                   </div>
@@ -141,7 +143,7 @@ const MicrosoftDynamics365 = () => {
 
       {/* section 3 */}
 
-      <div className="w-full pt-12 lg:pt-20 select-none">
+      <div className="w-full pt-8 lg:pt-20 select-none">
         <div className="relative">
           <div className="max-w-[1400px] mx-auto px-4 sm-px-6 ">
             <div className="flex flex-col gap-4 space-y-8">
