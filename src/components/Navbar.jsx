@@ -63,9 +63,7 @@ const NavBar = () => {
               AX{" "}
               <span
                 className={` ${
-                  isScrolled
-                    ? "text-black font-bold"
-                    : "text-navGray semibold"
+                  isScrolled ? "text-black font-bold" : "text-navGray semibold"
                 }`}
               >
                 Seva
@@ -83,7 +81,7 @@ const NavBar = () => {
           >
             SERVICES
           </FlyoutLink>
-          <FlyoutLink href="#" FlyoutContent={PricingContent}>
+          <FlyoutLink href="/solutions" FlyoutContent={PricingContent}>
             SOLUTIONS
           </FlyoutLink>
           <FlyoutLink href="/industries" FlyoutContent={IndustriesContent}>
@@ -284,7 +282,7 @@ const NavBar = () => {
                   >
                     <li className="text-navGray">
                       <a
-                        href="/"
+                        href="/solutions"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
@@ -293,7 +291,7 @@ const NavBar = () => {
                     </li>
                     <li className="text-navGray">
                       <a
-                        href="/"
+                        href="/solutions"
                         className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
 "
                       >
@@ -511,7 +509,9 @@ const PricingContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold text-sideHeading">We Provide Solutions For</h3>
+        <h3 className="font-semibold text-sideHeading">
+          We Provide Solutions For
+        </h3>
         <a
           href="/"
           className="block text-sideHeading text-sm hover:text-mainColor transition duration-500 ease-in-out  hover:font-semibold"
@@ -668,7 +668,9 @@ const SupportContent = () => {
   return (
     <div className="w-64 bg-white p-6 shadow-xl">
       <div className="mb-3 space-y-3">
-        <h3 className="font-semibold text-sideHeading">Dedicated to Assisting You</h3>
+        <h3 className="font-semibold text-sideHeading">
+          Dedicated to Assisting You
+        </h3>
 
         <a
           href="/about-us#location_map"
