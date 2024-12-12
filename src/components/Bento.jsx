@@ -23,7 +23,7 @@ const Bento = () => {
                 className="flex flex-col space-y-6 w-full"
               >
                 <div className=" text-4xl lg:text-start text-center font-bold text-headingColor lg:ml-2 px-2 lg:px-0">
-                  <h1>Wondering why we are the best in market?</h1>
+                  <h2>Wondering why we are the best in market?</h2>
                 </div>
 
                 <div className="lg:text-lg text-base text-sideHeading lg:text-start text-center lg:ml-2 px-2 lg:px-0">
@@ -45,9 +45,9 @@ const Bento = () => {
                             alt="bento_three"
                             className="w-12 h-12"
                           />
-                          <h1 class="text-4xl ml-2 text-mainColor font-bold text-start">
+                          <h4 class="text-4xl ml-2 text-mainColor font-bold text-start">
                             86%
-                          </h1>
+                          </h4>
                         </div>
                         <div class="flex justify-center lg:justify-start items-center">
                           <p class="text-2xl text-colorTwo font-semibold lg:text-start text-center">
@@ -75,9 +75,9 @@ const Bento = () => {
                             alt="bento_four"
                             className="w-12 h-12"
                           />
-                          <h1 class="text-4xl ml-2 mt-2 text-mainColor font-bold text-start">
+                          <h4 class="text-4xl ml-2 mt-2 text-mainColor font-bold text-start">
                             2x
-                          </h1>
+                          </h4>
                         </div>
                         <div class="flex justify-center lg:justify-start items-center">
                           <p class="text-2xl text-colorTwo font-semibold lg:text-start text-center">

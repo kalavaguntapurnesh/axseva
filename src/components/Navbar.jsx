@@ -58,7 +58,7 @@ const NavBar = () => {
       <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4">
         <a href="/" className="flex flex-row items-center md:ml-0 ml-2">
           <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
-          <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+          <h4 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
             <div className="flex gap-0">
               AX{" "}
               <span
@@ -69,7 +69,7 @@ const NavBar = () => {
                 Seva
               </span>
             </div>
-          </h1>
+          </h4>
         </a>
 
         {/* Desktop Nav Links */}
@@ -139,9 +139,9 @@ const NavBar = () => {
         >
           <a href="/" className="flex flex-row items-center ml-6 mt-6 mb-2">
             <SiPaloaltosoftware className="text-mainColor text-2xl leading-none" />
-            <h1 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
+            <h4 className="ml-1 text-2xl text-mainColor font-bold cursor-pointer">
               AX <span className="text-navGray">Seva</span>
-            </h1>
+            </h4>
           </a>
 
           <ul className="p-4">
@@ -413,9 +413,9 @@ const NavBar = () => {
           </ul>
 
           <div className="px-4">
-            <h1 className="p-4 text-xl text-navGray font-semibold">
+            <h5 className="p-4 text-xl text-navGray font-semibold">
               Follow us on
-            </h1>
+            </h5>
             <div className="p-4">
               <div className="grid grid-cols-4">
                 <a href="https://www.linkedin.com/in/sumanthdama/">

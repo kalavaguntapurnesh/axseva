@@ -19,9 +19,9 @@ const Carousel = () => {
                 className="flex items-center text-center justify-center "
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor">
+                <p className="ml-2 text-lg font-bold text-mainColor">
                   We are AXSeva
-                </h1>
+                </p>
               </motion.div>
 
               <motion.div
@@ -31,9 +31,9 @@ const Carousel = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="mx-auto max-w-[1000px] text-center mt-4"
               >
-                <h1 className="text-4xl font-bold text-headingColor">
+                <h3 className="text-4xl font-bold text-headingColor">
                   Our Products
-                </h1>
+                </h3>
               </motion.div>
 
               <motion.div
@@ -43,10 +43,10 @@ const Carousel = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="text-center mt-4"
               >
-                <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
+                <p className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                   Discover the Comprehensive Suite of Microsoft Dynamics 365 and
                   other Microsoft Solutions for Your Business Transformation
-                </h1>
+                </p>
               </motion.div>
 
               <motion.div
@@ -67,9 +67,9 @@ const Carousel = () => {
                         />
                       </div>
                       <div className="flex justify-center items-center">
-                        <h1 className="text-2xl text-headingColor font-bold text-center">
+                        <h3 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Business
-                        </h1>
+                        </h3>
                       </div>
                       <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
@@ -93,9 +93,9 @@ const Carousel = () => {
                         />
                       </div>
                       <div className="flex justify-center items-center">
-                        <h1 className="text-2xl text-headingColor font-bold text-center">
+                        <h3 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Finance
-                        </h1>
+                        </h3>
                       </div>
                       <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
@@ -119,9 +119,9 @@ const Carousel = () => {
                         />
                       </div>
                       <div className="flex justify-center items-center">
-                        <h1 className="text-2xl text-headingColor font-bold text-center">
+                        <h3 className="text-2xl text-headingColor font-bold text-center">
                           Dynamics 365 For Supply Chain
-                        </h1>
+                        </h3>
                       </div>
                       <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
@@ -145,9 +145,9 @@ const Carousel = () => {
                         />
                       </div>
                       <div className="flex justify-center items-center">
-                        <h1 className="text-2xl text-headingColor font-semibold text-center">
+                        <h3 className="text-2xl text-headingColor font-semibold text-center">
                           Dynamics 365 For Sales Management
-                        </h1>
+                        </h3>
                       </div>
                       <div className="flex justify-center items-center text-gray-600 text-center">
                         <p>
@@ -193,17 +193,17 @@ const Carousel = () => {
                           >
                             <div className="flex items-center lg:justify-start justify-center ">
                               <div className="h-4 w-1 bg-mainColor"></div>
-                              <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                              <p className="ml-2 text-lg font-bold text-mainColor ">
                                 Services we offer
-                              </h1>
+                              </p>
                             </div>
-                            <h1 className="text-4xl font-bold text-headingColor lg:text-start text-center">
+                            <h3 className="text-4xl font-bold text-headingColor lg:text-start text-center">
                               Driving Innovation with Microsoft Dynamics
                               Expertise
-                            </h1>
+                            </h3>
 
                             <div className="lg:text-start text-center mt-4 mb-1">
-                              <h1 className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
+                              <p className="leading-relaxed tracking-wide font-medium text-base text-gray-600 dark:text-gray-800 ">
                                 AXSeva specializes in Dynamics AX
                                 implementations with core focus on Dynamics AX +
                                 Analytics. Our expertise with Dynamics AX
@@ -211,7 +211,7 @@ const Carousel = () => {
                                 intelligence with SSRS, Analytics with OLAP,
                                 Power BI and AX Integration with external
                                 systems.
-                              </h1>
+                              </p>
                             </div>
                             <div class=" mt-6 space-y-4 border-t-[2px] border-gray-200 dark:border-gray-700">
                               {/* <div className="flex flex-row justify-between">
@@ -297,9 +297,9 @@ const Carousel = () => {
                                 alt="c_sixteen"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h1 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
+                              <h4 class="mb-2 text-2xl lg:text-start text-center font-bold text-colorTwo ">
                                 Business Intelligence Analytics
-                              </h1>
+                              </h4>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Seamless integration with apps, data and
                                 processes.
@@ -311,9 +311,9 @@ const Carousel = () => {
                                 alt="c_seventeen"
                                 class="w-16 h-16 mb-2 text-mainColor"
                               />
-                              <h1 class="mb-2 text-2xl font-bold lg:text-start text-center">
+                              <h4 class="mb-2 text-2xl font-bold lg:text-start text-center">
                                 Dynamic 365 Finance & Operations
-                              </h1>
+                              </h4>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Turn relevant and timely business data into
                                 actionable insights.
@@ -326,9 +326,9 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                                 alt="carousel_one"
                               />
-                              <h1 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
+                              <h4 class="mb-2 text-2xl text-colorTwo font-bold lg:text-start text-center">
                                 Support & Managed Services
-                              </h1>
+                              </h4>
                               <p class="font-normal text-gray-500 dark:text-gray-500 lg:text-start text-center">
                                 Ongoing support and partnership after the
                                 go-live activities.
@@ -341,9 +341,9 @@ const Carousel = () => {
                                 class="w-16 h-16 mb-2 text-mainColor"
                                 alt="carousel_two"
                               />
-                              <h1 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
+                              <h4 class="mb-2 text-2xl text-colorTwo font-bold md:text-start text-center">
                                 Tailoring Applications in X++
-                              </h1>
+                              </h4>
                               <p class="font-normal text-gray-500 dark:text-gray-500 md:text-start text-center">
                                 Tailoring Dynamics AX to meet specific business
                                 requirements.
@@ -367,22 +367,22 @@ const Carousel = () => {
             >
               <div className="flex items-center text-center justify-center ">
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor">
+                <p className="ml-2 text-lg font-bold text-mainColor">
                   We are AXSeva
-                </h1>
+                </p>
               </div>
 
               <div className="mx-auto max-w-[1000px] text-center mt-4">
-                <h1 className="text-4xl font-bold text-headingColor">
+                <h2 className="text-4xl font-bold text-headingColor">
                   Impact of Microsoft Dynamics 365
-                </h1>
+                </h2>
               </div>
 
               <div className="text-center mt-4">
-                <h1 className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
+                <p className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                   Check out the total economic impact of Dynamics 365 Finance
                   and Operations on businesses across the globe.
-                </h1>
+                </p>
               </div>
             </motion.div>
 
@@ -406,12 +406,12 @@ const Carousel = () => {
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                               <div className="space-y-6 flex flex-col pl-8">
                                 <div className=" md:text-start text-center">
-                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                  <h2 className="lg:text-4xl text-3xl font-bold text-black">
                                     Dynamic 365 Finance & Operations{" "}
                                     <span className="text-mainColor">
                                       innovation
                                     </span>
-                                  </h1>
+                                  </h2>
                                 </div>
                                 <div className="mt-4 md:text-start text-center text-gray-700 text-[18px]">
                                   <p>
@@ -477,12 +477,12 @@ const Carousel = () => {
                             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                               <div className="space-y-6 flex flex-col pl-8">
                                 <div className=" md:text-start text-center">
-                                  <h1 className="lg:text-4xl text-3xl font-bold text-black">
+                                  <h2 className="lg:text-4xl text-3xl font-bold text-black">
                                     Dynamic 365 Supply Chain Management{" "}
                                     <span className="text-mainColor">
                                       features
                                     </span>
-                                  </h1>
+                                  </h2>
                                 </div>
                                 <div className="mt-4 md:text-start text-center text-gray-700 text-[18px]">
                                   <p>

@@ -18,9 +18,9 @@ const HomeFinal = () => {
                 className="flex items-center text-center justify-center "
               >
                 <div className="h-4 w-1 bg-mainColor"></div>
-                <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                <p className="ml-2 text-lg font-bold text-mainColor ">
                   Require Assistance
-                </h1>
+                </p>
               </motion.div>
 
               <motion.div
@@ -30,9 +30,9 @@ const HomeFinal = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="mx-auto max-w-[1000px] text-center mt-4"
               >
-                <h1 className="text-4xl font-bold text-headingColor">
+                <h3 className="text-4xl font-bold text-headingColor">
                   Frequently Asked Questions
-                </h1>
+                </h3>
               </motion.div>
 
               <motion.div

@@ -144,9 +144,9 @@ const Contact = () => {
 
           {/* Static Text Content */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
-            <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+            <h2 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
               {slides[currentIndex].heading}
-            </h1>
+            </h2>
             <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
               {slides[currentIndex].paragraph}
             </p>
@@ -170,25 +170,25 @@ const Contact = () => {
                       <div className="flex flex-col space-y-4 mt-8">
                         <div className="flex items-center lg:justify-start justify-center lg:text-start text-center">
                           <div className="h-4 w-1 bg-mainColor"></div>
-                          <h1 className=" ml-2 text-lg font-bold text-mainColor ">
+                          <h2 className=" ml-2 text-lg font-bold text-mainColor ">
                             Collaborate with AXSeva
-                          </h1>
+                          </h2>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="text-4xl font-bold text-headingColor">
+                          <p className="text-4xl font-bold text-headingColor">
                             Your Expert in Microsoft Dynamics 365 Finance &
                             Operations
-                          </h1>
+                          </p>
                         </div>
                         <div className="lg:text-start text-center">
-                          <h1 className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                          <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
                             While these functions all stand to benefit your
                             business, they can be difficult to navigate without
                             the help of an experienced specialist. AXSeva
                             can help. We’ll help your business make the most of
                             the Microsoft Dynamics 365 system, giving you the
                             competitive edge you need to succeed.
-                          </h1>
+                          </p>
                         </div>
 
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
@@ -206,9 +206,9 @@ const Contact = () => {
                                   />
                                 </div>
                                 <div class="flex justify-center items-center">
-                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                  <h4 class="text-xl text-headingColor font-semibold text-center">
                                     Headquarters
-                                  </h1>
+                                  </h4>
                                 </div>
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
@@ -232,9 +232,9 @@ const Contact = () => {
                                   />
                                 </div>
                                 <div class="flex justify-center items-center">
-                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                  <h4 class="text-xl text-headingColor font-semibold text-center">
                                     Offshore Development Center
-                                  </h1>
+                                  </h4>
                                 </div>
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium ">
@@ -260,9 +260,9 @@ const Contact = () => {
                                   />
                                 </div>
                                 <div class="flex justify-center items-center">
-                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                  <h4 class="text-xl text-headingColor font-semibold text-center">
                                     Email Address
-                                  </h1>
+                                  </h4>
                                 </div>
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
@@ -285,9 +285,9 @@ const Contact = () => {
                                   />
                                 </div>
                                 <div class="flex justify-center items-center">
-                                  <h1 class="text-xl text-headingColor font-semibold text-center">
+                                  <h4 class="text-xl text-headingColor font-semibold text-center">
                                     Social Media Links
-                                  </h1>
+                                  </h4>
                                 </div>
 
                                 <div class="grid grid-cols-3 pt-2">
@@ -521,9 +521,9 @@ const Contact = () => {
                 className="space-y-2"
               >
                 <div className="text-center">
-                  <h1 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                  <h3 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     A word from the founder
-                  </h1>
+                  </h3>
                 </div>
               </motion.div>
               <motion.div
@@ -548,9 +548,9 @@ const Contact = () => {
                     with you and are confident that together, we can build a
                     foundation for sustained success.
                   </p>
-                  <h2 className="text-black text-2xl mt-4 font-bold text-center flex flex-row items-center">
+                  <h6 className="text-black text-2xl mt-4 font-bold text-center flex flex-row items-center">
                     Sumanth Dama
-                  </h2>
+                  </h6>
                 </div>
                 {/* Bottom-right image */}
                 <img
@@ -570,9 +570,9 @@ const Contact = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="text-center"
                 >
-                  <h1 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
+                  <h3 className=" text-4xl font-bold tracking-normal md:leading-relaxed leading-normal text-headingColor">
                     Transformation has no boundaries.
-                  </h1>
+                  </h3>
                 </motion.div>
 
                 <motion.div
@@ -591,10 +591,10 @@ const Contact = () => {
                       />
                     </div>
                     <div className="text-center text-gray-600 text-lg">
-                      <h1>
+                      <p>
                         Submit the contact form. Expect to receive an email from
                         us within one business day.
-                      </h1>
+                      </p>
                     </div>
                   </div>
 
@@ -607,10 +607,10 @@ const Contact = () => {
                       />
                     </div>
                     <div className="text-center text-gray-600 text-lg">
-                      <h1>
+                      <p>
                         Respond to our email. We’ll ask you about project
                         details and meeting availability.
-                      </h1>
+                      </p>
                     </div>
                   </div>
 
@@ -623,10 +623,10 @@ const Contact = () => {
                       />
                     </div>
                     <div className="text-center text-gray-600 text-lg">
-                      <h1>
+                      <p>
                         Meet with our experts. You’ll walk away knowing more
                         about us and our process — and we’ll learn.
-                      </h1>
+                      </p>
                     </div>
                   </div>
                 </motion.div>
@@ -644,9 +644,9 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold lg:text-start text-center  text-headingColor">
+                      <h4 class="text-2xl font-bold lg:text-start text-center  text-headingColor">
                         Discovery and Planning
-                      </h1>
+                      </h4>
                     </div>
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
@@ -679,9 +679,9 @@ const Contact = () => {
                 <div class="w-full p-4 bg-white border border-gray-200 rounded shadow sm:p-6 md:p-8 ">
                   <div class="space-y-3">
                     <div class="flex lg:justify-start justify-center items-center">
-                      <h1 class="text-2xl font-bold lg:text-start text-center text-headingColor">
+                      <h4 class="text-2xl font-bold lg:text-start text-center text-headingColor">
                         Your Path to Success Starts Here.
-                      </h1>
+                      </h4>
                     </div>
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
