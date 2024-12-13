@@ -6,8 +6,8 @@ const SupportHero = () => {
   const slides = [
     {
       image:
-        // "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
-        SupportOne,
+        "https://www.tectura.com/wp-content/uploads/2023/02/img_v2_b89f65cc-04c0-4ada-b7c1-bcb856ff202h1.jpg",
+        // SupportOne,
       heading: "SUPPORT & MANAGED SERVICES",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
