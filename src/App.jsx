@@ -21,14 +21,14 @@ import React, { useEffect } from "react";
 import Custom404 from "./pages/Custom404";
 import Solutions from "./pages/Solutions";
 function App() {
-  // useEffect(() => {
-  //   // Disable right-click globally
-  //   const disableRightClick = (e) => e.preventDefault();
-  //   document.addEventListener("contextmenu", disableRightClick);
-  //   return () => {
-  //     document.removeEventListener("contextmenu", disableRightClick);
-  //   };
-  // }, []);
+  useEffect(() => {
+    // Disable right-click globally
+    const disableRightClick = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", disableRightClick);
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
 
   return (
     <BrowserRouter>
