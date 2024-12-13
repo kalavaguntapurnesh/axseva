@@ -184,7 +184,7 @@ const Contact = () => {
                           </p>
                         </div>
                         <div className="lg:text-start text-center">
-                          <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
+                          <p className="md:text-lg text-base text-sideHeading md:text-start text-center px-2 md:px-0">
                             While these functions all stand to benefit your
                             business, they can be difficult to navigate without
                             the help of an experienced specialist. AXSeva can
@@ -196,7 +196,7 @@ const Contact = () => {
 
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 pt-6 md:px-0 px-2">
                           <a
-                            href="https://maps.app.goo.gl/86cEfhqBVqryeg8x9"
+                            href="https://maps.app.goo.gl/WVHqLc5Fe479Y7bQ8"
                             class="flex md:justify-start justify-center"
                           >
                             <div class="w-full p-4 bg-white border border-gray-200 rounded shadow">
@@ -215,7 +215,7 @@ const Contact = () => {
                                 </div>
 
                                 <div class="flex flex-col justify-center items-center text-sideHeading text-center font-medium">
-                                  <p>1691 Kettering St.</p>
+                                  <p>530 Technology Drive, </p>
                                   <p>Irvine, California, USA-92614</p>
                                 </div>
                               </div>
