@@ -184,9 +184,9 @@ const Contact = () => {
                           <p className="md:text-lg text-base text-sideHeading md:text-start text-center md:ml-2 px-2 md:px-0">
                             While these functions all stand to benefit your
                             business, they can be difficult to navigate without
-                            the help of an experienced specialist. AXSeva
-                            can help. We’ll help your business make the most of
-                            the Microsoft Dynamics 365 system, giving you the
+                            the help of an experienced specialist. AXSeva can
+                            help. We’ll help your business make the most of the
+                            Microsoft Dynamics 365 system, giving you the
                             competitive edge you need to succeed.
                           </p>
                         </div>
@@ -292,17 +292,23 @@ const Contact = () => {
 
                                 <div class="grid grid-cols-3 pt-2">
                                   <a
-                                    href="https://www.linkedin.com/in/sumanthdama/"
+                                    href="https://www.linkedin.com/company/axseva/"
                                     className="flex justify-center items-center"
                                   >
                                     <FaLinkedin className="text-headingColor w-6 h-6" />
                                   </a>
-                                  <div className="flex justify-center items-center">
+                                  <a
+                                    href="https://www.linkedin.com/company/axseva/"
+                                    className="flex justify-center items-center"
+                                  >
                                     <FaXTwitter className="text-headingColor w-6 h-6" />
-                                  </div>
-                                  <div className="flex justify-center items-center">
+                                  </a>
+                                  <a
+                                    href="https://www.linkedin.com/company/axseva/"
+                                    className="flex justify-center items-center"
+                                  >
                                     <FaInstagram className="text-headingColor w-6 h-6" />
-                                  </div>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -686,8 +692,8 @@ const Contact = () => {
 
                     <div class="flex lg:justify-start justify-center items-center lg:text-start text-center text-gray-600 text-lg">
                       <p>
-                        Our team configures Dynamics 365 Finance & Operations to align with
-                        your specific processes and workflows.
+                        Our team configures Dynamics 365 Finance & Operations to
+                        align with your specific processes and workflows.
                       </p>
                     </div>
 

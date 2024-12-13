@@ -156,7 +156,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="https://www.linkedin.com/in/sumanthdama/"
+                          href="https://www.linkedin.com/company/axseva/"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center text-[14px] leading-6 text-footerLinks   transition duration-300 ease-in-out"
                         >
                           LinkedIn Page
@@ -233,7 +233,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href="/about"
+                      href="https://www.linkedin.com/company/axseva/"
                       className="flex justify-center items-center"
                     >
                       <FaXTwitter
@@ -243,7 +243,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href="/about"
+                      href="https://www.linkedin.com/company/axseva/"
                       className="flex justify-center items-center"
                     >
                       <FaInstagram
@@ -253,7 +253,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href="/about"
+                      href="https://www.linkedin.com/company/axseva/"
                       className="flex justify-center items-center"
                     >
                       <FaGoogle
@@ -263,7 +263,7 @@ const Footer = () => {
                       />
                     </a>
                     <a
-                      href="/about"
+                      href="https://www.linkedin.com/company/axseva/"
                       className="flex justify-center items-center"
                     >
                       <FaFacebook
