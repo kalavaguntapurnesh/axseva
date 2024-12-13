@@ -11,12 +11,15 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import ContactOne from "../assets/ContactOne.jpg";
 import { FaLinkedin } from "react-icons/fa";
 const Contact = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg",
+        // "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1010836040-2048x2048-1.jpg",
+        // "https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        ContactOne,
       heading: "Want to get a valuable advice?",
       paragraph:
         "AXSeva is here to provide good recommendations for your business",

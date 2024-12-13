@@ -1,24 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import SupportOne from "../assets/Support_One.jpg";
 
 const SupportHero = () => {
   const slides = [
     {
       image:
         "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
+        // SupportOne,
       heading: "SUPPORT & MANAGED SERVICES",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
-      buttonLink: "/contact#contact_form",
-    },
-    {
-      image:
-        "https://www.tectura.com/wp-content/uploads/2023/04/End-to-End-Retail-ERP-CRM-and-POS-Solutions-for-Specialty-Retailers.jpg",
-      heading: "get an advice from us",
-      paragraph:
-        "Stay ahead in the market with our innovative and reliable services.",
-      buttonText: "Contact Us",
       buttonLink: "/contact#contact_form",
     },
   ];

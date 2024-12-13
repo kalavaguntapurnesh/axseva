@@ -1,28 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import AboutTwo from "../assets/AboutTwo.jpg";
+import SupportOne from "../assets/Support_One.jpg";
 
-const AboutHero = () => {
+const SolutionsHero = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/02/istockphoto-1335295270-2048x2048-1.jpg",
-      heading: "AXSeva specialized in Dynamics 365 F&O",
+        // "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
+        SupportOne,
+      heading: "SUPPORT & MANAGED SERVICES",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
       buttonText: "Discover More",
       buttonLink: "/contact#contact_form",
     },
-    {
-      image:
-        // "https://www.tectura.com/wp-content/uploads/2024/06/tectura-blog.webp",
-        AboutTwo,
-      heading: "Unmatched scalability & efficiency",
-      paragraph:
-        "Stay ahead in the market with our innovative and reliable services.",
-      buttonText: "Find Out More",
-      buttonLink: "/contact#contact_form",
-    },
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,9 +48,9 @@ const AboutHero = () => {
 
       {/* Static Text Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white text-center px-4">
-        <h2 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
+        <h3 className="text-4xl font-semibold sm:text-5xl md:text-6xl uppercase">
           {slides[currentIndex].heading}
-        </h2>
+        </h3>
         <p className="mt-4 text-lg sm:text-xl md:text-2xl font-light">
           {slides[currentIndex].paragraph}
         </p>
@@ -73,4 +65,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default SolutionsHero;

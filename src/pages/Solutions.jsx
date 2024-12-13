@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Footer from "../components/Footer";
-import { FaCheckCircle } from "react-icons/fa";
-import ServicesLayout from "../components/ServicesLayout";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import ContactUsButton from "../components/ContactUsButton";
+import SolutionsLayout from "./../components/SolutionsLayout";
 
 const Solutions = () => {
   const services3 = [
@@ -32,7 +31,7 @@ const Solutions = () => {
   ];
   return (
     <>
-      <ServicesLayout />
+      <SolutionsLayout />
 
       <div className="lg:pt-16 pt-12 select-none">
         <div className="relative">
