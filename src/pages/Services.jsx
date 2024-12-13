@@ -14,7 +14,7 @@ const Services = () => {
         "Axseva adopts a client-centric customization approach by focusing to meet the specific needs and goals of their clients.",
       items: [
         "Conducting in-depth consultations to understand the unique business processes and objectives of the client",
-        "Ensuring that customizations are implemented with minimal disruption in faster time.",
+        "Ensuring that customizations are implemented with minimal disruption in faster time than our competitors.",
         "Designing solutions that can adapt to evolving business needs, offering scalability to support future growth.",
       ],
     },
@@ -56,123 +56,6 @@ const Services = () => {
     },
   ];
 
-  // const [activeHeading, setActiveHeading] = useState(0); // Default to the first heading
-  // const sectionRefs = [
-  //   useRef(null),
-  //   useRef(null),
-  //   useRef(null),
-  //   useRef(null),
-  //   useRef(null),
-  // ];
-
-  // const headings = [
-  //   "Unified Business Process Integration",
-  //   "Real-Time Data Insights Availability",
-  //   "Scalable and Customizable Platform",
-  //   "Enhanced Customer Relationship Management",
-  // ];
-
-  // const content = [
-  //   {
-  //     title: "Information We Collect From the User",
-  //     details: (
-  //       <div>
-  //         <p>
-  //           Dynamics 365 integrates multiple business processes into a single
-  //           platform, improving efficiency, communication, and operational
-  //           consistency.
-  //         </p>
-  //         <ul className="list-disc ml-4">
-  //           <li>
-  //             Personal Information: This includes your name, email address,
-  //             contact details, etc.
-  //           </li>
-  //           <li>
-  //             Non-Personal Information: Technical information such as IP
-  //             addresses, browser type, device information, etc.
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     ),
-  //     image:
-  //       "https://images.pexels.com/photos/7567591/pexels-photo-7567591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   },
-  //   {
-  //     title: "Real-Time Data Insights Availability",
-  //     details: (
-  //       <div>
-  //         <p>
-  //           Provides actionable insights through real-time data analysis,
-  //           enabling informed decision-making and proactive business strategies.
-  //         </p>
-  //         <ul className="list-disc ml-4">
-  //           <li>
-  //             Supports on-the-go access to insights via mobile apps, keeping
-  //             stakeholders informed anytime, anywhere.
-  //           </li>
-  //           <li>
-  //             Integrates with Power BI for advanced analytics and visualization
-  //             of complex data sets.
-  //           </li>
-  //           <li>
-  //             Offers predictive analytics for better forecasting and planning
-  //             across departments.
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     ),
-  //     image:
-  //       "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   },
-  //   {
-  //     title: "Scalable and Customizable Platform",
-  //     details: (
-  //       <div>
-  //         <p>
-  //           Adapts to business growth and requirements with customizable
-  //           modules, ensuring flexibility and future-proofing investments.
-  //         </p>
-  //         <ul className="list-disc ml-4">
-  //           <li>
-  //             Designed to grow with your business, accommodating increased data,
-  //             users, and processes without performance degradation.
-  //           </li>
-  //           <li>
-  //             Allows integration with third-party applications and APIs,
-  //             ensuring compatibility with existing tools.
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     ),
-  //     image:
-  //       "https://images.pexels.com/photos/7693142/pexels-photo-7693142.jpeg?auto=compress&cs=tinysrgb&w=1200",
-  //   },
-  //   {
-  //     title: "Enhanced Customer Relationship Management",
-  //     details: (
-  //       <div>
-  //         <p>
-  //           It streamlines customer interactions, offering personalized
-  //           experiences, improved engagement, and better support through
-  //           comprehensive CRM tools.
-  //         </p>
-  //         <ul className="list-disc ml-4">
-  //           <li>
-  //             Offers a comprehensive view of customer interactions, enabling
-  //             businesses to understand and predict customer needs effectively.
-  //           </li>
-  //           <li>
-  //             Automates customer service workflows, reducing response times and
-  //             enhancing satisfaction.
-  //           </li>
-  //         </ul>
-  //       </div>
-  //     ),
-  //     image:
-  //       "https://images.pexels.com/photos/8867201/pexels-photo-8867201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   },
-  // ];
-
   return (
     <>
       <ServicesLayout />
@@ -182,6 +65,18 @@ const Services = () => {
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
               <div className="flex flex-col space-y-4">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="flex items-center justify-center"
+                >
+                  <div className="h-4 w-1 bg-mainColor"></div>
+                  <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                    Our core services
+                  </h1>
+                </motion.div>
                 {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -190,7 +85,7 @@ const Services = () => {
                   viewport={{ once: true, amount: 0.3 }}
                   className=" text-4xl text-headingColor font-bold text-center"
                 >
-                  Services We Offer
+                  Excellence in Business Solutions
                 </motion.div>
 
                 {/* Description */}
@@ -248,7 +143,7 @@ const Services = () => {
                 <div className="flex justify-center pt-6">
                   <a
                     href="/contact"
-                    class="relative mt-2 flex h-[54px] lg:w-1/4 w-[90%] items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
+                    class="relative mt-2 flex h-[54px] lg:w-1/4 w-[90%] items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded font-medium"
                   >
                     <span class="relative z-10">Speak with us now</span>
                   </a>
@@ -259,7 +154,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="lg:pt-20 pt-12 select-none">
+      <div className="lg:pt-20 lg:pb-16 pt-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
@@ -295,7 +190,7 @@ const Services = () => {
                   <div className="lg:flex items-center lg:justify-start justify-center hidden lg:ml-2 ml-0">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
+                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded font-medium"
                     >
                       <span class="relative z-10">Know More</span>
                     </a>
@@ -406,7 +301,7 @@ const Services = () => {
                   <div className="lg:flex items-center lg:justify-start justify-center hidden">
                     <a
                       href="https://www.linkedin.com/in/sumanthdama/"
-                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
+                      class="relative h-[50px] w-48 mt-2 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded font-medium"
                     >
                       <span class="relative z-10">Request a Demo</span>
                     </a>
@@ -435,7 +330,19 @@ const Services = () => {
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col space-y-4">
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="flex items-center justify-center"
+                >
+                  <div className="h-4 w-1 bg-mainColor"></div>
+                  <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                    We facilitate you
+                  </h1>
+                </motion.div>
                 {/* Heading */}
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
@@ -467,7 +374,7 @@ const Services = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="max-w-[1400px] lg:mx-auto grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-10"
+                  className="max-w-[1400px] lg:mx-auto grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-10 pt-4"
                 >
                   {/* Left Column */}
                   <div>
@@ -530,90 +437,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="mt-12 mb-12 lg:block hidden select-none">
-        <div className="relative">
-          <div className="w-full">
-            <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
-              <div className="flex flex-col space-y-6">
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className=" text-4xl text-headingColor font-bold text-center"
-                >
-                  5 Common Challenges We Can Resolve
-                </motion.div>
-
-                <motion.div
-                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                >
-                  <p className="md:text-lg text-base text-sideHeading lg:text-start text-center md:ml-2">
-                    Explore how dynamics 365 Services can help your organization
-                    address these common challenges that disrupt efficient
-                    system management and security.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.5 }}
-                  className="pt-16"
-                >
-                  <div className="hidden lg:grid grid-cols-3 gap-8">
-                    <div className="space-y-4 col-span-1 w-[100%] h-max sticky top-28 ">
-                      {headings.map((heading, index) => (
-                        <div
-                          key={index}
-                          onClick={() => setActiveHeading(index)}
-                          className={`py-4 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] flex items-center rounded ${
-                            activeHeading === index
-                              ? "bg-blue-100 text-blue-600" // Active heading styles
-                              : "bg-[#f8f9fa] text-gray-800" // Default styles
-                          }`}
-                        >
-                          <h2 className="pl-2 text-lg cursor-pointer font-medium ease-in-out duration-1000">
-                            {heading}
-                          </h2>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="space-y-12 col-span-2 overflow-y-auto">
-                      <div
-                        ref={sectionRefs[activeHeading]}
-                        className="space-y-6"
-                      >
-                        <h3 className="text-2xl font-bold text-gray-800">
-                          {content[activeHeading].title}
-                        </h3>
-                        <div className="space-y-2 text-lg xl:text-start text-center text-sideHeading">
-                          {content[activeHeading].details}
-                        </div>
-
-                        <div className="mt-4 flex justify-start">
-                          <img
-                            src={content[activeHeading].image}
-                            alt={content[activeHeading].title}
-                            // width={512}
-                            className="w-[92%] h-[380px] rounded"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <ContactUsButton />
 

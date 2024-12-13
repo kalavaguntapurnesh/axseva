@@ -20,21 +20,21 @@ const Support = () => {
   const values = [
     {
       icon: <BiSupport className="text-mainColor text-4xl" />,
-      title: "Ad-Hoc Support",
+      title: "Immediate help",
       description:
-        "Our Ad-Hoc Support model is designed to offer instant support for your short-length or one-time assignment. To carry out your independent requirement, we do not even ask you for any sort of commitment from your end. Understanding your business flow, we can offer your best-in-class support services suited to your specific workflow.",
+        "Immediate help ensures timely resolutions, minimizing downtime and enhancing productivity. With instant access to expertise, businesses can swiftly address challenges, maintain operational flow, and focus on achieving their goals without unnecessary delays.",
     },
     {
       icon: <GiAlarmClock className="text-mainColor text-4xl" />,
-      title: "Prepaid Hours Support",
+      title: "Prompt assistance",
       description:
-        "Through our prepaid hours' support model, enterprises can leverage priority support for their ongoing practices. Our prepaid hours' support plan comprises 50-dedicated hours that ensure contribution to manage continuity in your business flow. With this support model, we provide instant technical help to the enterprises to maintain their smoother and uninterrupted process flow.",
+        "Prompt assistance ensures swift resolution of issues, minimizing downtime and enhancing productivity. It fosters trust by addressing challenges efficiently, empowering businesses to stay agile, maintain momentum, and deliver seamless operations in competitive environments.",
     },
     {
       icon: <MdBusiness className="text-mainColor text-4xl" />,
-      title: "Annual Support",
+      title: "Accelerated support",
       description:
-        "We undertake all your general system issues in terms of bug fixing, abundance in the process flow, and other system issues interrupting your system performance. Our yearly proficient support team can help to resolve your system issues, regain your system capabilities, and enable you to boost your workflow with our high-end Dynamics 365 Support Services.",
+        "Accelerated Support ensures businesses receive timely assistance to address challenges swiftly. By prioritizing speed and efficiency, it minimizes downtime, resolves issues proactively, and empowers teams to maintain seamless operations and focus on growth.",
     },
   ];
 
@@ -52,7 +52,7 @@ const Support = () => {
     },
     {
       icon: <FaUserAlt />,
-      Title: "Account Settings",
+      Title: "Business Management",
       description:
         "Manage personal information, security & specific configurations.",
       color: "text-blue-500", // Green color for this icon
@@ -96,8 +96,20 @@ const Support = () => {
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-4">
                 {/* Heading */}
+                <motion.div
+                  variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.3 }}
+                  className="flex items-center justify-center"
+                >
+                  <div className="h-4 w-1 bg-mainColor"></div>
+                  <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                    We empower you
+                  </h1>
+                </motion.div>
                 <motion.div
                   variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                   initial="hidden"
@@ -115,7 +127,7 @@ const Support = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
                 >
-                  <p className="text-base text-sideHeading text-center md:text-lg pt-4">
+                  <p className="text-base text-sideHeading text-center md:text-lg ">
                     Axseva specializes in Dynamics AX implementations, offering
                     expertise in customization, business intelligence,
                     analytics, and seamless integration, ensuring tailored
@@ -128,7 +140,7 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-10 max-w-full"
+                  className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-10 max-w-full"
                 >
                   {values1.map((value, index) => (
                     <div
@@ -148,7 +160,7 @@ const Support = () => {
                               {value.Title}
                             </h1>
                           </div>
-                          <div className="flex justify-center items-center text-gray-600 text-center">
+                          <div className="flex justify-center  items-center text-gray-600 text-center">
                             <p>{value.description}</p>
                           </div>
                         </div>
@@ -201,6 +213,18 @@ const Support = () => {
                   viewport={{ once: true, amount: 0.5 }}
                   className="flex flex-col space-y-6 w-full justify-center"
                 >
+                  <div
+                    variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="flex items-center md:justify-start justify-center md:ml-1"
+                  >
+                    <div className="h-4 w-1 bg-mainColor"></div>
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                      We stand by
+                    </h1>
+                  </div>
                   <div className="text-4xl text-center lg:text-start font-bold text-headingColor">
                     Dedicated Dynamics 365 Finance & Operations Expert
                   </div>
@@ -223,7 +247,7 @@ const Support = () => {
                   <div className="flex justify-center lg:justify-start">
                     <a
                       href="/contact"
-                      class="relative h-[50px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
+                      class="relative h-[50px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-mainColor text-mainColor transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-mainColor before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded font-medium"
                     >
                       <span class="relative z-10">Reach out to us</span>
                     </a>
@@ -237,7 +261,7 @@ const Support = () => {
 
       {/* section 3 */}
 
-      <div className="mt-12 select-none">
+      <div className="lg:pt-20 pt-8 pb-12 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6">
@@ -248,24 +272,29 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="hidden lg:block"
+                  className="hidden lg:flex flex-col space-y-4 "
                 >
+                  <div
+                    variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="flex items-center justify-center"
+                  >
+                    <div className="h-4 w-1 bg-mainColor"></div>
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                      Our core support
+                    </h1>
+                  </div>
                   <div className="text-4xl text-headingColor font-bold text-center">
-                    Microsoft dynamics 365 Suite
+                    Microsoft Dynamics 365 F & O ecosystem
                   </div>
 
                   {/* Description */}
-                  <p className="md:text-lg pt-4 text-base text-sideHeading text-center lg:max-w-[1200px] mx-auto">
+                  <p className="md:text-lg text-base text-sideHeading text-center lg:max-w-[1200px] mx-auto">
                     Drive innovative and strategic approach through your
                     business premises with intelligent connected processes, data
-                    insights, and adaptive{" "}
-                    <span className="text-mainColor cursor-pointer">
-                      Dynamics 365 F & O.
-                    </span>{" "}
-                    {/* &{" "}
-                    <span className="text-mainColor cursor-pointer">
-                      ERP solutions.
-                    </span> */}
+                    insights, and adaptive Dynamics 365 Finance and Operations.
                   </p>
                 </motion.div>
 
@@ -275,18 +304,27 @@ const Support = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="max-w-[1200px] mx-auto grid lg:grid-cols-2 grid-cols-1 gap-6 justify-center lg:pt-8 pt-4 pb-6"
+                  className="max-w-[1400px] mx-auto grid lg:grid-cols-2 grid-cols-1 gap-6 justify-center  pt-12 pb-6"
                 >
                   {/* grid 1 */}
-                  <div className="flex flex-col space-y-4 w-full justify-center">
+                  <div className="flex flex-col space-y-4 w-full justify-start">
                     <div className=" text-4xl text-center lg:text-start font-bold text-headingColor">
-                      Dynamics 365 Support Plans We Offer
+                      We Optimize Operational Efficiency
                     </div>
                     <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
-                      AXSeva, your trusted Microsoft Dynamics partner will
-                      handle every aspect of your Dynamics 365 system from user
-                      support, training, customization, technical consultancy to
-                      development work.
+                      "Optimize Operational Efficiency" encapsulates the
+                      transformative power of Dynamics 365 Finance & Operations.
+                      It enables businesses to automate workflows, enhance
+                      decision-making, and seamlessly manage resources,
+                      fostering productivity and driving sustainable growth in
+                      day-to-day operations.
+                    </p>
+                    <p className="md:text-lg text-base text-center lg:text-start text-sideHeading">
+                      Dynamics 365 Finance & Operations simplifies complex
+                      tasks, improves collaboration, reduces manual effort,
+                      accelerates reporting, ensures compliance, and integrates
+                      data, delivering unmatched efficiency and scalability for
+                      businesses to thrive in competitive markets.
                     </p>
                   </div>
 
@@ -295,7 +333,7 @@ const Support = () => {
                     {values.map((value, index) => (
                       <div
                         key={index}
-                        className="p-12 border rounded-lg shadow-lg hover:shadow-xl hover:border-mainColor transition duration-300 "
+                        className="p-12 border rounded-lg shadow"
                       >
                         <div
                           className="flex items-center justify-between cursor-pointer"
@@ -303,16 +341,16 @@ const Support = () => {
                         >
                           <div className="flex items-center space-x-4">
                             {value.icon}
-                            <h3 className="text-xl font-semibold text-sideHeading">
+                            <h3 className="text-xl font-semibold text-headingColor">
                               {value.title}
                             </h3>
                           </div>
-                          <div className="text-gray-500 text-xl">
+                          <div className="text-headingColor text-xl">
                             {openIndex === index ? "▲" : "▼"}
                           </div>
                         </div>
                         {openIndex === index && (
-                          <p className="mt-4 text-gray-600 text-base">
+                          <p className="mt-4 lg:text-lg text-gray-600 text-base">
                             {value.description}
                           </p>
                         )}
@@ -321,16 +359,22 @@ const Support = () => {
                   </div>
                 </motion.div>
 
-                <div className="flex justify-center pt-8">
+                <motion.div
+                  variants={fadeIn("up", 0.1)} // Fade in from top to bottom
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.5 }}
+                  className="flex justify-center pt-8"
+                >
                   <a
                     href="/contact"
-                    class="relative mt-2 flex h-[54px] xl:w-1/4 w-3/4 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
+                    class="relative mt-2 flex h-[54px] xl:w-1/4 w-3/4 items-center justify-center overflow-hidden bg-mainColor border border-mainColor text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-mainColor before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded font-medium"
                   >
                     <span class="relative z-10">
                       Speak with a Managed Services Expert
                     </span>
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
