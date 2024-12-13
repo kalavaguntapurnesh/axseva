@@ -140,12 +140,25 @@ const Benefits = () => {
       <div>
         {/* Section 1 */}
 
-        <div className="pt-12 bg-[#f6f8f9] select-none">
+        <div className="pt-12  select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4 sm:px-6 mx-auto">
-                <div className="flex flex-col">
+                <div className="flex flex-col space-y-4">
                   {/* Heading */}
+
+                  <motion.div
+                    variants={fadeIn("down", 0.1)} // Fade in from top to bottom
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="flex items-center justify-center"
+                  >
+                    <div className="h-4 w-1 bg-mainColor"></div>
+                    <h1 className="ml-2 text-lg font-bold text-mainColor ">
+                      We empower you
+                    </h1>
+                  </motion.div>
                   <motion.div
                     variants={fadeIn("down", 0.1)} // Fade in from top to bottom
                     initial="hidden"
@@ -163,7 +176,7 @@ const Benefits = () => {
                     whileInView="show"
                     viewport={{ once: true, amount: 0.5 }}
                   >
-                    <p className="text-base text-sideHeading text-center md:text-lg pt-4">
+                    <p className="text-base text-sideHeading text-center md:text-lg">
                       Collaborating with us unlocks an opportunity to elevate
                       your offerings and maximize growth opportunities together.
                     </p>
@@ -212,10 +225,10 @@ const Benefits = () => {
 
         {/* section 2 */}
 
-        <div className="pt-20 select-none">
+        <div className="lg:pt-20 lg:pb-16 pt-12 select-none">
           <div className="relative">
             <div className="w-full">
-              <div className="w-full lg:mx-auto max-w-[1400px] pb-12 px-4">
+              <div className="w-full lg:mx-auto max-w-[1400px] px-4">
                 <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-4 gap-8">
                   {/* grid 1 */}
 
@@ -345,7 +358,7 @@ const Benefits = () => {
 
         {/* section 4 */}
 
-        <div className="pt-20 bg-[#f6f8f9] select-none">
+        <div className="pt-20 select-none">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-16 px-4">
@@ -377,7 +390,7 @@ const Benefits = () => {
                   initial="hidden"
                   whileInView="show"
                   viewport={{ once: true, amount: 0.5 }}
-                  className="mx-auto max-w-[900px] pt-6"
+                  className="mx-auto max-w-[800px] pt-6"
                 >
                   <form
                     onSubmit={handleSubmit}
