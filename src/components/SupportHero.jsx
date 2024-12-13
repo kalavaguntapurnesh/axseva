@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import SupportOne from "../assets/Support_One.jpg";
+import SupportOne from "../assets/SupportTwo.jpg";
 
 const SupportHero = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
-        // SupportOne,
+        // "https://www.tectura.com/wp-content/uploads/2023/04/Services_ApplicationManagementServices.jpg",
+        SupportOne,
       heading: "SUPPORT & MANAGED SERVICES",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",
