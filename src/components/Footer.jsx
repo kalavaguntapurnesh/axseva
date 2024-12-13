@@ -223,7 +223,7 @@ const Footer = () => {
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-4 w-full">
                   <div className="grid grid-cols-5">
                     <a
-                      href="https://www.linkedin.com/in/sumanthdama/"
+                      href="https://www.linkedin.com/company/axseva/"
                       className="flex justify-center items-center "
                     >
                       <FaLinkedin
