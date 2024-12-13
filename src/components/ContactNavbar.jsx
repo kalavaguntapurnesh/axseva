@@ -457,17 +457,17 @@ const NavBar = () => {
             <h5 className="p-4 text-xl font-semibold">Follow us on</h5>
             <div className="p-4">
               <div className="grid grid-cols-4">
-                <a href="https://www.linkedin.com/company/laoe-maom/">
+                <a href="https://www.linkedin.com/company/axseva/">
                   <FaLinkedinIn className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/axseva/">
                   <FaXTwitter className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/axseva/">
                   {" "}
                   <FaInstagram className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/axseva/">
                   {" "}
                   <FaFacebookF className="w-6 h-6 text-black duration-1000 hover:text-mainColor ease-in-out" />
                 </a>
