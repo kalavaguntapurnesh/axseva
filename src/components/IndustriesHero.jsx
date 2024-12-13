@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Industries_One from "../assets/Industries_One.jpg";
 
 const IndustriesHero = () => {
   const slides = [
     {
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/04/Microsoft-Dynamics-ERP-CRM-for-Service-Industry.jpg",
+        // "https://www.tectura.com/wp-content/uploads/2023/04/Microsoft-Dynamics-ERP-CRM-for-Service-Industry.jpg",
+        Industries_One,
       heading: "Empowering Your Business",
       paragraph:
         "Unify capabilities with Dynamics 365—modern that help move your business forward",

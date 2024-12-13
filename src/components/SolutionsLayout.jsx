@@ -1,14 +1,14 @@
 import React from "react";
-import ServicesHero from "./ServicesHero";
 import NavBar from "./Navbar";
+import SolutionsHero from "./SolutionsHero";
 
-const ServicesLayout = () => {
+const SolutionsLayout = () => {
   return (
     <div className="flex flex-col h-screen">
       <NavBar />
-      <ServicesHero />
+      <SolutionsHero />
     </div>
   );
 };
 
-export default ServicesLayout;
+export default SolutionsLayout;
